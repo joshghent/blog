@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <div
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -27,8 +27,10 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
-        </p>
+          <small>📅 {post.frontmatter.date}</small>
+          <small>    -   </small>
+          <small>☕ {post.fields.readingTime.text}</small>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -84,6 +86,12 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
+        readingTime {
+          text
+        }
       }
     }
   }
