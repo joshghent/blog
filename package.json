@@ -1,11 +1,11 @@
 {
-	"name": "@cloudcall/blog",
+	"name": "@joshghent/blog",
 	"private": true,
-	"description": "CloudCall Tech Blog based on the Gatsby Starter Blog",
-	"version": "0.1.0",
-	"author": "CloudCall Development <development@cloudcall.com>",
+	"description": "Josh Ghent's Blog - based on the Gatsby Starter blog",
+	"version": "1.0.0",
+	"author": "Josh Ghent <me@joshghent.com>",
 	"bugs": {
-		"url": "https://github.com/gatsbyjs/gatsby/issues"
+		"url": "https://github.com/joshghent/blog/issues"
 	},
 	"dependencies": {
 		"gatsby": "^2.1.27",
@@ -58,7 +58,7 @@
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "npm run develop",
 		"serve": "gatsby serve",
-		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+		"test": "npm run spellcheck",
 		"spellcheck": "mdspell -r \"content/blog/**/*.md\""
 	}
 }
