@@ -1,4 +1,7 @@
 language: node_js
 node_js:
-	- "lts/*"
+  - "lts/*"
 cache: npm
+notifications:
+    webhooks: https://www.travisbuddy.com/
+    on_success: never
