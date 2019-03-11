@@ -58,13 +58,13 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Gatsby Starter Blog`,
-				short_name: `GatsbyJS`,
+				name: `Josh Ghent's Blog`,
+				short_name: `JoshGhent`,
 				start_url: `/`,
 				background_color: `#ffffff`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `content/assets/gatsby-icon.png`,
+				icon: `content/assets/icon.png`,
 			},
 		},
 		`gatsby-plugin-offline`,
