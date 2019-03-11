@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Toggle from "./toggle"
 
 class Layout extends React.Component {
   render() {
@@ -58,14 +59,18 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          backgroundColor: 'var(--bg)',
+          color: 'var(--textNormal)',
+          transition: 'color 0.2s ease-out, background 0.2s ease-out',
         }}
       >
         <header>{header}</header>
+        <Toggle />
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.cloudcall.com">CloudCall</a>
         </footer>
       </div>
     )
