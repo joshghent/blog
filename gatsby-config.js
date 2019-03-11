@@ -1,11 +1,11 @@
 module.exports = {
 	siteMetadata: {
-		title: `CloudCall Tech Blog`,
-		author: `CloudCall`,
+		title: `Josh Ghent's Blog`,
+		author: `Josh Ghent`,
 		description: `A starter blog demonstrating what Gatsby can do.`,
 		siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
 		social: {
-			twitter: `cloudcall`,
+			twitter: `joshghent`,
 		},
 	},
 	plugins: [
