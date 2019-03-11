@@ -2,6 +2,10 @@ module.exports = {
 	siteMetadata: {
 		title: `Josh Ghent's Blog`,
 		author: `Josh Ghent`,
+		company: {
+			name: `CloudCall`,
+			url: `https://cloudcall.com`
+		},
 		description: `A starter blog demonstrating what Gatsby can do.`,
 		siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
 		social: {
