@@ -4,4 +4,4 @@ node_js:
 cache: npm
 notifications:
     webhooks: https://www.travisbuddy.com/
-    on_success: never
+    slack: ghentspace:ZLT8kfb3r2v5M0iY2gCN62dd
