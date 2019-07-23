@@ -1,6 +1,7 @@
 ---
 title: "What Tracking My Expenses for a Year Taught Me About Personal Finance"
 date: "2018-02-26T22:12:03.284Z"
+description: ""
 ---
 
 2017was the year I tracked my finances. I started doing this because I wanted to remove the mystery of where my money was going. I wasn’t overspending per se, but found it challenging to know exactly what I had spent across credit cards, debit cards, cash, etc.

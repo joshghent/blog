@@ -1,6 +1,7 @@
 ---
 title: "Understanding PHP hatred"
 date: "2018-03-05T22:12:03.284Z"
+description: ""
 ---
 
 Pictured: The PHP developer in their natural state of silent contempt

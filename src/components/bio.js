@@ -38,8 +38,8 @@ function Bio() {
 							}}
 						/>
 						<p>
-							I'm <a href={`https://twitter.com/${social.twitter}`}><strong>{author}</strong></a>. I make robust apps for the web. I wrangle code at <a href={company.url}>{company.name}</a>. I act as lead maintainer of ESFiddle and organize LeicesterJS
-              {` `}
+							I'm <a href={`https://twitter.com/${social.twitter}`}><strong>{author}</strong></a>. I make robust apps for the web. I wrangle code at <a href={company.url}>{company.name}</a>. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a> and organize <a href="https://meetup.com/leicesterjs">LeicesterJS</a>
+							{` `}
 						</p>
 					</div>
 				)

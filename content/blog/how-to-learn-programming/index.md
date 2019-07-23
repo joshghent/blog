@@ -1,7 +1,10 @@
 ---
 title: "How to Learn a Programming Language in Record Time"
 date: "2017-06-28T22:12:03.284Z"
+description: ""
 ---
+
+![image](../../assets/images/1_8CZLKCJ926_bhBSmSJj2ww.png)
 
 *Note: This article is aimed primarily at beginners who perhaps know a single language but are looking to start learning another.*
 
@@ -15,9 +18,9 @@ Here’s my list of things to prioritise so you can pick up a new language in re
 
 1. **Variable creation** — if it’s a strongly or statically typed language, then this extends to how to declare variables of different types (integer, string, object, array). If the language has the feature then we can learn how to create a constant too.
 
-1. **Loop ’n’ number of times **— In Javascript this would be achieved by — `for(var i = 0; i < n; i++) {}`
+1. **Loop ’n’ number of times** — In Javascript this would be achieved by — `for(var i = 0; i < n; i++) {}`
 
-1. **Loop over a *key:value* store **— *Key:value* stores are called Objects in Javascript in other languages they are called Hashes (Ruby) or Dictionaries (Python). Nonetheless, they are all the same, and usually there is a particular method to iterating over them because they are referenced by “keys” and not index numbers (as with arrays).
+1. **Loop over a key:value store **— *Key:value* stores are called Objects in Javascript in other languages they are called Hashes (Ruby) or Dictionaries (Python). Nonetheless, they are all the same, and usually there is a particular method to iterating over them because they are referenced by “keys” and not index numbers (as with arrays).
 
 1. **Referencing items in array** — In javascript you can reference `arr[1]` for the second item of an array. In addition to basic referencing, there may be special methods like `end()` to get the final element of an array.
 
@@ -35,7 +38,7 @@ Here’s my list of things to prioritise so you can pick up a new language in re
 
 1. **Length of a string** — A must have for any language. I find myself using this all the time but a common use case is checking whether we should truncate a string before displaying it to a user.
 
-1. **Length of an array **— Crucial when working with loops as 99% of the time, you will be iterating over an array for however long the array is.
+1. **Length of an array** — Crucial when working with loops as 99% of the time, you will be iterating over an array for however long the array is.
 
 1. **Public and Private methods** — All languages (especially those with classes) should have this, and is essential when you want to disallow access to functions outside the class.
 

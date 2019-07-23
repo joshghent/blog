@@ -1,6 +1,7 @@
 ---
 title: "How to Attend Your First Programming Meetup"
 date: "2018-02-06T22:12:03.284Z"
+description: ""
 ---
 
 Attending your first programming meetup can leave you a little apprehensive. I felt the same! So, I thought it may be useful to break down my first meetup experience and how you can start attending meetups yourself.

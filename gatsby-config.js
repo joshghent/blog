@@ -1,18 +1,75 @@
 module.exports = {
 	siteMetadata: {
-		title: `Josh Ghent's Blog`,
+		title: `Josh Ghent | Developer Musings`,
 		author: `Josh Ghent`,
 		company: {
-			name: `CloudCall`,
-			url: `https://cloudcall.com`
+			name: `Capp & Co`,
+			url: `https://www.capp.co`
 		},
-		description: `A starter blog demonstrating what Gatsby can do.`,
-		siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+		description: `Backend Developer, with an interest in application security and performance`,
+		siteUrl: `https://joshghent.com`,
 		social: {
 			twitter: `joshghent`,
+			linkedin: `https://www.linkedin.com/in/joshghent/`,
+			github: `joshghent`
 		},
 	},
 	plugins: [
+		{
+			resolve: `gatsby-plugin-feed`,
+			options: {
+				// this base query will be merged with any queries in each feed
+				query: `
+					{
+						site {
+							siteMetadata {
+								title
+								siteUrl
+								site_url: siteUrl
+							}
+						}
+					}
+				`,
+				feeds: [
+					{
+						serialize: ({ query: { site, allMarkdownRemark } }) => {
+							return allMarkdownRemark.edges.map(edge => {
+								return Object.assign({}, edge.node.frontmatter, {
+									description: edge.node.excerpt,
+									date: edge.node.frontmatter.date,
+									url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+									guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+									custom_elements: [{ "content:encoded": edge.node.html }],
+								})
+							})
+						},
+						query: `
+							{
+								allMarkdownRemark(
+									limit: 1000,
+									sort: { order: DESC, fields: [frontmatter___date] },
+									filter: {frontmatter: { draft: { ne: true } }}
+								) {
+									edges {
+										node {
+											excerpt
+											html
+											fields { slug }
+											frontmatter {
+												title
+												date
+											}
+										}
+									}
+								}
+							}
+						`,
+						output: "/rss.xml",
+						title: "Gatsby RSS Feed",
+					},
+				],
+			},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -31,6 +88,19 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
+					{
+						resolve: "gatsby-remark-embed-gist",
+						options: {
+							// Optional:
+
+							// the github handler whose gists are to be accessed
+							username: 'joshghent',
+
+							// a flag indicating whether the github default gist css should be included or not
+							// default: true
+							includeDefaultCss: true
+						}
+					},
 					{
 						resolve: `gatsby-remark-images`,
 						options: {
@@ -55,7 +125,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				trackingId: `UA-72778945-4`,
+				trackingId: `UA-72778945-1`,
 			},
 		},
 		`gatsby-plugin-feed`,

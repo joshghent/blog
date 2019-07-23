@@ -17,3 +17,21 @@ body.dark {
   --textLink: #FF6C2F;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
+
+body.dark > blockquote > * {
+	color: var(--textLink);
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	padding-top: 1em;
+	font-family: Montserrat,sans-serif;
+}
+
+.nav > li {
+	display: inline;
+	padding-right: 10px;
+}

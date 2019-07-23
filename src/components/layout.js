@@ -10,7 +10,7 @@ class Layout extends React.Component {
 		const rootPath = `${__PATH_PREFIX__}/`
 		let header
 
-		if (location.pathname === rootPath) {
+		if (location.pathname === rootPath || location.pathname !== "blog") {
 			header = (
 				<h1
 					style={{
@@ -70,12 +70,17 @@ class Layout extends React.Component {
 				>
 					<header
 						style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '2.625rem',
-            }}
-					>{header}<ThemeToggle /></header>
+							display: 'flex',
+							justifyContent: 'space-between',
+							alignItems: 'center',
+							marginBottom: '2.625rem',
+						}}
+					>{header}
+						<div className="nav">
+							<li><Link to={`/blog`}>Blog</Link></li>
+							<li><Link to={`/now`}>Now</Link></li>
+						</div>
+						<ThemeToggle /></header>
 					<main>{children}</main>
 					<footer>
 						© {new Date().getFullYear()}, Built by

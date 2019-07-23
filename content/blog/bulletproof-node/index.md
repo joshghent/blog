@@ -1,6 +1,7 @@
 ---
 title: "Bulletproof Node — Security Best Practises"
 date: "2018-01-23T22:12:03.284Z"
+description: ""
 ---
 
 Make your Node app like this guy
@@ -47,7 +48,9 @@ This is, in my opinion, the most important aspect of them all. By implementing m
 
 * Attempt to do SQL injection or other XSS attacks — if you see a particular user attempting to do any of these sorts of attacks, most likely no action will be necessary, as your app should be secure and the likelihood is that they are just messing about. Nonetheless, it may be worth keeping track of these users and the IP address as a sort of “black book”.
 
-![Me talking to my API routes](https://cdn-images-1.medium.com/max/2000/1*TOb464uqspF5k7dG81YyNg.gif)*Me talking to my API routes*
+![Me talking to my API routes](https://cdn-images-1.medium.com/max/2000/1*TOb464uqspF5k7dG81YyNg.gif)
+
+*Me talking to my API routes*
 
 You may have noticed the general theme going here — **automation**. I had a plethora of other tips for this article that I cut, as **a)** you can find them in articles elsewhere and **b)** data is the only way you will be able to find weak points. A chain is only as strong as its weakest link. For example, perhaps your application (targeted at a less than tech-savvy audience who don’t use crazy high entropy pass-phrases with a password manager) has a password policy which means many people are writing their passwords on post-its and putting them on their desk. This may lead to someone spotting the password and using it. Without data and monitoring, you would never be able to see that the users account was accessed from a new IP. The point is, there is no “one-size fits all” solution to security. Take a look at how your app is being used and prioritize security methods to help those use cases first.
 

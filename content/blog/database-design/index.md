@@ -1,6 +1,7 @@
 ---
 title: "Beginners Database Design Primer"
 date: "2018-02-14T22:12:03.284Z"
+description: ""
 ---
 
 Your boss has just got off the phone with a client who wants a bespoke social network site targeting a niche market. And they want you to head up the project. You’ve never built a social network. Your mind goes to Facebook, Twitter, and Instagram. They’re built by thousands of people with genius level IQ’s and degrees. How could you compete?
