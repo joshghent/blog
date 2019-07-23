@@ -4,7 +4,10 @@ date: "2018-03-26T22:12:03.284Z"
 description: ""
 ---
 
-Photo credit: https://unsplash.com/photos/Dl6jeyfihLk
+<div class="image">
+	<img src="../../assets/images/zeniphone.jpg"/>
+	<em>Photo credit: <a href="https://unsplash.com/photos/Dl6jeyfihLk">https://unsplash.com/photos/Dl6jeyfihLk</a></em>
+</div>
 
 Ever since the smartphone arrived in our hands, people everywhere have been utterly entranced by them. Spending never more than a moment without being bathed in white digital light.
 

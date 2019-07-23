@@ -6,7 +6,7 @@ description: ""
 
 Attending your first programming meetup can leave you a little apprehensive. I felt the same! So, I thought it may be useful to break down my first meetup experience and how you can start attending meetups yourself.
 
-<iframe src="https://medium.com/media/7d4e1279a2af51b0434f09c414ddc285" frameborder=0></iframe>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">First meetup <a href="https://twitter.com/hashtag/nottsjs?src=hash&amp;ref_src=twsrc%5Etfw">#nottsjs</a> <a href="https://t.co/2IQ0vImjxW">pic.twitter.com/2IQ0vImjxW</a></p>&mdash; Josh Ghent (@joshghent) <a href="https://twitter.com/joshghent/status/874685729179357184?ref_src=twsrc%5Etfw">June 13, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Why did I want to go to a programming meetup in the first place?
 

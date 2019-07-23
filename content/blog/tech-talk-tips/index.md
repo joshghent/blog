@@ -4,7 +4,10 @@ date: "2018-11-13T22:12:03.284Z"
 description: ""
 ---
 
-Giving the talk — credit https://twitter.com/JamieTanna/status/1029428095223320576
+<div class="image">
+	<img src="../../assets/images/me.jpeg"/>
+	<em>Giving the talk — credit https://twitter.com/JamieTanna/status/1029428095223320576</em>
+</div>
 
 Glossophobia or fear of public speaking is cited as being amongst [mankind’s top 10 fears](https://www.washingtonpost.com/news/wonk/wp/2014/10/30/clowns-are-twice-as-scary-to-democrats-as-they-are-to-republicans/?noredirect=on&utm_term=.a61b1b9d11bc). It related to our inherent fear of failure. Although I have never been afraid of speaking publicly, for even the most experienced speakers, it can be a bit nerve racking at times.
 
@@ -20,7 +23,10 @@ First and foremost, the preparation took a long time. A long time. Initially, I 
 
 Part of the reason the preparation took a long time was I wanted to make sure I was 100% concrete on every last word I said — in case someone picked me up on it and tore the entire talk to shreds. For example, part of my talk was speaking about the [NodeJS event loop](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c). Although I know roughly how the event loop works, there were still some questions I did not know. I thought that perhaps someone may ask me about the Node event loop and therefore, I set on down the rabbit hole to explore. This kind of pattern occurred at least 6–7 times when creating the talk and accounted for a large proportion of the time I spent.
 
-![The image I created for Node js clusters](https://cdn-images-1.medium.com/max/2000/1*qO8ucAj7rpUXP_tD3W1A9Q.png)*The image I created for Node js clusters*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/1*qO8ucAj7rpUXP_tD3W1A9Q.png"/>
+	<em>The image I created for Node js clusters</em>
+</div>
 
 Moreover, I wanted to keep the slides almost completely visual. I wanted to keep words off the slides because I have observed people read those rather than listening to you. Finding images for NodeJS clustering is harder than it looks though and so again another time-consuming task was pouring over pages of gifs and images to find one that perfectly encapsulated the subject matter. Often times, I created my own in Photoshop, which again took a large portion of time — primarily due to my appalling photo editing skills.
 
@@ -32,13 +38,19 @@ In connection with preparation time, it also took a long time to come up with a 
 
 This is a lesson I learned after the fact of presenting the talk. Not every point deserves the same amount of time. Spend more time on the difficult to understand topics and breeze through the small minor points. There is often a sunken cost fallacy at play here, whereby you take lots of time to prepare all the slides so they each deserve their own ceremony. We should try to get rid of this thinking and instead prioritize the points covered. Ordering your points carefully can aid with this. No one wants to be bombarded with lots of heavy topics all in one go, so spread them out and interleave them with smaller, lighter points.
 
-![Your delivery can get a bit wooden!](https://cdn-images-1.medium.com/max/2000/0*8H9OLV-pu8qsvO4e)*Your delivery can get a bit wooden!*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*8H9OLV-pu8qsvO4e"/>
+	<em>Your delivery can get a bit wooden!</em>
+</div>
 
 ## **Practice, practice… but not too much**
 
 Practicing your talk is essential of course but you can practice it too much. At a certain point, your delivery could become too scripted or wooden. Rather than attempting to memorize a script, remember the points you are covering. Then just speak. If you have the subject knowledge then this will produce results. Furthermore, speaking from within rather than from notes will vary your talk in different ways. I found that when practicing my talk, I would do it a different way each time, adding anecdotes and talking points and cutting others. This was done at an unconscious level and would not have been achieved if I were reciting verbatim.
 
-![There’s an NPM module for that — [https://twitter.com/iamdevloper/status/487606612757315584](https://twitter.com/iamdevloper/status/487606612757315584)](https://cdn-images-1.medium.com/max/2416/0*p-iyI1WhYQGJUMQ2)*There’s an NPM module for that — [https://twitter.com/iamdevloper/status/487606612757315584](https://twitter.com/iamdevloper/status/487606612757315584)*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2416/0*p-iyI1WhYQGJUMQ2"/>
+	<em>There’s an NPM module for that — <a href="https://twitter.com/iamdevloper/status/487606612757315584">https://twitter.com/iamdevloper/status/487606612757315584</a></em>
+</div>
 
 ## **Don’t fear questions**
 

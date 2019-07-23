@@ -26,7 +26,10 @@ This thought was inspired by reading [http://boringtechnology.club/](http://bori
 
 I felt the same way about the work I have done on our Messaging backend. I hope that, as Etsy did, they can leave those API’s and consumers to whir away and hum quietly in the background. It is a testament to how good your code is if 20x scale later it is still humming along nicely and a pseudo-metric I aim for with everything I write.
 
-![Credit: [https://www.osnews.com/story/19266/wtfsm/](https://www.osnews.com/story/19266/wtfsm/)](https://cdn-images-1.medium.com/max/2000/0*K_mkgCYT0SJHl8rF)*Credit: [https://www.osnews.com/story/19266/wtfsm/](https://www.osnews.com/story/19266/wtfsm/)*
+<div class="image">
+	<img src="https://mk0osnewswb2dmu4h0a.kinstacdn.com/images/comics/wtfm.jpg"/>
+	<em>Credit: <a href="https://www.osnews.com/story/19266/wtfsm/">https://www.osnews.com/story/19266/wtfsm/</a></em>
+</div>
 
 It has taught me a lesson not to march in and say “why didn’t they think of this when designing the system??? Time to tear it out and start again”. Instead, take a look at why the design was chosen in the first place, and to work with the design, rather than against it.
 

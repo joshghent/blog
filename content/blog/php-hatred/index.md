@@ -4,7 +4,10 @@ date: "2018-03-05T22:12:03.284Z"
 description: ""
 ---
 
-Pictured: The PHP developer in their natural state of silent contempt
+<div class="image">
+	<img src="../../assets/images/php.png"/>
+	<em>Pictured: The PHP developer in their natural state of silent contempt</em>
+</div>
 
 It’s an age-old joke to hate on [PHP](https://secure.php.net/). But why do people dislike it so much? After all, [PHP powers 80% of the web](https://w3techs.com/technologies/details/pl-php/all/all) (a large majority of that is credited to [Wordpress](https://wordpress.com/), but still). In this article I break down the main gripes of PHP development and share advice on language and system design.
 
@@ -16,7 +19,7 @@ This led to names such as [array_map](https://secure.php.net/manual/en/function.
 
 Additionally, these method names had inconsistent usage of [snake_case](https://en.wikipedia.org/wiki/Snake_case) — as is the case across most of the string methods. You have functions such as [strtotime](https://secure.php.net/manual/en/function.strtotime.php) and [str_split](https://secure.php.net/manual/en/function.str-split.php) — why is it not str_to_time? Who knows.
 
-Furthermore, another minor inconsistency that had escaped my notice until studying the [list of PHP methods](https://secure.php.net/manual/en/indexes.functions.php), is the usage of **‘to’ **and **‘2’**. In some cases **‘2’** was substituted into method names, presumably to look like a teenager texting on a [Nokia 3310](https://en.wikipedia.org/wiki/Nokia_3310) in the early 2000’s.
+Furthermore, another minor inconsistency that had escaped my notice until studying the [list of PHP methods](https://secure.php.net/manual/en/indexes.functions.php), is the usage of **‘to’** and **‘2’**. In some cases **‘2’** was substituted into method names, presumably to look like a teenager texting on a [Nokia 3310](https://en.wikipedia.org/wiki/Nokia_3310) in the early 2000’s.
 
 As a result, we now have methods such as ‘[bin**2**hex](https://secure.php.net/manual/en/function.bin2hex.php)’ and ‘[deg**2**rad](https://secure.php.net/manual/en/function.deg2rad.php)’ as well as [str**to**time](https://secure.php.net/manual/en/function.strtotime.php) and [str**to**lower](https://secure.php.net/manual/en/function.strtolower.php).
 
@@ -41,7 +44,10 @@ What? You say. After much debugging, thinking there may be an issue with your me
 
 There you discover…
 
-![Documentation for array_map ([https://secure.php.net/manual/en/function.array-map.php](https://secure.php.net/manual/en/function.array-map.php))](https://cdn-images-1.medium.com/max/2432/1*WdQmqjGHTWJD8Avo29rMjw.png)*Documentation for array_map ([https://secure.php.net/manual/en/function.array-map.php](https://secure.php.net/manual/en/function.array-map.php))*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2432/1*WdQmqjGHTWJD8Avo29rMjw.png"/>
+	<em>Documentation for array_map <a href="https://secure.php.net/manual/en/function.array-map.php">https://secure.php.net/manual/en/function.array-map.php</a></em>
+</div>
 
 **It’s callback first. Not callback last, like you had just done with array_filter.**
 
@@ -69,7 +75,9 @@ Error messages are a major problem with PHP. I distinctly remember my first grip
 
 Now, you may have got error messages ***actually ***working but sooner or later you come across this gem.
 > **PHP: [**Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM](http://phpsadness.com/sad/1)
+>
 > **You**: A what?!
+>
 > **PHP**: A Paamayim Nekudatayim of course…
 
 For the uninitiated, [paamayim nekudatayim](https://en.wiktionary.org/wiki/%D7%A4%D7%A2%D7%9E%D7%99%D7%99%D7%9D_%D7%A0%D7%A7%D7%95%D7%93%D7%AA%D7%99%D7%99%D7%9D#Hebrew) is a romanized version of the Hebrew word for “twice colon” which is referring to the [scope resolution operator](https://en.wikipedia.org/wiki/Scope_resolution_operator#PHP) (::). The kind you would use to call a static method such as this
@@ -84,7 +92,10 @@ The main issue with PHP error messages are the detail and specificity. At some p
 
 ![](https://cdn-images-1.medium.com/max/2976/1*AODwsrc4MDA1ZfPh4les3w.png)
 
-![Result of the code above](https://cdn-images-1.medium.com/max/2000/1*zQTkfZ1biXDZ8r_rflvaaw.png)*Result of the code above*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/1*zQTkfZ1biXDZ8r_rflvaaw.png"/>
+	<em>Result of the code above</em>
+</div>
 
 If you’re a battle hardened PHP developer then you may have spotted that the closing quotation mark on line 5 is missing. Yet PHP considers it helpful to return the message from line 8.
 

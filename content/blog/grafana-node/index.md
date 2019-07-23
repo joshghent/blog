@@ -4,7 +4,10 @@ date: "2019-03-06T22:12:03.284Z"
 description: ""
 ---
 
-*This guide assumes you already have a basic NodeJS API and a Graphite instance configured.*
+<div class="image">
+	<img src="../../assets/images/grfana.png"/>
+	<em>This guide assumes you already have a basic NodeJS API and a Graphite instance configured.</em>
+</div>
 
 Graphs are a great way to monitor your services, and as an added bonus — they look cool.
 
@@ -21,7 +24,7 @@ This is the statsd client we will be using. StatsD runs on a UDP port and this l
 
 Next up is to create some kind of wrapper around the statsD client as I found it difficult to use (and also not typescript ready).
 
-<iframe src="https://medium.com/media/d3c631a0ab569255643c2f654bac3e76" frameborder=0></iframe>
+`gist:joshghent/d800ce464ec756c02ac6f9dc4441bed6#graphite.ts`
 
 Most importantly, we a static `*getInstance()*` method. But why? We found that, long lived services (anything not serverless) would create a massive amount of UDP connections over time and eventually make it so the service could not create any new connections. We use this getInstance method so we make sure we use a single connection throughout the app.
 
@@ -39,7 +42,7 @@ The first piece of data to record is a simple counter to see how many times a ce
 
 Here is our router file now
 
-<iframe src="https://medium.com/media/ffe52dc7f8ffcff8d9c9eaeaba0c54e5" frameborder=0></iframe>
+`gist:joshghent/c11698f57e8c9122dfd7eec64b9f626d#router-stage-1.ts`
 
 Ok, now we’ve setup a log counting the number of successful calls the route has, we should also track any unsuccessful calls to the router. This way, if you see a sudden spike in errors, you can see exactly where that error is occuring.
 
@@ -78,7 +81,7 @@ Set your datasource as your Graphite DB so you can now perform queries for your 
 
 Let’s break this down
 
-* * — This is a wildcard query as we do not need to narrow it down just yet
+* `*` — This is a wildcard query as we do not need to narrow it down just yet
 
 * “MYPREFIX” — this our prefix that is configured in the GraphiteController at the top of the file
 

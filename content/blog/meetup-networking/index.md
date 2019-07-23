@@ -4,8 +4,6 @@ date: "2018-08-11T22:12:03.284Z"
 description: ""
 ---
 
-Photo by Marvin Meyer on Unsplash
-
 Tech meetups and talks are a great way to get to know fellow developers in your locality. But it can be challenging if you are introverted by your nature. Although you may not be introverted, some find it challenging to approach people when they first attended a meetup. Networking is a core part of why many attend meetups — whether to find a project to work on, a new job or just a friend. This article is motivated by knowing my past-self and others would benefit from how to network at meetups.
 
 First of all, know who attend meetups. Developers! Rather than being a source for discomfort, you can look around the room in the midst of Gitlab hoodies, beards and sticker covered laptops and breath a sigh of relief. These are your people. Developers are like spiders, they are more afraid of you than you are of them. So just approach them! They won’t hurt you.

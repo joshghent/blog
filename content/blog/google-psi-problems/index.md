@@ -3,8 +3,10 @@ title: "Solve 90% of Google Pagespeed Insights Issues in 30 Minutes"
 date: "2018-03-31T22:12:03.284Z"
 description: ""
 ---
-
-Source: https://unsplash.com/photos/fxAo3DiMICI
+<div class="image">
+	<img src="../../assets/images/horserace.jpg"/>
+	<em>Source: <a href="https://unsplash.com/photos/fxAo3DiMICI">https://unsplash.com/photos/fxAo3DiMICI</a></em>
+</div>
 
 Performance is a critical factor in site retention rates. Time is money, and there is a laundry list of examples that prove [people expect near-instant loading](http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/) and will navigate off a webpage if it [does not load in under 3 seconds](https://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all).
 
@@ -28,7 +30,10 @@ Huge savings in speed will come from the client’s browser not having to downlo
 
 You can cache your assets in a few ways, the easiest is to set a cache control header on your requests. On an Apache server, you can do that as follows.
 
-![Code here: [https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1](https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1)](https://cdn-images-1.medium.com/max/2152/0*SsZKehPZW3P9knAC.)*Code here: [https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1](https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1)*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2152/0*SsZKehPZW3P9knAC."/>
+	<em>Code here: <a href="https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1">https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1</a></em>
+</div>
 
 Application caches can also come in very useful. A major issue facing many sites is long-running queries. An easy solution to this is to cache the query response in the application, providing that the query is worth of caching and will not have its response changed a lot. [Laravel has this built in](https://laravel.com/docs/5.6/cache) and [Express can be extended to do this also](https://www.sohamkamani.com/blog/2016/10/14/make-your-node-server-faster-with-redis-cache/). This will reduce the server response time and therefore lead to quicker page loads for the clients.
 

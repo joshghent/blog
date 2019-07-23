@@ -4,6 +4,10 @@ date: "2018-12-04T22:12:03.284Z"
 description: ""
 ---
 
+<div class="image">
+	<img src="../../assets/images/githubscreenshot.png"/>
+</div>
+
 The issue raised for the event-stream breach. It’s a grizzly flame war that I would not recommend reading
 
 I’m a little late to the party here but after having a couple of conversations at work and with others I wanted to document my thoughts on the recent security issues around the [event stream npm package](https://blog.npmjs.org/post/180565383195/details-about-the-event-stream-incident) which was used by lots of popular packages such as nodemon.

@@ -18,7 +18,10 @@ If a service does lose connection to a service it requires persistent access to,
 
 But when your app boots fresh for the first time, it also needs logic to establish anything it needs in those services. For example, if you have a queue consumer service that maintains a connection to [RabbitMQ](https://www.rabbitmq.com/), when it boots, it needs logic in there to assert all the queues and exchanges it needs. Often, because a queue publisher service has been written previously, **that **service contains all the assert logic. However, when it comes to deploying the queue consumer service, you hit errors because the publisher service was not deployed previously and therefore had not asserted the exchanges and queues the consumer needs. This creates deployment dependencies, which trust me, you don’t want.
 
-![Example structure of an app with failover](https://cdn-images-1.medium.com/max/2000/0*7veIJLnOp4w_LV2m)*Example structure of an app with failover*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*7veIJLnOp4w_LV2m"/>
+	<em>Example structure of an app with fail over</em>
+</div>
 
 ## Infrastructure Failover
 

@@ -4,8 +4,6 @@ date: "2018-07-27T22:12:03.284Z"
 description: ""
 ---
 
-Photo by Joshua Earle on Unsplash
-
 “There is always an app for that” is a phrase I heard repeatedly when I was looking at something to keep tabs on my goals, both short and long-term. But you know what, I don’t want an app! I began to consider using [Todoist](https://en.todoist.com/), my task management app for doing this. After all, it’s one of my most used applications so there is less likelihood of me forgetting about it on the back page of a folder. Instead, it would be right front and center. Whilst I’m sure that all those goal management apps have some useful feature, you might be interested to see how you could use Todoist (or indeed any task management app) to keep track of your goals.
 
 The idea of “task management” may begin to make your goal seem more like a chore but, on the other hand, it makes you think of the goal in more segmented achievable chunks. This really aided me as it helped me apply the age-old advice of being specific and actionable with my goals. Rather than go to the gym, I create tasks to go to the gym on certain days. Additionally, tasks have completion dates so you can set each of those segments against a date to check in with the goal you are attempting to achieve.
@@ -14,7 +12,10 @@ Now I’m going to dig into the specifics of how you can set your task manager u
 
 ## Create a goal project
 
-![The championship is so close!](https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle)*The championship is so close!*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle"/>
+	<em>The championship is so close!</em>
+</div>
 
 The first separate is to create a new project to separate your goal based tasks. In Todoist, you can create nested projects so I created a parent project of “Goals” and then child-projects for each goal I had.
 

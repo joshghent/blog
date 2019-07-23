@@ -3,8 +3,10 @@ title: "Starting with Why as a Software Developer"
 date: "2019-02-26T22:12:03.284Z"
 description: ""
 ---
-
-Developers are like jackdaws — “oh shiny!”
+<div class="image">
+	<img src="../../assets/images/jackdaw.png"/>
+	<em>Developers are like jackdaws — “oh shiny!”</em>
+</div>
 
 As you progress as a software developer, you should begin to build an innate sense of when something should be done a certain way, perhaps to future proof it in some way or make it more resilient. It’s an odd feeling, but you just get a sense for something.
 

@@ -3,14 +3,19 @@ title: "Principles of Performance"
 date: "2018-05-16T22:12:03.284Z"
 description: ""
 ---
-
-Photo by Cara Fuller on Unsplash
+<div class="image">
+	<img src="../../assets/images/cheetah.jpeg"/>
+	<em>Photo by Cara Fuller on Unsplash</em>
+</div>
 
 On the web, speed is everything. But you knew that right? Rather than throwing percentages and statistics at you about site retention rates, let’s take a look at some key principles to bear in mind when looking to improve your app or website’s performance.
 
 These are principles to be used no matter what technology you use and are more broad in their scope. The aim is to make this into a small handbook, not a manual. Just as once you learn to drive a car you, in theory, can drive any other, this article aims to teach the principles and not the implementation.
 
-![This is your website](https://cdn-images-1.medium.com/max/2000/0*-PJFFL6w3b2sbjF5.)*This is your website*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*-PJFFL6w3b2sbjF5."/>
+	<em>This is your website</em>
+</div>
 
 ## More Network Round-Trips = Slower Load Times
 
@@ -26,7 +31,10 @@ Note this tip applies only to HTTP 1.1. With the rise of HTTP2 around the corner
 
 A [fantastic talk by Addy Osmani at CSSConf](https://www.youtube.com/watch?v=FEs2jgZBaQA) demonstrated the detrimental effect of having large image assets on your page (especially in the visible viewport). To have a fast running app or website, you have to shed the things that slow you down.
 
-![I couldn’t find a photo of Usain Bolt with a bag of sand but here’s the next best thing!](https://cdn-images-1.medium.com/max/2000/0*weuFQ40LFR1eJQyR.)*I couldn’t find a photo of Usain Bolt with a bag of sand but here’s the next best thing!*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*weuFQ40LFR1eJQyR."/>
+	<em>I couldn’t find a photo of Usain Bolt with a bag of sand but here’s the next best thing!</em>
+</div>
 
 Usain Bolt can run the 100m in 9.58 seconds. That’s very fast. But if he was carrying a bag of sand, he would be a lot slower. It sounds silly but the bag of sand illustrates all those cumbersome libraries and images you are using to try and make the website look sleeker but end up slowing it down. Sure, your image pops in and does a little twirl, but people will have left the site long before that animation library even loads in.
 
@@ -38,7 +46,10 @@ When loading something, if it “feels” fast then it will be fast. But what do
 
 It also means being interactive in the shortest time possible. You want a person to scroll down your website and not hit a load of, what I will call, the “Tasmanian scrollbar devil”. I’m sure you’ve had it yourself, scrolling down a website then an image above the visible viewport loads and pushed the content you were trying to look at down. Incredible annoying UX and takes up valuable CPU time.
 
-![You don’t want this guy on your site](https://cdn-images-1.medium.com/max/2000/0*sOAULjFJsJE0_kYf.)*You don’t want this guy on your site*
+<div class="image">
+	<img src="https://cdn-images-1.medium.com/max/2000/0*sOAULjFJsJE0_kYf."/>
+	<em>You don’t want this guy on your site</em>
+</div>
 
 To combat this, place invisible div’s with the width and height of images before they load, this will prevent this scrollbar devil from ever arising. You can also perform the same trick with large areas of text or the like, for example, you may have seen Facebook and Jira using Background masks. [Here is a great article](https://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html) on specifically how they work.
 

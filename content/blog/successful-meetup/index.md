@@ -3,8 +3,10 @@ title: "How to Run a Successful Tech Meetup — even if you’re forgetful"
 date: "2018-12-22T22:12:03.284Z"
 description: ""
 ---
-
-A picture taken from the November 2018 LeicesterJS meetup
+<div class="image">
+	<img src="../../assets/images/meetup.jpeg"/>
+	<em>A picture taken from the November 2018 LeicesterJS meetup</em>
+</div>
 
 [LeicesterJS](https://www.meetup.com/leicesterjs/) is born out of the rise of Javascript now being the de facto programming language for a majority of developers. Additionally, we aimed to bring together a tech community in Leicester.
 
@@ -32,7 +34,7 @@ You want your meetup to be a success and part of that success can be measured by
 
 * **Word of mouth** — you’d be surprised how many people just come to events because they saw it on [meetup.com](https://www.meetup.com/). From my purely anecdotal data gathering, it seems that people mostly came because they saw the event on meetup.
 
-* **RSVP’s matter **— A day before the meetup starts, it is good to encourage people to update their RSVP status if they are no longer planning on attending. Often times, you will only get 60–70% of the RSVP’s you have on meetup. Make sure you keep track of this KPI and encourage the “regulars” to your meetup
+* **RSVP’s matter** — A day before the meetup starts, it is good to encourage people to update their RSVP status if they are no longer planning on attending. Often times, you will only get 60–70% of the RSVP’s you have on meetup. Make sure you keep track of this KPI and encourage the “regulars” to your meetup
 
 ![Download the full thing here: [https://gist.github.com/joshghent/2bb9c6e2ce616e29aaa3c7a2895cb17d](https://gist.github.com/joshghent/2bb9c6e2ce616e29aaa3c7a2895cb17d)](https://cdn-images-1.medium.com/max/2000/0*5t6kUM-EnedEnCmD)*Download the full thing here: [https://gist.github.com/joshghent/2bb9c6e2ce616e29aaa3c7a2895cb17d](https://gist.github.com/joshghent/2bb9c6e2ce616e29aaa3c7a2895cb17d)*
 
@@ -40,11 +42,11 @@ You want your meetup to be a success and part of that success can be measured by
 
 After the first meetup, I had a number of people come and ask me for the slides to the talks that had been given. I hadn’t even thought about that! There were a number of these sorts of things that I had to get a process nailed down for.
 
-* **Talk slides **— stealing an idea from NottsJS, I decided to create a Github organization and put the slides in a repo. It was the least frictionless way to distribute them. I considered using Google drive or some other file sharing service but this would give me difficult URLs that audience members may have a hard time finding
+* **Talk slides** — stealing an idea from NottsJS, I decided to create a Github organization and put the slides in a repo. It was the least frictionless way to distribute them. I considered using Google drive or some other file sharing service but this would give me difficult URLs that audience members may have a hard time finding
 
-* **Talk ideas **— after having a number of inquirers about giving talks I again turned to GitHub. The process is now to submit a talk idea as a Github issue on a repo. I have a set template for the issue so there is not any information left out that I may need at the last minute
+* **Talk ideas** — after having a number of inquirers about giving talks I again turned to GitHub. The process is now to submit a talk idea as a Github issue on a repo. I have a set template for the issue so there is not any information left out that I may need at the last minute
 
-* **Somewhere to talk **— despite the bounty of slack groups out there, many requested to set up a Slack group to discuss the meetup and the tech community in Leicester at large. This ticks along nicely. I used [Slackin](https://github.com/rauchg/slackin) on a free Heroku box to create a site for people to get instant invites
+* **Somewhere to talk** — despite the bounty of slack groups out there, many requested to set up a Slack group to discuss the meetup and the tech community in Leicester at large. This ticks along nicely. I used [Slackin](https://github.com/rauchg/slackin) on a free Heroku box to create a site for people to get instant invites
 
 * **Introductions** — the first meet had some very basic introduction slides but I’ve gradually fleshed these out to make sure everyone feels at home. Basic things like pointing out the bathrooms and telling people what time the food will be here and the meetup is expected to end can be very useful to people. Another additional tip is I get people to raise their hand if they with me (and therefore, at the office, we were in), I informed other audience members that they can also go to those ones if they need any help
 
