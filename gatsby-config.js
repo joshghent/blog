@@ -47,8 +47,7 @@ module.exports = {
 							{
 								allMarkdownRemark(
 									limit: 1000,
-									sort: { order: DESC, fields: [frontmatter___date] },
-									filter: {frontmatter: { draft: { ne: true } }}
+									sort: { order: DESC, fields: [frontmatter___date] }
 								) {
 									edges {
 										node {
@@ -65,7 +64,7 @@ module.exports = {
 							}
 						`,
 						output: "/rss.xml",
-						title: "Gatsby RSS Feed",
+						title: "Josh Ghent Blog RSS Feed",
 					},
 				],
 			},
