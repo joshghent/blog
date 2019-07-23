@@ -48,3 +48,7 @@
 .toggle-checkbox {
   display: none;
 }
+
+.react-toggle-track {
+	background-color: black;
+}

@@ -47,16 +47,14 @@ class HomeIndex extends React.Component {
 								Wordpress website for a recruitment company based in London. <a href="https://github.com/joshghent/timberseed">code</a>
 							</li>
 							<li>
-								<a href="https://github.com/joshghent/deepClone">Deep Clone</a> <br></br>
-								Robust and reliant module for cloning any data structure in javascript.
+								<a href="https://github.com/joshghent/lastfm-slack">LastFM 2 Slack</a> <br></br>
+								Docker bot for posting your currently scrobbled LastFm track as your Slack Status
                     </li>
 						</ul>
 					</section>
-				</main>
 
-				<footer>
 					<p>:wq</p>
-				</footer>
+				</main>
 			</Layout>
 		)
 	}
