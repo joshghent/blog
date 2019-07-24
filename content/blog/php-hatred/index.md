@@ -53,7 +53,7 @@ There you discover…
 
 I don’t know how many times I’ve done this but each time you can’t help but slightly curse the name [Rasmus Lerdorf](https://en.wikipedia.org/wiki/Rasmus_Lerdorf).
 
-Besides the importance of consistency as we have already spoken about, what else can we learn. Well for my money, it’s helpful error messages. Rather than spitting out something vague and meaningly like in this case, write something helpful and actionable. I read a great article about this very topic — you can find it [here](https://uxplanet.org/how-to-write-a-perfect-error-message-da1ca65a8f36). I’d highly recommend reading it. Ideally you want to make your UI (including visual and programmatic UI) as intuitive as possible but account for cases where someone makes a mistake (we all do) and handle it gracefully by guiding the user to the correct course.
+Besides the importance of consistency as we have already spoken about, what else can we learn. Well for my money, it’s helpful error messages. Rather than spitting out something vague and meaningless like in this case, write something helpful and actionable. I read a great article about this very topic — you can find it [here](https://uxplanet.org/how-to-write-a-perfect-error-message-da1ca65a8f36). I’d highly recommend reading it. Ideally you want to make your UI (including visual and programmatic UI) as intuitive as possible but account for cases where someone makes a mistake (we all do) and handle it gracefully by guiding the user to the correct course.
 
 ### Frustrating usage
 
