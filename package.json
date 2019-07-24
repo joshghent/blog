@@ -68,7 +68,7 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"test": "npm run spellcheck",
-		"spellcheck": "mdspell -r \"content/blog/**/*.md\"",
+		"spellcheck": "mdspell -a -n -r \"content/blog/**/*.md\"",
 		"lint": "eslint --color src/**/*.js",
 		"lighthouse": "lighthousebot"
 	}

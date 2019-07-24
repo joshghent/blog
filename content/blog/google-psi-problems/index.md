@@ -8,7 +8,7 @@ description: ""
 	<em>Source: <a href="https://unsplash.com/photos/fxAo3DiMICI">https://unsplash.com/photos/fxAo3DiMICI</a></em>
 </div>
 
-Performance is a critical factor in site retention rates. Time is money, and there is a laundry list of examples that prove [people expect near-instant loading](http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/) and will navigate off a webpage if it [does not load in under 3 seconds](https://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all).
+Performance is a critical factor in site retention rates. Time is money, and there is a laundry list of examples that prove [people expect near-instant loading](http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/) and will navigate off a web page if it [does not load in under 3 seconds](https://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all).
 
 Although the [Google Page speed Insights](https://developers.google.com/speed/pagespeed/insights/) score is not a guaranteed stamp that a site will be fast, it does give some indication of this fact. Additionally, it is now one of the hundreds of factors that Google and other search engines use in their SEO ranking algorithms. Truly then, web performance is something to care about from a business standpoint.
 

@@ -33,7 +33,7 @@ So how do we implement it?
 First we need to import it into our route file
 > import GraphiteController from “./graphite”;
 
-Next, at the top of the file let’s get an instance of the graphite controller that we can reuse in this file. We create it with the config that contains the url for the statsd instance.
+Next, at the top of the file let’s get an instance of the graphite controller that we can reuse in this file. We create it with the configuration that contains the url for the statsd instance.
 > const graphiteController = GraphiteController.getInstance(config);
 
 Ok, now we’ve got an instance of the controller we can now record some data.
@@ -44,12 +44,12 @@ Here is our router file now
 
 `gist:joshghent/c11698f57e8c9122dfd7eec64b9f626d#router-stage-1.ts`
 
-Ok, now we’ve setup a log counting the number of successful calls the route has, we should also track any unsuccessful calls to the router. This way, if you see a sudden spike in errors, you can see exactly where that error is occuring.
+Ok, now we’ve setup a log counting the number of successful calls the route has, we should also track any unsuccessful calls to the router. This way, if you see a sudden spike in errors, you can see exactly where that error is occurring.
 
 Add this to the catch block in the router. The second argument defaults to false but when true, signals that this call was an error. In the background, this will append .error to the UDP message, meaning you can filter those calls separately.
 > graphiteController.write(“GetUsers”, true);
 
-Next we will add time tracking to the route. This way we can see how long a certain route took to execute. This is a great piece of information to have as you can see if you perhaps need to upgrade the machine your api is running on, or where to focus optimization efforts.
+Next we will add time tracking to the route. This way we can see how long a certain route took to execute. This is a great piece of information to have as you can see if you perhaps need to upgrade the machine your API is running on, or where to focus optimization efforts.
 
 To do this you need to record the start time that the route was called. You can do this simply by
 > const startTime = new Date();
@@ -75,7 +75,7 @@ Move your mouse over to the left and click “Add Panel” in the little menu th
 
 Now, click the graph and click “Edit”. Now we can add a data source for our graph.
 
-Set your datasource as your Graphite DB so you can now perform queries for your data. You will need to build up a query like this:
+Set your data source as your Graphite DB so you can now perform queries for your data. You will need to build up a query like this:
 
 ![](https://cdn-images-1.medium.com/max/2000/0*OtAVsLVruQ7s6xqi)
 

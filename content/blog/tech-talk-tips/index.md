@@ -13,7 +13,7 @@ Glossophobia or fear of public speaking is cited as being amongst [mankind’s t
 
 Why did I choose to give a talk then? For one, I wanted the experience, ever since [going to my first meetup](https://blog.joshghent.com/how-to-attend-your-first-programming-meetup-835b74f6556f) I thought “that’s really cool to speak about stuff you’re excited about”. In connection with this, I enjoy teaching people, whether that be 1-on-1 or to a group — it’s one of the reasons I contribute to open source, and write blogs. It’s a creative outlet. Overall, my primary objective was simply to share something I’m passionate about and also *try* and make them laugh — emphasis on the word “try” there.
 
-My first talk was at the [NottinghamJS meetup](https://nottsjs.org/) and was titled “[Lightning Node Performance](https://github.com/nottsjs/speakers/issues/46)”. I’m hugely grateful to the organizers for giving me a platform. Previously they had people from Amazons Alexa division, Microsofts Machine Learning team and more — so it seemed as if I had big shoes to fill.
+My first talk was at the [NottinghamJS meetup](https://nottsjs.org/) and was titled “[Lightning Node Performance](https://github.com/nottsjs/speakers/issues/46)”. I’m hugely grateful to the organizers for giving me a platform. Previously they had people from Amazons Alexa division, Microsoft's Machine Learning team and more — so it seemed as if I had big shoes to fill.
 
 But giving the talk is the ending, let’s start at the beginning with things I wish I had known when preparing my first talk.
 
@@ -45,7 +45,7 @@ This is a lesson I learned after the fact of presenting the talk. Not every poin
 
 ## **Practice, practice… but not too much**
 
-Practicing your talk is essential of course but you can practice it too much. At a certain point, your delivery could become too scripted or wooden. Rather than attempting to memorize a script, remember the points you are covering. Then just speak. If you have the subject knowledge then this will produce results. Furthermore, speaking from within rather than from notes will vary your talk in different ways. I found that when practicing my talk, I would do it a different way each time, adding anecdotes and talking points and cutting others. This was done at an unconscious level and would not have been achieved if I were reciting verbatim.
+Practising your talk is essential of course but you can practice it too much. At a certain point, your delivery could become too scripted or wooden. Rather than attempting to memorize a script, remember the points you are covering. Then just speak. If you have the subject knowledge then this will produce results. Furthermore, speaking from within rather than from notes will vary your talk in different ways. I found that when practising my talk, I would do it a different way each time, adding anecdotes and talking points and cutting others. This was done at an unconscious level and would not have been achieved if I were reciting verbatim.
 
 <div class="image">
 	<img src="https://cdn-images-1.medium.com/max/2416/0*p-iyI1WhYQGJUMQ2"/>

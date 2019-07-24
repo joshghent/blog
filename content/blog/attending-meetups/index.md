@@ -34,7 +34,7 @@ Be thinking all the while about what questions you can ask them based on what th
 
 Other talking points may include, asking them about the company they work for, how big is it, where are they based and so on.
 
-When wrapping up a conversation, don’t make excuses about going to the bathroom (unless you actually need to), simply say “*I’m going to introduce myself to some other people now but I’d love to continue this conversation, perhaps I can take your email and we can talk*”. Since this is work related, people may get a little cagey about handing over their phone number, so opt for business related avenues of communication, email, twitter and linkedin.
+When wrapping up a conversation, don’t make excuses about going to the bathroom (unless you actually need to), simply say “*I’m going to introduce myself to some other people now but I’d love to continue this conversation, perhaps I can take your email and we can talk*”. Since this is work related, people may get a little cagey about handing over their phone number, so opt for business related avenues of communication, email, twitter and LinkedIn.
 
 All in all, don’t be scared. These are your people, just as shy and nerdy as you are. So put yourself out there and see who you meet. There are lots of interesting people out there! If all else fails, see if you can convince a coworker or friend to come along.
 

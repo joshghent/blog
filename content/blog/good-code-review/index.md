@@ -22,7 +22,7 @@ Code review can often seem like the reviewer has marched in and torn to shreds t
 
 ## Look out the output not approach
 
-A key part of code review is analyzing the output, not the approach they have taken. There are many different ways of solving a problem, and it’s important to avoid enforcing one solution over another.
+A key part of code review is analysing the output, not the approach they have taken. There are many different ways of solving a problem, and it’s important to avoid enforcing one solution over another.
 
 In some cases, a developer might not be aware of another approach. For example, let’s say they have written a method that loops through an array to find a matching element in that array. They might not be aware that [Array.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) (in Javascript) could solve their problem! In such cases, it’s best to go and talk to the developer in person. It might be the case they cannot use Array.includes. You are most likely tackling this code base as an outsider so it is best to assume that the author is the expert.
 

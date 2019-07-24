@@ -4,7 +4,7 @@ date: "2019-01-23T22:12:03.284Z"
 description: ""
 ---
 
-With the shift to mobile and the statistics of the “younger” generation (hi there) not using phone calls as a means of communication, there is a constant push towards reaching people in a platform agnostic way — via email, linkedin, twitter dm, you name it. The challenge arises when you need to create a platform that is scalable demands and flexible enough to hack in any other new communication streams later down the line — maybe we suddenly want support for MySpace messaging.
+With the shift to mobile and the statistics of the “younger” generation (hi there) not using phone calls as a means of communication, there is a constant push towards reaching people in a platform agnostic way — via email, LinkedIn, twitter DM, you name it. The challenge arises when you need to create a platform that is scalable demands and flexible enough to hack in any other new communication streams later down the line — maybe we suddenly want support for MySpace messaging.
 
 The architecture I discuss below comes out of experience with this problem first hand, and the solutions we came up with — all to be delivered for a deadline.
 
@@ -12,9 +12,9 @@ The architecture I discuss below comes out of experience with this problem first
 
 Since this needed to be real time in the case of IM or near-real-time in the case of SMS, websockets are the best way to go and a defacto standard for real-time operations on the web. For this, PubNub is a great choice since it already had a lot of the functionality baked in, such as different channels and mechanism to subscribe, send and receive on those channels.
 
-PubNub also had a mechanism called “PubNub functions” whereby any new websocket message on a channel matching a certain pattern would be handled by a function written in plain ol’ javascript. This meant you can fire SMS messages off to other systems that would handle the actual sending of the SMS message and another route that sends whatsapp messages to Twilio’s API for example. It provided immense flexibility, especially as you expand to different communication methods and channel types.
+PubNub also had a mechanism called “PubNub functions” whereby any new websocket message on a channel matching a certain pattern would be handled by a function written in plain ol’ javascript. This meant you can fire SMS messages off to other systems that would handle the actual sending of the SMS message and another route that sends WhatsApp messages to Twilio’s API for example. It provided immense flexibility, especially as you expand to different communication methods and channel types.
 
-Although PubNub has it’s own datastore in the background, you can only query it through their API, making it difficult to just dive into the DB and find let’s say all channels containing accountId 123. Additionally, you can only bring back 99 records at a time with PubNub which means producing accurate reporting a challenge. The solution was to introduce a second data source. This potentially opens up the problem of many sources of truth. This can be avoided by having an API stood in front of a non-relational database (I would recommend ElasticSearch) which all read operations would go through.
+Although PubNub has it’s own data store in the background, you can only query it through their API, making it difficult to just dive into the DB and find let’s say all channels containing accountId 123. Additionally, you can only bring back 99 records at a time with PubNub which means producing accurate reporting a challenge. The solution was to introduce a second data source. This potentially opens up the problem of many sources of truth. This can be avoided by having an API stood in front of a non-relational database (I would recommend ElasticSearch) which all read operations would go through.
 
 ## Typescript Time
 
