@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/seo"
 import "../styles/brutal.css";
 
 class HomeIndex extends React.Component {
@@ -10,6 +11,10 @@ class HomeIndex extends React.Component {
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
+				<SEO
+					title="Josh Ghent"
+					keywords={[`blog`, `gatsby`, `javascript`, `react`, `josh`, `ghent`, `josh ghent`, `leicesterjs`]}
+				/>
 				<main className="homepage">
 					<section id="hello-world">
 						<h1>/* Hello World! */</h1>

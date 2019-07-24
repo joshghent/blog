@@ -7,22 +7,22 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
+                  query {
+                    site {
+                      siteMetadata {
+                        title
+                        description
+                        author
+                      }
+                    }
+                  }
+                `
   )
 
   const metaDescription = description || site.siteMetadata.description
@@ -32,8 +32,17 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      defer={false}
+      {...(title
+        ? {
+          titleTemplate: `%s — ${site.siteMetadata.title}`,
+          title,
+        }
+        : {
+          title: `${site.siteMetadata.title}`,
+        })
+      }
+      defaultTitle={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -71,9 +80,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
             : []
         )
         .concat(meta)}
