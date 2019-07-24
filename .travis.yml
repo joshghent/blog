@@ -2,6 +2,12 @@ language: node_js
 node_js:
   - "lts/*"
 cache: npm
+jobs:
+  include:
+    - stage: Spellcheck
+      script: npm run spellcheck
+    - stage: Lint
+      script: npm run lint
 notifications:
     webhooks: https://www.travisbuddy.com/
     slack: ghentspace:ZLT8kfb3r2v5M0iY2gCN62dd
