@@ -42,6 +42,11 @@
 		"typography-theme-wordpress-2016": "^0.16.19"
 	},
 	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb": "^17.1.1",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "^7.14.3",
 		"markdown-spellcheck": "1.3.1",
 		"prettier": "^1.16.4"
 	},
@@ -62,6 +67,7 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"test": "npm run spellcheck",
-		"spellcheck": "mdspell -r \"content/blog/**/*.md\""
+		"spellcheck": "mdspell -r \"content/blog/**/*.md\"",
+		"lint": "eslint --color src/**/*.js"
 	}
 }
