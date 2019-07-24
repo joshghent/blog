@@ -6,7 +6,7 @@ description: ""
 
 Code review is a critical part of any software development process. In theory, it is designed to broaden system knowledge amongst the team and ensure that the code is maintainable and easy to read. Perfecting code reviews can be somewhat of an art, it requires a balance of being picky and not sweating the small stuff.
 
-Before we dive into the principles around good code review, we should first define what it **isn’t. **Many believe that one goal of a code review is to address any styling issues. With the rise of [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/), arguments about code formatting have become moot. Automating formatting with the use of tools removes the personal opinion and sway from any one person. Additionally, this also has the benefit of formatting the code more consistently across all areas of the code base.
+Before we dive into the principles around good code review, we should first define what it **isn’t.** Many believe that one goal of a code review is to address any styling issues. With the rise of [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/), arguments about code formatting have become moot. Automating formatting with the use of tools removes the personal opinion and sway from any one person. Additionally, this also has the benefit of formatting the code more consistently across all areas of the code base.
 
 Other believe that code reviews should be to catch bugs. Whilst this can be true if you spot something glaringly obvious, it is often challenging to understand the code in a wider context. Bug catching should generally be left to a set of watertight unit and integration tests as well as your top-notch QA department.
 
