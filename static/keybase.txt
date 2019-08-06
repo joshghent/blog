@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/joshghent
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joshghent.com
+  * I am joshghent (https://keybase.io/joshghent) on keybase.
+  * I have a public key with fingerprint 0176 A8D5 896D F7FC CEDD  22B2 F8F3 7646 1CCA 4B50
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010188de14cde936855843d44375239fef0e47e4b26ad3222fdd41225d7bab5d1d640a",
+      "fingerprint": "0176a8d5896df7fccedd22b2f8f376461cca4b50",
+      "host": "keybase.io",
+      "key_id": "f8f376461cca4b50",
+      "kid": "010188de14cde936855843d44375239fef0e47e4b26ad3222fdd41225d7bab5d1d640a",
+      "uid": "4e42d8cbca9fe974beab4dbac50bac19",
+      "username": "joshghent"
+    },
+    "service": {
+      "hostname": "joshghent.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1565108395,
+  "expire_in": 157680000,
+  "prev": "126a66c20d1c0602369efbdc33898fa9f55a3bda18bf65ab2da62ed3dd3c7a69",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIiAnicrVJbSBVBGD6WSh5KRIrs+rDdSMx2Z3dmd89DUZbR7aGIrtphbnvOejl7
+PLtqdjoi0UUrgigKeuhCFwIlIiMNylKiHtTAJC2CsKSgKILCioJsVuolemweZph/
+vu+b7/v5708aHwimzZvTO3xr8sofad2dp6sDpauvNCcl4rA6KZSUyvnYwSsYd71w
+uc2kkCQrsmIYjCsaZdxUkQGhoalM01QdAtW0uCVzTecaAQgzFQBgMaYpAECmE0wg
+UxjSZCwVSJYdi/BEPGHHvDFZHWGDQcNEzNItSjljABBgGZaqIw0plGKNQFkQo47r
+M4Q5gl1eaDuiJi7hMXv/wP9n39VjchrXADMooVhQTV0jHBONEUyhLDbF9IEuT8Rw
+JRfoMseNRqJcJE0VSKJcY1Pud9aP8jekkDqVgh1POJ5DnQrxFPW8uBvyqV5d3MfW
+chL+rRImdoyJTgpGDU+4thOTQopAUs/2ZRWIoCIbqgkLJL4rbid42PYRUEeGLJb/
+D68RkoqIjRAFMlOojGSgIpNbhFFVNUzDEiEhxCphWDGIhSAmgGEEOFMZU6mOkZ/X
+5VUxRwoBIerhiNB07UgMe9UJLqW67pWkB9KCgcyMcf6IBYJZOX8Gb+rpCYFj774P
+N3R8Lgx13VxBquqV3tsjQ2b9YN2m9kVLz5ZcWgzR0+GW3amy5uORhatLRs7o5bOn
+bz/eMzC7ompfjjZt1vSi0YPWBvnIFnnVI/NM7sKjyVMZqfwFz+UvDUOld1rtD99a
+nw+2fF18/uXhPc1V2U8uXZOakvtzu80pnXuXwMG+tccuvnq1tCvn28DJ+m1tOw88
+G87tP/fmZ8Ghkcb+NcUbQ7WN2ePq7uaB/KA+60MyvXbHhU90nUmf/khcf2tm6cHX
+GVsnvm/vk8dLL9raj+wurvx4KHhVe1gyih5/eTP0YH2R3n4jtWrGiY7YZnN5nvw+
+s2dZcKSpbX7Z3JqZmVF2+RcupUIn
+=kMgT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joshghent
+
+==================================================================
