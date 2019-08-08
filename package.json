@@ -23,7 +23,7 @@
 		"gatsby-remark-copy-linked-files": "^2.0.9",
 		"gatsby-remark-embed-gist": "1.1.9",
 		"gatsby-remark-images": "^2.0.6",
-		"gatsby-remark-prismjs": "^3.2.4",
+		"gatsby-remark-prismjs": "^3.3.4",
 		"gatsby-remark-reading-time": "^1.0.1",
 		"gatsby-remark-responsive-iframe": "^2.0.9",
 		"gatsby-remark-smartypants": "^2.0.8",
