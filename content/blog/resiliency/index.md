@@ -10,11 +10,24 @@ I had the objective of making 99% of errors auto recover and be never told about
 Here's what I ended up doing
 
 ## Backing Off
-When the primary consumer service (loving named Short Message Event Gatherer or "SMEG" for short), we implemented a retry mechanism that just
+When the primary consumer service (loving named Short Message Event Gatherer or "SMEG" for short), we implemented a retry mechanism that just requeued the message to be re-processed. It was then consumed immidiatly by another instance which undoubtedly generated the same error (due to 3rd party errors etc).
+
+The correct behaviour is to have a backing off mechanism. This means that in the event of 3rd party failures (databases, external API's etc) it will give them chance to recover before retrying the process.
+
+We implemented a gradual back off proceedure that increased 3x with each attempt. So after the first failure it would retry after 1 minute then the second would be after 3 minutes, and then 9 minutes and so on.
 
 ## Die!
+Hosting the application with ECS (Docker) forced us to think in a "cattle" rather than "pets" way of working with servers.
+
+When the applications health check failed or it's heartbeat to RabbitMQ failed, it would immidiatly kill itself. This would then trigger ECS to boot a new task to take its place.
+
 
 ## Health Check on Start
+Linked with the above, when the application booted, we did a systems check to make sure it could connect to the database, rabbitmq and a couple of third parties that we used.
+
+If this process failed on startup, it means that ECS could try to boot it in another availability zone, increasing its chance of success.
+
+We configured alerting on the back of this if AWS could not boot a container that added to our overall picture of the systems health.
 
 ## Automated end-to-end monitoring
 
@@ -27,6 +40,7 @@ When the primary consumer service (loving named Short Message Event Gatherer or 
 ## Real world testing
 
 ## DynamoDB billing on Demand
+At the time, 
 
 ## Aggressive feature flagging
 
