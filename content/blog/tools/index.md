@@ -15,13 +15,20 @@ The reason for this work is that I felt to advance to the "next level" I had to 
 ## Terminal
 * Bash to ZSH
 * Stuck with iTerm - although modified the UI
+* Shell aliases - suggested using zsh-autosuggestions
 
 ## Code
 * VSCode (with _ALL_ the plugins)
+* Automated linting
+* Global gitignore
+* Continuous deployment
+* Newsletters
 
 ## Misc
 * Keyboard Shortcuts
-
+* Gmail Filters
+* Gmail Folders
+* Todoist filters
 
 ## Hardware
 * New keyboard - Drop Ctrl
