@@ -43,6 +43,9 @@ We configured alerting on the back of this if AWS could not boot a container tha
 At the time, 
 
 ## Aggressive feature flagging
+Although we did not utilize a feature flagging tool such as LaunchDarkly (which in retrospect, we should but didn't know about it at the time), we still aggressively feature flagged everything in the backend. I had a number of features launch ages in advance of when they were actually "turned on" since my pace of work exceeded that of the frontend team. Often, I would create a feature, release it to our development environment, test it and sign it off. Then we would get a bug report or another more important feature, I would then add that on top of the previous feature which would then mean it was a pain to release one without the other. Could that be solved with better release cycles? Perhaps. But often I would not be aware of if Feature B needed to go before Feature A and when Feature A's frontend would be done.
+
+Anyway, the solution was to add feature flags that we then toggled within the applications config that it pulled down from ASM. Easy-peasy. But this simple mechanism allowed code to be released and tested well in advance of when it was actually needed.
 
 ## Automated Unit and Integration testing
 
