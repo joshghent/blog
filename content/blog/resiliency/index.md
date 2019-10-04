@@ -5,9 +5,11 @@ Once things settled down however, one of my first priorities (for my own sanity 
 ## Goals
 Let's start of with some high level goals, because often resiliency can be used to mean "stopping a service from ever crashing". However, the goal of resiliency should be to accept failure, and instead be more focused on handling them gracefully.
 
-I had the objective of making 99% of errors auto recover and be never told about them, but the 1% of errors I wanted to know about immediately. This included not just, is X service healthy, but also is the queue that it listens to being consumed at a rate less than it was being added to.
+I had the objective of making 99% of errors auto recover and be never told about them, but the 1% of errors I wanted to know about immediately. This included not just, is X service healthy, but also is the queue that it listens to being consumed at a rate less than it was being added to and so on.
 
-Here's what I ended up doing
+Making the web more resilient is a certain goal of mine as I (as I'm sure you, the reader, have) been burned by going through a form submission, only for it to go wrong and have to do the entire thing again. Frustrating right? One example of this stands out in my mind where I submitted an application for a bank account. On the confirmation screen, I left it as I got distracted by something else. By the time I went back on the page, Chrome decided to reload it and what resulted was me having no way to login and a credit checking being done on me but no bank account at the end of it! Funny (in retrospect) perhaps but pointed out serious resiliency issues. If you start looking, you'll see them everywhere.
+
+Here's what I ended up doing to make our SMS/IM systems more resilient.
 
 ## Backing Off
 When the primary consumer service (loving named Short Message Event Gatherer or "SMEG" for short), we implemented a retry mechanism that just requeued the message to be re-processed. It was then consumed immidiatly by another instance which undoubtedly generated the same error (due to 3rd party errors etc).
@@ -45,21 +47,28 @@ This is not a unique idea but, looking back in retrospect, would be one of the f
 Throughout any system, there will be a number of "failure scenarios" that you have to handle. Previously, we handled all failures the same, just requeued the message and then eventually completely failed.
 Soon though, we found a number of issues that should not have been retried such as a lack of credit on the account. For these cases, we created a way to categorize the errors, some were critical and others were just warnings. This meant more messages went all the way through (maintaining a minimum viable service level) and fed back to the user sooner on issues that were their fault (sorry!)
 
-## Real world testing
-
 ## Aggressive feature flagging
 Although we did not utilize a feature flagging tool such as LaunchDarkly (which in retrospect, we should but didn't know about it at the time), we still aggressively feature flagged everything in the backend. I had a number of features launch ages in advance of when they were actually "turned on" since my pace of work exceeded that of the frontend team. Often, I would create a feature, release it to our development environment, test it and sign it off. Then we would get a bug report or another more important feature, I would then add that on top of the previous feature which would then mean it was a pain to release one without the other. Could that be solved with better release cycles? Perhaps. But often I would not be aware of if Feature B needed to go before Feature A and when Feature A's frontend would be done.
 
 Anyway, the solution was to add feature flags that we then toggled within the applications config that it pulled down from ASM. Easy-peasy. But this simple mechanism allowed code to be released and tested well in advance of when it was actually needed.
 
-## Automated Unit and Integration testing
-
 ## Alerting
+Being notified of errors is something that is critical in any good system, but in our case we had additional considerations around handling third-parties and since it was driven by a consumer service we needed to make sure that the queue was not backing up to far and auto-scaling policies were working correctly.
+
+Fortunatly, were able to setup RabbitMQ to post it's stats to Grafana so we could create alerting from Grafana based on different metrics coming from RabbitMQ - this could trigger auto scaling policies and/or emails and slack messages to the relavent parties.
+
+On one occasion we had an AZ outage where although our service span up correctly in another AZ, some other components that our service required didn't. We soon knew about this thanks to the reporting we had inside the service to report it's health in relation with other services it required.
+
+The end-to-end monitoring also had an alerting component since it notified us if the whole process of sending an SMS message took over a certain N number of milliseconds.
 
 ## Future Plans
-
 Since I moved to a new company, I did not get chance to execute on all of my resiliency plans. 
 
 I had planned to add a new feature into our frontend that would allow people to manually retry messages (like on iMessage or WhatsApp), this would then trigger a new Lambda that would requeue the message based on the data in the DynamoDB table
 
-Additionally, I was looking to implement a feature whereby messages that failed completely (after retries) would be moved to another "Failed" DLX queue. If somehow the app managed to process a message then it would start consuming from the "Failed" DLX queue. 
+Additionally, I was looking to implement a feature whereby messages that failed completely (after retries) would be moved to another "Failed" DLX queue. If somehow the app managed to process a message then it would start consuming from the "Failed" DLX queue.
+
+Furthermore, implementing some kind of chaos engineering in production would have properly and automatically tested all the work I had done around handling sudden outages. Although we tested these manually, either by firewalling or taking down the service, we did not test it with each new release, only when the work was originally done so there is the chance it could break in the future. Automating tests like this makes it near impossible to run into these types of issues and uncovers additional flaws in the system.
+
+## Summary
+Each of these points could have been a blog post in of themselves but I believe it's often good to have a rough overview from a specific view point and then research the implementation seperatly. I hope you had enjoyed reading about this resiliency work and provided some ideas for how you can make a more resilient and robust web!
