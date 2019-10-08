@@ -6,8 +6,6 @@ jobs:
   include:
     - stage: Spellcheck
       script: npm run spellcheck
-    - stage: Lint
-      script: npm run lint
     - stage: Lighthouse
       if: type = pull_request
       script: npm run lighthouse --perf 90 --pwa 90 --a11y 90 --bp 90 --seo 90 "$(wait-for-netlify-preview)"
