@@ -127,6 +127,10 @@ keybase
 stackoverflow
 Spotify
 LastFM
+netlify
+travisci
+navbar
+gists
 hacky
 correlationids
 microservice
@@ -267,6 +271,10 @@ infact
 Tanna
 LastFm2Slack
 aways
+ - content/blog/gatsby-or-bust/index.md
+Overreacted.io
+Sivers
+medium-2-md
  - content/blog/resiliency/index.md
 requeued
 3x
