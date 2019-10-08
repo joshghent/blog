@@ -18,7 +18,7 @@ Anyway, I wanted for people to actually read my blog and didn't like the mobile 
 Additionally, I wanted to regain control of my content. I didn't like the idea that a platform could be gaining revenue from content that wasn't theirs. It wasn't as if I was using the platform for free, I had paid $70 or so to get it pointed to my own subdomain (a feature that they later dropped).
 
 ## The Move
-I chose Gatsby for two reasons, it seemed pretty quick and was easy to deploy and add new blog posts to.
+I chose Gatsby for two reasons, it seemed pretty quick and was easy to deploy and add new blog posts to. I could also keep everything inside git and tools that I was already using for development work.
 
 ### Deployments
 I chose to host the site on Netlify and configured auto deployments from new commits on the master branch. I also configured my DNS provider with a CNAME from the root of my domain the the Netlify application.
@@ -26,12 +26,12 @@ I chose to host the site on Netlify and configured auto deployments from new com
 Along with this, I configured TravisCI to run a spell check on all my blog posts as well as deployment previews for new PR's. This allows me to see new posts before they get merged in the live site.
 
 ### Development
-I started, like most people, with the Gatsby starter blog. I didn't like some of the coding styles, but didn't really care all that much.
+I started, like most people, with the [Gatsby starter blog](https://github.com/gatsbyjs/gatsby-starter-blog). I didn't like some of the coding styles, but didn't really care all that much.
 On top of the boilerplate, I made some additional changes
 
 * Added a light/dark mode toggle in the Navbar - heavily inspired by the Overreacted.io blog as well as a myriad of others with the same feature. This was easy enough to do
 * Changed the color scheme
-* Added my keybase gpg key for verification of my identity
+* Added my [keybase](https://keybase.io/joshghent) gpg key for verification of my identity
 * Changed the style of headings for the blog posts, I found the default headings to be larger than writing on a charity cheque
 * Added a /now page as inspired by David Sivers and documented the apps and tools I use currently. This needs some improving
 
