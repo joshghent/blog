@@ -1,3 +1,9 @@
+---
+title: "Resiliency"
+date: "2019-10-08T11:43:03.284Z"
+description: ""
+---
+
 At my previous post at [CloudCall](https://cloudcall.com), I was responsible for the SMS/IM backend. Whilst it was being developed, we made the classic mistake of not worrying about resiliency or testing since we were so stacked with features and had a manual QA department to act as a big bug dragnet.
 
 Once things settled down however, one of my first priorities (for my own sanity and peace of mind) was to focus on resiliency. Here are the steps that I took, that contain translatable principles across any system. In my case, I was working with a suite of NodeJS API's and consumer services hosted on ECS or Lambda.
@@ -62,7 +68,7 @@ On one occasion we had an AZ outage where although our service span up correctly
 The end-to-end monitoring also had an alerting component since it notified us if the whole process of sending an SMS message took over a certain N number of milliseconds.
 
 ## Future Plans
-Since I moved to a new company, I did not get chance to execute on all of my resiliency plans. 
+Since I moved to a new company, I did not get chance to execute on all of my resiliency plans.
 
 I had planned to add a new feature into our frontend that would allow people to manually retry messages (like on iMessage or WhatsApp), this would then trigger a new Lambda that would requeue the message based on the data in the DynamoDB table
 
