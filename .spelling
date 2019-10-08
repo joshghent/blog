@@ -127,6 +127,11 @@ keybase
 stackoverflow
 Spotify
 LastFM
+hacky
+correlationids
+microservice
+frontend
+iMessage
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -262,3 +267,8 @@ infact
 Tanna
 LastFm2Slack
 aways
+ - content/blog/resiliency/index.md
+requeued
+3x
+LaunchDarkly
+Easy-peasy
