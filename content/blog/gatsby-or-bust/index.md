@@ -31,7 +31,7 @@ On top of the boilerplate, I made some additional changes
 
 * Added a light/dark mode toggle in the Navbar - heavily inspired by the Overreacted.io blog as well as a myriad of others with the same feature. This was easy enough to do
 * Changed the color scheme
-* Added my [keybase](https://keybase.io/joshghent) gpg key for verification of my identity
+* Added my [keybase](https://keybase.io/joshghent) GPG key for verification of my identity
 * Changed the style of headings for the blog posts, I found the default headings to be larger than writing on a charity cheque
 * Added a /now page as inspired by David Sivers and documented the apps and tools I use currently. This needs some improving
 

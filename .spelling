@@ -127,6 +127,10 @@ keybase
 stackoverflow
 Spotify
 LastFM
+netlify
+travisci
+navbar
+gists
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -262,3 +266,7 @@ infact
 Tanna
 LastFm2Slack
 aways
+ - content/blog/gatsby-or-bust/index.md
+Overreacted.io
+Sivers
+medium-2-md
