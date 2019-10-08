@@ -131,6 +131,11 @@ netlify
 travisci
 navbar
 gists
+hacky
+correlationids
+microservice
+frontend
+iMessage
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -270,3 +275,8 @@ aways
 Overreacted.io
 Sivers
 medium-2-md
+ - content/blog/resiliency/index.md
+requeued
+3x
+LaunchDarkly
+Easy-peasy
