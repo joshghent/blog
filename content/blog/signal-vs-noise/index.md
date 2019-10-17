@@ -8,6 +8,8 @@ Technology is so fast paced that to stay up to date, you *need* to be learning o
 
 This was a challenge that I faced myself in my career of staying up to date and learning about new technologies in a 80/20 fashion. In otherwords, what is the 20% of content I can read for 80% of the impact.
 
+---
+
 ## Why is "staying up to date" important though?
 
 Recently, Corey Quinn, writer of Last Week in AWS, had an interesting point when answering the question of [*"What's the most consistently wrong thing you see AWS users do?"*](https://www.techrepublic.com/article/aws-billing-is-broken-and-kubernetes-wont-last-says-irreverent-economist-corey-quinn/?ck_subscriber_id=559247293)
@@ -16,25 +18,45 @@ Recently, Corey Quinn, writer of Last Week in AWS, had an interesting point when
 
 I've found this to be true in my own career that often, there will be a workaround I have to do for a particular project but then a new strategy will be released that means we do not need to do that do that workaround anymore. Without, "staying up to date" I would keep doing this workaround!
 
-## The challenge remains however, that you cannot consume or read everything that is published, even about a specific technology. So how can you filter the signal vs noise?
+
+> ## The challenge remains however, that you cannot consume or read everything that is published, even about a specific technology. So how can you filter the signal vs noise?
 
 
-### Subscribing to newsletters
+## Subscribing to newsletters
 First and foremost, subscribe to these on your work email. Learning is a part of your work and so reading through information on a work relevant topic should be considered as such. Previously, I subscribed to them on my personal email and found myself with a mountain of emails I should have read through on my way home from work.
 
 I find newsletters a great source of learning because they usually contain summaries of articles and only include on the list of articles, ones that particularly stood out with importance.
 
 There is even a newsletter for HackerNews so you can have it boiled down as a sort of "Greatest Hits" of the week. This helps you feel connected to the community without having to spend all day scrolling on there.
 
-### Join Slack/Discord Communities focused around a technology or topic
 
-### Go to Meetups
+## Go to Meetups
+I'm a big advocate of meetups for learning. Why? Because it's dedicated time to focus on one thing. You're not (or at least you shouldn't) be checking Twitter at the same time, you're just listening and learning.
 
-### Follow relevant people on Twitter (+ setup Twitter mute keywords)
+Furthermore, it's a great way to surround yourself with like minded people and build on your ideas. You can gain real insight into how people learned a topic or even got into the industry in the first place.
 
-### Listen to Podcasts (selectively) and Books
+
+## Join Slack/Discord/Forum Communities focused around a technology or topic
+If you go to meetups, they will often have a slack or discord community that you can join and talk with other attendees. I'd highly recommend joining these, but be selective, not joining and participating in absolutely every single one. Instead, encourage conversation by asking questions, even if you think they are dumb - people will help you out.
+Slack is particularly good for meetups because it allows you to build relationships with the people in the local area. This makes it easier to look for new opportunities, to collaborate and perhaps to secure funding for your next great idea.
+
+Additionally, if you have an interest in a particular technology or area of expertise, these will likely have a community around them also. Personally, I really love the Chaos Engineering Slack as there is always lively discussion and a lot of links being shared on the topic. Again this allows you to filter down articles and gain insights on the topic that you otherwise would not know.
+
+
+## Follow relevant people on Twitter (+ setup Twitter mute keywords)
+Despite the hate, I find Twitter a great asset to me in my learning and "staying-up-to-date". But it carries a couple of warnings.
+Firstly, it's to setup Twitter mute keywords. I have around a hundred or so of these (unfortunatly they cannot be imported via CSV or other formats), that filter out everything I don't want to see (basically anything asides from tech). Additionally, I steer clear from politics and other "drama" that springs up in the community. Some may find this to be "putting up the shutters" so to speak, but I get my news elsewhere and my life is a lot happier not reading about other peoples personal lives.
+
+Second is to be selective about who you follow in the community. Go to your favourite "tweeter" and look at who they follow and just follow them all, then if you find the content off topic then you can simply unfollow them.
+
+
+## Listen to Podcasts (selectively) and Books
+
+
 
 ### Relax
 ... you don't need to be learning all the time. Although important, you should not overwhelm yourself with media to consume on a near constant basis. That is why I chose to not include tools like Pocket in this article. For myself, they led to massive FOMO and anxiety around how many articles I had stacking up. I read hundreds of articles previously, and truth be told, I remember almost none of them. What I do remember however, is books. For me, they provide much deeper insights and introduce new world views that allow me to learn in new ways.
+
+Additionally, although it's good to use these different channels, make sure to not be destracted by them and instead allot their own block of time to be focused on individually.
 
 I have set myself the provision that if a tab is open for more than 10 days, then even if I think it might be the greatest piece of literature ever written, then I close the tab. You have to reason, if it is that good, you'll probably hear about it by some other means.
