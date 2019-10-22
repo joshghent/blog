@@ -136,6 +136,8 @@ correlationids
 microservice
 frontend
 iMessage
+HackerNews
+PocketCasts
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -280,3 +282,5 @@ requeued
 3x
 LaunchDarkly
 Easy-peasy
+ - content/blog/signal-vs-noise/index.md
+Quinn
