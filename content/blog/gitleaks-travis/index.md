@@ -26,12 +26,14 @@ if [ ! -z $TRAVIS_PULL_REQUEST ]; then
 fi
 ```
 
-Additionally, add this into your `.travis.yml`. Alternatively just add an additional "script" if you don't want to do different stages
+Next, add this into your `.travis.yml`. Alternatively just add an additional "script" if you don't want to do different stages
 ```yaml
 - stage: Leaks
     language: generic
     script:
     - "./.ci/leaks.sh"
 ```
+
+Additionally, add `docker` as a new service in the `.travis.yml`
 
 That's it! Tweet me [@joshghent](https://twitter.com/joshghent) if you have any problems.
