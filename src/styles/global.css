@@ -67,4 +67,5 @@ div.image > span + em, div.image > img + em, div.image > a + em {
 
 pre {
 	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
