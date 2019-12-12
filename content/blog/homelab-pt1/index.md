@@ -1,5 +1,5 @@
 ---
-title: "Homelab - the Making Of - Part 1"
+title: "Homelab - Part 1: The Foundations"
 date: "2019-12-06T16:04:54.284Z"
 description: ""
 ---
@@ -15,9 +15,10 @@ Having read a number of articles (and spent far too much time browsing /r/homela
 ## But what problem am I trying to solve?
 Now, in this section I could discuss how Google is bad, the internet is controlled by a handful of monopoly's with little oversight run by people who, despite their relative innocence didn't scale with their own success and companies are profiting off our data - but I'm not going to. There are plenty of people who have wrote about this at length and have done a lot more research.
 
-The problem I was trying to solve was two fold
+The problem I was trying to solve was three fold
 1. My Google Drive monthly pricing was slowly creeping up and the data in there was impossible to sort and categorize due to their woefully slow web client and even more attrotious desktop client.
 2. I wanted a VPN service
+3. I wanted more control over my own data
 
 ## Ok, enough talk...
 
@@ -64,3 +65,6 @@ I didn't proxy these requests to get their SSL as I was handling that myself.
 It's worth noting that, on the free plan of Cloudflare, you cannot have wildcard records (e.g., *.ghent.cloud would mean xyz.ghent.cloud and abc.ghent.cloud route to the same place). So, to setup new services you have to setup A records with the subdomain you want pointed to your servers IP address. This caught me out after having spent hours battling with LetsEncrypt.
 
 ### Adding NextCloud, N8N and Statping
+
+
+In Part 2 I will be discussing getting the VPN setup, GitLab and automation! Stay Tuned!
