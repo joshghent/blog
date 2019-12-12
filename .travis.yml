@@ -4,6 +4,8 @@ node_js:
 cache: npm
 jobs:
   include:
+    - stage: Audit
+      script: npm audit
     - stage: Spellcheck
       script: npm run spellcheck
     - stage: Lighthouse
