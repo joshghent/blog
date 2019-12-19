@@ -32,11 +32,10 @@ class HomeIndex extends React.Component {
           <h2>What am I up to?</h2>
           <ul>
             <li>Doing lots of DIY in my first home with my new wife</li>
-            <li>I work as a Senior Software Engineer at <a href="https://capp.co">Capp & Co.</a></li>
-            <li>Kitting out my home office to enable me to transition to more remote work</li>
+            <li>I work as a Senior Software Engineer at <a href="https://cappfinity.com">Cappfinity</a></li>
+            <li>Transitioning to working remotely</li>
             <li>Organizing <a href="https://meetup.com/leicesterjs">LeicesterJS</a></li>
-            <li>Helping re-architect the third-party integrations system to be more modern</li>
-            <li>Enhancing my knowledge about Cloud Architecture and Software Design Patterns</li>
+            <li>Focusing on creating rather than consuming</li>
           </ul>
 
           <h2>What tech am I using</h2>
