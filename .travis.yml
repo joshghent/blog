@@ -3,13 +3,18 @@ node_js:
   - "11"
 addons:
   chrome: stable
-cache: npm
 before_install:
   - npm install -g @lhci/cli@0.3.x
+  - npm install -g yarn@latest --cache-min 999999999
 jobs:
   include:
     - stage: Spellcheck
-      script: npm run spellcheck
+      script: yarn spellcheck
+    - stage: Lint
+      script: yarn lint
+    - stage: Build
+      script: yarn build
+      skip_cleanup: true
     - stage: Lighthouse
       if: type = pull_request
       script: lhci autorun
