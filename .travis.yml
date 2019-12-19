@@ -4,6 +4,8 @@ node_js:
 addons:
   chrome: stable
 cache: npm
+before_install:
+  - npm install -g @lhci/cli@0.3.x
 jobs:
   include:
     - stage: Spellcheck
