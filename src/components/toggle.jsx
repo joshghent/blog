@@ -15,7 +15,7 @@ export default class ThemeToggle extends React.Component {
             checked={theme === 'dark'}
             name="theme"
             value="dark"
-            onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+            onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
             icons={{
               checked: <img
                 src={moon}

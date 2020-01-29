@@ -34,6 +34,7 @@ function SEO({
         lang,
       }}
       defer={false}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...(title
         ? {
           titleTemplate: `%s — ${site.siteMetadata.title}`,
