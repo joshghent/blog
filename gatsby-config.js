@@ -1,94 +1,91 @@
 module.exports = {
   siteMetadata: {
-    title: `Developer Musings`,
-    author: `Josh Ghent`,
+    title: 'Developer Musings',
+    author: 'Josh Ghent',
     company: {
-      name: `Capp & Co`,
-      url: `https://www.capp.co`
+      name: 'Cappfinity',
+      url: 'https://www.cappfinity.com',
     },
-    description: `Backend Developer, with an interest in application security and performance`,
-    siteUrl: `https://joshghent.com`,
+    description: 'Backend Developer, with an interest in application security and performance',
+    siteUrl: 'https://joshghent.com',
     social: {
-      twitter: `joshghent`,
-      linkedin: `https://www.linkedin.com/in/joshghent/`,
-      github: `joshghent`
+      twitter: 'joshghent',
+      linkedin: 'https://www.linkedin.com/in/joshghent/',
+      github: 'joshghent',
     },
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         // this base query will be merged with any queries in each feed
         query: `
-					{
-						site {
-							siteMetadata {
-								title
-								siteUrl
-								site_url: siteUrl
-							}
-						}
-					}
-				`,
+          {
+            site {
+              siteMetadata {
+                title
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
-            },
+            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.edges.map((edge) => ({
+              ...edge.node.frontmatter,
+              description: edge.node.excerpt,
+              date: edge.node.frontmatter.date,
+              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              custom_elements: [{ 'content:encoded': edge.node.html }],
+            })),
             query: `
-							{
-								allMarkdownRemark(
-									limit: 1000,
-									sort: { order: DESC, fields: [frontmatter___date] }
-								) {
-									edges {
-										node {
-											excerpt
-											html
-											fields { slug }
-											frontmatter {
-												title
-												date
-											}
-										}
-									}
-								}
-							}
-						`,
-            output: "/rss.xml",
-            title: "Josh Ghent Blog RSS Feed",
+              {
+                allMarkdownRemark(
+                  limit: 1000,
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Josh Ghent Blog RSS Feed',
           },
         ],
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: 'blog',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`,
+        name: 'assets',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-gist",
+            resolve: 'gatsby-remark-embed-gist',
             options: {
               // Optional:
 
@@ -97,59 +94,59 @@ module.exports = {
 
               // a flag indicating whether the github default gist css should be included or not
               // default: true
-              includeDefaultCss: true
-            }
+              includeDefaultCss: true,
+            },
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          `gatsby-remark-reading-time`,
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+          'gatsby-remark-reading-time',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: `UA-72778945-1`,
+        trackingId: 'UA-72778945-1',
       },
     },
-    `gatsby-plugin-feed`,
+    'gatsby-plugin-feed',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Josh Ghent's Site`,
-        short_name: `JoshGhent`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/icon.png`,
+        name: 'Josh Ghent\'s Site',
+        short_name: 'JoshGhent',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'content/assets/icon.png',
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: 'src/utils/typography',
       },
     },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-dark-mode',
     'gatsby-plugin-twitter',
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
   ],
-}
+};

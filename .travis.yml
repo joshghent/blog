@@ -1,14 +1,24 @@
 language: node_js
 node_js:
   - "11"
-cache: npm
+addons:
+  chrome: stable
+before_install:
+  - npm install -g @lhci/cli@0.3.x
+  - npm install -g yarn@latest --cache-min 999999999
 jobs:
   include:
     - stage: Spellcheck
-      script: npm run spellcheck
+      script: yarn spellcheck
+    - stage: Lint
+      script: yarn lint
+    - stage: Build
+      script: yarn build
+      skip_cleanup: true
     - stage: Lighthouse
       if: type = pull_request
-      script: npm run lighthouse --perf 90 --pwa 90 --a11y 90 --bp 90 --seo 90 "$(wait-for-netlify-preview)"
+      script: lhci autorun
 notifications:
     webhooks: https://www.travisbuddy.com/
     slack: ghentspace:ZLT8kfb3r2v5M0iY2gCN62dd
+    email: false

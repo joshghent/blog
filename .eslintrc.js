@@ -6,7 +6,10 @@ module.exports = {
     "extends": "airbnb",
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+        "SharedArrayBuffer": "readonly",
+        graphql: true,
+        __PATH_PREFIX__: true,
+        __BASE_PATH__: true,
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,8 +19,14 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "graphql"
     ],
     "rules": {
+        "react/jsx-one-expression-per-line": ["off"],
+        "react/prefer-stateless-function": ["off"],
+        "react/prop-types": ["off"],
+        "max-len": ["off"],
+        "react/no-danger": ["off"]
     }
 };
