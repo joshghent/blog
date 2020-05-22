@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import '../styles/brutal.css';
+import { rhythm } from '../utils/typography';
 
 class HomeIndex extends React.Component {
   render() {
@@ -16,49 +17,21 @@ class HomeIndex extends React.Component {
           keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs']}
         />
         <main className="homepage">
-          <section id="hello-world">
-            <h1>/* Hello World! */</h1>
-            <p>I&apos;m Josh. I make robust apps for the web. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a>. And organize <a href="https://meetup.com/leicesterjs">LeicesterJS</a></p>
-            <p>You can find my resume <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">here</a>.</p>
-            <p>I write articles on various topics to do with software development <a href="https://joshghent.com/blog">here</a>.</p>
-            <p>You can find my talks on <a href="https://speakerdeck.com/joshghent">Speakerdeck</a></p>
-            <p>If you want to work together <a href="mailto:me@joshghent.com">email me!</a></p>
+          <section className="header" style={{ padding: `${rhythm(1.5)} ${rhythm(6)}` }}>
+            <p>
+              Hey! <span role="img" aria-label="waving hand">👋</span> My name is Josh Ghent. I'm a Developer from the UK. I help companies reign in their AWS Bills and make the web more resilient for all. I am creator of <a href="https://turboapi.dev">TurboAPI</a> and <a href="https://leicesterjs.org">LeicesterJS</a>.
+              I also built <a href="https://esfiddle.net">ESFiddle</a>, <a href="https://github.com/joshghent/gifbar">GifBar</a> and <a href="https://github.com/joshghent">more</a>.
+            </p>
           </section>
+          <section className="triangle" />
+          <section className="cta" style={{ padding: `${rhythm(1.5)} ${rhythm(3)}` }}>
+            <p>AWS Bills making you sweat?</p>
+            <p>Developers fearing their on-call shift?</p>
+            <p>Mind-numbing manual work when things go wrong?</p>
 
-          <section id="contact">
-            <h1>/* Contact */</h1>
-            <p>/mail - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
-            <p>/github - <a href="https://github.com/joshghent">joshghent</a></p>
-            <p>/resume - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
+            <p>I can help cut your cloud costs and save your developers time</p>
+            <p>Share your stories of despair <span role="img" aria-label="mail-icon">💌</span> <a className="email-address" href="mailto:me@joshghent.com?subject=Why does nothing work?">me@joshghent.com</a></p>
           </section>
-
-          <section id="projects">
-            <h1>/* Open Source Projects */</h1>
-            <ul>
-              <li>
-                <a href="https://esfiddle.net/">ESFiddle <i>(maintainer)</i></a> <br />
-                Create ES6+ code snippets in your browser and share them with your friends. <a href="https://github.com/esfiddle/esfiddle">code</a>
-              </li>
-              <li>
-                <a href="https://strawpoll.joshghent.com/">Strawpoll</a> <br />
-                Quick and easy straw poll creation tool for the masses. <a href="https://github.com/joshghent/strawpoll">code</a>
-              </li>
-              <li>
-                <a href="https://github.com/joshghent/gifbar">GifBar</a> <br />
-                A Mac Menu bar for find your favourite gifs
-              </li>
-              <li>
-                <a href="https://timberseed.com">Timberseed</a> <br />
-                Wordpress website for a recruitment company based in London. <a href="https://github.com/joshghent/timberseed">code</a>
-              </li>
-              <li>
-                <a href="https://github.com/joshghent/lastfm-slack">LastFM 2 Slack</a> <br />
-                Docker bot for posting your currently scrobbled LastFm track as your Slack Status
-              </li>
-            </ul>
-          </section>
-
-          <p>:wq</p>
         </main>
       </Layout>
     );

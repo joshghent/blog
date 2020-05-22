@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Developer Musings',
+    title: 'Josh Ghent - Helping you cut cloud costs and save your developers time',
     author: 'Josh Ghent',
     company: {
       name: 'Cappfinity',

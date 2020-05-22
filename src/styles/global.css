@@ -1,23 +1,24 @@
-body {
-  --bg: white;
-  --textNormal: #222;
-  --textTitle: #222;
-  --textLink: #FF6C2F;
-	--hr: hsla(0, 0%, 0%, 0.2);
-	--caption: rgba(0, 0, 0, 0.5);
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
-  background-color: var(--bg);
+:root {
+	--blue: #0081fe;
+	--red: #ec051b;
+	--orange: #ff6100;
+	--yellow: #ffda5c;
+	--green: #2cd565;
 }
 
-body.dark {
-  -webkit-font-smoothing: antialiased;
 
-  --bg: #282D3C;
-  --textNormal: rgba(255, 255, 255, 0.88);
-  --textTitle: white;
-  --textLink: #FF6C2F;
-	--hr: hsla(0, 0%, 100%, 0.2);
-	--caption: rgba(255, 255, 255, 0.5);
+body {
+  --bg: black;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: var(--orange);
+	--hr: hsla(0, 0%, 0%, 0.2);
+	--caption: rgba(0, 0, 0, 0.5);
+	font-family: "Avenir", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  background-color: var(--bg);
 }
 
 blockquote {
@@ -40,11 +41,6 @@ body.dark > blockquote {
 	padding: 0;
 	padding-top: 1em;
 	font-family: Montserrat,sans-serif;
-}
-
-.nav > li {
-	display: inline;
-	padding-right: 10px;
 }
 
 div.image {

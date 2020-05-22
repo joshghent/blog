@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { rhythm, scale } from '../utils/typography';
-import ThemeToggle from './toggle';
 
 class Layout extends React.Component {
   render() {
@@ -26,7 +25,7 @@ class Layout extends React.Component {
             }}
             to="/"
           >
-            {title}
+            JOSH
           </Link>
         </h1>
       );
@@ -64,8 +63,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: 'auto',
             marginRight: 'auto',
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            padding: `${rhythm(1)} ${rhythm(2 / 4)}`,
           }}
         >
           <header
@@ -73,17 +71,16 @@ class Layout extends React.Component {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '2.625rem',
             }}
           >{header}
             <div className="nav">
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/now">Now</Link></li>
             </div>
-            <ThemeToggle />
           </header>
           <main>{children}</main>
           <footer>
+            <p>You've reached the end. I'm not sure what you're looking for, but it's probably not here. Anyway, here is some meaningless copyright</p>
             © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
           </footer>
         </div>
