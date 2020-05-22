@@ -89,4 +89,27 @@ section.cta {
 	font-size: 25px;
 }
 
-.email-address {}
+.email-address {
+	font-weight: 800;
+}
+
+.row {
+	display: flex;
+	margin-top: 50px;
+}
+
+.left {
+	padding-right: 25px;
+}
+
+.right {
+	text-align: right;
+}
+
+.left, .right {
+	flex: 50%;
+}
+
+.bold {
+	font-weight: 800;
+}

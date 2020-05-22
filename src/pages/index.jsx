@@ -25,12 +25,18 @@ class HomeIndex extends React.Component {
           </section>
           <section className="triangle" />
           <section className="cta" style={{ padding: `${rhythm(1.5)} ${rhythm(3)}` }}>
-            <p>AWS Bills making you sweat?</p>
-            <p>Developers fearing their on-call shift?</p>
-            <p>Mind-numbing manual work when things go wrong?</p>
+            <div className="row">
+              <div className="left">
+                <p>AWS Bills making you sweat?</p>
+                <p>Developers fearing their on-call shift?</p>
+                <p>Mind-numbing manual work when things go wrong?</p>
+              </div>
 
-            <p>I can help cut your cloud costs and save your developers time</p>
-            <p>Share your stories of despair <span role="img" aria-label="mail-icon">💌</span> <a className="email-address" href="mailto:me@joshghent.com?subject=Why does nothing work?">me@joshghent.com</a></p>
+              <div className="right">
+                <p>I can help cut your cloud costs and save your developers time</p>
+                <p>Share your stories of despair <span role="img" aria-label="mail-icon">💌</span> <a className="email-address" href="mailto:me@joshghent.com?subject=Why does nothing work?">me@joshghent.com</a></p>
+              </div>
+            </div>
           </section>
         </main>
       </Layout>
