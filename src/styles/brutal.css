@@ -1,7 +1,7 @@
 section.header {
 	font-weight: 800;
 	line-height: 1.4;
-	font-size: 45px;
+	font-size: 4vw;
 	background-color: black;
 	color: white;
 }
@@ -112,4 +112,25 @@ section.cta {
 
 .bold {
 	font-weight: 800;
+}
+
+.mailbox {
+  background-color: var(--blue);
+  border: 3px solid black;
+  padding: 10px 15px;
+  font-weight: 800;
+}
+
+
+section.services {
+  color: black;
+  background-color: white;
+}
+
+section.services h1 {
+  color: var(--orange);
+}
+
+footer {
+  color: white;
 }

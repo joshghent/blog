@@ -24,9 +24,7 @@ class Layout extends React.Component {
               color: 'inherit',
             }}
             to="/"
-          >
-            JOSH
-          </Link>
+          />
         </h1>
       );
     } else {
@@ -80,8 +78,17 @@ class Layout extends React.Component {
           </header>
           <main>{children}</main>
           <footer>
-            <p>You've reached the end. I'm not sure what you're looking for, but it's probably not here. Anyway, here is some meaningless copyright</p>
-            © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
+            <div className="row">
+              <div className="left">
+                <p>You've reached the end. I'm not sure what you're looking for, but it's probably not here. Anyway, here is some meaningless copyright</p>
+                <p>© {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a></p>
+              </div>
+              <div className="right">
+                <a href="https://twitter.com/joshghent">Twitter</a>
+                <a href="mailto:me@joshghent.com?subject=Help I'm trapped in the footer!">Mail</a>
+                <a href="https://linkedin.com/in/joshghent">LinkedIn</a>
+              </div>
+            </div>
           </footer>
         </div>
       </div>
