@@ -94,7 +94,8 @@ section.cta {
 }
 
 .row {
-	display: flex;
+  display: flex;
+  flex-wrap: wrap;
 	margin-top: 50px;
 }
 
@@ -115,22 +116,39 @@ section.cta {
 }
 
 .mailbox {
-  background-color: var(--blue);
+  background-color: var(--cyan);
   border: 3px solid black;
-  padding: 10px 15px;
+  padding: 40px 0;
+  text-align: center;
   font-weight: 800;
+}
+
+.questions p {
+  padding-bottom: 20px;
 }
 
 
 section.services {
   color: black;
   background-color: white;
+  font-family: var(--standardfont) !important;
 }
 
 section.services h1 {
   color: var(--orange);
+  font-family: var(--standardfont) !important;
 }
 
 footer {
   color: white;
+}
+
+.services-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.item {
+  width: 40%;
 }
