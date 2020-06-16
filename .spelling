@@ -149,6 +149,16 @@ Strava
 RescueTime
 FitBit
 PocketCast
+Frazelle
+Cappfinity
+DisplayLink
+Logitech
+bluetooth
+aeron
+SaaS
+TurboAPI
+DigitalOcean
+Shopify
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -302,3 +312,8 @@ Yury
 Smykalov
 ysmykalov
 helmetjs
+ - content/blog/personal-infra/index.md
+clamshelled
+usethis
+ - content/blog/private-github-packages-travis/index.md
+org
