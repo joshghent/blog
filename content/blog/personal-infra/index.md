@@ -22,9 +22,11 @@ I use a [Logitech K380](https://www.logitech.com/en-gb/product/multi-device-keyb
 
 I put an [MX Master 3](https://www.logitech.com/en-gb/product/mx-master-3?crid=7) on the right hand side of my keyboard - again it has the same great 3 device bluetooth switcher. And a Magic Trackpad on the left. I occasionally swap the two but generally it stays in this configuration. It sounds odd, but it's nice to have the options and reduce the repetitive movements I do.
 
+During lockdown, my wife was able to spend some time redoing both her art studio and my office. She painted it a subtle green and chose an "urban jungle" theme. I've always loved bringing nature indoors and having lots of plants around really helps me focus and not feel like I'm in an office. Makes it look a more bright and vibrant environment, rather than a dull dreary office.
+
 ## Health
 
-My wife, kindly, brought me a [Herman Miller Aeron](https://www.hermanmiller.com/en_gb/products/seating/office-chairs/aeron-chairs/) for my desk after "relentlessly moaning" (according to her - what does she know) about my previous chair - which was as comfortable as a church pew. The Aeron is like being cradled by 4 angels and has helped my posture and fatigue massively. Yes that's right, fatigue. Sitting down all day can be tiring in a weird way, due to the lack of lower body movement. I've tried to alleviate this by taking regular breaks and working in different environments.
+My wife, kindly, bought me a [Herman Miller Aeron](https://www.hermanmiller.com/en_gb/products/seating/office-chairs/aeron-chairs/) for my desk after "relentlessly moaning" (according to her - what does she know) about my previous chair - which was as comfortable as a church pew. The Aeron is like being cradled by 4 angels and has helped my posture and fatigue massively. Yes that's right, fatigue. Sitting down all day can be tiring in a weird way, due to the lack of lower body movement. I've tried to alleviate this by taking regular breaks and working in different environments. It was the best present she's got me to this day and will make a huge difference to my daily life.
 
 Furthermore, I've found the amount of water I drink to be a big factor in my mood. I know attempt to drink around 4L of Pure water per day as well as a coffee or two. I try to avoid caffeine after midday as I find it affects my sleep quantifiable.
 
