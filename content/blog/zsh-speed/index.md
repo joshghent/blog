@@ -51,7 +51,8 @@ We can do this with a tool called [zprof](http://zsh.sourceforge.net/Doc/Release
 We can add it by putting `zmodload zsh/zprof` at the top of our `~/.zshrc` config and then putting `zprof` at the very bottom of the config.
 
 Now we simply need to reload our shell and we get a nice breakdown of the time taken for each part of our config.
-![zprof profile]()
+
+![zprof profile](../../assets/images/zprof.png)
 
 We can clearly see from the above screenshot that a plugin called set_iterm_tab_color is accounting for a lot of our load time. The plugin wasn't really what I wanted it for anyway (I wanted something like peacock for VSCode).
 I removed it and a few other Antigen plugins and re-ran the test script again
