@@ -159,6 +159,17 @@ SaaS
 TurboAPI
 DigitalOcean
 Shopify
+lockdown
+YubiKey
+dotfiles
+findability
+oh-my-zsh
+plowed
+nitty
+VSCode
+lackluster
+iTerm2
+webhook's
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -315,5 +326,27 @@ helmetjs
  - content/blog/personal-infra/index.md
 clamshelled
 usethis
+usesthis
  - content/blog/private-github-packages-travis/index.md
 org
+ - content/blog/backwards-compatible/index.md
+ol
+Cantrills
+SQLite3
+v1
+v2
+mo
+D.E.V
+spacejam
+Cantrill's
+ - content/blog/zsh-speed/index.md
+150ms
+13ms
+zshrc
+emojified
+zprof
+set_iterm_tab_color
+Pyenv
+pyenv
+compinit
+Zplugin
