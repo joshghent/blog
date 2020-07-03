@@ -20,7 +20,7 @@ Try running it in your shell of choice now, and you'll get a performance breakdo
 1.5 seconds 0.8 user 0.7 sys
 ```
 
-1.5 seconds may not seem like a lot, but that is more than noticable to any human. Time perception is a whole other topic for far more intelligent people than I. But after some digging, the consensus seems to be that reaction times are around 150ms (input-to-action) and 13ms for perseptive time (from visual stimuli).
+1.5 seconds may not seem like a lot, but that is more than noticeable to any human. Time perception is a whole other topic for far more intelligent people than I. But after some digging, the consensus seems to be that reaction times are around 150ms (input-to-action) and 13ms for perceptive time (from visual stimuli).
 Therefore, our benchmark we were aiming for was 0.13 seconds. This is a number I now seek out across all software I use and consume.
 
 Ok so, we've got a benchmark of 0.13 seconds meaning we need to reduce the load times by 1.37 seconds - let's get to it!
