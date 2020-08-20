@@ -29,9 +29,8 @@ As all things should be, we tackled these one at a time and released each one of
 1. The documentation
 The documentation site was written using Slate, which is a Ruby based project. To add this to our *NodeJS/Express* API, sounds painful but all we did was put it in new folder 'devdocs' and treat it as it's own separate project. Next we added a GitHub Action (Our CI/CD tool of choice) to build and deploy the 'devdocs' to the S3 bucket where they are served from.
 
-All I can say is...
-`youtube: https://www.youtube.com/watch?v=3YmMNpbFjp0`
-
+![That was easy](https://blogs.psychcentral.com/hidden-disabilities/files/2020/02/easy-button-300x300.png)
+>Well that was easy
 
 Right, next...
 2. Internal Tooling API
