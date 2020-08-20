@@ -23,6 +23,7 @@
 		"gatsby-remark-check-links": "^2.1.0",
 		"gatsby-remark-copy-linked-files": "^2.1.36",
 		"gatsby-remark-embed-gist": "1.1.9",
+		"gatsby-remark-embed-video": "^3.0.10",
 		"gatsby-remark-images": "^3.1.42",
 		"gatsby-remark-prismjs": "^3.3.30",
 		"gatsby-remark-reading-time": "^1.1.0",
