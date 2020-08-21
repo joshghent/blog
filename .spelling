@@ -175,6 +175,8 @@ joinkoru.com
 Route53
 Cloudfront
 Nginx
+Basecamp
+lifecycle
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -363,3 +365,6 @@ networkidle2
  - content/blog/domain-migration/index.md
 KeyPrefixEquals
 KeyPrefixEqual
+API
+ - content/blog/rebuilding-a-monolith/index.md
+devdocs
