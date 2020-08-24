@@ -113,7 +113,7 @@ By cutting down the lambda to trigger only on inserts, we not only saved money, 
 
 ### 7. Special error cases
 
-We worked with the Cappfinity team closely on this one. We found that in some cases, somehow, records were in the database ready to submit back to the ATS, that shouldn't have been their. These were the cases we were trying to handle:
+We worked with the Cappfinity team closely on this one. We found that in some cases, somehow, records were in the database ready to submit back to the ATS, that shouldn't have been there. These were the cases we were trying to handle:
 
 - Straight up invalid records
 - The candidate hadn't actually completed the assessment
