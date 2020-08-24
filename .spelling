@@ -177,6 +177,8 @@ Cloudfront
 Nginx
 Basecamp
 lifecycle
+Uber
+maxed
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -368,3 +370,5 @@ KeyPrefixEqual
 API
  - content/blog/rebuilding-a-monolith/index.md
 devdocs
+ - content/blog/third-party-data-resiliency/index.md
+tm
