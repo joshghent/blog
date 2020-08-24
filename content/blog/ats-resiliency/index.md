@@ -99,8 +99,6 @@ if (!acceptTypes.includes(triggerType)) {
     message: "Invalid trigger for this lambda"
   };
 }
-
-...continue with processing records
 ```
 
 But why did we do this?
@@ -109,9 +107,10 @@ By cutting down the lambda to trigger only on inserts, we not only saved money, 
 
 7. Special error cases
 We worked with the Cappfinity team closely on this one. We found that in some cases, somehow, records were in the database ready to submit back to the ATS, that shouldn't have been their. These were the cases we were trying to handle:
-1) Straight up invalid records
-2) The candidate hadn't actually completed the assessment
-3) We had already sent data but had not marked it as processed in our system.
+
+* Straight up invalid records
+* The candidate hadn't actually completed the assessment
+* We had already sent data but had not marked it as processed in our system.
 
 To solve this problem, we needed to introduce some new status codes so that we could categorize the errors we got back. Previously, if we sent an invalid request of any kind, it would return a 500 error to us. This categorization of errors meant we could handle each one uniquely. For complete invalid records, this meant just deleting them. Whilst for duplicate submissions, we marked them as "processed".
 
