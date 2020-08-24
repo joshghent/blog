@@ -62,10 +62,9 @@ The solution was to simply limit the number of requests that we sent too 100 per
 We added a further fix to the problem above by creating our own Https Agent and passing that into the `request-promise` libraries options.
 ```js
 const agent = new https.Agent({maxSockets: 25, keepAlive: true});
-
 await request({
-  ...options
-  agent: agent // use the global agent
+  options: {},
+  agent: agent, // use the global agent
 });
 ```
 
