@@ -16,6 +16,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'joshghent',
+      },
+    },
+    {
       resolve: 'gatsby-remark-embed-video',
       options: {
         width: 800,
