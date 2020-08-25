@@ -40,16 +40,12 @@ class HomeIndex extends React.Component {
                 Create ES6+ code snippets in your browser and share them with your friends. <a href="https://github.com/esfiddle/esfiddle">code</a>
               </li>
               <li>
-                <a href="https://strawpoll.joshghent.com/">Strawpoll</a> <br />
-                Quick and easy straw poll creation tool for the masses. <a href="https://github.com/joshghent/strawpoll">code</a>
-              </li>
-              <li>
                 <a href="https://github.com/joshghent/gifbar">GifBar</a> <br />
                 A Mac Menu bar for find your favourite gifs
               </li>
               <li>
                 <a href="https://timberseed.com">Timberseed</a> <br />
-                Wordpress website for a recruitment company based in London. <a href="https://github.com/joshghent/timberseed">code</a>
+                Wordpress website for a recruitment company based in London.
               </li>
               <li>
                 <a href="https://github.com/joshghent/lastfm-slack">LastFM 2 Slack</a> <br />
