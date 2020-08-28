@@ -26,7 +26,6 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <CommentCount config={disqusConfig} placeholder="..." />
         <h1>{post.frontmatter.title}</h1>
         <div
           style={{
@@ -39,6 +38,8 @@ class BlogPostTemplate extends React.Component {
           <small><span role="img" aria-label="calendar">📅</span> {post.frontmatter.date}</small>
           <small>    -   </small>
           <small><span role="img" aria-label="coffee">☕</span> {post.fields.readingTime.text}</small>
+          <small>    -   </small>
+          <small><span role="img" aria-label="comment">💬</span> <CommentCount config={disqusConfig} placeholder="0 Comments" /></small>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
