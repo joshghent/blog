@@ -24,7 +24,63 @@ This is the statsd client we will be using. StatsD runs on a UDP port and this l
 
 Next up is to create some kind of wrapper around the statsD client as I found it difficult to use (and also not typescript ready).
 
-`gist:joshghent/d800ce464ec756c02ac6f9dc4441bed6#graphite.ts`
+```ts
+import { Client } from "node-statsd-client";
+import { IGraphiteController } from "../interfaces";
+
+const PREFIX = "MY-API-NAME";
+
+export default class GraphiteController implements IGraphiteController {
+    private _client: any;
+    // the graphite port will always be this for every environment
+    private _port: number = 8125;
+    private static _instance: GraphiteController;
+
+    // Check if we are running tests, if so, deactive the graphite logging
+    private testing: boolean = process.env.NODE_ENV === "testing";
+
+    constructor(config: any) {
+
+        if (!this.testing) {
+
+            try {
+                this._client = new Client(config.statsd, this._port);
+            } catch (err) {
+                throw new Error(`There was an error connecting to Graphite: ${err}`);
+            }
+
+        }
+
+    }
+
+    public static getInstance(config: any): GraphiteController {
+        if (!this._instance) {
+            this._instance = new GraphiteController(config);
+        }
+        return this._instance;
+    }
+
+    public write(activityType: string, error: boolean = false): void {
+        if (!this.testing) {
+            this._client.increment(`${PREFIX}.${activityType}${error ? ".error" : ""}`);
+        }
+    }
+
+    /**
+     * Writes a graphite timing
+     * This is used to measure the time a function or piece of logic takes
+     * @param  {string} activityType
+     * @param  {Date} startDate - a new Date() object. Create this as a variable at the top of the function and then pass it in
+     * @returns void
+     */
+    public writeTiming(activityType: string, startDate: Date): void {
+        if (!this.testing) {
+            this._client.timing(`${PREFIX}.${activityType}`, (new Date().getTime() - startDate.getTime()));
+        }
+    }
+
+}
+```
 
 Most importantly, we a static `*getInstance()*` method. But why? We found that, long lived services (anything not serverless) would create a massive amount of UDP connections over time and eventually make it so the service could not create any new connections. We use this getInstance method so we make sure we use a single connection throughout the app.
 
@@ -42,7 +98,40 @@ The first piece of data to record is a simple counter to see how many times a ce
 
 Here is our router file now
 
-`gist:joshghent/c11698f57e8c9122dfd7eec64b9f626d#router-stage-1.ts`
+```ts
+import { Router } from "express";
+import { Config } from "./configuration";
+
+// Import or require the graphite controller and activity labels
+import { GraphiteController, GraphiteLabel } from "../graphite";
+
+const router = Router() as Router;
+
+// Load your config
+const config = Config.getConfig();
+
+// Import the graphite controller
+const graphiteController = GraphiteController.getInstance(config);
+
+router.get("/", async (req, res, next) => {
+
+   try {
+       const record = await UserController.get(req.query, req.jwt.accountId);
+
+       if (record) {
+           // Just before the response is sent, we log the route being called
+           graphiteController.write(“GetUsers”);
+           res.json({ success: true, data: record });
+       } else {
+           res.status(404).send();
+       }
+   } catch (err) {
+       next(new InternalServerError("There was an error getting data from the database"));
+   }
+});
+
+export default router;
+```
 
 Ok, now we’ve setup a log counting the number of successful calls the route has, we should also track any unsuccessful calls to the router. This way, if you see a sudden spike in errors, you can see exactly where that error is occurring.
 
