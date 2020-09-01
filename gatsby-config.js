@@ -22,16 +22,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-remark-embed-video',
-      options: {
-        width: 800,
-        ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-        height: 400, // Optional: Overrides optional.ratio
-        related: false, // Optional: Will remove related videos from the end of an embedded YouTube video.
-        containerClass: 'embedVideo-container', // Optional: Custom CSS class for iframe container, for multiple classes separate them by space
-      },
-    },
-    {
       resolve: 'gatsby-plugin-feed',
       options: {
         // this base query will be merged with any queries in each feed
@@ -101,28 +91,9 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-embed-gist',
-            options: {
-              // Optional:
-
-              // the github handler whose gists are to be accessed
-              username: 'joshghent',
-
-              // a flag indicating whether the github default gist css should be included or not
-              // default: true
-              includeDefaultCss: true,
-            },
-          },
-          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
           'gatsby-remark-prismjs',
@@ -164,5 +135,7 @@ module.exports = {
     'gatsby-plugin-twitter',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-preact',
   ],
 };
