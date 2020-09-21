@@ -7,7 +7,7 @@ tags: ['RDS', 'AWS', "database"]
 
 Recently, I had a case where I needed to gain access to an RDS Instance that I had long since deleted. To add insult to injury, the Bastion host to gain access to the Database server had also been deleted and it's VPC, Security Groups and all the other architecture components! Yikes.
 
-Fortunatly, I had taken a final snapshot before it was deleted. Phew!
+Fortunately, I had taken a final snapshot before it was deleted. Phew!
 
 I thought it was as simple as downloading the snapshot, which I assumed was just an SQL Dump, import it into a local Database and then bobs your uncle. Not so fast... RDS Snapshots aren't just database dumps, after all that would just be too easy! Instead they are bespoke AWS format that is not able to be parsed and imported with a tool.
 
