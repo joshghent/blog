@@ -18,7 +18,7 @@ class HomeIndex extends React.Component {
         <main className="homepage">
           <section id="hello-world">
             <h1>/* Hello World! */</h1>
-            <p>I&apos;m Josh. I make robust apps for the web. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a>. And organize <a href="https://meetup.com/leicesterjs">LeicesterJS</a></p>
+            <p>I&apos;m Josh. I make robust apps for the web. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a>. And organize <a href="https://midlandsjs.org">MidlandsJS</a></p>
             <p>You can find my resume <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">here</a>.</p>
             <p>I write articles on various topics to do with software development <a href="https://joshghent.com/blog">here</a>.</p>
             <p>You can find my talks on <a href="https://speakerdeck.com/joshghent">Speakerdeck</a></p>
@@ -33,10 +33,14 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="projects">
-            <h1>/* Open Source Projects */</h1>
+            <h1>/* Projects */</h1>
             <ul>
               <li>
-                <a href="https://esfiddle.net/">ESFiddle <i>(maintainer)</i></a> <br />
+                <a href="https://turboapi.dev">TurboAPI</a> <br />
+                I created TurboAPI after facing problems constantly rebuilding custom end-to-end monitoring and API performance tracking tools. This tool helps customers track their end-to-end application and API performance over time. These insights help them bring faster experiences to their customers to increase conversions.
+              </li>
+              <li>
+                <a href="https://esfiddle.net/">ESFiddle</a> <br />
                 Create ES6+ code snippets in your browser and share them with your friends. <a href="https://github.com/esfiddle/esfiddle">code</a>
               </li>
               <li>

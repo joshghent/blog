@@ -36,40 +36,40 @@ const bioQuery = graphql`
 `;
 
 function Bio() {
-  return (
-    <StaticQuery
-      query={bioQuery}
-      render={(data) => {
-        const { author, social, company } = data.site.siteMetadata;
-        return (
-          <div
-            style={{
-              display: 'flex',
-              marginBottom: rhythm(2.5),
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: '100%',
-              }}
-              imgStyle={{
-                borderRadius: '50%',
-              }}
-            />
-            <p>
-              I&apos;m <a href={`https://twitter.com/${social.twitter}`}><strong>{author}</strong></a>. I make robust apps for the web. I wrangle code at <a href={company.url}>{company.name}</a>. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a> and organize <a href="https://meetup.com/leicesterjs">LeicesterJS</a>
-              {' '}
-            </p>
-          </div>
-        );
-      }}
-    />
-  );
+	return (
+		<StaticQuery
+			query={bioQuery}
+			render={(data) => {
+				const { author, social, company } = data.site.siteMetadata;
+				return (
+					<div
+						style={{
+							display: 'flex',
+							marginBottom: rhythm(2.5),
+						}}
+					>
+						<Image
+							fixed={data.avatar.childImageSharp.fixed}
+							alt={author}
+							style={{
+								marginRight: rhythm(1 / 2),
+								marginBottom: 0,
+								minWidth: 50,
+								borderRadius: '100%',
+							}}
+							imgStyle={{
+								borderRadius: '50%',
+							}}
+						/>
+						<p>
+							I&apos;m <a href={`https://twitter.com/${social.twitter}`}><strong>{author}</strong></a>. I make robust apps for the web - currently building <a href="https://turboapi.dev">TurboAPI</a> and <a href="https://alexswonderlandpuzzles.com">Alex&apos;s Wonderland Puzzles</a> as well as running <a href="https://midlandsjs.org">MidlandsJS</a>
+							{' '}
+						</p>
+					</div>
+				);
+			}}
+		/>
+	);
 }
 
 export default Bio;
