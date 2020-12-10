@@ -1,6 +1,6 @@
 ---
 title: "Downloading your Favorite YouTube Playlist Automatically"
-date: "2019-02-26T22:12:03.284Z"
+date: "2020-12-10"
 description: "Simple Cron for downloading your favorite Youtube playlist"
 tags: ["youtube-dl", "bash", "scripts"]
 ---
