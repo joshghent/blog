@@ -6,7 +6,7 @@ module.exports = {
       name: 'TurboAPI',
       url: 'https://turboapi.dev',
     },
-    description: 'Developer Musings, the personal website and blog of Josh Ghent. Creator of TurboAPI, Alex\'s Wonderland Puzzles and more...',
+    description: 'Developer Musings, the personal website and blog of Josh Ghent. Building of TurboAPI',
     siteUrl: 'https://joshghent.com',
     social: {
       twitter: 'joshghent',

@@ -2,7 +2,6 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import '../styles/brutal.css';
 
 class HomeIndex extends React.Component {
   render() {
@@ -13,7 +12,7 @@ class HomeIndex extends React.Component {
       <Layout location={location} title={siteTitle}>
         <SEO
           title="Josh Ghent"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs']}
+          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'home page', 'homepage']}
         />
         <main className="homepage">
           <section id="hello-world">
@@ -27,14 +26,16 @@ class HomeIndex extends React.Component {
 
           <section id="contact">
             <h2>/* Contact */</h2>
-            <p>/mail - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
-            <p>/github - <a href="https://github.com/joshghent">joshghent</a></p>
-            <p>/resume - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
+            <p>letters - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
+            <p>code - <a href="https://github.com/joshghent">joshghent</a></p>
+            <p>work - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
           </section>
 
           <section id="projects">
             <h2>/* Projects */</h2>
-            <ul>
+            <ul style={{
+              listStyleType: "none"
+            }}>
               <li>
                 <a href="https://turboapi.dev">TurboAPI</a> <br />
                 I created TurboAPI after facing problems constantly rebuilding custom end-to-end monitoring and API performance tracking tools. This tool helps customers track their end-to-end application and API performance over time. These insights help them bring faster experiences to their customers to increase conversions.
@@ -58,7 +59,7 @@ class HomeIndex extends React.Component {
             </ul>
           </section>
 
-          <p>:wq</p>
+          <p style={{ textAlign: "left" }}>:wq</p>
         </main>
       </Layout>
     );

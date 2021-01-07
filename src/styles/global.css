@@ -2,7 +2,7 @@ body {
   --bg: white;
   --textNormal: #222;
   --textTitle: #222;
-  --textLink: #FF6C2F;
+  --textLink: #005a87;
 	--hr: hsla(0, 0%, 0%, 0.2);
 	--caption: rgba(0, 0, 0, 0.5);
 
@@ -11,7 +11,14 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-body.dark {
+header ~ main {
+  max-width: 47em;
+  overflow: hidden;
+  padding: 0 2.5em;
+  margin: 0 auto;
+}
+
+/* body.dark {
   -webkit-font-smoothing: antialiased;
 
   --bg: #282D3C;
@@ -20,30 +27,29 @@ body.dark {
   --textLink: #FF6C2F;
 	--hr: hsla(0, 0%, 100%, 0.2);
 	--caption: rgba(255, 255, 255, 0.5);
-}
+} */
 
 blockquote {
 	color: inherit !important;
 	border-left-color: var(--textLink)
 }
 
-body.dark > blockquote > * {
+/* body.dark > blockquote > * {
 	color: var(--textLink);
 }
 
 body.dark > blockquote {
 	color: var(--textNormal) !important;
-}
+} */
 
 .nav {
-	list-style-type: none;
 	margin: 0;
 	text-align: center;
 	padding: 0;
 	padding-top: 1em;
 }
 
-.nav > li {
+.nav > ul > li {
 	display: inline;
 	padding-right: 10px;
 }
@@ -69,4 +75,9 @@ div.image > span + em, div.image > img + em, div.image > a + em {
 pre {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
+}
+
+#projects li > a {
+  font-weight: bold;
+  font-size: 13px;
 }

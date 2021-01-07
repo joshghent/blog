@@ -9,47 +9,26 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`;
     let header;
 
-    if (location.pathname === rootPath || location.pathname !== 'blog') {
-      header = (
-        <h1
+    header = (
+      <h1
+        style={{
+          marginBottom: 0,
+          marginTop: 0,
+          fontSize: "1.25em"
+        }}
+      >
+        <Link
           style={{
-            marginBottom: 0,
-            marginTop: 0,
+            boxShadow: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
           }}
+          to="/"
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to="/"
-          >
-            {title}
-          </Link>
-        </h1>
-      );
-    } else {
-      header = (
-        <h3
-          style={{
-            ...scale(0.75),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to="/"
-          >
-            {title}
-          </Link>
-        </h3>
-      );
-    }
+          {title}
+        </Link>
+      </h1>
+    );
     return (
       <div
         style={{
@@ -74,18 +53,20 @@ class Layout extends React.Component {
               marginBottom: '2.625rem',
             }}
           >{header}
-            <div className="nav">
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/archive">Archive</Link></li>
-              <li><Link to="/now">Now</Link></li>
-            </div>
+            <nav className="nav">
+              <ul style={{ listStyle: "none", display: "inline" }}>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/archive">Archive</Link></li>
+                <li><Link to="/now">Now</Link></li>
+              </ul>
+            </nav>
           </header>
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
           </footer>
         </div>
-      </div>
+      </div >
     );
   }
 }
