@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
@@ -38,8 +37,6 @@ class BlogPostTemplate extends React.Component {
           <small><span role="img" aria-label="calendar">📅</span> {post.frontmatter.date}</small>
           <small>    -   </small>
           <small><span role="img" aria-label="coffee">☕</span> {post.fields.readingTime.text}</small>
-          <small>    -   </small>
-          <small><span role="img" aria-label="comment">💬</span> <CommentCount config={disqusConfig} placeholder="0 Comments" /></small>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -48,8 +45,6 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-
-        <Disqus config={disqusConfig} />
 
         <ul
           style={{
