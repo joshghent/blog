@@ -1,8 +1,7 @@
-import React from 'react';
 import { Link } from 'gatsby';
-
+import React from 'react';
 import { rhythm, scale } from '../utils/typography';
-import ThemeToggle from './toggle';
+
 
 class Layout extends React.Component {
   render() {
@@ -35,7 +34,6 @@ class Layout extends React.Component {
         <h3
           style={{
             ...scale(0.75),
-            fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
           }}
         >
@@ -78,9 +76,9 @@ class Layout extends React.Component {
           >{header}
             <div className="nav">
               <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/archive">Archive</Link></li>
               <li><Link to="/now">Now</Link></li>
             </div>
-            <ThemeToggle />
           </header>
           <main>{children}</main>
           <footer>

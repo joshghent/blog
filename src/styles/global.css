@@ -7,6 +7,8 @@ body {
 	--caption: rgba(0, 0, 0, 0.5);
 
   background-color: var(--bg);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body.dark {
@@ -39,7 +41,6 @@ body.dark > blockquote {
 	text-align: center;
 	padding: 0;
 	padding-top: 1em;
-	font-family: Montserrat,sans-serif;
 }
 
 .nav > li {

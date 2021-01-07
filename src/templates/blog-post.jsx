@@ -13,12 +13,6 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 
-    const disqusConfig = {
-      url: `${data.site.siteMetadata.siteUrl + location.pathname}`,
-      identifier: post.id,
-      title: post.title,
-    };
-
     return (
       <Layout location={location} title={siteTitle}>
         <SEO

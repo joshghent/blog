@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
-.homepage {
-	font-family: "Cousine", monospace !important;
-}
-
-.homepage h1 {
+.homepage h2 {
 	margin-top: 1em;
-	font-family: "Cousine", monospace !important;
 	font-weight: bold;
 	padding-top: 1em;
-	font-size: 20px;
 }

@@ -17,8 +17,8 @@ class HomeIndex extends React.Component {
         />
         <main className="homepage">
           <section id="hello-world">
-            <h1>/* Hello World! */</h1>
-            <p>I&apos;m Josh. I make robust apps for the web. I act as lead maintainer of <a href="https://esfiddle.net">ESFiddle</a>. And organize <a href="https://midlandsjs.org">MidlandsJS</a></p>
+            <h2>/* Hello World! */</h2>
+            <p>I&apos;m Josh. I make robust apps for the web. I build <a href="https://turboapi.dev">TurboAPI</a> - application performance monitoring made simple. And organize <a href="https://midlandsjs.org">MidlandsJS</a></p>
             <p>You can find my resume <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">here</a>.</p>
             <p>I write articles on various topics to do with software development <a href="https://joshghent.com/blog">here</a>.</p>
             <p>You can find my talks on <a href="https://speakerdeck.com/joshghent">Speakerdeck</a></p>
@@ -26,14 +26,14 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="contact">
-            <h1>/* Contact */</h1>
+            <h2>/* Contact */</h2>
             <p>/mail - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
             <p>/github - <a href="https://github.com/joshghent">joshghent</a></p>
             <p>/resume - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
           </section>
 
           <section id="projects">
-            <h1>/* Projects */</h1>
+            <h2>/* Projects */</h2>
             <ul>
               <li>
                 <a href="https://turboapi.dev">TurboAPI</a> <br />

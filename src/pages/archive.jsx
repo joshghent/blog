@@ -36,7 +36,11 @@ class BlogIndex extends React.Component {
               <small><span role="img" aria-label="calendar">📅</span> {node.frontmatter.date}</small>
               <small>    -   </small>
               <small><span role="img" aria-label="coffee">☕</span> {node.fields.readingTime.text}</small>
-              <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
             </div>
           );
         })}
@@ -57,7 +61,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          html
           excerpt
           fields {
             slug
