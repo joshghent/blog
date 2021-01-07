@@ -16,12 +16,6 @@ module.exports = {
 	},
 	plugins: [
 		{
-			resolve: 'gatsby-plugin-disqus',
-			options: {
-				shortname: 'joshghent',
-			},
-		},
-		{
 			resolve: 'gatsby-plugin-feed',
 			options: {
 				// this base query will be merged with any queries in each feed
@@ -105,12 +99,6 @@ module.exports = {
 		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
-		{
-			resolve: 'gatsby-plugin-google-analytics',
-			options: {
-				trackingId: 'UA-72778945-1',
-			},
-		},
 		'gatsby-plugin-feed',
 		{
 			resolve: 'gatsby-plugin-manifest',
