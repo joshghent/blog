@@ -8,14 +8,19 @@ body {
 
   background-color: var(--bg);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: nunito-sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
 }
 
-header ~ main {
+.container {
   max-width: 47em;
   overflow: hidden;
   padding: 0 2.5em;
   margin: 0 auto;
+  padding-bottom: 2.5em;
+}
+
+p {
+  font-size: 18px;
 }
 
 /* body.dark {
@@ -77,7 +82,7 @@ pre {
 	-webkit-overflow-scrolling: touch;
 }
 
-#projects li > a {
+#projects li > a:first-child {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 1.2em;
 }

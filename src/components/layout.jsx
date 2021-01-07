@@ -30,27 +30,17 @@ class Layout extends React.Component {
       </h1>
     );
     return (
-      <div
-        style={{
-          backgroundColor: 'var(--bg)',
-          color: 'var(--textNormal)',
-          transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        }}
-      >
-        <div
-          style={{
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            maxWidth: rhythm(48),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
+      <>
+        <div style={{ borderBottom: "1px #f5f5f5 solid", marginBottom: '2.5rem', }}>
           <header
             style={{
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '2.625rem',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(48),
+              padding: `${rhythm(1)} ${rhythm(3 / 4)}`
             }}
           >{header}
             <nav className="nav">
@@ -61,12 +51,29 @@ class Layout extends React.Component {
               </ul>
             </nav>
           </header>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
-          </footer>
         </div>
-      </div >
+        <div
+          style={{
+            backgroundColor: 'var(--bg)',
+            color: 'var(--textNormal)',
+            transition: 'color 0.2s ease-out, background 0.2s ease-out',
+          }}
+        >
+          <div
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(48),
+              padding: `${rhythm(1)} ${rhythm(3 / 4)}`
+            }}
+          >
+            <main className="container">{children}</main>
+            <footer>
+              © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
+            </footer>
+          </div>
+        </div>
+      </>
     );
   }
 }
