@@ -103,8 +103,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Josh Ghent\'s Site',
-        short_name: 'JoshGhent',
+        name: 'Developer Musings',
+        short_name: 'Dev Musings',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#663399',
@@ -114,7 +114,6 @@ module.exports = {
     },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-dark-mode',
-    'gatsby-plugin-twitter',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify',
