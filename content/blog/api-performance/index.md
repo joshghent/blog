@@ -67,6 +67,6 @@ This took down the average query time from around 885ms to 7ms 🚀
 
 There is still many more queries to improve the performance of but this was a great start. It taught me a lot about the internals of Postgres and experimentation.
 
-Takeaways:
+## Takeaways
 1. Learn but don't be afraid to experiment - there becomes a point with learning that the best way to see if something will be a positive change or not, is to just try it out
 2. "Reckons" don't always reflect reality - I believed there was lots of performance improvements to be made in a number of common operations but after trying the queries out and collecting data, they were already very performant. Therefore, be more data driven rather than "reckon" driven, even if those assumptions point you in the general direction.

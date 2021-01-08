@@ -134,3 +134,7 @@ a.anchor svg[aria-hidden="true"] {
 hr {
   background: 'var(--hr)',
 }
+
+.container > div > ol, .container > div > ul {
+  text-align: left;
+}
