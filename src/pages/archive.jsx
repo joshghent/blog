@@ -10,46 +10,48 @@ class BlogIndex extends React.Component {
   render() {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const groups = data.allMarkdownRemark.group;
+
+    let groups = data.allMarkdownRemark.group;
+    // Stupid logic to figure out if we should sort
+    // For some reason when you navigate to the page, it sorts the data correctly
+    // If you click the archive in the nav tho then it has it cached sorted so then it undoes the sort
+    if (Number(groups[0].edges[0].node.frontmatter.date.split(" ")[2]) < Number(groups[groups.length - 1].edges[0].node.frontmatter.date.split(" ")[2])) {
+      groups = groups.reverse();
+    }
 
     return (
       <Layout location={location} title={siteTitle}>
         <SEO
           title="Blog"
           description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
+          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity']}
         />
         {groups.map((group) => {
-          const posts = group.edges;
-          const date = group.edges[0].node.frontmatter.date;
-
-          const postsMap = posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small><span role="img" aria-label="coffee">☕</span> {node.fields.readingTime.text}</small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            );
-          })
+          const posts = group.edges.sort((a, b) => Number(b.node.frontmatter.date.split(" ")[0]) - Number(a.node.frontmatter.date.split(" ")[0]))
+          const dateField = group.edges[0].node.frontmatter.date
+          const date = `${dateField.split(" ")[1]} ${dateField.split(" ")[2]}`;
 
           return (
             <>
-              <div key={{ date }}>{{ date }}</div>
-              { { postsMap }}
+              <div className="archiveGroupHeader" key={date}>{date}</div>
+              {posts.map(({ node }) => {
+                const title = node.frontmatter.title || node.fields.slug;
+                return (
+                  <div key={node.fields.slug}>
+                    <p
+                      style={{
+                        textAlign: 'left',
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
+                      <span>{node.frontmatter.date.split(" ")[0]} </span>
+                      <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                        {title}
+                      </Link>
+                    </p>
+                  </div>
+                );
+              })}
             </>
           )
         })}
@@ -67,21 +69,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___date) {
+    allMarkdownRemark {
+      group(field: fields___year_month) {
         edges {
           node {
-            excerpt
             fields {
               slug
-              readingTime {
-                text
-              }
             }
             frontmatter {
-              date(formatString: "MMMM YYYY")
+              date(formatString: "DD MMMM YYYY")
               title
-              description
             }
           }
         }

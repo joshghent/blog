@@ -3,6 +3,7 @@ body {
   --textNormal: #222;
   --textTitle: #222;
   --textLink: #005a87;
+  --textHoverLink: #003a57;
 	--hr: hsla(0, 0%, 0%, 0.2);
 	--caption: rgba(0, 0, 0, 0.5);
 
@@ -17,6 +18,15 @@ body {
   padding: 0 2.5em;
   margin: 0 auto;
   padding-bottom: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: var(--textHoverLink);
 }
 
 p {
@@ -85,4 +95,21 @@ pre {
 #projects li > a:first-child {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.container > .archiveGroupHeader:first-child {
+  margin-top: 0;
+}
+
+.archiveGroupHeader {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.75em;
+  margin-top: 1.5em;
+}
+
+.blogPostTitle {
+  font-size: 2.5em;
+  margin: 2em;
+  margin-top: 0;
 }

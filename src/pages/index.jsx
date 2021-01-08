@@ -15,21 +15,21 @@ class HomeIndex extends React.Component {
           keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'home page', 'homepage']}
         />
         <section id="hello-world">
-          <h2>/* Hello World! */</h2>
+          <h2>Hello World</h2>
           <p>I&apos;m Josh. I make robust apps for the web. I build <a href="https://turboapi.dev">TurboAPI</a> - application performance monitoring made simple. And organize <a href="https://midlandsjs.org">MidlandsJS</a></p>
           <p>You can find my talks on <a href="https://speakerdeck.com/joshghent">Speakerdeck</a></p>
           <p>If you want to work together <a href="mailto:me@joshghent.com">email me!</a></p>
         </section>
 
         <section id="contact">
-          <h2>/* Contact */</h2>
+          <h2>Contact</h2>
           <p>letters - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
           <p>code - <a href="https://github.com/joshghent">joshghent</a></p>
           <p>work - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
         </section>
 
         <section id="projects">
-          <h2>/* Projects */</h2>
+          <h2>Projects</h2>
           <ul style={{
             listStyleType: "none"
           }}>

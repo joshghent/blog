@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 
 
 class Layout extends React.Component {
@@ -69,7 +69,7 @@ class Layout extends React.Component {
           >
             <main className="container">{children}</main>
             <footer>
-              © {new Date().getFullYear()}, Built by <a href="https://joshghent.com">Josh Ghent</a>
+              © {new Date().getFullYear()}, Built by <Link to="/">Josh Ghent</Link>
             </footer>
           </div>
         </div>

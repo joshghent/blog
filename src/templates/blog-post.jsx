@@ -19,26 +19,13 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          style={{
-            ...scale(-1 / 10),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          <small><span role="img" aria-label="calendar">📅</span> {post.frontmatter.date}</small>
-          <small>    -   </small>
-          <small><span role="img" aria-label="coffee">☕</span> {post.fields.readingTime.text}</small>
-        </div>
+        <h2 className="blogPostTitle">{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
 
         <ul
           style={{
