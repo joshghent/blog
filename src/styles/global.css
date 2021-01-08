@@ -23,7 +23,13 @@ body {
 a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+  color: var(--textLink);
 }
+
+a:visited { text-decoration: none; color: var(--textLink) }
+a:hover { text-decoration: none; color: var(--textLink) }
+a:focus { text-decoration: none; color: var(--textLink) }
+a:hover, a:active { text-decoration: none; color: var(--textLink) }
 
 a:hover {
   color: var(--textHoverLink);
@@ -112,4 +118,19 @@ pre {
   font-size: 2.5em;
   margin: 2em;
   margin-top: 0;
+}
+
+/* Copied from typography */
+a.gatsby-resp-image-link {
+  box-shadow: 'none',
+}
+a.anchor {
+  box-shadow: 'none',
+}
+
+a.anchor svg[aria-hidden="true"] {
+  stroke: 'var(--textLink)',
+}
+hr {
+  background: 'var(--hr)',
 }

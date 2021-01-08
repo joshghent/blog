@@ -118,5 +118,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify',
     'gatsby-plugin-preact',
+    'gatsby-plugin-typography',
   ],
 };
