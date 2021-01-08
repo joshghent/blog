@@ -135,6 +135,6 @@ hr {
   background: 'var(--hr)',
 }
 
-.container > div > ol, .container > div > ul {
+.container > div > ol, .container > div > ul, .blogPostTitle ~ div > ol, .blogPostTitle ~ div > ul {
   text-align: left;
 }
