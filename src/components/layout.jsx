@@ -40,7 +40,7 @@ class Layout extends React.Component {
               marginLeft: 'auto',
               marginRight: 'auto',
               maxWidth: rhythm(48),
-              padding: `${rhythm(1)} ${rhythm(3 / 4)}`
+              padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`
             }}
           >{header}
             <nav className="nav">

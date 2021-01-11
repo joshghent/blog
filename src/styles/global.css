@@ -20,6 +20,23 @@ body {
   padding-bottom: 2.5em;
 }
 
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .blogPostTitle {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
@@ -35,39 +52,26 @@ a:hover {
   color: var(--textHoverLink);
 }
 
-p {
+p, li {
   font-size: 18px;
+  line-height: 1.5em;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
 }
 
-/* body.dark {
-  -webkit-font-smoothing: antialiased;
-
-  --bg: #282D3C;
-  --textNormal: rgba(255, 255, 255, 0.88);
-  --textTitle: white;
-  --textLink: #FF6C2F;
-	--hr: hsla(0, 0%, 100%, 0.2);
-	--caption: rgba(255, 255, 255, 0.5);
-} */
+p:last-child {
+  margin-bottom: 2em;
+}
 
 blockquote {
 	color: inherit !important;
 	border-left-color: var(--textLink)
 }
 
-/* body.dark > blockquote > * {
-	color: var(--textLink);
-}
-
-body.dark > blockquote {
-	color: var(--textNormal) !important;
-} */
-
 .nav {
 	margin: 0;
 	text-align: center;
 	padding: 0;
-	padding-top: 1em;
 }
 
 .nav > ul > li {
@@ -141,7 +145,8 @@ hr {
 
 .gatsby-highlight {
   text-align: left;
-  background-color: #333;
-  color: white;
-  padding: 2em;
+}
+
+div.image {
+  margin-bottom: 2em;
 }
