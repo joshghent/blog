@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
@@ -14,42 +13,19 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 
-    const disqusConfig = {
-      url: `${data.site.siteMetadata.siteUrl + location.pathname}`,
-      identifier: post.id,
-      title: post.title,
-    };
-
     return (
       <Layout location={location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          style={{
-            ...scale(-1 / 10),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          <small><span role="img" aria-label="calendar">📅</span> {post.frontmatter.date}</small>
-          <small>    -   </small>
-          <small><span role="img" aria-label="coffee">☕</span> {post.fields.readingTime.text}</small>
-          <small>    -   </small>
-          <small><span role="img" aria-label="comment">💬</span> <CommentCount config={disqusConfig} placeholder="0 Comments" /></small>
-        </div>
+        <h2 className="blogPostTitle">{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
-
-        <Disqus config={disqusConfig} />
 
         <ul
           style={{

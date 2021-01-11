@@ -1,10 +1,9 @@
+import { graphql, Link } from 'gatsby';
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-
-import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,33 +16,24 @@ class BlogIndex extends React.Component {
         <SEO
           title="Blog"
           description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs']}
+          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
         />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
             <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+              <h2 className="blogPostTitle">
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h3>
-              <small><span role="img" aria-label="calendar">📅</span> {node.frontmatter.date}</small>
-              <small>    -   </small>
-              <small><span role="img" aria-label="coffee">☕</span> {node.fields.readingTime.text}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
+              </h2>
+              <div dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: "18px" }} />
             </div>
           );
-        })}
+        })
+        }
+
+        <Link style={{ fontSize: "1.5em" }} to="/archive">See All Posts</Link>
       </Layout>
     );
   }
@@ -58,9 +48,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
       edges {
         node {
+          html
           excerpt
           fields {
             slug

@@ -1,15 +1,45 @@
 body {
-  --bg: white;
+  --bg: #FFF;
   --textNormal: #222;
   --textTitle: #222;
-  --textLink: #FF6C2F;
+  --textLink: #005a87;
+  --textHoverLink: #003a57;
 	--hr: hsla(0, 0%, 0%, 0.2);
 	--caption: rgba(0, 0, 0, 0.5);
 
   background-color: var(--bg);
+  text-align: center;
+  font-family: nunito-sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
 }
 
-body.dark {
+.container {
+  max-width: 47em;
+  overflow: hidden;
+  padding: 0 2.5em;
+  margin: 0 auto;
+  padding-bottom: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: var(--textLink);
+}
+
+a:visited { text-decoration: none; color: var(--textLink) }
+a:hover { text-decoration: none; color: var(--textLink) }
+a:focus { text-decoration: none; color: var(--textLink) }
+a:hover, a:active { text-decoration: none; color: var(--textLink) }
+
+a:hover {
+  color: var(--textHoverLink);
+}
+
+p {
+  font-size: 18px;
+}
+
+/* body.dark {
   -webkit-font-smoothing: antialiased;
 
   --bg: #282D3C;
@@ -18,31 +48,29 @@ body.dark {
   --textLink: #FF6C2F;
 	--hr: hsla(0, 0%, 100%, 0.2);
 	--caption: rgba(255, 255, 255, 0.5);
-}
+} */
 
 blockquote {
 	color: inherit !important;
 	border-left-color: var(--textLink)
 }
 
-body.dark > blockquote > * {
+/* body.dark > blockquote > * {
 	color: var(--textLink);
 }
 
 body.dark > blockquote {
 	color: var(--textNormal) !important;
-}
+} */
 
 .nav {
-	list-style-type: none;
 	margin: 0;
 	text-align: center;
 	padding: 0;
 	padding-top: 1em;
-	font-family: Montserrat,sans-serif;
 }
 
-.nav > li {
+.nav > ul > li {
 	display: inline;
 	padding-right: 10px;
 }
@@ -68,4 +96,52 @@ div.image > span + em, div.image > img + em, div.image > a + em {
 pre {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
+}
+
+#projects li > a:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.container > .archiveGroupHeader:first-child {
+  margin-top: 0;
+}
+
+.archiveGroupHeader {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.75em;
+  margin-top: 1.5em;
+}
+
+.blogPostTitle {
+  font-size: 2.5em;
+  margin: 2em;
+  margin-top: 0;
+}
+
+/* Copied from typography */
+a.gatsby-resp-image-link {
+  box-shadow: 'none',
+}
+a.anchor {
+  box-shadow: 'none',
+}
+
+a.anchor svg[aria-hidden="true"] {
+  stroke: 'var(--textLink)',
+}
+hr {
+  background: 'var(--hr)',
+}
+
+.container > div > ol, .container > div > ul, .blogPostTitle ~ div > ol, .blogPostTitle ~ div > ul {
+  text-align: left;
+}
+
+.gatsby-highlight {
+  text-align: left;
+  background-color: #333;
+  color: white;
+  padding: 2em;
 }
