@@ -138,3 +138,10 @@ hr {
 .container > div > ol, .container > div > ul, .blogPostTitle ~ div > ol, .blogPostTitle ~ div > ul {
   text-align: left;
 }
+
+.gatsby-highlight {
+  text-align: left;
+  background-color: #333;
+  color: white;
+  padding: 2em;
+}
