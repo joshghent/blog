@@ -1,7 +1,7 @@
 ---
-title: "Redesigning my Site - Accessibility, Simplicity, Performance"
+title: "Redesigning my Site - Accessibility, Privacy and 100 PSI Scores"
 date: "2021-01-11"
-description: "I redesigned my website! In this post I'll dive how I redesigned by site for performance, accessibility and simplicity. And update you all on what I'll be writing about soon."
+description: "A story about how I redesigned my site for accessibility, privacy and performance - to reach a perfect 100 in the Google Page speed insights score."
 ---
 
 So, things look a little different around here. I took the time to overhaul the previous design of my site into something more simple. But why? This post is meta but bear with me.
