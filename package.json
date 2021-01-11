@@ -17,6 +17,7 @@
     "gatsby-plugin-netlify": "^2.9.0",
     "gatsby-plugin-offline": "^3.8.0",
     "gatsby-plugin-preact": "^4.5.0",
+    "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-sharp": "2.12.0",
     "gatsby-plugin-twitter": "2.8.0",
