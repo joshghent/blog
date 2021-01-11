@@ -59,8 +59,8 @@ p, li {
   letter-spacing: .03em;
 }
 
-p:last-child {
-  margin-bottom: 2em;
+.blogPostTitle ~ div > h2, h3, h4, h5 {
+  margin-top: 1.45rem;
 }
 
 blockquote {
@@ -81,7 +81,7 @@ blockquote {
 
 div.image {
 	text-align: center;
-	margin-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 div.image > img {
@@ -145,8 +145,4 @@ hr {
 
 .gatsby-highlight {
   text-align: left;
-}
-
-div.image {
-  margin-bottom: 2em;
 }
