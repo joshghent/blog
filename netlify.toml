@@ -1,5 +1,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self';"
+    Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline';"
     Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
