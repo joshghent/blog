@@ -181,6 +181,10 @@ Uber
 maxed
 Postgres
 prefill
+3rd
+MidlandsJS
+NoSQL
+youtube
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -350,6 +354,7 @@ mo
 D.E.V
 spacejam
 Cantrill's
+4th
  - content/blog/zsh-speed/index.md
 150ms
 13ms
@@ -376,6 +381,14 @@ devdocs
 tm
  - content/blog/ats-resiliency/index.md
 tm
+1
+2
+3
+4
+5
+6
+7
+0
  - content/blog/health-checks/index.md
 Harrelson's
 pocky
@@ -390,3 +403,14 @@ webhook
  - content/blog/using-rds-snapshots/index.md
 snapshot-access-vpc
 rds-snapshot-sg
+ - content/blog/learning-software/index.md
+sqlzoo
+ - content/blog/redesign/index.md
+Jadene
+Aderonmu
+ff6c2f
+Disqus
+Solarwinds
+ - content/blog/youtube-playlist-downloader/index.md
+Youtube-DL
+youtube-dl
