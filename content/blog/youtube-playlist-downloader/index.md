@@ -7,7 +7,7 @@ tags: ["youtube-dl", "bash", "scripts"]
 
 In light of Youtube-DL being taken down from GitHub, I decided to give it a go with a use case I happened to have.
 
-Lately, I've been listening to lots of concerts/festival sets that are not available for traditional purchase. Although I have listened to them on youtube, I didn't want to have the webpage open and the auto-play/queuing features are not as fledged out as a proper music player.
+Lately, I've been listening to lots of concerts/festival sets that are not available for traditional purchase. Although I have listened to them on youtube, I didn't want to have the web page open and the auto-play/queuing features are not as fledged out as a proper music player.
 
 I decided to write a quick script that I could run in a cron to pull down the latest version of the playlist I maintain. To keep an eye on it, I included a Slack webhook notification that let's me know when the playlist has been downloaded.
 
