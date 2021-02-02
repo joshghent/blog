@@ -1,3 +1,8 @@
+---
+title: "My Advice on Become a Software Developer"
+date: "2021-01-31"
+description: "A letter to my 17-year-old self on how to become a software developer."
+---
 
 Whilst running the [MidlandsJS](https://midlandsjs.org) meetup, I've been asked a number of times how to "get into" software development and the industry at large. So that I can clarify my own thoughts (and update them), here is my advice.
 
