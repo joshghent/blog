@@ -25,7 +25,7 @@ class HomeIndex extends React.Component {
           <h2>Contact</h2>
           <p>letters - <a href="mailto:me@joshghent.com">me@joshghent.com</a></p>
           <p>code - <a href="https://github.com/joshghent">joshghent</a></p>
-          <p>work - <a href="https://docs.google.com/document/d/1uHFiaZvVl1kZCLwg_EFi5SEyWQEqp-S7PGm44fkXcO4/export?format=pdf">resume.pdf</a></p>
+          <p>work - <a href="https://docs.google.com/document/d/1BHEsryVDOnFv-XDYjLKrVFC2TCNgqHr9KLVM9Vul-9Y/export?format=pdf">resume.pdf</a></p>
         </section>
 
         <section id="projects">
