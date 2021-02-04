@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
-import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,12 +16,14 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
         />
         <h2 className="blogPostTitle">{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(1.5),
+            marginTop: rhythm(1.5),
           }}
         />
 
@@ -34,6 +34,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: 'space-between',
             listStyle: 'none',
             padding: 0,
+            margin: 0,
           }}
         >
           <li>

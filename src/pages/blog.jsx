@@ -2,8 +2,6 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm } from '../utils/typography';
-
 
 class BlogIndex extends React.Component {
   render() {
@@ -27,13 +25,12 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h2>
-              <div dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: "18px" }} />
+              <div dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: '18px' }} />
             </div>
           );
-        })
-        }
+        })}
 
-        <Link style={{ fontSize: "1.5em" }} to="/archive">See All Posts</Link>
+        <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.5em' }} to="/archive">See All Posts</Link></div>
       </Layout>
     );
   }
