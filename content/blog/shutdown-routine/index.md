@@ -7,10 +7,10 @@ tags: ["productivity", "shutdown routine", "shutdown"]
 
 In the current pandemic, it's even more challenging to switch off from work. With many working from home, it can seem impossible to "leave" work in a physical and mental sense.
 
-I introduced a shutdown routine to help combat this. It's a practise touted by many "productivity guru's", which made me skeptical at first. But, the basic idea is to create a short checklist of things to do before you "finish" your day. The aim is as follows:
+I introduced a shutdown routine to help combat this. It's a practise touted by many "productivity guru's", which made me skeptical at first. But, the basic idea is to create a short checklist of things to do before you "finish" your day. The goals are as follows:
 * Realise how much you've accomplished that day
-* Be clear about what you need tomorrow
-* Tie any lose ends
+* Be clear about what you need to do tomorrow
+* Tie any loose ends
 
 I usually allot anywhere from 10-20 minutes to do this process. Yours may vary but here is my list and the reasons why:
 
@@ -21,4 +21,4 @@ I usually allot anywhere from 10-20 minutes to do this process. Yours may vary b
 5. Clear my todo list - After I've finished work, I've finished and I want to spend time with my family. This helps me to stop feeling productivity guilt about things I haven't done. It also saves all the tasks rolling over to the next day.
 6. Clean my desk - Sounds obvious but it's nice to not return to a stale coffee cup in the morning.
 
-These steps may sound semi-obvious or reductive. But, I have found the process mindfully winds me down from work and helps me get into the "relax" flow for the evening. I hope you too can leave your stress at work for the next day. There is always more work.
+These steps may seem reductive. But, I have found the process mindfully winds me down from work and helps me get into the "relax" flow for the evening. I hope you too can leave your stress at work for the next day. There is always more work.
