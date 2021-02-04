@@ -31,28 +31,30 @@ class HomeIndex extends React.Component {
         <section id="projects">
           <h2>Projects</h2>
           <ul style={{
-            listStyleType: "none"
-          }}>
+            listStyleType: 'none',
+            marginRight: 0,
+          }}
+          >
             <li>
               <a href="https://turboapi.dev">TurboAPI</a> <br />
-                I created TurboAPI after facing problems constantly rebuilding custom end-to-end monitoring and API performance tracking tools. This tool helps customers track their end-to-end application and API performance over time. These insights help them bring faster experiences to their customers to increase conversions.
-              </li>
+              I created TurboAPI after facing problems constantly rebuilding custom end-to-end monitoring and API performance tracking tools. This tool helps customers track their end-to-end application and API performance over time. These insights help them bring faster experiences to their customers to increase conversions.
+            </li>
             <li>
               <a href="https://esfiddle.net/">ESFiddle</a> <br />
-                Create ES6+ code snippets in your browser and share them with your friends. <a href="https://github.com/esfiddle/esfiddle">code</a>
+              Create ES6+ code snippets in your browser and share them with your friends. <a href="https://github.com/esfiddle/esfiddle">code</a>
             </li>
             <li>
               <a href="https://timberseed.com">Timberseed</a> <br />
-                Wordpress website for a recruitment company based in London.
+              Wordpress website for a recruitment company based in London.
             </li>
             <li>
               <a href="https://github.com/joshghent/lastfm-slack">LastFM 2 Slack</a> <br />
-                Docker bot for posting your currently scrobbled LastFm track as your Slack Status
+              Docker bot for posting your currently scrobbled LastFm track as your Slack Status
             </li>
           </ul>
         </section>
 
-        <p style={{ textAlign: "left", fontFamily: "monospace" }}>:wq</p>
+        <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>
       </Layout>
     );
   }
