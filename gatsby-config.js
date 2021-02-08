@@ -144,12 +144,5 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        analyzerPort: 3000,
-        production: true,
-      },
-    },
   ],
 };
