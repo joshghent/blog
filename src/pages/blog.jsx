@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h1>
-              <section className="e-content" dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: "18px" }} />
+              <section className="e-content" dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: '18px' }} />
             </div>
           );
         })}

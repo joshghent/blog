@@ -29,7 +29,7 @@ class HomeIndex extends React.Component {
 
           <h2>What am I up to?</h2>
           <ul>
-            <li>Doing lots of DIY in my first home with my new wife and playing fetch with my dog <a href={"./images/wetbeard.jpeg"}>Millie</a></li>
+            <li>Doing lots of DIY in my first home with my new wife and playing fetch with my dog <a href="./images/wetbeard.jpeg">Millie</a></li>
             <li>Focusing on creating rather than consuming</li>
             <li>Building <a href="https://turboapi.dev">TurboAPI</a></li>
             <li>Continuing to simplify</li>
@@ -37,7 +37,7 @@ class HomeIndex extends React.Component {
 
           <h2>What tech am I using</h2>
           <ul>
-            <li>At work and home I use a Macbook Pro of varying years (M1 at Home, 16" at Work)</li>
+            <li>At work and home I use a Macbook Pro of varying years (M1 at Home, MBP 16 inch at Work)</li>
             <li>Primarily using Typescript to write new services and React to write front-ends</li>
             <li>Using AWS to deploy and host</li>
             <li>Configuring lots of bots/automations via Docker, Zapier, IFTTT, Shortcuts and a personal Slack workspace</li>
