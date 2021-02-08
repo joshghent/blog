@@ -20,12 +20,12 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug;
           return (
             <div key={node.fields.slug}>
-              <h2 className="blogPostTitle">
+              <h1 className="blogPostTitle p-name">
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h2>
-              <div dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: '18px' }} />
+              </h1>
+              <section className="e-content" dangerouslySetInnerHTML={{ __html: node.html }} style={{ fontSize: '18px' }} />
             </div>
           );
         })}
@@ -52,9 +52,6 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
-            readingTime {
-              text
-            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

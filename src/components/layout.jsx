@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { rhythm } from '../utils/typography';
+import HCard from './hcard';
 
 class Layout extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class Layout extends React.Component {
     );
     return (
       <>
+        <HCard />
         <div style={{ borderBottom: '1px #f5f5f5 solid', marginBottom: '2.5rem' }}>
           <header
             style={{
@@ -65,7 +67,7 @@ class Layout extends React.Component {
           >
             <main className="container">{children}</main>
             <footer style={{ textAlign: 'center' }}>
-              © {new Date().getFullYear()}, Built by <Link to="/">Josh Ghent</Link>
+              © {new Date().getFullYear()}, Built by <Link to="/" className="u-url p-name">Josh Ghent</Link>
             </footer>
           </div>
         </div>

@@ -1,5 +1,5 @@
+import { graphql, Link } from 'gatsby';
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
@@ -18,8 +18,13 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
         />
-        <h2 className="blogPostTitle">{post.frontmatter.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section className="h-entry">
+          <time className="dt-published" dateTime={post.frontmatter.date} style={{ display: 'none' }}>{post.frontmatter.date}</time>
+          <a href={`${data.site.siteMetadata.siteUrl}${post.fields.slug}`} className="u-url" style={{ display: 'none' }}>Link to this Article</a>
+          <p className="p-summary" style={{ display: 'none' }}>{post.frontmatter.description}</p>
+          <h1 className="blogPostTitle p-name">{post.frontmatter.title}</h1>
+          <section className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </section>
         <hr
           style={{
             marginBottom: rhythm(1.5),
@@ -79,9 +84,6 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        readingTime {
-          text
-        }
       }
     }
   }

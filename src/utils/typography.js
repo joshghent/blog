@@ -20,7 +20,7 @@ const typography = new Typography({
     hr: {
       background: 'var(--hr)',
     },
-  })
+  }),
 });
 
 // Hot reload typography in development.
