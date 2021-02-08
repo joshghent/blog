@@ -12,6 +12,7 @@ module.exports = {
       twitter: 'joshghent',
       linkedin: 'https://www.linkedin.com/in/joshghent/',
       github: 'joshghent',
+      email: 'me@joshghent.com',
     },
   },
   plugins: [

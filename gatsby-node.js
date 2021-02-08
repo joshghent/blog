@@ -63,16 +63,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
 
-    const date = new Date(node.frontmatter.date)
+    const date = new Date(node.frontmatter.date);
 
-    const year = date.getFullYear()
-    const month = date.getMonth() + 1
-    const year_month = `${year}-${month}`
-    const day = date.getDate()
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const yearMonth = `${year}-${month}`;
+    const day = date.getDate();
 
-    createNodeField({ node, name: "year", value: year })
-    createNodeField({ node, name: "month", value: month })
-    createNodeField({ node, name: "year-month", value: year_month })
-    createNodeField({ node, name: "day", value: day })
+    createNodeField({ node, name: 'year', value: year });
+    createNodeField({ node, name: 'month', value: month });
+    createNodeField({ node, name: 'year-month', value: yearMonth });
+    createNodeField({ node, name: 'day', value: day });
   }
 };
