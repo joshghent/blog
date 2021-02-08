@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
     // Stupid logic to figure out if we should sort
     // For some reason when you navigate to the page, it sorts the data correctly
     // If you click the archive in the nav tho then it has it cached sorted so then it undoes the sort
-    if (Number(groups[0].edges[0].node.frontmatter.date.split(" ")[2]) < Number(groups[groups.length - 1].edges[0].node.frontmatter.date.split(" ")[2])) {
+    if (Number(groups[0].edges[0].node.frontmatter.date.split(' ')[2]) < Number(groups[groups.length - 1].edges[0].node.frontmatter.date.split(' ')[2])) {
       groups = groups.reverse();
     }
 
@@ -27,12 +27,12 @@ class BlogIndex extends React.Component {
           keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity']}
         />
         {groups.map((group) => {
-          const posts = group.edges.sort((a, b) => Number(b.node.frontmatter.date.split(" ")[0]) - Number(a.node.frontmatter.date.split(" ")[0]))
-          const dateField = group.edges[0].node.frontmatter.date
-          const date = `${dateField.split(" ")[1]} ${dateField.split(" ")[2]}`;
+          const posts = group.edges.sort((a, b) => Number(b.node.frontmatter.date.split(' ')[0]) - Number(a.node.frontmatter.date.split(' ')[0]));
+          const dateField = group.edges[0].node.frontmatter.date;
+          const date = `${dateField.split(' ')[1]} ${dateField.split(' ')[2]}`;
 
           return (
-            <>
+            <div style={{ textAlign: 'center' }}>
               <div className="archiveGroupHeader" key={date}>{date}</div>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;
@@ -44,7 +44,7 @@ class BlogIndex extends React.Component {
                         marginBottom: rhythm(1 / 4),
                       }}
                     >
-                      <span>{node.frontmatter.date.split(" ")[0]} </span>
+                      <span>{node.frontmatter.date.split(' ')[0]} </span>
                       <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                         {title}
                       </Link>
@@ -52,8 +52,8 @@ class BlogIndex extends React.Component {
                   </div>
                 );
               })}
-            </>
-          )
+            </div>
+          );
         })}
       </Layout>
     );

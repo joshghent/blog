@@ -2,19 +2,15 @@ import { Link } from 'gatsby';
 import React from 'react';
 import { rhythm } from '../utils/typography';
 
-
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
-
-    header = (
+    const { title, children } = this.props;
+    const header = (
       <h1
         style={{
           marginBottom: 0,
           marginTop: 0,
-          fontSize: "1.25em"
+          fontSize: '1.25em',
         }}
       >
         <Link
@@ -31,7 +27,7 @@ class Layout extends React.Component {
     );
     return (
       <>
-        <div style={{ borderBottom: "1px #f5f5f5 solid", marginBottom: '2.5rem', }}>
+        <div style={{ borderBottom: '1px #f5f5f5 solid', marginBottom: '2.5rem' }}>
           <header
             style={{
               display: 'flex',
@@ -40,11 +36,11 @@ class Layout extends React.Component {
               marginLeft: 'auto',
               marginRight: 'auto',
               maxWidth: rhythm(48),
-              padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`
+              padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`,
             }}
           >{header}
             <nav className="nav">
-              <ul style={{ listStyle: "none", display: "inline" }}>
+              <ul style={{ listStyle: 'none', display: 'inline' }}>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/archive">Archive</Link></li>
                 <li><Link to="/now">Now</Link></li>
@@ -64,11 +60,11 @@ class Layout extends React.Component {
               marginLeft: 'auto',
               marginRight: 'auto',
               maxWidth: rhythm(48),
-              padding: `${rhythm(1)} ${rhythm(3 / 4)}`
+              padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
             }}
           >
             <main className="container">{children}</main>
-            <footer>
+            <footer style={{ textAlign: 'center' }}>
               © {new Date().getFullYear()}, Built by <Link to="/">Josh Ghent</Link>
             </footer>
           </div>
