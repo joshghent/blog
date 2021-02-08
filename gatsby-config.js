@@ -93,7 +93,6 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-reading-time',
         ],
       },
     },
@@ -133,6 +132,23 @@ module.exports = {
         // whitelist: ['whitelist'], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         purgeOnly: ['global.css'], // Purge only these files/folders
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-indieweb',
+      options: {
+        auth: {
+          twitter: 'joshghent',
+          github: 'joshghent',
+          email: 'me@joshghent.com',
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {
+        analyzerPort: 3000,
+        production: true,
       },
     },
   ],
