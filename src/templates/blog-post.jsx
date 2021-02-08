@@ -21,6 +21,7 @@ class BlogPostTemplate extends React.Component {
         />
         <section className="h-entry">
           <time className="dt-published" dateTime={post.frontmatter.date} style={{ display: 'none' }}>{post.frontmatter.date}</time>
+          <a href={`${data.site.siteMetadata.siteUrl}/${post.fields.slug}`} className="u-url" style={{ display: 'none' }}>Link to this Article</a>
           <p className="p-summary" style={{ display: 'none' }}>{post.frontmatter.description}</p>
           <h1 className="blogPostTitle p-name">{post.frontmatter.title}</h1>
           <section className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -57,7 +58,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-      </Layout >
+      </Layout>
     );
   }
 }
