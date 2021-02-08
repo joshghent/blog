@@ -7,7 +7,7 @@ tags: ["productivity", "shutdown routine", "shutdown"]
 
 In the current pandemic, it's even more challenging to switch off from work. With many working from home, it can seem impossible to "leave" work in a physical and mental sense.
 
-I introduced a shutdown routine to help combat this. It's a practise touted by many "productivity guru's", which made me skeptical at first. But, the basic idea is to create a short checklist of things to do before you "finish" your day. The goals are as follows:
+I introduced a shutdown routine to help combat this. It's a practise touted by many "productivity guru's", which made me sceptical at first. But, the basic idea is to create a short checklist of things to do before you "finish" your day. The goals are as follows:
 * Realise how much you've accomplished that day
 * Be clear about what you need to do tomorrow
 * Tie any loose ends
