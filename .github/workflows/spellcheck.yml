@@ -3,16 +3,16 @@
 
 name: Spellcheck
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
-  build:
+  spellcheck:
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -20,6 +20,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install -g yarn@latest --cache-min 999999999
-    - run: yarn install
-    - run: yarn spellcheck
+    - run: mdspell -a -n -r "content/blog/**/*.md"
+      name: Spellcheck
