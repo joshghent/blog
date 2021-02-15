@@ -29,7 +29,7 @@ Here is my guide for when you inevitably make a catastrophic mistake.
 But what if you're in a position where others come to you with their catastrophic problems? Here are some things to remember.
 
 ## What to do when someone comes to you with an incident
-1. *Ask them to Keep a log* - This will be a savior when it comes to implementing preventative change and help you learn the mindset of those on your team.
+1. *Ask them to Keep a log* - This will be a saviour when it comes to implementing preventative change and help you learn the mindset of those on your team.
 2. *Be empathetic* - It's not the time to point fingers, or say I told you so (to anyone, not just the person who reported the incident). Focus on resolving the issue and learning.
 3. *Be a force for change to prevent future issues* - As someone with some authority, you have the power to implement changes to prevent future issues. Otherwise, these things will happen over and over again and customers will get angry. You'd think that things fix themselves on their own and get sorted but you'd be amazed at how many teams spend large swathes of time, simply putting out fires. Implement changes such as mandatory testing, code reviews by experts and restricted access to prevent these incidents in the future.
 
