@@ -145,5 +145,19 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-webmention',
+      options: {
+        username: 'joshghent.com', // webmention.io username
+        identity: {
+          github: 'joshghent',
+          twitter: 'joshghent', // no @
+        },
+        mentions: true,
+        pingbacks: true,
+        domain: 'joshghent.com',
+        token: process.env.WEBMENTIONS_TOKEN,
+      },
+    },
   ],
 };

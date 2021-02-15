@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node;
 
       createPage({
-        path: post.node.fields.slug,
+        path: `${post.node.fields.slug}`,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
@@ -46,6 +46,21 @@ exports.createPages = ({ graphql, actions }) => {
           next,
         },
       });
+
+      console.log(JSON.stringify(post));
+
+      if (post.node.frontmatter && (post.node.frontmatter.type === undefined || post.node.frontmatter.type === 'post')) {
+        console.log('Creating post page');
+        createPage({
+          path: `/kind/posts${post.node.fields.slug}`,
+          component: blogPost,
+          context: {
+            slug: post.node.fields.slug,
+            previous,
+            next,
+          },
+        });
+      }
     });
 
     return null;
