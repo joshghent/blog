@@ -188,6 +188,8 @@ youtube
 resumés
 DnD
 LighthouseCI
+github
+GitHubCI
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -423,3 +425,5 @@ hemingwayapp.com
 RxJS
  - content/blog/shutdown-routine/index.md
 5pm
+ - content/blog/spellcheck-ci/index.md
+mdspell
