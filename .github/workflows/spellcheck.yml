@@ -16,5 +16,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npx mdspell -a -n -r "content/blog/**/*.md"
+      - run: npm i markdown-spellcheck -g
+      - run: mdspell -a -n -r "content/blog/**/*.md"
         name: Spellcheck

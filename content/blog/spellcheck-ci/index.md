@@ -12,7 +12,7 @@ Thankfully, someone has created an open source markdown based spellcheck module 
 
 Since I'm using Gatsby, my posts can be found under `content/blog/*/index.md` - where `*` is the name of the blog post. The command to run the spell check was then
 ```
-$ npx mdspell -a -n "content/blog/**/*.md"
+$ npm i -g node-markdown-spellcheck && mdspell -a -n "content/blog/**/*.md"
 ```
 
 This would go through each of my posts and then validate the spelling is correct. When it comes across an incorrect spelling, it notifies me and asks me if I want to correct it, or add it to a local dictionary.
@@ -49,7 +49,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npx mdspell -a -n -r "content/blog/**/*.md"
+    - run: npm i markdown-spellcheck -g
+    - run: mdspell -a -n -r "content/blog/**/*.md"
       name: Spellcheck
 ```
 
