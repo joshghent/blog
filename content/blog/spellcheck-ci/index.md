@@ -1,6 +1,6 @@
 ---
 title: "SpellcheckCI"
-date: "2021-02-17"
+date: "2021-03-04"
 description: "How to use mdspell and GitHub Actions to spellcheck your markdown blog"
 tags: ["ci", "continuous integration", "mdspell", "spellcheck", "automation"]
 ---
@@ -36,7 +36,6 @@ on: [pull_request]
 
 jobs:
   spellcheck:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -44,14 +43,14 @@ jobs:
         node-version: [14.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm i markdown-spellcheck -g
-    - run: mdspell -a -n -r "content/blog/**/*.md"
-      name: Spellcheck
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i markdown-spellcheck -g
+      - run: mdspell -a -n -r "content/blog/**/*.md"
+        name: Spellcheck
 ```
 
 I hope this proves useful to you for your own blog. If you don't have one already, I'd highly recommend creating one!
