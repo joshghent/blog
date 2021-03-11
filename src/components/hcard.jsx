@@ -30,7 +30,6 @@ class HCard extends React.Component {
         <Link to="/" className="u-url p-name">{meta.author}</Link>
         <a className="p-org h-card" href={meta.company.url}>{meta.company.name}</a>
         <a className="u-email h-card" href={`mailto:${meta.social.email}`}>{meta.social.email}</a>
-        <img className="u-photo" src="./images/avatar.jpg" alt="avatar" />
 
         <a href={`https://twitter.com/${meta.social.twitter}`} rel="me">@{meta.social.twitter} on Twitter</a>
         <a href={`https://github.com/${meta.social.github}`} rel="me">Github</a>
