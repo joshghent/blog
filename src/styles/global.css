@@ -126,17 +126,17 @@ pre {
 
 /* Copied from typography */
 a.gatsby-resp-image-link {
-  box-shadow: 'none',
+  box-shadow: none,
 }
 a.anchor {
-  box-shadow: 'none',
+  box-shadow: none,
 }
 
 a.anchor svg[aria-hidden="true"] {
-  stroke: 'var(--textLink)',
+  stroke: var(--textLink),
 }
 hr {
-  background: 'var(--hr)',
+  background: var(--hr),
 }
 
 .container > div > ol, .container > div > ul, .blogPostTitle ~ div > ol, .blogPostTitle ~ div > ul {
