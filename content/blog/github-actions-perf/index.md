@@ -23,7 +23,7 @@ Secondly, I swapped out my normal `npm ci` command for another action `bahmutov/
 	<img src="../../assets/images/github-actions-timing-2.png"/>
 </div>
 
-Half the time gone! That's a good start but still not far enough. I found the modules were taking ages to install due to a webpack plugin responsible for optimizing images, something we didn't need in the CI process. I moved this out into an `optionalDependencies` and then set the command to `npm ci --no-optional`
+Half the time gone! That's a good start but still not far enough. I found the modules were taking ages to install due to a Webpack plugin responsible for optimizing images, something we didn't need in the CI process. I moved this out into an `optionalDependencies` and then set the command to `npm ci --no-optional`
 
 ## ESLint
 
@@ -46,5 +46,10 @@ Actions to the rescue! Fortunately, a kind internet person has created a github 
 
 This completely eliminated that time taken if no files had been changed matching the scanning glob.
 
-## Module installation again
-Module installation was still taking 1:40 and so I decided to have another crack at it.
+From there, I spent more time than I care to admit trying to trim the time down. The main blockers were the dependency install (1:20s average) and the Jest test suite (50s average). Although there are ways to [run the Jest suite in parallel](https://imhoff.blog/posts/parallelizing-jest-with-github-actions) it sort of seems redundant at this stage. The install is the big job, but the unfortunate battle is that we have Webpack image-loader as a `devDependency`. This then installs a whole host of binary packages that then get built from source - every. single. time. Anywho, I'm pleased with reducing it by 76%.
+
+Here are my main takeaways:
+1) Spend time speeding up your CI - fast developer feedback is important and saves you money (if you're restricted on pipeline minutes)
+2) Use the pre-built actions - there is a huge marketplace of actions that solve a bunch of problems and have smart defaults. GitHub Actions is great (and I promise this isn't an ad), in part, because it's like code lego.
+
+I hope this helps you with your journey in speeding up your CI.
