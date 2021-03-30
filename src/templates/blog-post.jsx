@@ -12,11 +12,11 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = pageContext;
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title={`${post.frontmatter.title} | ${siteTitle}`}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
+          keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'github actions', 'midlandsjs', 'york press developer', 'cappfinity developer']}
         />
         <section className="h-entry">
           <time className="dt-published" dateTime={post.frontmatter.date} style={{ display: 'none' }}>{post.frontmatter.date}</time>

@@ -10,11 +10,11 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title={`Blog | ${siteTitle}`}>
         <SEO
           title="Blog"
           description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
+          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'york press developer', 'cappfinity developer']}
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
@@ -39,27 +39,27 @@ class BlogIndex extends React.Component {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+    query {
+      site {
+        siteMetadata {
+          title
+        }
       }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
-      edges {
-        node {
-          html
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
+        edges {
+          node {
+            html
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              title
+              description
+            }
           }
         }
       }
     }
-  }
-`;
+    `;

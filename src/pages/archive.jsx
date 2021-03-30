@@ -18,11 +18,11 @@ class BlogIndex extends React.Component {
     }
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title={`Archive | ${siteTitle}`}>
         <SEO
           title="Blog"
           description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity']}
+          keywords={data.site.siteMetadata.defaultTags}
         />
         {groups.map((group) => {
           const posts = group.edges.sort((a, b) => Number(b.node.frontmatter.date.split(' ')[0]) - Number(a.node.frontmatter.date.split(' ')[0]));

@@ -6,8 +6,9 @@ module.exports = {
       name: 'TurboAPI',
       url: 'https://turboapi.dev',
     },
-    description: 'Developer Musings, the personal website and blog of Josh Ghent. Building of TurboAPI',
+    description: 'Blog posts on joshghent.com - covering an array of topics from technical tutorials to stories, and advice to productivity in Todoist and automation',
     siteUrl: 'https://joshghent.com',
+    defaultTags: ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'midlandsjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity'],
     social: {
       twitter: 'joshghent',
       linkedin: 'https://www.linkedin.com/in/joshghent/',
@@ -145,5 +146,6 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-sitemap',
   ],
 };
