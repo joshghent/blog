@@ -1,8 +1,8 @@
 ---
 title: "How to Improve Your Typing Speed"
 date: "2021-03-30"
-tags: ["productivity"]
-description: "The keyboard is the primary interface between my brain and the computer. So increasing the "bandwidth" of this connection is super valuable. In this post, I dig into why I started practising typing daily and how you can start"
+description: "The keyboard is the primary interface between my brain and the computer. So increasing the bandwidth of this connection is super valuable. In this post, I dig into why I started practising typing daily and how you can start"
+tags: ["productivity", "sharpen-the-saw" ]
 ---
 
 Recently, I've started practising my typing each day - for around 5-10 minutes. So far, according to 10fastfingers, I've increased my typing speed from 70WPM to 80WPM. Not much, but I can feel myself getting more "familiar" with the keyboard. In this post, I wanted to dig into why I've started this daily habit and how I'm practising.
@@ -31,5 +31,5 @@ This tool makes up the bulk of my practice as it "moves" you around the keyboard
 
 ## [Wrapping up](#wrapping-up)
 
-Maybe you're sold on improving your typing speed, maybe not. In any case, I encourage you to sharpen the saw and look at the fundamentals rather than chasing productivity through "tools". 
+Maybe you're sold on improving your typing speed, maybe not. In any case, I encourage you to sharpen the saw and look at the fundamentals rather than chasing productivity through "tools".
 Now the sun is out, and I've typed enough today so cya!
