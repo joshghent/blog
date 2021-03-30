@@ -13,7 +13,7 @@
     "not ie <= 11"
   ],
   "dependencies": {
-    "gatsby": "^2.30.1",
+    "gatsby": "^2.32.11",
     "gatsby-image": "^2.9.0",
     "gatsby-plugin-brotli": "^2.0.0",
     "gatsby-plugin-catch-links": "^2.8.0",
