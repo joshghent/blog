@@ -21,7 +21,7 @@
     "gatsby-plugin-feed": "2.11.0",
     "gatsby-plugin-indieweb": "^1.0.3",
     "gatsby-plugin-manifest": "^2.12.1",
-    "gatsby-plugin-netlify": "^2.9.0",
+    "gatsby-plugin-netlify": "^2.11.1",
     "gatsby-plugin-offline": "^3.10.2",
     "gatsby-plugin-preact": "^4.7.0",
     "gatsby-plugin-purgecss": "^6.0.0",
