@@ -146,3 +146,45 @@ hr {
 .gatsby-highlight {
   text-align: left;
 }
+
+.SignupForm {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  color: #2a2a2a;
+  padding: 2rem;
+}
+.SignupForm h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.SignupForm .Wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow:hidden;
+}
+.SignupForm input {
+  color: #2a2a2a;
+  width: 75%;
+  border: none;
+}
+.SignupForm button, .SignupForm input {
+  padding: 1rem 1.5rem;
+}
+.SignupForm button {
+  display: inline-block;
+  border: none;
+  background-image: none;
+  background-color: rgb(0, 122, 204);
+  color: white;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.SignupForm button:hover {
+  cursor: pointer;
+  background: #920303;
+}
+
+.container > section:last-of-type {
+  margin-bottom: 2.5em;
+}

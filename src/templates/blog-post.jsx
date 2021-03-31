@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import SignupForm from '../components/signup-form';
 import { rhythm } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
@@ -12,11 +13,14 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = pageContext;
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title={`${post.frontmatter.title} | ${siteTitle}`}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter']}
+          keywords={post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags}
+          pathname={location.pathname}
+          date={post.frontmatter.date}
+          isBlogPost="true"
         />
         <section className="h-entry">
           <time className="dt-published" dateTime={post.frontmatter.date} style={{ display: 'none' }}>{post.frontmatter.date}</time>
@@ -31,6 +35,8 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1.5),
           }}
         />
+
+        <SignupForm />
 
         <ul
           style={{
