@@ -24,6 +24,7 @@ function SEO({
                         social {
                           twitter
                         }
+                        siteUrl
                       }
                     }
                   }

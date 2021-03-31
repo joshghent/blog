@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 function SchemaOrg({
   author,
@@ -51,9 +52,9 @@ function SchemaOrg({
     : baseSchema;
 
   return (
-    <>
+    <Helmet>
       <script script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </>
+    </Helmet>
   );
 }
 
