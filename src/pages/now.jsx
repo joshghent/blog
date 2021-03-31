@@ -9,10 +9,11 @@ class HomeIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title={`Now | ${siteTitle}`}>
         <SEO
           title="Now"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'about me', 'now page', 'now', 'derek sivers', 'now movement']}
+          description="Josh Ghent's Now Page - What's going on in my life right now and what I'm working on"
+          keywords={data.site.siteMetadata.defaultTags}
         />
         <div>
           <h1>/now</h1>
