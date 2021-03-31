@@ -22,10 +22,6 @@ function SchemaOrg({
       publisher: {
         '@type': 'Person',
         name: 'Josh Ghent',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://joshghent.com/images/logo.png',
-        },
       },
     },
   ];
@@ -45,6 +41,10 @@ function SchemaOrg({
           '@type': 'Person',
           name: author.name,
           email: author.email,
+        },
+        publisher: {
+          '@type': 'Person',
+          name: author.name,
         },
         mainEntityOfPage: {
           '@type': 'WebSite',
