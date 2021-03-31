@@ -23,6 +23,7 @@ function SEO({
                         author,
                         social {
                           twitter
+                          email
                         }
                         siteUrl
                       }
@@ -33,6 +34,11 @@ function SEO({
 
   const metaDescription = description || site.siteMetadata.description;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : site.siteMetadata.siteUrl;
+
+  const author = {
+    name: site.siteMetadata.author,
+    email: site.siteMetadata.social.email,
+  };
 
   return (
     <>
@@ -124,7 +130,7 @@ function SEO({
         title={title}
         description={metaDescription}
         canonicalUrl={site.siteMetadata.siteUrl}
-        author={site.siteMetadata.author}
+        author={author}
         defaultTitle={title}
         datePublished={date}
       />

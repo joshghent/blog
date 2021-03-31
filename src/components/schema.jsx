@@ -7,7 +7,6 @@ function SchemaOrg({
   datePublished,
   defaultTitle,
   description,
-  image,
   isBlogPost,
   title,
   url,
@@ -19,6 +18,15 @@ function SchemaOrg({
       url,
       name: title,
       alternateName: defaultTitle,
+      logo: 'https://joshghent.com/images/logo.png',
+      publisher: {
+        '@type': 'Person',
+        name: 'Josh Ghent',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://joshghent.com/images/logo.png',
+        },
+      },
     },
   ];
 
@@ -32,10 +40,6 @@ function SchemaOrg({
         name: title,
         alternateName: defaultTitle,
         headline: title,
-        image: {
-          '@type': 'ImageObject',
-          url: image,
-        },
         description,
         author: {
           '@type': 'Person',
