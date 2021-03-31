@@ -6,9 +6,10 @@ module.exports = {
       name: 'TurboAPI',
       url: 'https://turboapi.dev',
     },
-    description: 'Blog posts on joshghent.com - covering an array of topics from technical tutorials to stories, and advice to productivity in Todoist and automation',
+    description: 'Self-taught software developer and solo-maker. Creating fun products and writing about my journey. Helping to teaching new developers about breaking into the industry and improving workflows in your development team.',
     siteUrl: 'https://joshghent.com',
-    defaultTags: ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'midlandsjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity'],
+    tinyletterUrl: 'https://tinyletter.com/joshghent',
+    defaultTags: ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'esfiddle creator', 'esfiddle', 'self-hosted software', 'josh ghent', 'Joshua Ghent', 'Josh Ghent', 'Turbo Technologies Ltd', 'Turbo Technologies', 'GiveTap', 'TapTable', 'leicesterjs', 'midlandsjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'twitter', 'minimalism', 'simplicity', 'technical architect', 'technical speaker', 'meetup organiser', 'github actions geek', 'turboapi', 'placedog', 'timberseed', 'web developer walsall', 'full stack developer walsall', 'full stack developer', 'nodejs developer walsall', 'backend developer walsall', 'full stack developer west midlands', 'freelance web developer walsall', 'freelance full stack developer west midlands', 'yorkpress developer', 'technical architect', 'yorkpress technical project lead', 'cappfinity developer', 'koru developer', 'aws developer', 'nodejs developer', 'python developer', 'typescript developer'],
     social: {
       twitter: 'joshghent',
       linkedin: 'https://www.linkedin.com/in/joshghent/',
