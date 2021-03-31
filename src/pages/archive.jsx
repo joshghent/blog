@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
@@ -20,8 +21,8 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={location} title={`Archive | ${siteTitle}`}>
         <SEO
-          title="Blog"
-          description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
+          title="Archive"
+          description="Archive of all posts on JoshGhent.com"
           keywords={data.site.siteMetadata.defaultTags}
         />
         {groups.map((group) => {
@@ -31,6 +32,7 @@ class BlogIndex extends React.Component {
 
           return (
             <div style={{ textAlign: 'center' }}>
+              <a id={date} href={`#${date}`} />
               <div className="archiveGroupHeader" key={date}>{date}</div>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;
