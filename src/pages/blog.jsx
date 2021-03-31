@@ -13,8 +13,11 @@ class BlogIndex extends React.Component {
       <Layout location={location} title={`Blog | ${siteTitle}`}>
         <SEO
           title="Blog"
-          description="Blog posts on joshghent.com - covering an array of topics from technical tutorials, stories and advice to productivity in Todoist and automation"
-          keywords={['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'york press developer', 'cappfinity developer']}
+          description="The latest blog post on JoshGhent.com"
+          keywords={data.site.siteMetadata.defaultTags}
+          pathname={posts[0].node.fields.slug}
+          date={posts[0].node.frontmatter.date}
+          isBlogPost="true"
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
