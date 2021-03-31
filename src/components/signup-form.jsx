@@ -29,7 +29,7 @@ class SignupForm extends React.Component {
             }}
             className="SignupForm"
           >
-            <h2>Get notified of my new blog posts and links from around the web that help you become a better developer. Aimed at developers of all experience levels.</h2>
+            <h3 style={{ marginTop: 0 }}>Get notified of my new blog posts and links from around the web that help you become a better developer. Aimed at developers of all experience levels.</h3>
             <div className="Wrapper">
               <input
                 aria-label="Email address"

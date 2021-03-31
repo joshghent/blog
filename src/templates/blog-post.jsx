@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import SignupForm from '../components/signup-form';
 import { rhythm } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
@@ -34,6 +35,8 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1.5),
           }}
         />
+
+        <SignupForm />
 
         <ul
           style={{

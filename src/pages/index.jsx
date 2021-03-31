@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import SignupForm from '../components/signup-form';
 
 class HomeIndex extends React.Component {
   render() {
@@ -26,6 +27,10 @@ class HomeIndex extends React.Component {
           <p>On this blog, I&apos;m documenting my learnings in software, building products and helping my clients. I use this blog as a <a href="https://fortelabs.co/blog/basboverview/">second brain</a> for reference.</p>
           <p>You can find my talks on <a href="https://speakerdeck.com/joshghent">Speakerdeck</a></p>
           <p>Here&apos;s <a href="https://github.com/joshghent/dotfiles">how I set up my computers</a> with an automated installation script to install programs, dotfiles and configurations.</p>
+        </section>
+
+        <section id="signup">
+          <SignupForm />
         </section>
 
         <section id="contact">
