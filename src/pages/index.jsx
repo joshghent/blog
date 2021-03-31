@@ -17,7 +17,6 @@ class HomeIndex extends React.Component {
           keywords={data.site.siteMetadata.defaultTags}
         />
         <section id="hello-world">
-          <a id="about_me" />
           <h2>Hello World</h2>
           <p>I&apos;m Josh. I make robust apps for the web. I build <a href="https://turboapi.dev">TurboAPI</a> - application performance monitoring made simple. And organize <a href="https://midlandsjs.org">MidlandsJS</a>.</p>
           <p>I work with SME businesses to supercharge their website and application performance, implement strong development practises as well as designing and building scalable infrastructure in the cloud.</p>
@@ -34,7 +33,6 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="contact">
-          <a id="contact" />
           <h2>Contact</h2>
           <ul style={{
             listStyleType: 'none',
@@ -48,7 +46,6 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="projects">
-          <a id="projects" />
           <h2>Projects</h2>
           <ul style={{
             listStyleType: 'none',
