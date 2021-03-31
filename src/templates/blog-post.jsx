@@ -16,7 +16,10 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          keywords={post.frontmatter.tags || ['blog', 'gatsby', 'javascript', 'react', 'josh', 'ghent', 'josh ghent', 'leicesterjs', 'todoist', 'productivity', 'developers', 'software', 'engineering', 'software engineering', 'automation', 'terraform', 'github actions', 'midlandsjs', 'york press developer', 'cappfinity developer']}
+          keywords={post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags}
+          pathname={location.pathname}
+          date={post.frontmatter.date}
+          isBlogPost="true"
         />
         <section className="h-entry">
           <time className="dt-published" dateTime={post.frontmatter.date} style={{ display: 'none' }}>{post.frontmatter.date}</time>
