@@ -18,7 +18,7 @@
     "gatsby-plugin-brotli": "^2.0.0",
     "gatsby-plugin-catch-links": "^2.8.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
-    "gatsby-plugin-feed": "2.11.0",
+    "gatsby-plugin-feed": "2.13.1",
     "gatsby-plugin-indieweb": "^1.0.3",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-netlify": "^2.9.0",
