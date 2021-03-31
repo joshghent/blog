@@ -14,20 +14,8 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="title" content="Josh Ghent — Developer Musings" />
-        <meta name="description" content="Self-taught software developer and solo-maker. Creating fun products and writing about my journey." />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://joshghent.com/" />
-        <meta property="og:title" content="Josh Ghent — Developer Musings" />
-        <meta property="og:description" content="Self-taught software developer and solo-maker. Creating fun products and writing about my journey." />
-        <meta property="og:image" content="/images/icon.png" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://joshghent.com/" />
-        <meta property="twitter:title" content="Josh Ghent — Developer Musings" />
-        <meta property="twitter:description" content="Self-taught software developer and solo-maker. Creating fun products and writing about my journey." />
-        <meta property="twitter:image" content="/images/icon.png" />
+        <meta property="og:image" content="https://joshghent.com/images/icon.png" />
+        <meta property="twitter:image" content="https://joshghent.com/images/icon.png" />
 
         <link rel="webmention" href="https://webmention.io/joshghent.com/webmention" />
         <link rel="pingback" href="https://webmention.io/joshghent.com/xmlrpc" />
