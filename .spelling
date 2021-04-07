@@ -199,6 +199,14 @@ Mongo
 10fastfingers.com
 keybr.com.
 Keybr
+Sequelize
+Knex
+Artifacts
+artifacts
+dropdown
+alt
+artifact
+sequelize
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -454,3 +462,5 @@ influencecapa
 comprom
 discuse
 cya
+ - content/blog/azure-pipelines-sequelize/index.md
+DB_URL

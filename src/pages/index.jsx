@@ -18,7 +18,7 @@ class HomeIndex extends React.Component {
         />
         <section id="hello-world">
           <h2>Hello World</h2>
-          <p>I&apos;m Josh. I make robust apps for the web. I build <a href="https://turboapi.dev">TurboAPI</a> - application performance monitoring made simple. And organize <a href="https://midlandsjs.org">MidlandsJS</a>.</p>
+          <p>I&apos;m Josh. I make robust apps for the web. I&apos;m currently building <a href="https://turboapi.dev">TurboAPI</a> - a tool to manage your API and Website performance. I also organize <a href="https://midlandsjs.org">MidlandsJS</a>.</p>
           <p>I work with SME businesses to supercharge their website and application performance, implement strong development practises as well as designing and building scalable infrastructure in the cloud.</p>
           <p>I primarily work with NodeJS, Typescript and Python. And deploy applications to AWS with Terraform, Cloudformation or Serverless. But, I am a big fan of <Link to="/what-lang-to-learn">principle based learning</Link> so set my hand to any application I am given.</p>
           <p>If you want to work together <a href="mailto:me@joshghent.com">email me!</a></p>
