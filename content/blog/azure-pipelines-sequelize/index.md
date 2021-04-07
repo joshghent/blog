@@ -1,5 +1,5 @@
 ---
-title: "How to Handle Programmatic Sequelize Migrations and Seeding Processes in Azure Pipelines"
+title: "How to Run Sequelize Migrations in Azure Pipelines"
 date: "2021-04-07"
 description: How to use Azure Pipelines to migrate and seed your databases
 tags: ["azure pipelines", "devops", "azure", "sequelize", "sequelize migrations in azure", "sequelize seeding in azure", "programmatic migrations", "beginners guide to migrations", "azure devops database migrations", "schema migrations", "database migrations"]
