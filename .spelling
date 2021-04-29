@@ -207,6 +207,7 @@ dropdown
 alt
 artifact
 sequelize
+polyfills
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -464,3 +465,14 @@ discuse
 cya
  - content/blog/azure-pipelines-sequelize/index.md
 DB_URL
+ - content/blog/webperf-on-deadline/index.md
+Akamai
+482ms
+154ms
+www.blog.duomly.com
+what-is-webpack-and-how-to-setup-webpack
+Contentful
+Phillip
+bundlesize
+webpack
+speedcurve
