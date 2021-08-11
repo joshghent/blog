@@ -208,6 +208,9 @@ alt
 artifact
 sequelize
 polyfills
+datadog
+devops
+buildid
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
