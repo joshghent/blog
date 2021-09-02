@@ -51,7 +51,7 @@
     "typography": "^0.16.21"
   },
   "devDependencies": {
-    "@lhci/cli": "^0.7.2",
+    "@lhci/cli": "^0.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.1",
