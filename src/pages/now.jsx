@@ -21,24 +21,29 @@ class HomeIndex extends React.Component {
 
           <h2>What are my interests?</h2>
           <ul>
+            <li>Travel</li>
+            <li>Photography - particularly landscape and macro photography</li>
             <li>Self-Hosted Software</li>
-            <li>Resiliency</li>
             <li>Automation</li>
-            <li>Reading - old fashioned paper books!</li>
-            <li>Hiking</li>
+            <li>Reading - particularly about Neurology, History, and Space. You can find <a href="https://www.goodreads.com/user/show/74204708-josh">what I'm reading here</a></li>
+            <li>Hiking - Find <a href="https://www.alltrails.com/members/joshua-ghent">my trekking history here</a></li>
+            <li>Gardening - mainly vegetables, aiming to be self-sufficient in leafy veg</li>
+            <li>Running</li>
+            <li>Formula 1</li>
+            <li>Writing</li>
+            <li>Cooking</li>
           </ul>
 
           <h2>What am I up to?</h2>
           <ul>
-            <li>Doing lots of DIY in my first home with my new wife and playing fetch with my dog <a href="./images/wetbeard.jpeg">Millie</a></li>
+            <li>Having fun adventures in and around our home with my wife and dog, <a href="./images/wetbeard.jpeg">Millie</a></li>
             <li>Focusing on creating rather than consuming</li>
-            <li>Building <a href="https://turboapi.dev">TurboAPI</a></li>
             <li>Continuing to simplify</li>
           </ul>
 
           <h2>What tech am I using</h2>
           <ul>
-            <li>At work and home I use a Macbook Pro of varying years (M1 at Home, MBP 16 inch at Work)</li>
+            <li>At work and home I use a Macbook Pro M1 2020</li>
             <li>Primarily using Typescript to write new services and React to write front-ends</li>
             <li>Using AWS to deploy and host</li>
             <li>Configuring lots of bots/automations via Docker, Zapier, IFTTT, Shortcuts and a personal Slack workspace</li>
@@ -46,7 +51,7 @@ class HomeIndex extends React.Component {
             <li>You can find the setup for my machines (which are standardized) <a href="https://github.com/joshghent/dotfiles">here</a></li>
           </ul>
 
-          <p>Last Updated 7th Jan 2021, from Walsall, UK</p>
+          <p>Last Updated 8th November 2021, from Walsall, UK</p>
         </div>
       </Layout>
     );
