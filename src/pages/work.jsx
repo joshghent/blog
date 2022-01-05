@@ -23,8 +23,8 @@ class WorkIndex extends React.Component {
 
           <h2>Services</h2>
           <ul>
-            <li><strong>Website Performance Consultancy</strong>. This involves in-depth analysis your website for performance and accessibility issues. Afterwards, I'll work with your development team to implement the fixes. </li>
-            <li><strong>Monitoring</strong>. Is your system going down all the time? do you get random tickets with hard to find issues? I can help shed light on this by building robust monitoring interfaces for you and your team.</li>
+            <li><strong>Website Performance Consultancy</strong>. This involves in-depth analysis of your website for performance and accessibility issues. Afterwards, I'll work with your development team to implement the fixes. </li>
+            <li><strong>Monitoring</strong>. Is your system going down all the time? Do you get random tickets with hard to find issues? I can help shed light on this by building robust monitoring interfaces for you and your team.</li>
             <li><strong>Software Development</strong>. Having been a software developer for 7+ years, I have the experience of building projects from the ground up, improving existing systems, and breaking down large systems into microservices.</li>
             <li><strong>Technical Architecture</strong>. I can help you design and implement reliable architectures that can handle millions of customers and new features.</li>
             <li><strong>DevOps and Automation</strong>. Using Infrastructure-as-code tools and CI Pipeline tools, I can save your development team time, catch bugs before your customers and create reuseable systems.</li>
