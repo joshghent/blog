@@ -2,7 +2,6 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import SignupForm from '../components/signup-form';
 
 class BlogIndex extends React.Component {
   render() {
@@ -33,8 +32,6 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-
-        {/* <SignupForm /> */}
 
         <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.5em' }} to="/archive">See All Posts</Link></div>
       </Layout>

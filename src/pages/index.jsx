@@ -2,13 +2,11 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import SignupForm from '../components/signup-form';
 
 class HomeIndex extends React.Component {
   render() {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -19,17 +17,16 @@ class HomeIndex extends React.Component {
         <section id="hello-world">
           <h2>Hello World</h2>
           <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
-          <p>created - Turbo Technologies (Consultancy Firm) / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
-          <p>is - <a href="https://softwareengineering.stackexchange.com/questions/28484/what-is-language-agnosticism-and-why-is-it-called-that">Language Agnostic</a> / <a href="https://www.nhs.uk/live-well/eat-well/the-vegetarian-diet/">Vegetarian</a> / <a href="https://www.theminimalists.com/minimalism/">Minimalist</a></p>
+          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
           <p>latest - <Link to="/now">what I'm doing</Link></p>
           <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" style={{ marginTop: '3rem'}}>
           <h2>Contact</h2>
           <ul style={{
             listStyleType: 'none',
-            marginRight: 0,
+            marginLeft: 0,
           }}
           >
             <li>letters - <a href="mailto:me@joshghent.com">me@joshghent.com</a></li>
@@ -39,52 +36,7 @@ class HomeIndex extends React.Component {
           </ul>
         </section>
 
-        {/* <section id="projects">
-          <h2>Projects</h2>
-          <ul style={{
-            listStyleType: 'none',
-            marginRight: 0,
-          }}
-          >
-            <li>
-              <a href="https://turboapi.dev">TurboAPI</a> <br />
-              I created TurboAPI after facing problems constantly rebuilding custom end-to-end monitoring and API performance tracking tools. This tool helps customers track their end-to-end application and API performance over time. These insights help them bring faster experiences to their customers to increase conversions.
-            </li>
-            <li>
-              <a href="https://place.dog">PlaceDog</a> <br />
-              A simple service to get cute dogs as placeholders for your websites and designs. Just add a width and height to the end of the url.
-            </li>
-            <li>
-              <a href="https://timberseed.com">Timberseed</a> <br />
-              Wordpress website for a recruitment company based in London.
-            </li>
-            <li>
-              <a href="https://github.com/joshghent/lastfm-slack">LastFM 2 Slack</a> <br />
-              Docker bot for posting your currently scrobbled LastFm track as your Slack Status
-            </li>
-          </ul>
-        </section> */}
-
         <section id="posts">
-          {/* <h2>Latest Posts</h2>
-
-          <ul style={{
-            listStyleType: 'none',
-            marginRight: 0,
-          }}
-          >
-
-            {posts.map(({ node }) => {
-              const title = node.frontmatter.title || node.fields.slug;
-              return (
-                <li key={node.fields.slug}>
-                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul> */}
 
           <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.25em' }} to="/archive">See All Posts</Link></div>
         </section>
