@@ -56,3 +56,10 @@ In another case, I had a non-technical founder approach me to build out an MVP f
 
 These approaches are not foolproof, they have their own issues. For example, for many products, it isn't possible to "build it in your spare time". Still others may not have spare time to build a product in. But, don't be afraid to break the mould and do things the non-traditional way. Think of creative solutions to the problems you have. Resist the rush to build lots of new features, seek to please customers at all costs, and compromise your product. Your product and customers will thank you.
 
+
+
+In summary:
+
+* **Relax your requirements about the pace of work**. It will lead to better quality product as a result.
+* **Don't get sucked into the investment stategy grind**. You'll eventually have an army of developers with nothing to do.
+* **Seek alternative solutions**. The barriers to create are lower than ever, use Nocode tools or build the project on the side.
