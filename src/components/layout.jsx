@@ -12,6 +12,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginTop: 0,
           fontSize: '1.25em',
+          width: '40%'
         }}
       >
         <Link
@@ -35,6 +36,7 @@ class Layout extends React.Component {
             style={{
               maxWidth: rhythm(48),
               padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`,
+              margin: '0 auto',
             }}
           >
             <div className="wide-container">{header}
