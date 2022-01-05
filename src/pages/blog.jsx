@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
           );
         })}
 
-        <SignupForm />
+        {/* <SignupForm /> */}
 
         <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.5em' }} to="/archive">See All Posts</Link></div>
       </Layout>
