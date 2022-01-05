@@ -12,6 +12,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginTop: 0,
           fontSize: '1.25em',
+          width: '40%'
         }}
       >
         <Link
@@ -31,23 +32,22 @@ class Layout extends React.Component {
         <HCard />
         <div style={{ borderBottom: '1px #f5f5f5 solid', marginBottom: '2.5rem' }}>
           <header
+            className="header"
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginLeft: 'auto',
-              marginRight: 'auto',
               maxWidth: rhythm(48),
               padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`,
+              margin: '0 auto',
             }}
-          >{header}
-            <nav className="nav">
-              <ul style={{ listStyle: 'none', display: 'inline' }}>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/archive">Archive</Link></li>
-                <li><Link to="/now">Now</Link></li>
-              </ul>
-            </nav>
+          >
+            <div className="wide-container">{header}
+              <nav className="nav">
+                <ul style={{ listStyle: 'none', display: 'inline' }}>
+                  <li><Link to="/blog">Blog</Link></li>
+                  <li><Link to="/archive">Archive</Link></li>
+                  <li><Link to="/work">Work with me</Link></li>
+                </ul>
+              </nav>
+            </div>
           </header>
         </div>
         <div
