@@ -27,7 +27,7 @@ A further reason is that rarely are companies "dogfooding" their software. Somet
 
 ## Principles
 
-What's the solution? Design has no hard and fast rules. And generally, people have a good sense of something working "well" or not simply by using the thing. Software design is no different. Therefore, principles make sense in order to guide developers to design great software. I’ve attempted to distill the principles of beautiful software into three key attributes.
+What's the solution? Design has no hard and fast rules. And generally, people have a good sense of something working "well" or not simply by using the thing. Software design is no different. Therefore, principles make sense in order to guide developers to design great software. I’ve attempted to distil the principles of beautiful software into three key attributes.
 
 1. **It should be a joy to work with**. No headaches or screaming at the computer should be seen. It should be joyous to work with or on your system to be able to accomplish their tasks.
 2. **Simple**. “If you can’t explain it simply, you don’t understand it” - Einstein. Beautiful systems need to be simple by definition. That doesn’t mean they cannot be complex. Rather, the complexity should be presented simply. If quantum mechanics can be explained then so can your system.
@@ -44,7 +44,7 @@ On a practical level, I've found it best to codify these principles into a short
 5. Is it possible to run the API with 2 commands or less? - if the answer is no, then we can look into creating a setup script.
 6. Are testing patterns already established to test the API, including mocking data or dependant systems etc.
 7. Can I quickly tell what version of the API I’m using
-8. Can I quickly resolve any errors myself? - does the API return error messages that are actionable and consise. 
+8. Can I quickly resolve any errors myself? - does the API return error messages that are actionable and concise. 
 9. If it is not possible to rectify an issue myself, can I provide a means of recreating an issue to the API author? - requestId’s, trace logs and the like are all helpful here and need to be accessible to the consumer.
 10. Are there significant efforts to mitigate issues? - Does it handle retries and other complexity that should not be a concern for the end user.
 
