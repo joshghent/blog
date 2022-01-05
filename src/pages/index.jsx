@@ -19,10 +19,10 @@ class HomeIndex extends React.Component {
         <section id="hello-world">
           <h2>Hello World</h2>
           <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
-          <p>Created: Turbo Technologies (Consultancy Firm) / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / and more</p>
-          <p>Is: Language Agnostic / Vegetarian / Minimalist</p>
-          <p>Latest: <Link to="/now">what I'm doing</Link></p>
-          <p>Purpose: this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
+          <p>created - Turbo Technologies (Consultancy Firm) / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
+          <p>is - <a href="https://softwareengineering.stackexchange.com/questions/28484/what-is-language-agnosticism-and-why-is-it-called-that">Language Agnostic</a> / <a href="https://www.nhs.uk/live-well/eat-well/the-vegetarian-diet/">Vegetarian</a> / <a href="https://www.theminimalists.com/minimalism/">Minimalist</a></p>
+          <p>latest - <Link to="/now">what I'm doing</Link></p>
+          <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 
         <section id="contact">
