@@ -1,14 +1,15 @@
 body {
-  --bg: #FFF;
+  --bg: #fff;
   --textNormal: #222;
   --textTitle: #222;
   --textLink: #005a87;
   --textHoverLink: #003a57;
-	--hr: hsla(0, 0%, 0%, 0.2);
-	--caption: rgba(0, 0, 0, 0.5);
+  --hr: hsla(0, 0%, 0%, 0.2);
+  --caption: rgba(0, 0, 0, 0.5);
 
   background-color: var(--bg);
-  font-family: nunito-sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
+  font-family: nunito-sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
 }
 
 .container {
@@ -19,10 +20,7 @@ body {
   padding-bottom: 2.5em;
 }
 
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -34,6 +32,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
+  .header > .wide-container {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    width: 100%;
+  }
+}
+
+.header > .wide-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 a {
@@ -42,63 +56,83 @@ a {
   color: var(--textLink);
 }
 
-a:visited { text-decoration: none; color: var(--textLink) }
-a:hover { text-decoration: none; color: var(--textLink) }
-a:focus { text-decoration: none; color: var(--textLink) }
-a:hover, a:active { text-decoration: none; color: var(--textLink) }
+a:visited {
+  text-decoration: none;
+  color: var(--textLink);
+}
+a:hover {
+  text-decoration: none;
+  color: var(--textLink);
+}
+a:focus {
+  text-decoration: none;
+  color: var(--textLink);
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--textLink);
+}
 
 a:hover {
   color: var(--textHoverLink);
 }
 
-p, li {
+p,
+li {
   font-size: 18px;
   line-height: 1.5em;
   text-rendering: optimizelegibility !important;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
-.blogPostTitle ~ div > h2, h3, h4, h5 {
+.blogPostTitle ~ div > h2,
+h3,
+h4,
+h5 {
   margin-top: 1.75rem;
 }
 
 blockquote {
-	color: inherit !important;
-	border-left-color: var(--textLink)
+  color: inherit !important;
+  border-left-color: var(--textLink);
 }
 
 .nav {
-	margin: 0;
-	text-align: center;
-	padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  width: 60%;
 }
 
 .nav > ul > li {
-	display: inline;
-	padding-right: 10px;
+  display: inline;
+  padding-right: 15px;
 }
 
 div.image {
-	text-align: center;
+  text-align: center;
   margin-bottom: 1.75rem;
 }
 
 div.image > img {
-	margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
-div.image > span + em, div.image > img + em, div.image > a + em {
-	line-height: 1.4;
-	margin: 0 auto;
-	margin-top: 10px;
-	color: var(--caption);
-	font-size: 12px;
-	display: block;
+div.image > span + em,
+div.image > img + em,
+div.image > a + em {
+  line-height: 1.4;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: var(--caption);
+  font-size: 12px;
+  display: block;
 }
 
 pre {
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 #projects li > a:first-child {
@@ -126,20 +160,23 @@ pre {
 
 /* Copied from typography */
 a.gatsby-resp-image-link {
-  box-shadow: 'none',
+  box-shadow: "none";
 }
 a.anchor {
-  box-shadow: 'none',
+  box-shadow: "none";
 }
 
 a.anchor svg[aria-hidden="true"] {
-  stroke: 'var(--textLink)',
+  stroke: "var(--textLink)";
 }
 hr {
-  background: 'var(--hr)',
+  background: "var(--hr)";
 }
 
-.container > div > ol, .container > div > ul, .blogPostTitle ~ div > ol, .blogPostTitle ~ div > ul {
+.container > div > ol,
+.container > div > ul,
+.blogPostTitle ~ div > ol,
+.blogPostTitle ~ div > ul {
   text-align: left;
 }
 
@@ -161,14 +198,15 @@ hr {
 .SignupForm .Wrapper {
   display: flex;
   flex-direction: row;
-  overflow:hidden;
+  overflow: hidden;
 }
 .SignupForm input {
   color: #2a2a2a;
   width: 75%;
   border: none;
 }
-.SignupForm button, .SignupForm input {
+.SignupForm button,
+.SignupForm input {
   padding: 1rem 1.5rem;
 }
 .SignupForm button {

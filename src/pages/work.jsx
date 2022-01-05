@@ -32,7 +32,7 @@ class WorkIndex extends React.Component {
 
           <h2>How it works</h2>
           <p>Get in touch <a href="mailto:me@joshghent.com">via Email (me@joshghent.com)</a> or <a href="https://calendly.com/joshghent/consultation">Book a call</a> to clarify what services you need and demonstrate what I can offer to you.</p>
-          <p>Upon agreement of the quote and deliverables, we'll exchange any contracts that we need and I'll get to work</p>
+          <p>Upon agreement of the quote and deliverables, we'll exchange any contracts that we need and I'll get to work!</p>
         </div>
       </Layout>
     );
