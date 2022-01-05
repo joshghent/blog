@@ -37,16 +37,16 @@ What's the solution? Design has no hard and fast rules. And generally, people ha
 
 On a practical level, I've found it best to codify these principles into a short checklist.
 
-**1**. Are all successful use cases of methods of the API documented?
-**2**. Are error codes and edge cases documented for each method of the API? - i.e., if you pass X with a value of Y, you also need to provide Z.
-**3**. Does the API have side effects?
-**4**. Do all the methods do “what they say on the tin”? - in other words, does the API method in question do what is described by the method itself. For example, if we have a REST API method `GET /packages` - does this return a list of packages for a customer? It’s always good at this stage, if you’re experienced with this system to ask someone who has never seen it - even if they are non-technical. Just ask “if you asked me to get packages”, what would you expect me to answer you with?
-**5**. Is it possible to run the API with 2 commands or less? - if the answer is no, then we can look into creating a setup script.
-**6**. Are testing patterns already established to test the API, including mocking data or dependant systems etc.
-**7**. Can I quickly tell what version of the API I’m using
-**8**. Can I quickly resolve any errors myself? - does the API return error messages that are actionable and consise. 
-**9**. If it is not possible to rectify an issue myself, can I provide a means of recreating an issue to the API author? - requestId’s, trace logs and the like are all helpful here and need to be accessible to the consumer.
-**10**. Are there significant efforts to mitigate issues? - Does it handle retries and other complexity that should not be a concern for the end user.
+1. Are all successful use cases of methods of the API documented?
+2. Are error codes and edge cases documented for each method of the API? - i.e., if you pass X with a value of Y, you also need to provide Z.
+3. Does the API have side effects?
+4. Do all the methods do “what they say on the tin”? - in other words, does the API method in question do what is described by the method itself. For example, if we have a REST API method `GET /packages` - does this return a list of packages for a customer? It’s always good at this stage, if you’re experienced with this system to ask someone who has never seen it - even if they are non-technical. Just ask “if you asked me to get packages”, what would you expect me to answer you with?
+5. Is it possible to run the API with 2 commands or less? - if the answer is no, then we can look into creating a setup script.
+6. Are testing patterns already established to test the API, including mocking data or dependant systems etc.
+7. Can I quickly tell what version of the API I’m using
+8. Can I quickly resolve any errors myself? - does the API return error messages that are actionable and consise. 
+9. If it is not possible to rectify an issue myself, can I provide a means of recreating an issue to the API author? - requestId’s, trace logs and the like are all helpful here and need to be accessible to the consumer.
+10. Are there significant efforts to mitigate issues? - Does it handle retries and other complexity that should not be a concern for the end user.
 
 There is a lot of overlap here between sound software development practises and beauty. As the famous design adage goes "form follows function". By creating good development practises, you end up creating beautiful software.
 
