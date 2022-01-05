@@ -1,6 +1,6 @@
 ---
 title: "Software Beauty"
-date: "2021-04-21"
+date: "2022-01-05"
 description: "Why you should strive for beauty in software, why it's forgotten and how to make software beautiful."
 tags: ["software design", "user experience"]
 ---
