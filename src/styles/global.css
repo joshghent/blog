@@ -20,7 +20,7 @@ body {
   padding-bottom: 2.5em;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 480px) {
   .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -33,7 +33,7 @@ body {
     margin-right: 0 !important;
   }
 
-  .header > .wide-container {
+  .wide-container {
     flex-wrap: wrap;
   }
 
@@ -42,7 +42,7 @@ body {
   }
 }
 
-.header > .wide-container {
+.wide-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
