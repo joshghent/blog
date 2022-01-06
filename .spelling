@@ -211,6 +211,15 @@ polyfills
 datadog
 devops
 buildid
+startups
+Evernote
+Gumroad
+Nocode
+Webflow
+Tetris
+ad-hoc
+irc
+freenode
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -479,3 +488,7 @@ Phillip
 bundlesize
 webpack
 speedcurve
+ - content/blog/software-beauty/index.md
+requestId’s
+coworkers
+softwarebeauty
