@@ -7,3 +7,5 @@
 - [] Ran the contents through grammarly
 - [] Added tags, description, date and title
 - [] Sources are linked
+- [] Is this extremely useful or remarkable
+- [] Work count < 600? 
