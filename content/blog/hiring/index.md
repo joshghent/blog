@@ -1,6 +1,6 @@
 ---
 title: "Maybe don't hire"
-date: "2021-01-06"
+date: "2022-01-06"
 description: "Your product is in huge demand! Quick hire more staff. Or, maybe don't - here is why."
 ---
 
