@@ -31,7 +31,7 @@ Set your own name for the table, and set the partition key to `token` as a *Stri
 
 
 
-![Screenshot 2022-01-11 at 15.44.50](/Users/joshghent/Projects/blog/content/assets/images/dynamodb-creation.png)
+![Screenshot 2022-01-11 at 15.44.50](../../assets/images/dynamodb-creation.png)
 
 
 
