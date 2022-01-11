@@ -5,17 +5,21 @@ description: How to cache Auth0 M2M Tokens to extend your free plan
 tags: ["auth0", "dynamodb", "nodejs", "lambda", "free plan", "aws", "typescript"]
 ---
 
-[Auth0](https://auth0.com) is an easy to integrate service that handles all your applications authentication needs. But, if you've worked with it before, you'll know it's downfalls. One of them is that the allowances on the Machine-to-Machine (M2M) tokens, used to authenticate between your services, are quite restrictive for serverless infrastructures. In the free plan you only get 1000 per month. And even on a paid plan, it would be prohibitively expensive to get the number of tokens you might need in a given month.
+[Auth0](https://auth0.com) is an easy to integrate service that handles all your applications authentication needs. But, if you've worked with it before, you'll know it's downfalls. 
+
+One of them Machine-to-Machine (M2M) tokens; used to authenticate between your services. 
+
+But the limits are restrictive for serverless infrastructures. In the free plan you only get 1000 per month. And even on a paid plan, it would be expensive to get the number of tokens you might need in a given month.
 
 The solution is to **cache Machine-to-Machine tokens** so we don't need to request new ones until they expire. 
 
 In traditional infrastructure, this would be trivial. Save the token globally somewhere and done.
 
-Serverless architectures are a little more tricky because there is no persistence between instances.
+Serverless architectures are a tricky because there is no persistence between instances.
 
 
 
-Here's how to handle it in AWS, but the same principles apply for other cloud providers.
+Here's how to handle caching Auth0 Tokens for AWS Lambda Microservices. But, the same principles apply for other cloud providers.
 
 
 
@@ -60,8 +64,8 @@ So, let's move on and add method that we can use in our Lambda Handler to retrie
 
 There are two paths for this method
 
-1. There is a existing unexpired token in DynamoDB, so we use that
-2. There is no token or only expired ones, so we generate a new one, store it in DynamoDB and use that
+1. There is a existing unexpired token in DynamoDB, so we use that.
+2. There is no token or only expired ones, so we generate a new one, store it in DynamoDB and use that.
 
 
 
@@ -102,10 +106,12 @@ export const getAuthToken = async (): Promise<string> => {
 
 Let's break this down a little
 
-1. We first get the existing token in DynamoDB - it returns the token or an empty string
-2. If it returns a token, we check it's not expired and then return that token
-3. If it is expired, or there is no token, we go ahead an generate one from Auth0
-4. We then delete the old token in DynamoDB, and store the new one
+1. We first get the **existing token in DynamoDB**. It returns the token or an empty string.
+2. If it returns a token, we check it's not expired and then return that token.
+3. If it is expired, or there is no token, we go ahead an **generate one from Auth0**.
+4. We then **delete the old token in DynamoDB, and store the new one**.
+
+
 
 Potentially, with this flow (and the fact that DynamoDB is non-locking), could mean that multiple instances of your service save a token at the same time. But, this will be minor compared to how much you're able to save by caching in the first place.
 
@@ -165,15 +171,15 @@ const getExistingToken = async () => {
 
 Again, let's break this down
 
-- In `deletePreviousTokens` we grab all existing tokens and delete them one by one - this is to avoid concurrency issues where another instance has written a new token which we do not want to delete
-- In `hasTokenExpired` we do a basic JWT validation to make sure that it is not expired - this could be improved by not using the token if it's only got 1ms left but has worked so far for me
-- In `getExistingToken` we get all rows in the table and return the first token or an empty string if none is found
+- In `deletePreviousTokens` we grab all existing tokens and delete them one by one. This is to avoid concurrency issues where another instance has written a new token which we do not want to delete.
+- In `hasTokenExpired` we do a basic JWT validation to make sure that it is not expired. This could be improved by not using the token if it's only got 1ms left but has worked so far for me.
+- In `getExistingToken` we get all rows in the table and return the first token or an empty string if none is found.
 
 
 
 ### Usage in the handler
 
-Now all that's left to do is to add it to your Lambda functions handler method
+Now all that's left to do is to add it to your Lambda functions handler method.
 
 ```ts
 export const handler = async (event: any, context: any) => {
