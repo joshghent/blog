@@ -61,5 +61,5 @@ These approaches are not foolproof, they have their own issues. For example, for
 In summary:
 
 * **Relax your requirements about the pace of work**. It will lead to better quality product as a result.
-* **Don't get sucked into the investment stategy grind**. You'll eventually have an army of developers with nothing to do.
+* **Don't get sucked into the investment strategy grind**. You'll eventually have an army of developers with nothing to do.
 * **Seek alternative solutions**. The barriers to create are lower than ever, use Nocode tools or build the project on the side.
