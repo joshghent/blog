@@ -220,6 +220,11 @@ Tetris
 ad-hoc
 irc
 freenode
+architecting
+standups
+retros
+UptimeRobot
+rollout
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -492,3 +497,9 @@ speedcurve
 requestId’s
 coworkers
 softwarebeauty
+ - content/blog/auth0-cache/index.md
+1ms
+ - content/blog/how-you-work/index.md
+specs
+ - content/blog/ship-faster/index.md
+lifecycles
