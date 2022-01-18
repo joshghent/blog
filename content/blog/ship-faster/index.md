@@ -5,7 +5,7 @@ description: "Releasing new versions of software be a panic-inducing experience.
 tags: ["software", "productivity"]
 ---
 
-Remember when software came on a physical medium like discs, USB sticks or [punch cards](https://www.smithsonianmag.com/smithsonian-institution/margaret-hamilton-led-nasa-software-team-landed-astronauts-moon-180971575/)? Me either. Software release lifecycles used to be lengtdhy - years-long in most cases.
+Remember when software came on a physical medium like discs, USB sticks or [punch cards](https://www.smithsonianmag.com/smithsonian-institution/margaret-hamilton-led-nasa-software-team-landed-astronauts-moon-180971575/)? Me either. Software release lifecycles used to be lengthy - years-long in most cases.
 
 As software flourished on the web, we grew accustomed to "moving fast and breaking things". This approach has a lot of drawbacks. Not least because some customer bases are more sensitive to problems than others.
 
@@ -33,7 +33,7 @@ What can you do if you notice these patterns?
 
 **Set expectations of delivery time**. Start by opening a discussion, with stakeholders, about what the expected time to ship new versions will be. Establishing these rough boundaries govern the setup of processes used to ship software. Generally speaking, shareholders will want features as soon as possible. But, if you are currently releasing once a month, you should aim to start releasing bi-weekly. Get a bit further along before promising to [deploy 30-50 times a day like Instagram](https://instagram-engineering.com/continuous-deployment-at-instagram-1e18548f01d1). 
 
-**Make systems observable**. Low confidence in releases often originates from systems with little observability. This means that if something does go wrong it's a nightmare to figure out why. Before starting to increase deployment frequency, you need a system you trust. Focus on the fundamentals - searchable logging, automatic monitoring of key website pages and API endpoints (using [UptimeRobot](https://uptimerobot.com)) and automatic tests (integration and unit at least). Test the observability tools by gathering feedback from the development team when they are required to debug a live issue. Further, have a system in place which tracks work items with code. Most task management systems integrate with GitHub or GitLab which facilitates this.
+**Make systems observable**. Low confidence in releases often originates from systems with little observability. This means that if something does go wrong it's a nightmare to figure out why. Before starting to increase deployment frequency, you need a system you trust. Focus on the fundamentals - searchable logging, automatic monitoring of key website pages and API endpoints (using [UptimeRobot](https://uptimerobot.com)) and automatic tests (integration and unit at least). 
 
 **Set small concise deliverables**. Doing manual releases requires an immense amount of cognitive overhead. Having a small number of tickets and clear deliverables in each release reduces this cognitive load. There is less to remember to test and check. And other areas of the system are less likely to be affected. If releases are simple to do, it's more likely they'll get done.
 
