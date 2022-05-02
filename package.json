@@ -41,7 +41,7 @@
     "gatsby-transformer-remark": "~2.16.0",
     "gatsby-transformer-sharp": "~2.12.1",
     "preact": "~10.5.14",
-    "preact-render-to-string": "~5.1.18",
+    "preact-render-to-string": "~5.2.0",
     "prismjs": "^1.24.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.1",
