@@ -18,7 +18,7 @@ First, to give you a context of my overall health, I was 17-18 at the time, reas
 
 
 
-#### Treating myself
+## Treating myself
 
 When I first noticed pain in my forearm and tingling in my fingers, I did what all good internet children do - Google it. I stumbled across many different articles discussing tennis elbow, repetitive strain injury and carpal tunnel syndrome. Based on my own symptoms, I believed I had CTS.
 
@@ -34,15 +34,15 @@ I quickly searched YouTube for stretches I could do - including my favourite by 
 
 
 
-#### Diagnosis
+## Diagnosis
 
 Getting diagnosed was easily the most annoying part of the experience. When you go to a doctor (on the NHS), the first thing they have to do is refer you to physiotherapy. One of the many failings of the British healthcare system is it's based on flow charts. It standardizes care but doesn't fairly give a patient autonomy to skip stages that will likely be a waste of time and money.
 
 
 
-#### Treatment
+## Treatment
 
-##### Physio
+### Physio
 
 The first lot of treatment was 5 sessions of physiotherapy. I tried to be as open-minded as possible but knew deep down that it wasn't going to give any lasting benefits.
 
@@ -58,7 +58,7 @@ It wasn't all in vain, however. One particular doctor did figure out that I had 
 
 
 
-##### Osteotherapy
+## Osteotherapy
 
 During the time I was getting physio, my mum had been going to an osteopath to help with her back. She recommended that I go and visit him and see what he could do. I'm skeptical of alternative medicines but had seen the impact he had on my mum so I decided to give it a go.
 
@@ -68,7 +68,7 @@ Despite numerous different techniques, nothing worked. However, after massage (n
 
 
 
-##### Surgery
+## Surgery
 
 After deciding osteopath treatments were a waste of time and physio had yielded no results, I decided to push my doctor to get me seen by someone else.
 
@@ -92,7 +92,7 @@ When I saw the hand specialist, they immediately put me on the list for surgery.
 
 Whilst I waiting for D-Day, I tried a laundry list of treatments that many with RSI recommend. With mixed results.
 
-##### What did work
+## What did work
 
 * **Using a low-key-travel keyboard (not mechanical).** This helped immensely as the amount of force I needed to put in from my forearms to my fingers was minimised. As much as I loved my cherry red switches, it wasn't worth it.
 * **Rest.** As much as this helped, it wasn't practical to never use my wrists. I'd recommend resting as much as possible, as soon as possible. I foolishly continued with hobbies based on a computer.
@@ -102,7 +102,7 @@ Whilst I waiting for D-Day, I tried a laundry list of treatments that many with 
 
 
 
-##### What didn't work
+## What didn't work
 
 * **Believing it wasn't there.** I don't know what voodoo scientist came up with this idea, or how it became so popular in the tech community but believing the pain wasn't there (quelle surprise) didn't work. The book entitled "Healing Back Pain: The Mind-Body Connection" came highly recommended by both hacker news and other programmers who had faced RSI. I read a portion online and decided quickly that it stank of bad science. If it works for you... great. You clearly have access to a realm far beyond my reach.
 * **Exercise.** As previously stated, doing small, light exercises did help. But the wisdom of lifting lots of heavy weights did not. I think this would have worked had I started sooner. But by the time I attempted it, my wrists felt like they would snap.
@@ -110,7 +110,7 @@ Whilst I waiting for D-Day, I tried a laundry list of treatments that many with 
 
 
 
-##### The Surgery
+## The Surgery
 
 When the day came for the surgery, I felt relief but also a little anxiety. I had never had surgery before. I was unsure of the "setup" you know. In movies where people are having bullets removed and organs transplanted, we are familiar with the look of an oval operating theatre with dozens of doctors milling about.
 
@@ -138,11 +138,13 @@ After 2 weeks, I returned to work. My hand was quite stiff and the stitches itch
 
 The fluid that had built up around my forearm still remained so I was a bit concerned it hadn't worked completely. But about a month afterwards, it was clear that the procedure had worked. But the fluid was not going to go away. 
 
-#### Conclusion
+## Conclusion
 
 After all these treatments, this is how my hand now looks.
 
-![hand](/Users/joshghent/Projects/blog/content/assets/images/hand.jpeg)
+<div class="image">
+	<img src="../../assets/images/hand.jpeg"/>
+</div>
 
 You can see the small scar just above the ridge of the wrist where the incision was.
 
