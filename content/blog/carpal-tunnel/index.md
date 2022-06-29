@@ -1,5 +1,5 @@
 ---
-title: My journey with carpel tunnel
+title: My journey with carpal tunnel
 description: What worked and what didn't.
 date: 2022-06-21
 ---
