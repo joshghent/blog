@@ -1,10 +1,27 @@
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
+
+function pad(n) {
+  return n < 10 ? "0" + n : n;
+}
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve('./src/templates/blog-post.jsx');
+  const openGraphImage = createOpenGraphImage(createPage, {
+    path: "/og-image/index.png",
+    component: path.resolve(`src/templates/index.og-image.js`),
+    size: {
+      width: 400,
+      height: 50,
+    },
+    waitCondition: "networkidle0",
+    context: {
+      description: "a image created with gatsby-plugin-open-graph-images",
+    },
+  });
+
+  const blogPost = path.resolve("./src/templates/blog-post.jsx");
   return graphql(
     `
       {
@@ -24,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `,
+    `
   ).then((result) => {
     if (result.errors) {
       throw result.errors;
@@ -34,7 +51,8 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+      const previous =
+        index === posts.length - 1 ? null : posts[index + 1].node;
       const next = index === 0 ? null : posts[index - 1].node;
 
       createPage({
@@ -55,10 +73,10 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === "MarkdownRemark") {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: 'slug',
+      name: "slug",
       node,
       value,
     });
@@ -66,13 +84,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const date = new Date(node.frontmatter.date);
 
     const year = date.getFullYear();
-    const month = date.getMonth() + 1;
+    const month = pad(date.getMonth() + 1);
     const yearMonth = `${year}-${month}`;
     const day = date.getDate();
 
-    createNodeField({ node, name: 'year', value: year });
-    createNodeField({ node, name: 'month', value: month });
-    createNodeField({ node, name: 'year-month', value: yearMonth });
-    createNodeField({ node, name: 'day', value: day });
+    createNodeField({ node, name: "year", value: year });
+    createNodeField({ node, name: "month", value: month });
+    createNodeField({ node, name: "year-month", value: yearMonth });
+    createNodeField({ node, name: "day", value: day });
   }
 };
