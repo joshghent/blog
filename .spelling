@@ -245,6 +245,9 @@ physio
 skeptical
 co-codamol
 paramol
+ASP.NET
+indieweb
+webmentions
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -415,6 +418,7 @@ D.E.V
 spacejam
 Cantrill's
 4th
+_
  - content/blog/zsh-speed/index.md
 150ms
 13ms
@@ -570,3 +574,5 @@ movies
 7mg
 Beethovans
 movies
+ - content/blog/site-upgrades/index.md
+graphql
