@@ -1,6 +1,6 @@
 ---
 title: "What Tracking My Expenses for a Year Taught Me About Personal Finance"
-date: "2018-02-26T22:12:03.284Z"
+date: "2018-02-26"
 description: ""
 ---
 

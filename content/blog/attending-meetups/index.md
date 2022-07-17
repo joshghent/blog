@@ -1,6 +1,6 @@
 ---
 title: "How to Attend Your First Programming Meetup"
-date: "2018-02-06T22:12:03.284Z"
+date: "2018-02-06"
 ---
 
 Attending your first programming meetup can leave you a little apprehensive. I felt the same! So, I thought it may be useful to break down my first meetup experience and how you can start attending meetups yourself.
@@ -27,13 +27,13 @@ Generally, talks will be geared around a certain technology, let’s say Docker 
 
 Now you can only go for the talk but that’s only half of the experience. I would highly recommend (after grabbing some pizza of course) just approaching people and introducing yourself. Programmers are generally a shy bunch, but ultimately, we all share a common interest so there will be plenty to talk about.
 
-Initially I found that everyone seemed to be in their own little circle talking amongst one another; if that is the case, just go up to them and say “*hi, how ya doing? I’m Josh*” (obviously substitute your name for mine but you get the idea). Ask about people’s jobs and what they are doing there, what exciting technologies they are using, and if they found the talk interesting. Almost every programmer you will talk to will have some kind of side project they are working on — talk about that! That can lead to some of the most exciting discussion as usually people are experimenting with cutting edge technology that they would not be able to use day-to-day.
+Initially I found that everyone seemed to be in their own little circle talking amongst one another; if that is the case, just go up to them and say “_hi, how ya doing? I’m Josh_” (obviously substitute your name for mine but you get the idea). Ask about people’s jobs and what they are doing there, what exciting technologies they are using, and if they found the talk interesting. Almost every programmer you will talk to will have some kind of side project they are working on — talk about that! That can lead to some of the most exciting discussion as usually people are experimenting with cutting edge technology that they would not be able to use day-to-day.
 
 Be thinking all the while about what questions you can ask them based on what they are saying, it show you are listening to them and are genuinely engaged in the conversation.
 
 Other talking points may include, asking them about the company they work for, how big is it, where are they based and so on.
 
-When wrapping up a conversation, don’t make excuses about going to the bathroom (unless you actually need to), simply say “*I’m going to introduce myself to some other people now but I’d love to continue this conversation, perhaps I can take your email and we can talk*”. Since this is work related, people may get a little cagey about handing over their phone number, so opt for business related avenues of communication, email, twitter and LinkedIn.
+When wrapping up a conversation, don’t make excuses about going to the bathroom (unless you actually need to), simply say “_I’m going to introduce myself to some other people now but I’d love to continue this conversation, perhaps I can take your email and we can talk_”. Since this is work related, people may get a little cagey about handing over their phone number, so opt for business related avenues of communication, email, twitter and LinkedIn.
 
 All in all, don’t be scared. These are your people, just as shy and nerdy as you are. So put yourself out there and see who you meet. There are lots of interesting people out there! If all else fails, see if you can convince a coworker or friend to come along.
 
