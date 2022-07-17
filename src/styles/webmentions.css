@@ -1,0 +1,55 @@
+.webmention--image {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0;
+}
+
+.webmention--replies {
+  margin: 0;
+}
+
+.webmention--meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.webmention--date--divider {
+  padding: 0 0.2rem;
+  color: var(--color-text-offset);
+  font-size: 0.8rem;
+}
+
+.webmention--meta > time {
+  font-size: 0.8rem;
+  color: var(--color-text-offset);
+}
+
+.webmention--meta > a {
+  display: flex;
+  align-items: center;
+}
+
+.webmention--meta > a > .webmention--image {
+  margin-right: 1rem;
+}
+
+.webmention--item {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+.webmention--author {
+  color: var(--color-text);
+}
+
+.webmention--author:hover {
+  color: var(--color-primary);
+}
+
+.webmention--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
