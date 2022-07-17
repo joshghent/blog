@@ -48,7 +48,13 @@ export const pageQuery = graphql`
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC },
+        filter: {
+          frontmatter: {
+            date: { ne: null }
+          }
+        }
+        limit: 1) {
         edges {
           node {
             html
