@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Heart, MessageCircle } from "react-feather";
+/* eslint-disable react/jsx-filename-extension */
+import React, { useEffect, useState } from "react";
 
-export const loadWebMentionCounts = async (target) => {
-  return fetch(`https://webmention.io/api/count.json?target=${target}`)
+export const loadWebMentionCounts = async (target) =>
+  fetch(`https://webmention.io/api/count.json?target=${target}`)
     .then((res) => res.json())
     .then((res) => res.type);
-};
 
-export const loadWebMentions = async (target, page = 0) => {
-  return fetch(
+export const loadWebMentions = async (target, page = 0) =>
+  fetch(
     `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-dir=up&sort-by=published&target=${target}`
   )
     .then((res) => res.json())
     .then((json) => (Array.isArray(json.links) ? json.links : []));
-};
 
 export default function WebMentions({ url }) {
   const fullUrl = `https://joshghent.com${url}`;
@@ -44,44 +42,58 @@ export default function WebMentions({ url }) {
   }, [url]);
 
   function renderMentions() {
-    return links.map((link, index) => {
+    return links.slice(0).map((link) => {
       if (link.activity.type === "reply" || link.activity.type === "link") {
         console.log(link);
         let date = new Date(link.data.published ?? link.verified_date);
-        date = new Intl.DateTimeFormat("en-US").format(date);
+        date = new Intl.DateTimeFormat("en-GB", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        }).format(date);
         return (
-          <div className="webmention--item" key={index}>
-            <div className="webmention--meta">
-              <a href={link.data.url}>
-                {link.data.author?.photo && (
-                  <img
-                    alt=""
-                    className="webmention--image"
-                    src={link.data.author?.photo}
-                  />
-                )}{" "}
-              </a>
-              <div>
-                <strong>{link.data.author?.name || link.data.url}</strong> -{" "}
-                {date}
+          <li className="webmention--item" key={`webmention-${link.id}`}>
+            <article>
+              <div className="webmention--meta">
+                <a
+                  href={link.data.url}
+                  className="webmention--author"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.data.author?.photo && (
+                    <img
+                      alt=""
+                      className="webmention--image"
+                      src={link.data.author?.photo}
+                    />
+                  )}{" "}
+                  <strong>{link.data.author?.name || link.data.url}</strong>
+                </a>
+                <span className="webmention--date--divider">-</span>
+                <time dateTime={date}>{date}</time>
               </div>
-            </div>
-            <div dangerouslySetInnerHTML={{ __html: link.data.content }} />
-          </div>
+              <div
+                className="webmention--content"
+                dangerouslySetInnerHTML={{ __html: link.data.content }}
+              />
+            </article>
+          </li>
         );
-      } else {
-        return [];
       }
+      return [];
     });
   }
 
   function renderLikes() {
     if (loading) {
       return <div>Loading webmentions...</div>;
-    } else if (!loading && links.length === 0) {
+    }
+    if (!loading && links.length === 0) {
       return "";
-    } else if (!loading) {
-      return links.map((link, index) => {
+    }
+    if (!loading) {
+      return links.slice(0).map((link, index) => {
         if (link.activity.type === "like") {
           let date = new Date(link.data.published ?? link.verified_date);
           date = new Intl.DateTimeFormat("en-US").format(date);
@@ -100,7 +112,8 @@ export default function WebMentions({ url }) {
               </div>
             </div>
           );
-        } else return "";
+        }
+        return "";
       });
     }
   }
@@ -108,35 +121,37 @@ export default function WebMentions({ url }) {
   function renderContent() {
     if (loading) {
       return <div>Loading Webmentions...</div>;
-    } else if (!loading && links.length === 0) {
-      return (
-        <div>
-          No replies yet! Tweet about <a href={twitterHref}>this post</a> and it
-          will show up here!
-        </div>
-      );
-    } else if (!loading) {
-      return renderMentions();
-    } else {
-      return null;
     }
+
+    console.log(links);
+    if (
+      !loading &&
+      links.filter((l) => ["reply", "link"].includes(l.activity.type))
+        .length === 0
+    ) {
+      return <div>No webmentions yet.</div>;
+    }
+
+    if (!loading) {
+      return renderMentions();
+    }
+    return null;
   }
 
-  const likesCount = type.like || 0 + type.repost || 0;
-  const replyCount = type.mention || 0 + type.reply || 0;
   return (
     <div>
       <div className="webmention--header">
         <h3>Webmentions</h3>
-        <span>
-          {likesCount} Like{likesCount !== 0 && likesCount > 1 ? "s" : ""}
-        </span>
-        <ol className="webmention--likes">{renderLikes()}</ol>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://indieweb.org/Webmention"
+        >
+          What&apos;s this?
+        </a>
       </div>
-      <span>
-        {replyCount} Repl{replyCount === 0 || replyCount > 1 ? "ies" : ""}
-      </span>
-      <ol className="webmention--replies">{renderContent()}</ol>
+      {/* <ul className="webmention--likes">{renderLikes()}</ul> */}
+      <ul className="webmention--replies">{renderContent()}</ul>
     </div>
   );
 }
