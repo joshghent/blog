@@ -43,6 +43,7 @@ class Layout extends React.Component {
               <nav className="nav">
                 <ul style={{ listStyle: 'none', display: 'inline' }}>
                   <li><Link to="/blog">Blog</Link></li>
+                  <li><Link to="/bookshelf">Bookshelf</Link></li>
                   <li><Link to="/archive">Archive</Link></li>
                   <li><Link to="/work">Work with me</Link></li>
                 </ul>
@@ -67,7 +68,7 @@ class Layout extends React.Component {
           >
             <main className="container">{children}</main>
             <footer style={{ textAlign: 'center' }}>
-              © {new Date().getFullYear()}, Built by <Link to="/" className="u-url p-name">Josh Ghent</Link>
+              © {new Date().getFullYear()} - <Link to="/" className="u-url p-name">Josh Ghent</Link> - <a href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
             </footer>
           </div>
         </div>
