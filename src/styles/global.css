@@ -7,6 +7,15 @@ body {
   --hr: hsla(0, 0%, 0%, 0.2);
   --caption: rgba(0, 0, 0, 0.5);
 
+  --color-bg: #ffffff;
+  --color-bg-offset: #f7f7f9;
+  --color-text: #373a3c;
+  --color-text-offset: #818a91;
+  --color-border: #eceeef;
+  --color-primary: #00b8ff;
+  --color-primary-offset: #0093cc;
+  --color-secondary: #faae2b;
+
   background-color: var(--bg);
   font-family: nunito-sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
@@ -57,10 +66,10 @@ a {
   color: var(--textLink);
 }
 
-a:visited {
+/* a:visited {
   text-decoration: none;
   color: var(--textLink);
-}
+} */
 a:hover {
   text-decoration: none;
   color: var(--textLink);
