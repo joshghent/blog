@@ -10,7 +10,8 @@ class BlogIndex extends React.Component {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
 
-    let groups = data.allMarkdownRemark.group;
+    let groups = data.allMarkdownRemark.group.slice(0);
+
     // Stupid logic to figure out if we should sort
     // For some reason when you navigate to the page, it sorts the data correctly
     // If you click the archive in the nav tho then it has it cached sorted so then it undoes the sort
@@ -69,7 +70,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {
+          frontmatter: {
+            date: { ne: null }
+          }
+        }) {
       group(field: fields___year_month) {
         edges {
           node {
