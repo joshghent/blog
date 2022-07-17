@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
 
           <h2>What am I up to?</h2>
           <ul>
-            <li>Having fun adventures in and around our home with my wife and dog, <a href="./images/wetbeard.jpeg">Millie</a></li>
+            <li>Having fun adventures in and around our home with my wife and dog, <a href="https://joshghent.com/images/wetbeard.jpeg">Millie</a></li>
             <li>Focusing on creating rather than consuming - writing, taking photos and building products</li>
             <li>Continuing to simplify</li>
             <li>Exercising, meditating and eating (mostly) vegan food</li>

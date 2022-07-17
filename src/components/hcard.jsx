@@ -33,14 +33,14 @@ class HCard extends React.Component {
         <span className="p-family-name">Ghent</span>
         <a className="p-org h-card" href={meta.company.url}>{meta.company.name}</a>
         <a className="u-email h-card" href={`mailto:${meta.social.email}`}>{meta.social.email}</a>
-        <img className="u-photo" src="./images/avatar.jpg" alt="avatar" />
+        <img className="u-photo" src="https://joshghent.com/images/avatar.jpg" alt="avatar" />
         <p className="p-note">Freelance software engineer with over 8 years experience - specializing in web performance and robust infrastructure. Love hiking with my wife and dog (Millie). Urban design enthusiest.</p>
         <p className="p-job-title">Director of Turbo Technologies</p>
         <p className="p-category">Software Engineer</p>
 
-        <a href={`https://twitter.com/${meta.social.twitter}`} rel="me">@{meta.social.twitter} on Twitter</a>
-        <a href={`https://github.com/${meta.social.github}`} rel="me">Github</a>
-        <a href={`mailto:${meta.social.email}`} rel="me">{meta.social.email}</a>
+        <a href={`https://twitter.com/${meta.social.twitter}`} >@{meta.social.twitter} on Twitter</a>
+        <a href={`https://github.com/${meta.social.github}`} >Github</a>
+        <a href={`mailto:${meta.social.email}`} >{meta.social.email}</a>
       </div>
     );
   }
