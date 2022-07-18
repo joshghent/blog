@@ -47,7 +47,7 @@ export default function WebMentions({ url }) {
         console.log(link);
         let date = new Date(link.data.published ?? link.verified_date);
         date = new Intl.DateTimeFormat("en-GB", {
-          month: "long",
+          month: "short",
           day: "numeric",
           year: "numeric",
         }).format(date);
