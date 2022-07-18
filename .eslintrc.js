@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    "jest/globals": true,
   },
   extends: ["airbnb", "plugin:jsx-a11y/recommended", "prettier"],
   globals: {
@@ -18,7 +19,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
   },
-  plugins: ["react", "graphql", "jsx-a11y"],
+  plugins: ["react", "graphql", "jsx-a11y", "jest"],
   rules: {
     "react/jsx-one-expression-per-line": ["off"],
     "react/prefer-stateless-function": ["off"],
