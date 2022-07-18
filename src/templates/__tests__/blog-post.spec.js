@@ -1,8 +1,8 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
+/* eslint-disable react/jsx-filename-extension */
 import "@testing-library/jest-dom";
+import { render } from "@testing-library/react";
+import React from "react";
 import BlogPostTemplate from "../blog-post";
-import { act } from "react-dom/test-utils";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({

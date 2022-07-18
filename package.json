@@ -65,6 +65,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.6.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-react": "^7.30.1",
     "identity-obj-proxy": "^3.0.0",
@@ -89,8 +90,9 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest && npm run spellcheck",
-    "spellcheck": "mdspell -a -n -r \"content/blog/**/*.md\"",
+    "test": "npm run test:suite && npm run test:spell",
+    "test:suite": "jest",
+    "test:spell": "mdspell -a -n -r \"content/blog/**/*.md\"",
     "lint": "eslint --color src/**/*.{js,jsx} *.js",
     "lighthouse": "lighthousebot"
   }

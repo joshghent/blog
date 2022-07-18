@@ -30,7 +30,7 @@ class HomeIndex extends React.Component {
           <h2>What are my interests?</h2>
           <ul>
             <li>Photography - particularly landscape and macro photography</li>
-            <li>Reading - particularly about neurology, history, and space. <a href="https://www.goodreads.com/user/show/74204708-josh">What I'm reading</a></li>
+            <li>Reading - particularly about neurology, history, and space. <a href="https://www.goodreads.com/user/show/74204708-josh">What I&apos;m reading</a></li>
             <li>Exercising - hiking, badminton and running. <a href="https://www.alltrails.com/members/joshua-ghent">My trekking history</a></li>
             <li>Gardening - mainly vegetables, aiming to be self-sufficient in leafy veg</li>
             <li>Formula 1</li>

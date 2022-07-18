@@ -18,7 +18,7 @@ class HomeIndex extends React.Component {
           <h2>Hello World</h2>
           <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
           <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
-          <p>latest - <Link to="/now">what I'm doing</Link></p>
+          <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
           <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 

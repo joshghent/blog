@@ -4,7 +4,12 @@ module.exports = {
     es6: true,
     "jest/globals": true,
   },
-  extends: ["airbnb", "plugin:jsx-a11y/recommended", "prettier"],
+  extends: [
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "plugin:jest/recommended",
+  ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",

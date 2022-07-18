@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostTemplate Renders in layout 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="h-card"
+        style="display: none;"
+      >
+        <a
+          class="u-url"
+          href="/"
+        />
+        <span
+          class="p-name"
+        >
+          Josh Ghent
+        </span>
+        <span
+          class="p-given-name"
+        >
+          Josh
+        </span>
+        <span
+          class="p-family-name"
+        >
+          Ghent
+        </span>
+        <a
+          class="p-org h-card"
+          href="https://joshghent.com"
+        >
+          Turbo Technologies
+        </a>
+        <a
+          class="u-email h-card"
+          href="mailto:"
+        />
+        <img
+          alt="avatar"
+          class="u-photo"
+          src="https://joshghent.com/images/avatar.jpg"
+        />
+        <p
+          class="p-note"
+        >
+          Freelance software engineer with over 8 years experience - specializing in web performance and robust infrastructure. Love hiking with my wife and dog (Millie). Urban design enthusiest.
+        </p>
+        <p
+          class="p-job-title"
+        >
+          Director of Turbo Technologies
+        </p>
+        <p
+          class="p-category"
+        >
+          Software Engineer
+        </p>
+        <a
+          href="https://twitter.com/"
+        >
+          @
+           on Twitter
+        </a>
+        <a
+          href="https://github.com/"
+        >
+          Github
+        </a>
+        <a
+          href="mailto:"
+        />
+      </div>
+      <div
+        style="border-bottom: 1px solid #f5f5f5; margin-bottom: 2.5rem;"
+      >
+        <header
+          class="header"
+          style="max-width: 69.6rem; padding: 1.8125rem 1.0875rem; margin: 0px auto;"
+        >
+          <div
+            class="wide-container"
+          >
+            <h1
+              style="margin-bottom: 0px; margin-top: 0px; font-size: 1.25em; width: 40%;"
+            >
+              <a
+                href="/"
+                style="box-shadow: none; text-decoration: none;"
+              >
+                This is the title | Jane Doe Blog
+              </a>
+            </h1>
+            <nav
+              class="nav"
+            >
+              <ul
+                style="list-style: none; display: inline;"
+              >
+                <li>
+                  <a
+                    href="/blog"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/bookshelf"
+                  >
+                    Bookshelf
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/archive"
+                  >
+                    Archive
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/work"
+                  >
+                    Work with me
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <div
+        style="transition: color 0.2s ease-out, background 0.2s ease-out;"
+      >
+        <div
+          style="margin-left: auto; margin-right: auto; max-width: 69.6rem; padding: 1.45rem 1.0875rem;"
+        >
+          <main
+            class="container"
+          >
+            <section
+              class="h-entry"
+            >
+              <time
+                class="dt-published"
+                datetime="14 Aug 2021"
+                style="display: none;"
+              >
+                14 Aug 2021
+              </time>
+              <a
+                class="u-url"
+                href="https://someblog.com/test-post"
+                style="display: none;"
+              >
+                Link to this Article
+              </a>
+              <p
+                class="p-summary"
+                style="display: none;"
+              />
+              <h1
+                class="blogPostTitle p-name"
+              >
+                This is the title
+              </h1>
+              <section
+                class="e-content"
+              >
+                <p>
+                  Here is the first paragraph
+                </p>
+                <h2>
+                  Sub Heading
+                </h2>
+                <p>
+                  And another paragraph
+                </p>
+              </section>
+            </section>
+            <div>
+              <div
+                class="webmention--header"
+              >
+                <h3>
+                  Webmentions
+                </h3>
+                <a
+                  href="https://indieweb.org/Webmention"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  What's this?
+                </a>
+              </div>
+              <ul
+                class="webmention--replies"
+              >
+                <div>
+                  Loading Webmentions...
+                </div>
+              </ul>
+            </div>
+            <hr
+              style="margin-bottom: 2.175rem; margin-top: 2.175rem;"
+            />
+            <ul
+              style="display: flex; flex-wrap: wrap; justify-content: space-between; list-style: none; padding: 0px; margin: 0px;"
+            >
+              <li />
+              <li />
+            </ul>
+          </main>
+          <footer
+            style="text-align: center;"
+          >
+            © 
+            2022
+             - 
+            <a
+              class="u-url p-name"
+              href="/"
+            >
+              Josh Ghent
+            </a>
+             - 
+            <a
+              href="https://creativecommons.org/licenses/by-sa/4.0/"
+            >
+              cc-by-sa
+            </a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="h-card"
+      style="display: none;"
+    >
+      <a
+        class="u-url"
+        href="/"
+      />
+      <span
+        class="p-name"
+      >
+        Josh Ghent
+      </span>
+      <span
+        class="p-given-name"
+      >
+        Josh
+      </span>
+      <span
+        class="p-family-name"
+      >
+        Ghent
+      </span>
+      <a
+        class="p-org h-card"
+        href="https://joshghent.com"
+      >
+        Turbo Technologies
+      </a>
+      <a
+        class="u-email h-card"
+        href="mailto:"
+      />
+      <img
+        alt="avatar"
+        class="u-photo"
+        src="https://joshghent.com/images/avatar.jpg"
+      />
+      <p
+        class="p-note"
+      >
+        Freelance software engineer with over 8 years experience - specializing in web performance and robust infrastructure. Love hiking with my wife and dog (Millie). Urban design enthusiest.
+      </p>
+      <p
+        class="p-job-title"
+      >
+        Director of Turbo Technologies
+      </p>
+      <p
+        class="p-category"
+      >
+        Software Engineer
+      </p>
+      <a
+        href="https://twitter.com/"
+      >
+        @
+         on Twitter
+      </a>
+      <a
+        href="https://github.com/"
+      >
+        Github
+      </a>
+      <a
+        href="mailto:"
+      />
+    </div>
+    <div
+      style="border-bottom: 1px solid #f5f5f5; margin-bottom: 2.5rem;"
+    >
+      <header
+        class="header"
+        style="max-width: 69.6rem; padding: 1.8125rem 1.0875rem; margin: 0px auto;"
+      >
+        <div
+          class="wide-container"
+        >
+          <h1
+            style="margin-bottom: 0px; margin-top: 0px; font-size: 1.25em; width: 40%;"
+          >
+            <a
+              href="/"
+              style="box-shadow: none; text-decoration: none;"
+            >
+              This is the title | Jane Doe Blog
+            </a>
+          </h1>
+          <nav
+            class="nav"
+          >
+            <ul
+              style="list-style: none; display: inline;"
+            >
+              <li>
+                <a
+                  href="/blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/bookshelf"
+                >
+                  Bookshelf
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/archive"
+                >
+                  Archive
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/work"
+                >
+                  Work with me
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div
+      style="transition: color 0.2s ease-out, background 0.2s ease-out;"
+    >
+      <div
+        style="margin-left: auto; margin-right: auto; max-width: 69.6rem; padding: 1.45rem 1.0875rem;"
+      >
+        <main
+          class="container"
+        >
+          <section
+            class="h-entry"
+          >
+            <time
+              class="dt-published"
+              datetime="14 Aug 2021"
+              style="display: none;"
+            >
+              14 Aug 2021
+            </time>
+            <a
+              class="u-url"
+              href="https://someblog.com/test-post"
+              style="display: none;"
+            >
+              Link to this Article
+            </a>
+            <p
+              class="p-summary"
+              style="display: none;"
+            />
+            <h1
+              class="blogPostTitle p-name"
+            >
+              This is the title
+            </h1>
+            <section
+              class="e-content"
+            >
+              <p>
+                Here is the first paragraph
+              </p>
+              <h2>
+                Sub Heading
+              </h2>
+              <p>
+                And another paragraph
+              </p>
+            </section>
+          </section>
+          <div>
+            <div
+              class="webmention--header"
+            >
+              <h3>
+                Webmentions
+              </h3>
+              <a
+                href="https://indieweb.org/Webmention"
+                rel="noreferrer"
+                target="_blank"
+              >
+                What's this?
+              </a>
+            </div>
+            <ul
+              class="webmention--replies"
+            >
+              <div>
+                Loading Webmentions...
+              </div>
+            </ul>
+          </div>
+          <hr
+            style="margin-bottom: 2.175rem; margin-top: 2.175rem;"
+          />
+          <ul
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; list-style: none; padding: 0px; margin: 0px;"
+          >
+            <li />
+            <li />
+          </ul>
+        </main>
+        <footer
+          style="text-align: center;"
+        >
+          © 
+          2022
+           - 
+          <a
+            class="u-url p-name"
+            href="/"
+          >
+            Josh Ghent
+          </a>
+           - 
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+          >
+            cc-by-sa
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

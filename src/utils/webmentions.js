@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from "react";
 
@@ -14,14 +16,14 @@ export const loadWebMentions = async (target, page = 0) =>
     .then((json) => (Array.isArray(json.links) ? json.links : []));
 
 export default function WebMentions({ url }) {
-  const fullUrl = `https://joshghent.com${url}`;
   const [type, setType] = useState({});
   const [page, setPage] = useState(0);
   const [links, setLinks] = useState([]);
   const [loading, setLoading] = useState(true);
-  const twitterHref = `https://twitter.com/intent/tweet/?text=Great%20post%20by%20@joshghent%20${fullUrl}`;
+  // const twitterHref = `https://twitter.com/intent/tweet/?text=Great%20post%20by%20@joshghent%20${fullUrl}`;
 
   useEffect(() => {
+    const fullUrl = `https://joshghent.com${url}`;
     async function loadPage() {
       loadWebMentions(fullUrl, page).then((returnedLinks) => {
         setLoading(false);
@@ -44,7 +46,6 @@ export default function WebMentions({ url }) {
   function renderMentions() {
     return links.slice(0).map((link) => {
       if (link.activity.type === "reply" || link.activity.type === "link") {
-        console.log(link);
         let date = new Date(link.data.published ?? link.verified_date);
         date = new Intl.DateTimeFormat("en-GB", {
           month: "short",
@@ -85,45 +86,44 @@ export default function WebMentions({ url }) {
     });
   }
 
-  function renderLikes() {
-    if (loading) {
-      return <div>Loading webmentions...</div>;
-    }
-    if (!loading && links.length === 0) {
-      return "";
-    }
-    if (!loading) {
-      return links.slice(0).map((link, index) => {
-        if (link.activity.type === "like") {
-          let date = new Date(link.data.published ?? link.verified_date);
-          date = new Intl.DateTimeFormat("en-US").format(date);
-          return (
-            <div className="webmention--item" key={index}>
-              <div className="webmention--meta">
-                <a href={link.data.url}>
-                  {link.data.author?.photo && (
-                    <img
-                      alt=""
-                      className="webmention--image"
-                      src={link.data.author?.photo}
-                    />
-                  )}{" "}
-                </a>
-              </div>
-            </div>
-          );
-        }
-        return "";
-      });
-    }
-  }
+  // function renderLikes() {
+  //   if (loading) {
+  //     return <div>Loading webmentions...</div>;
+  //   }
+  //   if (!loading && links.length === 0) {
+  //     return "";
+  //   }
+  //   if (!loading) {
+  //     return links.slice(0).map((link, index) => {
+  //       if (link.activity.type === "like") {
+  //         let date = new Date(link.data.published ?? link.verified_date);
+  //         date = new Intl.DateTimeFormat("en-US").format(date);
+  //         return (
+  //           <div className="webmention--item" key={index}>
+  //             <div className="webmention--meta">
+  //               <a href={link.data.url}>
+  //                 {link.data.author?.photo && (
+  //                   <img
+  //                     alt=""
+  //                     className="webmention--image"
+  //                     src={link.data.author?.photo}
+  //                   />
+  //                 )}{" "}
+  //               </a>
+  //             </div>
+  //           </div>
+  //         );
+  //       }
+  //       return "";
+  //     });
+  //   }
+  // }
 
   function renderContent() {
     if (loading) {
       return <div>Loading Webmentions...</div>;
     }
 
-    console.log(links);
     if (
       !loading &&
       links.filter((l) => ["reply", "link"].includes(l.activity.type))
