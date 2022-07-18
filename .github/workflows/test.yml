@@ -1,9 +1,9 @@
-name: Spellcheck
+name: Test
 
 on: [pull_request]
 
 jobs:
-  spellcheck:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
