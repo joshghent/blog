@@ -1,0 +1,15 @@
+name: iCloud Photo Downloader
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      uses: actions/setup-python@v4
+    - run: pip install icloudpd
+    - run: icloudpd --album "Photography" --skip-live-photos --no-progress-bar
