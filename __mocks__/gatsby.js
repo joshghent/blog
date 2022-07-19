@@ -1,4 +1,5 @@
 const React = require("react");
+
 const gatsby = jest.requireActual("gatsby");
 module.exports = {
   ...gatsby,
@@ -24,9 +25,9 @@ module.exports = {
     ),
   // +++ ADD MOCK NAVIGATE FUNCTION HERE +++
   navigate: jest.fn(),
-  useStaticQuery: jest.fn().mockImplementation(() => {
+  useStaticQuery: jest.fn().mockImplementation(() =>
     // When component calls useStaticQuery(...), this result will be returned
-    return {
+    ({
       site: {
         siteMetadata: {
           defaultTitle: "Jane Doe Blog",
@@ -46,6 +47,6 @@ module.exports = {
           },
         },
       },
-    };
-  }),
+    })
+  ),
 };

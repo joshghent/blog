@@ -1,17 +1,12 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
-// const { createImage } = require("gatsby-remark-opengraph");
 
 function pad(n) {
   return n < 10 ? `0${n}` : n;
 }
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-
-  // await createImage({
-  //   background: "#00b8ff",
-  // });
 
   const blogPost = path.resolve("./src/templates/blog-post.jsx");
   return graphql(

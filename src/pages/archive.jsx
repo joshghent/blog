@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { graphql, Link } from 'gatsby';
 import React from 'react';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
