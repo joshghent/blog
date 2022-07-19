@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "Developer Musings",
@@ -152,6 +154,20 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
+          {
+            resolve: "gatsby-remark-opengraph",
+            options: {
+              background: "#00b8ff",
+              // if you create post-specific open graph images, be sure to prefix `./public`
+              outputPath: (node) => path.join("./public", node.fields.slug),
+              texts: [
+                {
+                  text: (node) => node.frontmatter.title,
+                  font: require.resolve("./content/assets/opengraph-font.ttf"),
+                },
+              ],
+            },
+          },
         ],
       },
     },
@@ -174,11 +190,15 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.nodes.map((node) => ({ ...node.frontmatter, description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],})),
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.nodes.map((node) => ({
+                ...node.frontmatter,
+                description: node.excerpt,
+                date: node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + node.fields.slug,
+                guid: site.siteMetadata.siteUrl + node.fields.slug,
+                custom_elements: [{ "content:encoded": node.html }],
+              })),
             query: `
               {
                 allMarkdownRemark(
@@ -220,7 +240,6 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify",
-    "gatsby-plugin-preact",
     "gatsby-plugin-typography",
     {
       resolve: "gatsby-plugin-brotli",
@@ -251,11 +270,7 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-sitemap",
-      options: {
-        exclude: [`/__generated/*`],
-      },
     },
-    "gatsby-plugin-no-javascript",
     {
       resolve: `gatsby-plugin-webmention`,
       options: {
@@ -269,7 +284,6 @@ module.exports = {
         },
         mentions: true,
         pingbacks: false,
-        forwardPingbacksAsWebmentions: "https://example.com/endpoint",
         domain: "joshghent.com",
         fetchLimit: 10000, // number of webmentions to fetch
         token: process.env.WEBMENTIONS_TOKEN,

@@ -1,24 +1,16 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
+// const { createImage } = require("gatsby-remark-opengraph");
 
 function pad(n) {
   return n < 10 ? `0${n}` : n;
 }
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  // const openGraphImage = createOpenGraphImage(createPage, {
-  //   path: "/og-image/index.png",
-  //   component: path.resolve(`src/templates/index.og-image.js`),
-  //   size: {
-  //     width: 400,
-  //     height: 50,
-  //   },
-  //   waitCondition: "networkidle0",
-  //   context: {
-  //     description: "a image created with gatsby-plugin-open-graph-images",
-  //   },
+  // await createImage({
+  //   background: "#00b8ff",
   // });
 
   const blogPost = path.resolve("./src/templates/blog-post.jsx");
