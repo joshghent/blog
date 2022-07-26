@@ -7,6 +7,7 @@ class HomeIndex extends React.Component {
   render() {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -22,7 +23,9 @@ class HomeIndex extends React.Component {
           <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 
-        <section id="contact" style={{ marginTop: '3rem'}}>
+        <hr className="section-break" />
+
+        <section id="contact">
           <h2>Contact</h2>
           <ul style={{
             listStyleType: 'none',
@@ -36,9 +39,30 @@ class HomeIndex extends React.Component {
           </ul>
         </section>
 
-        <section id="posts">
+        <hr className="section-break" />
 
-          <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.25em' }} to="/archive">See All Posts</Link></div>
+        <section id="posts">
+          <h2 className="text">Posts</h2>
+          <Link to="/archive" className="styled-link">All Posts</Link>
+          <a href="rss.xml" className="styled-link">RSS</a>
+
+           <ul style={{
+             listStyleType: 'none',
+             marginLeft: 0,
+           }}
+           >
+
+             {posts.map(({ node }) => {
+               const title = node.frontmatter.title || node.fields.slug;
+               return (
+                 <li key={node.fields.slug} className="post-preview">
+                   <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                     {title}
+                   </Link>
+                 </li>
+               );
+             })}
+           </ul>
         </section>
 
         <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>
@@ -56,7 +80,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 5) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
+      frontmatter: {
+        date: { ne: null }
+      }
+    }, limit: 5) {
       edges {
         node {
           html
@@ -65,7 +93,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMM YYYY")
             title
             description
           }
