@@ -1,3 +1,8 @@
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../../content/assets/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
 body {
   --bg: #fff;
   --textNormal: #222;
@@ -19,6 +24,42 @@ body {
   background-color: var(--bg);
   font-family: nunito-sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+}
+
+::selection {
+  background: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font {
+  font-family: SpaceGrotesk, nunito-sans, -apple-system, BlinkMacSystemFont,
+    segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+}
+
+hr.section-break {
+  border: 0;
+  border-left: 0.7rem solid var(--textNormal);
+  height: 0.7rem;
+  margin: 3rem 0;
+  display: inline-block;
+}
+
+.text {
+  margin-right: 0.4rem;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.styled-link {
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  text-decoration: underline;
 }
 
 .container {
