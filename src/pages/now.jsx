@@ -9,7 +9,7 @@ class HomeIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
 
     return (
-      <Layout location={location} title={`Now | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title="Now"
           description="Josh Ghent's Now Page - What's going on in my life right now and what I'm working on"

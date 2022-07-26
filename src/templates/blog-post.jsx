@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
     const tags = post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags
 
     return (
-      <Layout location={location} title={`${post.frontmatter.title} | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

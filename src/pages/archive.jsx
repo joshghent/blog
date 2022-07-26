@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
     }
 
     return (
-      <Layout location={location} title={`Archive | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title="Archive"
           description="Archive of all posts on JoshGhent.com"
