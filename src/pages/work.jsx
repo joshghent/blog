@@ -9,7 +9,7 @@ class WorkIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
 
     return (
-      <Layout location={location} title={`Work with me | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title="Work with Me"
           description="Software Developer and Performance Consultant. Helping to save your development teams time, catching bugs, and increase your customer retention. Available to work with interesting people from greenfield to archaic monolith."
