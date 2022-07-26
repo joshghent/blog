@@ -20,6 +20,7 @@ class HomeIndex extends React.Component {
           <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
           <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
           <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
+          <p>bookshelf - <Link to="/bookshelf">my virtual bookshelf</Link></p>
           <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 
@@ -84,7 +85,7 @@ export const pageQuery = graphql`
       frontmatter: {
         date: { ne: null }
       }
-    }, limit: 5) {
+    }, limit: 3) {
       edges {
         node {
           html
