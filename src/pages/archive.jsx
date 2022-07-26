@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
           return (
             <div style={{ textAlign: 'center' }}>
               <a id={date} href={`#${date}`} />
-              <div className="archiveGroupHeader" key={date}>{date}</div>
+              <h2 className="archiveGroupHeader" key={date}>{date}</h2>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;
                 return (
