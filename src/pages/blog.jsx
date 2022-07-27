@@ -19,6 +19,7 @@ class BlogIndex extends React.Component {
           date={posts[0].node.frontmatter.date}
           isBlogPost="true"
         />
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (

@@ -1,4 +1,4 @@
-const data = require("./data/photos.json");
+const data = require("./_data/photos.json");
 
 const urls = [];
 data.photos.map((x) => {
@@ -7,7 +7,7 @@ data.photos.map((x) => {
       Object.keys(x.derivatives)[Object.keys(x.derivatives).length - 1]
     ];
 
-  urls.push(last.url);
+  return urls.push(last.url);
 });
 
 console.log(urls);

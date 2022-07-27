@@ -91,7 +91,7 @@ Object {
                 href="/"
                 style="box-shadow: none; text-decoration: none;"
               >
-                This is the title | Jane Doe Blog
+                Jane Doe Blog
               </a>
             </h1>
             <nav
@@ -109,16 +109,16 @@ Object {
                 </li>
                 <li>
                   <a
-                    href="/bookshelf"
+                    href="/archive"
                   >
-                    Bookshelf
+                    Archive
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/archive"
+                    href="/now"
                   >
-                    Archive
+                    About me
                   </a>
                 </li>
                 <li>
@@ -233,6 +233,12 @@ Object {
             >
               cc-by-sa
             </a>
+             - 
+            <a
+              href="https://github.com/joshghent/blog"
+            >
+              View source
+            </a>
           </footer>
         </div>
       </div>
@@ -325,7 +331,7 @@ Object {
               href="/"
               style="box-shadow: none; text-decoration: none;"
             >
-              This is the title | Jane Doe Blog
+              Jane Doe Blog
             </a>
           </h1>
           <nav
@@ -343,16 +349,16 @@ Object {
               </li>
               <li>
                 <a
-                  href="/bookshelf"
+                  href="/archive"
                 >
-                  Bookshelf
+                  Archive
                 </a>
               </li>
               <li>
                 <a
-                  href="/archive"
+                  href="/now"
                 >
-                  Archive
+                  About me
                 </a>
               </li>
               <li>
@@ -466,6 +472,12 @@ Object {
             href="https://creativecommons.org/licenses/by-sa/4.0/"
           >
             cc-by-sa
+          </a>
+           - 
+          <a
+            href="https://github.com/joshghent/blog"
+          >
+            View source
           </a>
         </footer>
       </div>
