@@ -12,7 +12,7 @@ describe("Homepage", () => {
     browser = await puppeteer.launch();
   });
 
-  it("renders correct", async () => {
+  it.skip("renders correct", async () => {
     const page = await browser.newPage();
     await page.goto("http://localhost:8000");
     const image = await page.screenshot();
