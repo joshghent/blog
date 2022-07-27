@@ -20,7 +20,7 @@ class SignupForm extends React.Component {
             method="post"
             target="popupwindow"
             onSubmit={() => {
-              window.open(
+              if (window) window.open(
                 `${data.site.siteMetadata.tinyletterUrl}`,
                 'popupwindow',
                 'scrollbars=yes,width=800,height=600',

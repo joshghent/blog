@@ -35,6 +35,7 @@ export default function HTML(props) {
         />
 
         <link
+          // eslint-disable-next-line react/no-invalid-html-attribute
           rel="webmention"
           href="https://webmention.io/joshghent.com/webmention"
         />

@@ -1,5 +1,5 @@
-import { graphql, Link } from 'gatsby';
 import React from 'react';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -7,6 +7,7 @@ class HomeIndex extends React.Component {
   render() {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -17,12 +18,15 @@ class HomeIndex extends React.Component {
         <section id="hello-world">
           <h2>Hello World</h2>
           <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
-          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a></p>
-          <p>latest - <Link to="/now">what I'm doing</Link></p>
+          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / <a href="https://joshghent.gumroad.com/l/ultimate-checklists">Checklists for Web Agencies</a></p>
+          <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
+          <p>bookshelf - <Link to="/bookshelf">my virtual bookshelf</Link></p>
           <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
         </section>
 
-        <section id="contact" style={{ marginTop: '3rem'}}>
+        <hr className="section-break" />
+
+        <section id="contact">
           <h2>Contact</h2>
           <ul style={{
             listStyleType: 'none',
@@ -36,9 +40,30 @@ class HomeIndex extends React.Component {
           </ul>
         </section>
 
-        <section id="posts">
+        <hr className="section-break" />
 
-          <div style={{ textAlign: 'center' }}><Link style={{ fontSize: '1.25em' }} to="/archive">See All Posts</Link></div>
+        <section id="posts">
+          <h2 className="text">Posts</h2>
+          <Link to="/archive" className="styled-link">All Posts</Link>
+          <a href="rss.xml" className="styled-link">RSS</a>
+
+           <ul style={{
+             listStyleType: 'none',
+             marginLeft: 0,
+           }}
+           >
+
+             {posts.map(({ node }) => {
+               const title = node.frontmatter.title || node.fields.slug;
+               return (
+                 <li key={node.fields.slug} className="post-preview">
+                   <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                     {title}
+                   </Link>
+                 </li>
+               );
+             })}
+           </ul>
         </section>
 
         <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>
@@ -56,7 +81,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 5) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
+      frontmatter: {
+        date: { ne: null }
+      }
+    }, limit: 3) {
       edges {
         node {
           html
@@ -65,7 +94,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMM YYYY")
             title
             description
           }

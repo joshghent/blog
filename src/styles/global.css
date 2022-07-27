@@ -1,3 +1,8 @@
+@font-face {
+  font-family: SpaceGroteskBold;
+  src: url("../../content/assets/SpaceGrotesk-Bold.ttf");
+}
+
 body {
   --bg: #fff;
   --textNormal: #222;
@@ -7,9 +12,54 @@ body {
   --hr: hsla(0, 0%, 0%, 0.2);
   --caption: rgba(0, 0, 0, 0.5);
 
+  --color-bg: #ffffff;
+  --color-bg-offset: #f7f7f9;
+  --color-text: #373a3c;
+  --color-text-offset: #818a91;
+  --color-border: #eceeef;
+  --color-primary: #00b8ff;
+  --color-primary-offset: #0093cc;
+  --color-secondary: #faae2b;
+
   background-color: var(--bg);
   font-family: nunito-sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+}
+
+::selection {
+  background: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font {
+  font-family: SpaceGroteskBold, nunito-sans, -apple-system, BlinkMacSystemFont,
+    segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+}
+
+hr.section-break {
+  border: 0;
+  border-left: 0.7rem solid var(--textNormal);
+  height: 0.7rem;
+  margin: 3rem 0;
+  display: inline-block;
+}
+
+.text {
+  margin-right: 0.4rem;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.styled-link {
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  text-decoration: underline;
 }
 
 .container {
@@ -57,10 +107,10 @@ a {
   color: var(--textLink);
 }
 
-a:visited {
+/* a:visited {
   text-decoration: none;
   color: var(--textLink);
-}
+} */
 a:hover {
   text-decoration: none;
   color: var(--textLink);
@@ -95,8 +145,22 @@ h5 {
 }
 
 blockquote {
-  color: inherit !important;
-  border-left-color: var(--textLink);
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 
 .nav {
@@ -109,6 +173,32 @@ blockquote {
 .nav > ul > li {
   display: inline;
   padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .wide-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .wide-container > h1 {
+    width: 100%;
+  }
+
+  .nav {
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .nav > ul {
+    margin-left: 0;
+  }
+
+  .nav > ul > li {
+    font-size: 0.9rem;
+  }
 }
 
 div.image {

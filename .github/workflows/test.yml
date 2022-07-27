@@ -1,9 +1,9 @@
-name: Spellcheck
+name: Test
 
 on: [pull_request]
 
 jobs:
-  spellcheck:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
@@ -16,6 +16,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm i markdown-spellcheck -g
-      - run: mdspell -a -n -r "content/blog/**/*.md"
-        name: Spellcheck
+      - run: yarn
+      - run: yarn test:suite

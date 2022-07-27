@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
+import WebMentions from "../utils/webmentions";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -10,13 +11,14 @@ class BlogPostTemplate extends React.Component {
     const post = data.markdownRemark;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
+    const tags = post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags
 
     return (
-      <Layout location={location} title={`${post.frontmatter.title} | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          keywords={post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags}
+          keywords={tags}
           pathname={location.pathname}
           date={post.frontmatter.date}
           isBlogPost="true"
@@ -26,8 +28,14 @@ class BlogPostTemplate extends React.Component {
           <a href={`${data.site.siteMetadata.siteUrl}${post.fields.slug}`} className="u-url" style={{ display: 'none' }}>Link to this Article</a>
           <p className="p-summary" style={{ display: 'none' }}>{post.frontmatter.description}</p>
           <h1 className="blogPostTitle p-name">{post.frontmatter.title}</h1>
+          {tags && tags.map((tag) => (
+              <p className="p-category">{tag}</p>
+            ))}
           <section className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
+
+        <WebMentions url={location.pathname} />
+
         <hr
           style={{
             marginBottom: rhythm(1.5),

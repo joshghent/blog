@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={location} title={`Blog | ${siteTitle}`}>
+      <Layout location={location} title={`${siteTitle}`}>
         <SEO
           title="Blog"
           description="The latest blog post on JoshGhent.com"
@@ -19,6 +19,7 @@ class BlogIndex extends React.Component {
           date={posts[0].node.frontmatter.date}
           isBlogPost="true"
         />
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -48,7 +49,13 @@ export const pageQuery = graphql`
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC },
+        filter: {
+          frontmatter: {
+            date: { ne: null }
+          }
+        }
+        limit: 1) {
         edges {
           node {
             html

@@ -1,0 +1,26 @@
+# Grabs the image JSON from iCloud and commit the update
+name: "Photos"
+on:
+  schedule: "0 0 * * *"
+
+
+jobs:
+  photos-sync:
+    runs-on: ubuntu-latest
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Download Data file
+      run: output=$(npx icloud-shared-album B0vGY8gBYs0Dg26) && echo $output > data/photos.json
+
+    - name: Process Data
+      run: output=$(node ./process-photo-data.js)
+
+    - name: Commit and push
+      run: |
+        git config --global user.email "bot@joshghent.com"
+        git config --global user.name "photos [bot]"
+        git add .
+        git commit -m "📸 Update photos" || echo "Nothing to commit"
+        git push origin HEAD:main
