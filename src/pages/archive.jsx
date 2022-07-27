@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
 
-    let groups = data.allMarkdownRemark.group.slice(0);
+    let groups = data.groups.group.slice(0);
 
     // Stupid logic to figure out if we should sort
     // For some reason when you navigate to the page, it sorts the data correctly
@@ -26,6 +26,28 @@ class BlogIndex extends React.Component {
           description="Archive of all posts on JoshGhent.com"
           keywords={data.site.siteMetadata.defaultTags}
         />
+        <ul style={{ display: 'none' }} className="h-feed">
+          <h1 className="p-name site-title">{siteTitle}</h1>
+          <p className="p-summary">Archive of all posts from joshghent.com</p>
+          {data.posts.edges.map(({ node }) => (
+              <li>
+                <article className="h-entry">
+                  <Link className="u-url" href={node.fields.slug}>
+                    <h2 className="p-name">{node.frontmatter.title}</h2>
+                  </Link>
+                  <address className="p-author author h-card vcard">
+                    <a href="https://joshghent.com" className="u-url url p-name fn" rel="author">Josh Ghent</a>
+                  </address>
+                  <span>
+                    <time className="dt-published" dateTime={node.frontmatter.date}>
+                      {node.frontmatter.date}
+                    </time>
+                  </span>
+                  <p className="p-summary">{node.frontmatter.description}</p>
+                </article>
+              </li>
+            ))}
+        </ul>
         {groups.map((group) => {
           const posts = group.edges.sort((a, b) => Number(b.node.frontmatter.date.split(' ')[0]) - Number(a.node.frontmatter.date.split(' ')[0]));
           const dateField = group.edges[0].node.frontmatter.date;
@@ -70,7 +92,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: {
+    groups: allMarkdownRemark(filter: {
           frontmatter: {
             date: { ne: null }
           }
@@ -85,6 +107,26 @@ export const pageQuery = graphql`
               date(formatString: "DD MMMM YYYY")
               title
             }
+          }
+        }
+      }
+    }
+  	posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
+      frontmatter: {
+        date: { ne: null }
+      }
+    }) {
+      edges {
+        node {
+          html
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+            description
           }
         }
       }
