@@ -13,7 +13,7 @@
     "not ie <= 11"
   ],
   "dependencies": {
-    "gatsby": "^4.19.0",
+    "gatsby": "^4.19.2",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-brotli": "^2.1.0",
     "gatsby-plugin-catch-links": "^4.17.0",
@@ -21,7 +21,7 @@
     "gatsby-plugin-feed": "4.19.0",
     "gatsby-plugin-indieweb": "^1.0.3",
     "gatsby-plugin-manifest": "^4.17.0",
-    "gatsby-plugin-netlify": "^5.0.0",
+    "gatsby-plugin-netlify": "^5.0.1",
     "gatsby-plugin-no-javascript": "^2.0.5",
     "gatsby-plugin-offline": "^5.17.0",
     "gatsby-plugin-og-images": "^1.2.0",
@@ -37,7 +37,7 @@
     "gatsby-remark-check-links": "~2.1.0",
     "gatsby-remark-copy-linked-files": "^5.17.0",
     "gatsby-remark-images": "~6.17.0",
-    "gatsby-remark-prismjs": "~6.17.0",
+    "gatsby-remark-prismjs": "~6.19.0",
     "gatsby-remark-reading-time": "~1.1.0",
     "gatsby-remark-smartypants": "~5.17.0",
     "gatsby-source-filesystem": "~4.17.0",
