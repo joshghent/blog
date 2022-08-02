@@ -17,7 +17,7 @@ jobs:
         with:
           fileName: _data/bookmarks.yml
       - name: Download the thumbnail image
-        run: curl "${{ env.BookmarkImage }}" -o "img/${{ env.BookmarkImageOutput }}"
+        run: curl "${{ env.BookmarkImage }}" -o "content/assets/images/bookmarks/${{ env.BookmarkImageOutput }}"
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
