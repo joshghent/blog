@@ -19,7 +19,7 @@ But the reality is that estimations are just that - estimations. But they are tr
 
 But where did we go wrong here? Why are estimations and the culture around them harmful?
 
-### Managers ask for estimations but want deadlines
+## Managers ask for estimations but want deadlines
 
 One of the biggest issues with estimates is that they are used as a proxy word for a deadline. In reality, deadlines are important. It allows other teams to prepare their department. For example, a deadline for a feature allows marketing to prepare a campaign, sales teams to be trained on the new feature and support teams to learn the ins and outs.
 
@@ -27,7 +27,7 @@ But estimates are not deadlines. So why not remove the middleman?
 
 In some cases (not all), it would be best to communicate with your manager and ask them what deadline there is. And then, practically, discuss the work item to meet that deadline somehow.
 
-### Developers rarely have all the information required
+## Developers rarely have all the information required
 
 At their core, estimates are only as good as the information provided to them. And, unfortunately, there is no extra "confidence" number to put against an estimate. You have the estimate, and that's final.
 
@@ -45,7 +45,7 @@ I'm sure you have stumbled across cases like this before, maybe even being on th
 
 In practice, you can never have 100% of the information. It's a ticket, not a crystal ball. But, having a high confidence level when making your estimates will improve a developer's happiness and decrease the chance that the feature needs to be changed after being built.
 
-### Estimates are formed based on a small set of factors
+## Estimates are formed based on a small set of factors
 
 The premise of estimates is that the ticket being evaluated is a neat loop of functionality that can be rounded off and shipped by anyone in the team. Although in a software utopia that might be the case, the reality is much different.
 
@@ -63,7 +63,7 @@ Another example, you have a family member who has a serious illness. Again, your
 
 Although it's not possible to control these inherently human issues. We need to keep them in mind when making estimates, drawing up quarterly timelines and promising features to customers.
 
-### Estimate numbers are meaningless
+## Estimate numbers are meaningless
 
 What does 3 points even mean exactly? Is 3 a day, a week? In all teams I've worked with, when you go in it seems like an advanced race who have understood time in a new dimension. A lingo evolves that categorises a 3 as a day, a 5 as 3 days and a 13 as two weeks.
 
@@ -79,7 +79,7 @@ When I've joined new teams in the past, they've circulated an image listing the 
 
 My preference is to just drop the proxy. In the vast majority of cases, you can simply use days. Or, if possible drop estimates altogether and prioritize rigorously. Often work takes as long as it takes. Enough trust should be built in your team to do the work diligently but not take too much time.
 
-### Conclusion
+## Conclusion
 
 - If you use estimates, be mindful of what that number represents.
 

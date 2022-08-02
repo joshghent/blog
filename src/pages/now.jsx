@@ -20,14 +20,14 @@ class HomeIndex extends React.Component {
           <p>Inspired by the <a href="https://nownownow.com/about">/now page movement</a>. The purpose of this page is to share what I&apos;m currently focused on.</p>
 
           <h2>About me</h2>
-          <p>Hi! My name is Josh. I am a freelance software engineer and SRE. I love building resilient systems that delight people. So, I think a lot about design, intuitive systems and cognative biases</p>
+          <p>Hi! My name is Josh. I am a freelance software engineer and SRE. I love building resilient systems that delight people. I think a lot about design, intuitive systems and cognative biases. I talk a lot about how to build successful software teams who deliver quality product quickly.</p>
 
           <h2>What am I up to?</h2>
           <ul>
-            <li>Having fun adventures in and around our home with my wife and dog, <a href="https://joshghent.com/images/wetbeard.jpeg">Millie</a></li>
-            <li>Focusing on creating rather than consuming - writing, taking photos and building products</li>
-            <li>Continuing to simplify</li>
-            <li>Exercising, meditating and eating (mostly) vegan food</li>
+            <li>Having fun adventures in and around our home with my wife and dog, <a href="https://joshghent.com/images/wetbeard.jpeg">Millie</a>.</li>
+            <li>Focusing on creating rather than consuming. Writing, taking photos and building products.</li>
+            <li>Continuing to simplify.</li>
+            <li>Exercising, meditating and eating (mostly) vegan food.</li>
             <li>Studying Italian.</li>
           </ul>
 
@@ -53,7 +53,7 @@ class HomeIndex extends React.Component {
 
           <hr className="section-break" />
 
-          <h2>What tech am I using</h2>
+          <h2>What tech am I using?</h2>
           <ul>
             <li>Laptop: Macbook Pro M1 2020</li>
             <li>Phone: iPhone 8+</li>
@@ -65,11 +65,11 @@ class HomeIndex extends React.Component {
 
           <h2>Strong opinions, weakly held</h2>
           <ul>
-            <li>News is an unnecessary resource</li>
-            <li>Good health is simple. Water, Sleep, Exercise</li>
-            <li>Society would be much better with radical honesty</li>
-            <li>Principles are much more valuable than </li>
-            <li>Modern school is unequipped for a world with instant access to information</li>
+            <li>News is an unnecessary resource.</li>
+            <li>Good health is simple. Water, Sleep, Exercise.</li>
+            <li>Society would be much better with radical honesty.</li>
+            <li>Principle-based learning is more valuable than specifics-based learning.</li>
+            <li>Modern school is unequipped for a world with instant access to information.</li>
             <li>Modern schooling is unequipped for teaching people to live outside of standard devisasion.</li>
             <li>Good design could solve a variety of social issues.</li>
           </ul>
