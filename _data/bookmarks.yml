@@ -1,0 +1,14 @@
+- title: It’s time to leave the leap second in the past
+  site: Engineering at Meta
+  date: '2022-08-02'
+  description: >-
+    Here’s why engineers at Meta are supporting a larger community push to stop
+    introducing any new leap seconds.
+  url: >-
+    https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/
+  image: bookmark-its-time-to-leave-the-leap-second-in-the-past.jpg
+  type: article
+  notes: >-
+    Time is such a basic premise with so much nuance affected by the physical
+    world. Not only is the digital world we create so fragile but also the
+    physical world is so abstract to hide these incredibly complexities
