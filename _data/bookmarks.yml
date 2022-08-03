@@ -20,3 +20,10 @@
   image: bookmark-optimizing-for-feelings.jpg
   type: article
   notes: "Wonderful article. I echo all the sentiments. Most software is drab to use because it’s numerical, or factual. But it doesn’t have to be that way. The web can be whimsical!\r\n\r\nGreat quote:\r\n\r\nGeorgia O’Keefe put it this way: \"I have things in my head that are not like what anyone has taught me... so I decided to start anew.\""
+- title: You can create a great looking website while sucking at design
+  site: ''
+  date: '2022-08-03'
+  description: How to create great looking websites while having little design skill.
+  image: ''
+  type: ''
+  notes: "Useful specific tips for good design:\r\n\r\n1. Use a framework - probably tailwind\r\n2. Use wicked blocks for prebuilt components\r\n3. Use Photopea to design any custom graphics"
