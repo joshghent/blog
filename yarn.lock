@@ -7286,10 +7286,10 @@ gatsby-plugin-brotli@^2.1.0:
     mkdirp "^1.0.4"
     piscina "^3.1.0"
 
-gatsby-plugin-catch-links@^4.17.0:
-  version "4.19.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.19.0.tgz#f56b09b8cf7783184d6c5f75b18e2686ba67ca98"
-  integrity sha512-3eRRobMRRQr/NPvdZt3zPXJEwgw5mRZ8XirnABdryyCOOZZW7+Vk+ejB8S4FdX7Qt/4M2zJM+MjOiT4M4iQnKw==
+gatsby-plugin-catch-links@^4.20.0:
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.20.0.tgz#f5bfa99234d3c8e2918dc2ab8d54a38d1ecf5603"
+  integrity sha512-dCzekOE7ziEI09gHgz8r/O3lZCyKDDd8ABvHiVDyGosLM1ph+yGhLoB8s7mOrLpQdiSDfbPMJnjVpcTo0Jd+9A==
   dependencies:
     "@babel/runtime" "^7.15.4"
     escape-string-regexp "^1.0.5"
@@ -7526,10 +7526,10 @@ gatsby-remark-check-links@~2.1.0:
   dependencies:
     unist-util-visit "^1.4.1"
 
-gatsby-remark-copy-linked-files@^5.17.0:
-  version "5.19.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.19.0.tgz#50a2899e35e19db3dd783ad405162e684bfbfc61"
-  integrity sha512-MB3MgqUy4+z0dTOHOwuUQPkCC9di9jS6tM/KBmZ29fxK7OZzzvTOFNOEKCWiO0/ioj+6fIbjkI5xMUJ5eKJ5VA==
+gatsby-remark-copy-linked-files@^5.20.0:
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.20.0.tgz#6ced11d7b7c24551a79ad64c84c084d6cc067f2f"
+  integrity sha512-LDVu772lmYZaNpfSnpU3QbgZ9QEOtM7p+XhZ6jFrUM+smM1zC/+A9tKG02cqYpDUOLxd1pNUzL4fXkrIFZRQ9g==
   dependencies:
     "@babel/runtime" "^7.15.4"
     cheerio "^1.0.0-rc.10"
