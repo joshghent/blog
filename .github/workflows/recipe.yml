@@ -1,0 +1,32 @@
+name: Add recipe
+on:
+  issues:
+    types: opened
+
+jobs:
+  add_bookmark:
+    runs-on: macOS-latest
+    name: Add recipe
+    # only continue if issue has "recipe" label
+    if: contains( github.event.issue.labels.*.name, 'recipe')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Bookmark action
+        uses: katydecorah/bookmark-action@v3.1.2
+        with:
+          fileName: _data/recipes.yml
+      - name: Download the thumbnail image
+        continue-on-error: true
+        run: curl "${{ env.BookmarkImage }}" -o "content/assets/images/recipes/${{ env.BookmarkImageOutput }}"
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A && git commit -m  "Added ${{ env.BookmarkTitle }} to bookmarks.yml"
+          git push
+      - name: Close issue
+        uses: peter-evans/close-issue@v2
+        with:
+          issue-number: "${{ env.IssueNumber }}"
+          comment: "You saved ${{ env.BookmarkTitle }} as a recipe on ${{env.DateBookmarked}}."
