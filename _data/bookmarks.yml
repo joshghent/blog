@@ -56,3 +56,10 @@
   image: bookmark-one-more-try-an-experimental-skate-video.jpg
   type: video.other
   notes: Amazing concept, well executed.
+- title: How to Learn to Code
+  site: headlinedev
+  date: '2022-08-15'
+  description: How to Learn to Code
+  url: https://headlinedev.xyz/2022/08/12/how-to-learn-to-program.html
+  image: ''
+  type: article
