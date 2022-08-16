@@ -31,7 +31,7 @@
     "gatsby-plugin-react-helmet": "^5.20.0",
     "gatsby-plugin-sharp": "4.20.0",
     "gatsby-plugin-sitemap": "^5.20.0",
-    "gatsby-plugin-twitter": "4.20.0",
+    "gatsby-plugin-twitter": "4.21.0",
     "gatsby-plugin-typography": "~4.20.0",
     "gatsby-plugin-webmention": "^0.2.0",
     "gatsby-remark-check-links": "~2.1.0",
