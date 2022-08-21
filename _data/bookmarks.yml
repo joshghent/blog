@@ -63,3 +63,19 @@
   url: https://headlinedev.xyz/2022/08/12/how-to-learn-to-program.html
   image: ''
   type: article
+- title: Why your daily stand-ups don't work and how to fix them
+  site: ''
+  date: '2022-08-21'
+  description: >-
+    Daily stand-ups are a classic example of learned helplessness. We all know
+    they’re useless, but we tell ourselves “that’s just how things are” and do
+    nothing...
+  url: https://lucasfcosta.com/2022/08/07/how-to-improve-daily-standups.html
+  image: ''
+  type: ''
+  notes: >-
+    Prioritise going through the backlog and adjusting according to any
+    blockers.
+
+    Stand ups are not about making sure people are working, they should be
+    focused on getting things done and delivering software to the customer.
