@@ -29,7 +29,7 @@
     "gatsby-plugin-preact": "^6.22.0",
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.22.0",
-    "gatsby-plugin-sharp": "4.21.0",
+    "gatsby-plugin-sharp": "4.22.0",
     "gatsby-plugin-sitemap": "^5.22.0",
     "gatsby-plugin-twitter": "4.21.0",
     "gatsby-plugin-typography": "~4.22.0",
