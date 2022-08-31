@@ -24,7 +24,7 @@ First let's look at the reasons people may object.
 
 ### Start with approval
 
-It's utterly pointless starting any of this without some kind of green light. Although we love stories of people doing things under ground and against the odds, the fact is that you're not creating a cure for cancer. You should speak to your immidiate team and get their feedback. Then create a formal proposal and, again, get more feedback. Then get the green light from the relevent stakeholder.
+It's utterly pointless starting any of this without some kind of green light. Although we love stories of people doing things under ground and against the odds, the fact is that you're not creating a cure for cancer. You should speak to your immediate team and get their feedback. Then create a formal proposal and, again, get more feedback. Then get the green light from the relevant stakeholder.
 
 The proposal should outline the overall vision for the system, the advantages, the risks and the downsides. If you can't think of risks and disadvantages, then you haven't thought about this problem enough.
 
@@ -54,7 +54,7 @@ Using your original proposal as a guide, build up a step by step plan that can b
 
 Unlike with code, we often can't rollback changes made to deployment and testing systems. So, think carefully about how those changes can be reversed if needs be. I've been burnt many times by not considering this carefully enough.
 
-After each step, take a 1-2 week break before making other changes, contining to record your data points. Verify that the numbers are heading in the right direction. And if they aren't, you can address this in a retrospective meeting.
+After each step, take a 1-2 week break before making other changes, continuing to record your data points. Verify that the numbers are heading in the right direction. And if they aren't, you can address this in a retrospective meeting.
 
 A sample plan may look like this.
 
@@ -75,7 +75,7 @@ As you go forward, and the metrics improve, the buy in from stakeholders and oth
 
 This can drive further change which follows a similar process as outlined above.
 
-By the end of it, you may not be deploying to production 50 times a day, but doing something much more humble. Saving you and your collegues, hours of mundane, repetitive and error prone work. And isn't that just as valuable?
+By the end of it, you may not be deploying to production 50 times a day, but doing something much more humble. Saving you and your colleagues, hours of mundane, repetitive and error prone work. And isn't that just as valuable?
 
 
 
