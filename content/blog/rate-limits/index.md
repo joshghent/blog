@@ -1,8 +1,8 @@
-```
+---
 title: Question your Rate limits
 description: Rate limits are not a silver bullet for spam. Here is why, and how to address spam concerns.
 date: 2022-08-02
-```
+---
 
 If you are building a system with an API, there is a good chance it has a rate limit or you stay awake at night afraid of a DDoS attack.
 
