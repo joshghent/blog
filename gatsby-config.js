@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   siteMetadata: {
     title: "Developer Musings",
@@ -154,22 +152,22 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          {
-            resolve: "gatsby-remark-opengraph",
-            options: {
-              background: "#00b8ff",
-              // if you create post-specific open graph images, be sure to prefix `./public`
-              outputPath: (node) => path.join("./public", node.fields.slug),
-              texts: [
-                {
-                  text: (node) => node.frontmatter.title,
-                  font: require.resolve(
-                    "./content/assets/SpaceGrotesk-Bold.ttf"
-                  ),
-                },
-              ],
-            },
-          },
+          // {
+          //   resolve: "gatsby-remark-opengraph",
+          //   options: {
+          //     background: "#00b8ff",
+          //     // if you create post-specific open graph images, be sure to prefix `./public`
+          //     outputPath: (node) => path.join("./public", node.fields.slug),
+          //     texts: [
+          //       {
+          //         text: (node) => node.frontmatter.title,
+          //         font: require.resolve(
+          //           "./content/assets/SpaceGrotesk-Bold.ttf"
+          //         ),
+          //       },
+          //     ],
+          //   },
+          // },
         ],
       },
     },
@@ -291,7 +289,6 @@ module.exports = {
         token: process.env.WEBMENTIONS_TOKEN,
       },
     },
-    `gatsby-plugin-open-graph-images`,
     "gatsby-plugin-preact",
     "gatsby-plugin-no-javascript",
   ],
