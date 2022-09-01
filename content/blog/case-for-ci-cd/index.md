@@ -1,4 +1,4 @@
-```yaml
+```
 title: Making the case for CI/CD
 description: If you are struggling to implement CI/CD in your team, here is how to do it.
 date: 2022-08-31
@@ -22,7 +22,7 @@ First let's look at the reasons people may object.
 
 
 
-### Start with approval
+## Start with approval
 
 It's utterly pointless starting any of this without some kind of green light. Although we love stories of people doing things under ground and against the odds, the fact is that you're not creating a cure for cancer. You should speak to your immediate team and get their feedback. Then create a formal proposal and, again, get more feedback. Then get the green light from the relevant stakeholder.
 
@@ -32,7 +32,7 @@ Throughout all this, make sure to not just push your vision on the team. Be coll
 
 
 
-### Start with the data
+## Start with the data
 
 Often times, stakeholders say they want a fancy dashboard with burndown rates, bug reports and the position of Saturn. In reality, an excel spreadsheet will work.
 
@@ -46,7 +46,7 @@ Start measuring these metrics for at least 4 weeks before making any changes. An
 
 
 
-### Start small.
+## Start small
 
 Now you have your numbers, you can start to look at improving them!
 

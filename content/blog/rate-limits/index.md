@@ -1,4 +1,4 @@
-```yaml
+```
 title: Question your Rate limits
 description: Rate limits are not a silver bullet for spam. Here is why, and how to address spam concerns.
 date: 2022-08-02
