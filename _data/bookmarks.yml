@@ -104,3 +104,12 @@
   image: bookmark-how-discord-stores-billions-of-messages.png
   type: website
   notes: Fascinating insights from a business at huge scale.
+- title: Reducing Experience Gaps in Web Performance
+  site: Ethan Gardner
+  date: '2022-09-01'
+  description: Looking at gaps can help inform performance strategy
+  url: >-
+    https://www.ethangardner.com/posts/web-performance-optimization-experience-gaps/
+  image: ''
+  type: article
+  notes: Valuable to look at multiple pages
