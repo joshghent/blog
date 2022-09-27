@@ -7544,10 +7544,10 @@ gatsby-remark-check-links@~2.1.0:
   dependencies:
     unist-util-visit "^1.4.1"
 
-gatsby-remark-copy-linked-files@^5.22.0:
-  version "5.22.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.22.0.tgz#c731f58e73ccdc55127cb66253345cbe40068db4"
-  integrity sha512-n+HNVZDtog7o4LX0yS0uQbcPectfcf1VuOou/rhkzeGR1vKXTcTHpfc4A+n9MfvoBoV8N4FyZCGjSzxF9nqS2g==
+gatsby-remark-copy-linked-files@^5.24.0:
+  version "5.24.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.24.0.tgz#d2d5f7dce3908687c9519b0e2e309b4b1223a401"
+  integrity sha512-Dvs3IznwKifcrTOH/bFo+Ee7OZpQz41hJD6HxHs97KRKQnScYWTDXDw45rGnBgrh7QeZEsFQLsdHxqUDSK+35g==
   dependencies:
     "@babel/runtime" "^7.15.4"
     cheerio "^1.0.0-rc.10"
