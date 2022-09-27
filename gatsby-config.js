@@ -140,6 +140,20 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/assets/images/photography`,
+        name: "photos",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/_data`,
+        name: "data",
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
