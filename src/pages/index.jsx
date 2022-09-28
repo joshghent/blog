@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { PhotoSlider } from '../components/photos-slider';
 
 class HomeIndex extends React.Component {
   render() {
@@ -17,27 +18,23 @@ class HomeIndex extends React.Component {
         />
         <section id="hello-world">
           <h2>Hello World</h2>
-          <p>I&apos;m Josh - engineer, maker and aspiring writer</p>
+          <p>I&apos;m Josh - software engineer, maker and aspiring writer.</p>
+          <p>Generally, I write about technical architecture, software culture and DevOps. This is my little corner of the internet where I post my writings, photos and things I have discovered on the net.</p>
           <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / <a href="https://joshghent.gumroad.com/l/ultimate-checklists">Checklists for Web Agencies</a></p>
           <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
           <p>bookshelf - <Link to="/bookshelf">my virtual bookshelf</Link></p>
-          <p>purpose - this blog is a <a href="https://fortelabs.co/blog/basboverview/">second brain</a>.</p>
+
+          <p>You can reach me via <a href="mailto:me@joshghent.com">Email</a>, <a href="https://github.com/joshghent">GitHub</a> and <a href="https://twitter.com/joshghent">Twitter</a>. And find my <a href="https://docs.google.com/document/d/1BHEsryVDOnFv-XDYjLKrVFC2TCNgqHr9KLVM9Vul-9Y/export?format=pdf">CV here</a>.</p>
         </section>
 
         <hr className="section-break" />
 
-        <section id="contact">
-          <h2>Contact</h2>
-          <ul style={{
-            listStyleType: 'none',
-            marginLeft: 0,
-          }}
-          >
-            <li>letters - <a href="mailto:me@joshghent.com">me@joshghent.com</a></li>
-            <li>code - <a href="https://github.com/joshghent">joshghent</a></li>
-            <li>snark - <a href="https://twitter.com/joshghent">@joshghent</a></li>
-            <li>work - <a href="https://docs.google.com/document/d/1BHEsryVDOnFv-XDYjLKrVFC2TCNgqHr9KLVM9Vul-9Y/export?format=pdf">resume.pdf</a></li>
-          </ul>
+        <section id="photos">
+          <h2 className="text">Photos</h2>
+          <Link to="/photos" className="styled-link">All Photos</Link>
+          <a href="photos.xml" className="styled-link">RSS</a>
+
+          <PhotoSlider limit={5}/>
         </section>
 
         <hr className="section-break" />
@@ -64,6 +61,14 @@ class HomeIndex extends React.Component {
                );
              })}
            </ul>
+        </section>
+
+        <hr className="section-break" />
+
+        <section id="notes">
+          <h2 className="text">Notes</h2>
+          <Link to="/notes" className="styled-link">All Notes</Link>
+          <a href="notes.xml" className="styled-link">RSS</a>
         </section>
 
         <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>

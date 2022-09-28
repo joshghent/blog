@@ -8,6 +8,7 @@ class Photos extends React.Component {
   render() {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
+    const photos = data.allFile.edges;
 
     return (
       <Layout location={location} title={`${siteTitle}`}>
@@ -16,16 +17,21 @@ class Photos extends React.Component {
           description="Photos I have taken"
           keywords={data.site.siteMetadata.defaultTags}
         />
-        {/* {photos.map((photo) => (
-          <figure id="">
-            <a href="">
-              <img src="" loading="lazy" alt=""/>
+        <div className="photo__container">
+        {photos.map(({node}) => (
+          // TODO: Add dynamic selection of how to view the images
+          <figure id={node.id}>
+            <a href={node.publicURL}>
+              {/* // TODO: change over to gatsby image */}
+              <img src={node.publicURL} loading="lazy" alt=""/>
             </a>
-            <figcaption>
-              <span className="photo__metadata">{{}}</span>
-            </figcaption>
-            </figure>
-          ))} */}
+            {/* TODO: Correctly pull through photo metadata and surface camera information */}
+            {/* <figcaption>
+              <span className="photo__metadata"></span>
+            </figcaption> */}
+          </figure>
+          ))}
+        </div>
       </Layout>
     );
   }
@@ -38,6 +44,16 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allFile(filter: {sourceInstanceName: {eq: "assets"}, absolutePath: { regex: "/photography/"}}) {
+      edges {
+        node {
+          id
+          extension
+          absolutePath
+          publicURL
+        }
       }
     }
     allMarkdownRemark(filter: {
