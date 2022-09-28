@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import PhotoSlider from '../components/photos-slider';
+import { PhotoSlider } from '../components/photos-slider';
 
 class HomeIndex extends React.Component {
   render() {
@@ -61,6 +61,14 @@ class HomeIndex extends React.Component {
                );
              })}
            </ul>
+        </section>
+
+        <hr className="section-break" />
+
+        <section id="notes">
+          <h2 className="text">Notes</h2>
+          <Link to="/notes" className="styled-link">All Notes</Link>
+          <a href="notes.xml" className="styled-link">RSS</a>
         </section>
 
         <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>

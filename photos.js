@@ -1,3 +1,4 @@
+/* eslint-disable */
 const { getImages } = require("icloud-shared-album");
 const Path = require("path");
 const fs = require("fs");

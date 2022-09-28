@@ -25,10 +25,10 @@ class Photos extends React.Component {
               {/* // TODO: change over to gatsby image */}
               <img src={node.publicURL} loading="lazy" alt=""/>
             </a>
-            <figcaption>
-              {/* TODO: Correctly pull through photo metadata and surface camera information */}
+            {/* TODO: Correctly pull through photo metadata and surface camera information */}
+            {/* <figcaption>
               <span className="photo__metadata"></span>
-            </figcaption>
+            </figcaption> */}
           </figure>
           ))}
         </div>

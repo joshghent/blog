@@ -57,7 +57,7 @@ function SchemaOrg({
 
   return (
     <Helmet>
-      <script script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 }
