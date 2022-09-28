@@ -17,16 +17,21 @@ class Photos extends React.Component {
           description="Photos I have taken"
           keywords={data.site.siteMetadata.defaultTags}
         />
+        <div className="photo__container">
         {photos.map(({node}) => (
+          // TODO: Add dynamic selection of how to view the images
           <figure id={node.id}>
             <a href={node.publicURL}>
+              {/* // TODO: change over to gatsby image */}
               <img src={node.publicURL} loading="lazy" alt=""/>
             </a>
             <figcaption>
+              {/* TODO: Correctly pull through photo metadata and surface camera information */}
               <span className="photo__metadata"></span>
             </figcaption>
           </figure>
           ))}
+        </div>
       </Layout>
     );
   }

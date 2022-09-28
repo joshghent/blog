@@ -333,3 +333,21 @@ hr {
 .photo--scroll > a > img {
   height: 200px;
 }
+
+.photo__container {
+  /* display: flex;
+  gap: 1em;
+  flex-wrap: nowrap;
+  overflow: auto;
+  align-items: center; */
+}
+
+.photo__container > figure {
+  margin: 1em 0 3em;
+}
+
+.photo__container > figure > a {
+  width: fit-content;
+  display: block;
+  margin: auto;
+}
