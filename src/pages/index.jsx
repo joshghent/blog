@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import PhotoSlider from '../components/photos-slider';
 
 class HomeIndex extends React.Component {
   render() {
@@ -38,6 +39,16 @@ class HomeIndex extends React.Component {
             <li>snark - <a href="https://twitter.com/joshghent">@joshghent</a></li>
             <li>work - <a href="https://docs.google.com/document/d/1BHEsryVDOnFv-XDYjLKrVFC2TCNgqHr9KLVM9Vul-9Y/export?format=pdf">resume.pdf</a></li>
           </ul>
+        </section>
+
+        <hr className="section-break" />
+
+        <section id="photos">
+          <h2 className="text">Photos</h2>
+          <Link to="/photos" className="styled-link">All Photos</Link>
+          <a href="photos.xml" className="styled-link">RSS</a>
+
+          <PhotoSlider limit={5}/>
         </section>
 
         <hr className="section-break" />
