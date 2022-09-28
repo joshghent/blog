@@ -1,21 +1,25 @@
 # Grabs the image JSON from iCloud and commit the update
 name: "Photos"
 on:
-  schedule: "0 0 * * *"
-
+  schedule: "0 */4 * * *"
 
 jobs:
   photos-sync:
     runs-on: ubuntu-latest
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Download Data file
-      run: output=$(npx icloud-shared-album B0vGY8gBYs0Dg26) && echo $output > data/photos.json
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - uses: bahmutov/npm-install@v1
 
     - name: Process Data
-      run: output=$(node ./process-photo-data.js)
+      run: node ./photos.js
+      env:
+        ICLOUD_ALBUM_ID: ${{ secrets.ICLOUD_ALBUM_ID }}
 
     - name: Commit and push
       run: |
