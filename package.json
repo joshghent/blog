@@ -13,6 +13,7 @@
     "not ie <= 11"
   ],
   "dependencies": {
+    "dotenv": "^16.0.2",
     "gatsby": "^4.21.1",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-brotli": "^2.1.0",
@@ -52,6 +53,7 @@
     "react-helmet": "^6.1.0",
     "react-toggle": "4.1.2",
     "react-typography": "^0.16.20",
+    "request": "^2.88.2",
     "typography": "^0.16.21"
   },
   "devDependencies": {
