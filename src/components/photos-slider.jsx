@@ -1,4 +1,5 @@
-import { graphql, StaticQuery, Img } from 'gatsby';
+/* eslint-disable */
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 
 export const PhotoSlider = ({ limit = 5 }) => {
@@ -23,6 +24,7 @@ export const PhotoSlider = ({ limit = 5 }) => {
           <div className="photo--scroll">
             {data.allFile.edges.map(({ node }) => {
               return (
+                // TODO: Change to gatsby image for better performance
                 <a href={node.publicURL}><img src={node.publicURL} loading="lazy"/></a>
               )
             })}
