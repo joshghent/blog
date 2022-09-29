@@ -21,3 +21,5 @@ The list is in no particular order.
 [Semaphore](https://semaphoreci.com/category/engineering)
 [Charity](https://charity.wtf)
 [RachelByTheBay](https://rachelbythebay.com)
+[Elle Townsend](https://www.elletownsend.co.uk)
+[Matt Brunt](https://brunty.me)
