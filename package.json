@@ -46,7 +46,7 @@
     "gatsby-transformer-sharp": "~4.24.0",
     "icloud-shared-album": "^1.1.0",
     "preact": "^10.11.1",
-    "preact-render-to-string": "^5.2.4",
+    "preact-render-to-string": "^5.2.5",
     "prismjs": "^1.29.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
