@@ -156,3 +156,10 @@
   image: bookmark-junior-designers-vs-senior-designers-desk-magazine.jpg
   type: article
   notes: A lot of these apply to developers as well.
+- title: Days Since Incident
+  site: ''
+  date: '2022-10-11'
+  description: Tracking natural disasters on Earth
+  url: https://neal.fun/days-since-incident/
+  image: bookmark-days-since-incident.png
+  type: website
