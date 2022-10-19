@@ -170,3 +170,13 @@
   url: https://every.to/superorganizers/how-james-clear-is-writing-his-next-book
   image: bookmark-how-james-clear-is-writing-his-next-book.png
   type: article
+- title: 'Autostrada: Code generator for Go projects'
+  site: autostrada.dev
+  date: '2022-10-19'
+  description: >-
+    Effortlessly generate the perfect starting point for your Go web application
+    or JSON API.
+  url: https://autostrada.dev
+  image: bookmark-autostrada-code-generator-for-go-projects.png
+  type: website
+  notes: Super cool site to generate Go project boilerplates
