@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
           <h2>Hello World</h2>
           <p>I&apos;m Josh - software engineer, maker and aspiring writer.</p>
           <p>Generally, I write about technical architecture, software culture and DevOps. This is my little corner of the internet where I post my writings, photos and things I have discovered on the net.</p>
-          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / <a href="https://joshghent.gumroad.com/l/ultimate-checklists">Checklists for Web Agencies</a></p>
+          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / <a href="https://joshghent.gumroad.com/l/ultimate-checklists">Checklists for Web Agencies</a> / <a href="https://github.com/joshghent/dailydoggos">DailyDoggos Telegram Bot</a></p>
           <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
           <p>bookshelf - <Link to="/bookshelf">my virtual bookshelf</Link></p>
 
@@ -63,13 +63,13 @@ class HomeIndex extends React.Component {
            </ul>
         </section>
 
-        <hr className="section-break" />
+        {/* <hr className="section-break" />
 
         <section id="notes">
           <h2 className="text">Notes</h2>
           <Link to="/notes" className="styled-link">All Notes</Link>
           <a href="notes.xml" className="styled-link">RSS</a>
-        </section>
+        </section> */}
 
         <p style={{ textAlign: 'left', fontFamily: 'monospace' }}>:wq</p>
       </Layout>
