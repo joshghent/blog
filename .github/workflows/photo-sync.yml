@@ -7,24 +7,25 @@ jobs:
   photos-sync:
     runs-on: ubuntu-latest
 
-    - name: Checkout
-      uses: actions/checkout@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    - uses: bahmutov/npm-install@v1
+      - uses: bahmutov/npm-install@v1
 
-    - name: Process Data
-      run: node ./photos.js
-      env:
-        ICLOUD_ALBUM_ID: ${{ secrets.ICLOUD_ALBUM_ID }}
+      - name: Process Data
+        run: node ./photos.js
+        env:
+          ICLOUD_ALBUM_ID: ${{ secrets.ICLOUD_ALBUM_ID }}
 
-    - name: Commit and push
-      run: |
-        git config --global user.email "bot@joshghent.com"
-        git config --global user.name "photos [bot]"
-        git add .
-        git commit -m "📸 Update photos" || echo "Nothing to commit"
-        git push origin HEAD:main
+      - name: Commit and push
+        run: |
+          git config --global user.email "bot@joshghent.com"
+          git config --global user.name "photos [bot]"
+          git add .
+          git commit -m "📸 Update photos" || echo "Nothing to commit"
+          git push origin HEAD:main
