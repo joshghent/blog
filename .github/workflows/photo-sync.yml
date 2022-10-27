@@ -1,7 +1,9 @@
 # Grabs the image JSON from iCloud and commit the update
 name: "Photos"
 on:
-  schedule: "0 */4 * * *"
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
 
 jobs:
   photos-sync:
