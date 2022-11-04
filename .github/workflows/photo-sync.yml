@@ -30,4 +30,4 @@ jobs:
           git config --global user.name "photos [bot]"
           git add .
           git commit -m "📸 Update photos" || echo "Nothing to commit"
-          git push origin HEAD:main
+          git push origin HEAD:master
