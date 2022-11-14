@@ -186,3 +186,13 @@
   description: synonyms and quotations for 'solitude'
   image: ''
   type: ''
+- title: Open source UI elements - made with CSS and HTML
+  site: ''
+  date: '2022-11-14'
+  description: >-
+    Library of free and customizable HTML and CSS UI elements. It's all
+    open-source, and it's all free. Try it out to save you many hours spent on
+    building & customizing UI components for your next project.
+  url: https://uiverse.io
+  image: bookmark-open-source-ui-elements-made-with-css-and-html.png
+  type: ''
