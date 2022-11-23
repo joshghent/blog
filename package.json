@@ -62,7 +62,7 @@
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "^14.4.3",
     "babel-jest": "^29.3.1",
-    "babel-preset-gatsby": "^2.24.0",
+    "babel-preset-gatsby": "^3.1.0",
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
