@@ -196,3 +196,14 @@
   url: https://uiverse.io
   image: bookmark-open-source-ui-elements-made-with-css-and-html.png
   type: ''
+- title: Performance | 2022 | The Web Almanac by HTTP Archive
+  site: ''
+  date: '2022-11-23'
+  description: >-
+    Performance chapter of the 2022 Web Almanac covering Core Web Vitals, with
+    deep dives into the Largest Contentful Paint, Cumulative Layout Shift, and
+    First Input Delay metrics and their diagnostics.
+  url: https://almanac.httparchive.org/en/2022/performance
+  image: bookmark-performance-2022-the-web-almanac-by-http-archive.jpg
+  type: article
+  notes: Lot of useful metrics to aim for here.
