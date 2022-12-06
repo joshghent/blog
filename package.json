@@ -52,7 +52,7 @@
     "react-dom": "17.0.0",
     "react-helmet": "^6.1.0",
     "react-toggle": "4.1.2",
-    "react-typography": "^0.16.20",
+    "react-typography": "^0.16.23",
     "request": "^2.88.2",
     "typography": "^0.16.21"
   },
