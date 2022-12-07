@@ -1,0 +1,210 @@
+[
+  {
+    "title": "It’s time to leave the leap second in the past",
+    "site": "Engineering at Meta",
+    "date": "2022-08-02",
+    "description": "Here’s why engineers at Meta are supporting a larger community push to stop introducing any new leap seconds.",
+    "url": "https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/",
+    "image": "bookmark-its-time-to-leave-the-leap-second-in-the-past.jpg",
+    "type": "article",
+    "notes": "Time is such a basic premise with so much nuance affected by the physical world. Not only is the digital world we create so fragile but also the physical world is so abstract to hide these incredibly complexities"
+  },
+  {
+    "title": "Optimizing For Feelings",
+    "site": "",
+    "date": "2022-08-02",
+    "description": "On seeking meaning beyond metrics",
+    "url": "https://browsercompany.substack.com/p/optimizing-for-feelings",
+    "image": "bookmark-optimizing-for-feelings.jpg",
+    "type": "article",
+    "notes": "Wonderful article. I echo all the sentiments. Most software is drab to use because it’s numerical, or factual. But it doesn’t have to be that way. The web can be whimsical!\r\n\r\nGreat quote:\r\n\r\nGeorgia O’Keefe put it this way: \"I have things in my head that are not like what anyone has taught me... so I decided to start anew.\""
+  },
+  {
+    "title": "You can create a great looking website while sucking at design",
+    "site": "",
+    "date": "2022-08-03",
+    "description": "How to create great looking websites while having little design skill.",
+    "image": "",
+    "type": "",
+    "notes": "Useful specific tips for good design:\r\n\r\n1. Use a framework - probably tailwind\r\n2. Use wicked blocks for prebuilt components\r\n3. Use Photopea to design any custom graphics"
+  },
+  {
+    "title": "Kurt Vonnegut on the 8 \"shapes\" of stories",
+    "site": "Big Think",
+    "date": "2022-08-04",
+    "description": "Before fame, Kurt Vonnegut wrote a master's thesis on the shapes of stories for the anthropology department at the University of Chicago.",
+    "url": "https://bigthink.com/high-culture/vonnegut-shapes/",
+    "image": "bookmark-kurt-vonnegut-on-the-8-shapes-of-stories.png",
+    "type": "article",
+    "notes": "“What uncle Alex found objectionable about so many human beings is that they so seldom noticed it when they were happy,” Vonnegut said.\n\nHis uncle made a habit of noticing the good times: When Vonnegut and his family would be drinking lemonade under a tree on a summer day, his uncle would suddenly exclaim, “Wait a minute, stop! If this isn’t nice, I don’t know what is!”"
+  },
+  {
+    "title": "One More Try – an experimental skate video",
+    "site": "Vimeo",
+    "date": "2022-08-08",
+    "description": "An ode to effort.  Clips by Dennis Ludwig, Ryan Neddeau, and Frankie Eder  Skaters: Blake Johnson, Markus Blessing, Ben Nordberg, Walker Ryan, Ray Corey, Carlos…",
+    "url": "https://vimeo.com/717945664",
+    "image": "bookmark-one-more-try-an-experimental-skate-video.jpg",
+    "type": "video.other",
+    "notes": "Amazing concept, well executed."
+  },
+  {
+    "title": "How to Learn to Code",
+    "site": "headlinedev",
+    "date": "2022-08-15",
+    "description": "How to Learn to Code",
+    "url": "https://headlinedev.xyz/2022/08/12/how-to-learn-to-program.html",
+    "image": "",
+    "type": "article"
+  },
+  {
+    "title": "Why your daily stand-ups don't work and how to fix them",
+    "site": "",
+    "date": "2022-08-21",
+    "description": "Daily stand-ups are a classic example of learned helplessness. We all know they’re useless, but we tell ourselves “that’s just how things are” and do nothing...",
+    "url": "https://lucasfcosta.com/2022/08/07/how-to-improve-daily-standups.html",
+    "image": "",
+    "type": "",
+    "notes": "Prioritise going through the backlog and adjusting according to any blockers.\nStand ups are not about making sure people are working, they should be focused on getting things done and delivering software to the customer."
+  },
+  {
+    "title": "To Become Wise, Do Less!",
+    "site": "",
+    "date": "2022-08-28",
+    "description": "Embrace leisure and abhor the need to always be productive to actually become productive",
+    "url": "https://leveragethoughts.substack.com/p/to-become-wise-do-less",
+    "image": "bookmark-to-become-wise-do-less.jpg",
+    "type": "article",
+    "notes": "Leisure gives the scribe the chance to acquire wisdom; a man with few commitments can grow wise. How can the ploughman become wise, whose sole ambition is to wield the goad, driving his oxen, engrossed in their work, his conversation limited to bullocks, his thoughts absorbed in the furrows he traces and his long evenings spent in fattening heifers?\n\nSirach 38: 24-26"
+  },
+  {
+    "title": "How Discord Stores Billions of Messages",
+    "site": "",
+    "date": "2022-08-31",
+    "description": "",
+    "image": "bookmark-how-discord-stores-billions-of-messages.png",
+    "type": "website",
+    "notes": "Fascinating insights from a business at huge scale."
+  },
+  {
+    "title": "Reducing Experience Gaps in Web Performance",
+    "site": "Ethan Gardner",
+    "date": "2022-09-01",
+    "description": "Looking at gaps can help inform performance strategy",
+    "url": "https://www.ethangardner.com/posts/web-performance-optimization-experience-gaps/",
+    "image": "",
+    "type": "article",
+    "notes": "Valuable to look at multiple pages"
+  },
+  {
+    "title": "Tips to build a great landscape photo - 500px",
+    "site": "500px",
+    "date": "2022-09-21",
+    "description": "Landscape photography is timeless, and it’s a genre that’s encouraged countless artists to pack up their gear, hike into the wilderness, and set up camp.",
+    "url": "https://iso.500px.com/tips-to-build-a-great-landscape-photo/",
+    "image": "bookmark-tips-to-build-a-great-landscape-photo-500px.jpg",
+    "type": "article"
+  },
+  {
+    "title": "How to Run an Event That Doesn’t Suck",
+    "site": "some words",
+    "date": "2022-09-25",
+    "description": "Distilling 18 months of experience with 80+ online events, involving thousands of attendees, down into a letter to a friend.",
+    "url": "https://karmanivero.us/blog/how-to-run-an-event-that-doesnt-suck/",
+    "image": "bookmark-how-to-run-an-event-that-doesnt-suck.png",
+    "type": "article"
+  },
+  {
+    "title": "Privacy vs “I have nothing to hide” - Kev Quirk",
+    "site": "Kev Quirk",
+    "date": "2022-09-25",
+    "description": "I wrote an article a while ago about why I’m ditching Android. That article got numerous comments asking why I was so concerned about privacy and asking what I have ... More -->",
+    "url": "https://kevquirk.com/privacy-vs-i-have-nothing-to-hide/",
+    "image": "bookmark-privacy-vs-i-have-nothing-to-hide-kev-quirk.jpg",
+    "type": "article"
+  },
+  {
+    "title": "Junior designers vs. senior designers - DESK Magazine",
+    "site": "The DESK Magazine",
+    "date": "2022-10-05",
+    "description": "The difference between a designer early in their career and a more experienced designer are easy to spot. Here we outline the key differences.* *It should be noted that some young designers have been known to exhibit behaviors of senior designers. And on rare occasions, you may see a senior designer in the wild behaving …",
+    "url": "https://vanschneider.com/blog/young-designers/junior-designers-vs-senior-designers/",
+    "image": "bookmark-junior-designers-vs-senior-designers-desk-magazine.jpg",
+    "type": "article",
+    "notes": "A lot of these apply to developers as well."
+  },
+  {
+    "title": "Days Since Incident",
+    "site": "",
+    "date": "2022-10-11",
+    "description": "Tracking natural disasters on Earth",
+    "url": "https://neal.fun/days-since-incident/",
+    "image": "bookmark-days-since-incident.png",
+    "type": "website"
+  },
+  {
+    "title": "How James Clear is Writing His Next Book",
+    "site": "",
+    "date": "2022-10-17",
+    "description": "Asana, Google Docs, and Meeting Readers Where they Are",
+    "url": "https://every.to/superorganizers/how-james-clear-is-writing-his-next-book",
+    "image": "bookmark-how-james-clear-is-writing-his-next-book.png",
+    "type": "article"
+  },
+  {
+    "title": "Autostrada: Code generator for Go projects",
+    "site": "autostrada.dev",
+    "date": "2022-10-19",
+    "description": "Effortlessly generate the perfect starting point for your Go web application or JSON API.",
+    "url": "https://autostrada.dev",
+    "image": "bookmark-autostrada-code-generator-for-go-projects.png",
+    "type": "website",
+    "notes": "Super cool site to generate Go project boilerplates"
+  },
+  {
+    "title": "solitude - Careful Words",
+    "site": "",
+    "date": "2022-10-23",
+    "description": "synonyms and quotations for 'solitude'",
+    "image": "",
+    "type": ""
+  },
+  {
+    "title": "Open source UI elements - made with CSS and HTML",
+    "site": "",
+    "date": "2022-11-14",
+    "description": "Library of free and customizable HTML and CSS UI elements. It's all open-source, and it's all free. Try it out to save you many hours spent on building & customizing UI components for your next project.",
+    "url": "https://uiverse.io",
+    "image": "bookmark-open-source-ui-elements-made-with-css-and-html.png",
+    "type": ""
+  },
+  {
+    "title": "Performance | 2022 | The Web Almanac by HTTP Archive",
+    "site": "",
+    "date": "2022-11-23",
+    "description": "Performance chapter of the 2022 Web Almanac covering Core Web Vitals, with deep dives into the Largest Contentful Paint, Cumulative Layout Shift, and First Input Delay metrics and their diagnostics.",
+    "url": "https://almanac.httparchive.org/en/2022/performance",
+    "image": "bookmark-performance-2022-the-web-almanac-by-http-archive.jpg",
+    "type": "article",
+    "notes": "Lot of useful metrics to aim for here."
+  },
+  {
+    "title": "The “je ne sais quoi” of TikTok — Daniel Immke",
+    "site": "",
+    "date": "2022-11-24",
+    "description": "How a misunderstood platform has completely taken over the world.",
+    "image": "",
+    "type": "article",
+    "notes": "I do t use TikTok but walked away with some powerful lessons.\n1) Copying features alone will not bring the desired outcome. Focus on what the feature brings to customers.\n2) Different platforms can serve different niches even in ones like social media."
+  },
+  {
+    "title": "How to Make Exercise a Daily Habit - zen habits",
+    "site": "zen habits",
+    "date": "2022-12-01",
+    "description": "",
+    "url": "https://zenhabits.net/how-to-make-exercise-a-daily-habit-with-a-may-challenge/",
+    "image": "bookmark-how-to-make-exercise-a-daily-habit-zen-habits.jpg",
+    "type": "article",
+    "notes": "Consistency ingrains the habit. Better to do little and often than lots and infrequently."
+  }
+]
