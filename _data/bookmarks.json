@@ -215,5 +215,15 @@
     "url": "https://hourups.com/",
     "image": "",
     "type": ""
+  },
+  {
+    "title": "Replicate – Run open-source machine learning models with a cloud API",
+    "site": "",
+    "date": "2022-12-07",
+    "description": "",
+    "url": "https://replicate.com/",
+    "image": "",
+    "type": "",
+    "notes": "A collection of open source machine learning models."
   }
 ]
