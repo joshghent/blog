@@ -2,7 +2,7 @@
   "name": "@joshghent/blog",
   "private": true,
   "description": "Josh Ghent Website and Blog. Built using Gatsby",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "author": "Josh Ghent <me@joshghent.com>",
   "bugs": {
     "url": "https://github.com/joshghent/blog/issues"
