@@ -1,4 +1,5 @@
 name: Add bookmark
+
 on:
   workflow_dispatch:
     inputs:
@@ -17,8 +18,6 @@ jobs:
   add_bookmark:
     runs-on: macOS-latest
     name: Add bookmark
-    # only continue if issue has "bookmark" label
-    if: contains( github.event.issue.labels.*.name, 'bookmark')
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -27,7 +26,6 @@ jobs:
         with:
           fileName: _data/bookmarks.json
       - name: Download the thumbnail image
-        continue-on-error: true
         run: curl "${{ env.BookmarkImage }}" -o "content/assets/images/bookmarks/${{ env.BookmarkImageOutput }}"
       - name: Commit files
         run: |
