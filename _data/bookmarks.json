@@ -225,5 +225,15 @@
     "image": "",
     "type": "",
     "notes": "A collection of open source machine learning models."
+  },
+  {
+    "title": "Bloomberg - Are you a robot?",
+    "site": "",
+    "date": "2022-12-08",
+    "description": "",
+    "url": "https://www.bloomberg.com/news/features/2022-12-05/urban-planner-jeff-speck-revisits-walkable-city-10-years-later",
+    "image": "",
+    "type": "",
+    "notes": "A recent study of 24 years of data found that lower-income neighborhoods experienced road fatality rates more than 3.6 times higher than wealthier places. Research also shows that Blacks and Latinos are at considerably higher risk on the road — especially as pedestrians and bicyclists — than white populations. African Americans and Native Americans make up 12.9% of the population but they represent 22% of pedestrian deaths. In all, people of color are 54% more likely to be struck and killed while walking in the US."
   }
 ]
