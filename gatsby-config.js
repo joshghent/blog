@@ -167,6 +167,32 @@ module.exports = {
             output: "/rss.xml",
             title: "Developer Musings - Josh Ghent RSS Feed",
           },
+          {
+            serialize: ({ query: { site, allFile } }) =>
+              allFile.nodes.map((node) => ({
+                title: `${site.siteMetadata.siteTitle} Photo - ${node.id}`,
+                description: node.changeTime,
+                date: node.changeTime,
+                url: node.publicURL,
+                guid: node.publicURL,
+              })),
+            query: `
+              {
+                allFile(filter: {sourceInstanceName: {eq: "assets"}, absolutePath: { regex: "/photography/"}}) {
+                  edges {
+                    node {
+                      id
+                      absolutePath
+                      publicURL
+                      changeTime
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/photos.xml",
+            title: "Josh Ghent's Photo Feed",
+          },
         ],
       },
     },
