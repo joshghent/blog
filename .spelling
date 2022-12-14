@@ -278,6 +278,7 @@ tshirt
 ssh
 identitiesonly
 config
+Pokemon
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -613,3 +614,6 @@ DeCorah
 graphql
  - content/blog/rate-limits/index.md
 95th-percentile
+ - content/blog/project-hail-mary/index.md
+subpar
+morse
