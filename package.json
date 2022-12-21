@@ -17,7 +17,7 @@
     "gatsby": "^4.24.8",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-brotli": "^2.1.0",
-    "gatsby-plugin-catch-links": "^4.23.0",
+    "gatsby-plugin-catch-links": "^4.25.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "4.24.0",
     "gatsby-plugin-indieweb": "^1.0.3",
