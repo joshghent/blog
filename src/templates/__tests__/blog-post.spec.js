@@ -6,7 +6,7 @@ import BlogPostTemplate from "../blog-post";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
-    json: () => Promise.resolve({}),
+    json: () => Promise.resolve([]),
   })
 );
 
