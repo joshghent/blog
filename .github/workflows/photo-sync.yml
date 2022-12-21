@@ -28,6 +28,7 @@ jobs:
 
       - name: Commit and push
         run: |
+          git config --global init.defaultBranch master
           git config --global user.email "bot@joshghent.com"
           git config --global user.name "photos [bot]"
           git add .

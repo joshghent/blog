@@ -74,58 +74,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-feed",
-      options: {
-        // this base query will be merged with any queries in each feed
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map((edge) => ({
-                ...edge.node.frontmatter,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }],
-              })),
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "Josh Ghent Blog RSS Feed",
-          },
-        ],
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/blog`,
@@ -166,22 +114,6 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          // {
-          //   resolve: "gatsby-remark-opengraph",
-          //   options: {
-          //     background: "#00b8ff",
-          //     // if you create post-specific open graph images, be sure to prefix `./public`
-          //     outputPath: (node) => path.join("./public", node.fields.slug),
-          //     texts: [
-          //       {
-          //         text: (node) => node.frontmatter.title,
-          //         font: require.resolve(
-          //           "./content/assets/SpaceGrotesk-Bold.ttf"
-          //         ),
-          //       },
-          //     ],
-          //   },
-          // },
         ],
       },
     },
@@ -285,25 +217,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
     },
-    {
-      resolve: `gatsby-plugin-webmention`,
-      options: {
-        username: "joshghent.com", // webmention.io username
-        identity: {
-          // you need to specify at least one of the identities
-          // to be able to log in webmention.io
-          github: "joshghent",
-          twitter: "joshghent", // no @
-          email: "me@joshghent.com",
-        },
-        mentions: true,
-        pingbacks: false,
-        domain: "joshghent.com",
-        fetchLimit: 10000, // number of webmentions to fetch
-        token: process.env.WEBMENTIONS_TOKEN,
-      },
-    },
     "gatsby-plugin-preact",
-    "gatsby-plugin-no-javascript",
   ],
 };
