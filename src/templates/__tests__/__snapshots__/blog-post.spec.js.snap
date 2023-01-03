@@ -199,11 +199,7 @@ Object {
               </div>
               <ul
                 class="webmention--likes"
-              >
-                <div>
-                  Loading webmentions...
-                </div>
-              </ul>
+              />
               <ul
                 class="webmention--replies"
               >
@@ -446,11 +442,7 @@ Object {
             </div>
             <ul
               class="webmention--likes"
-            >
-              <div>
-                Loading webmentions...
-              </div>
-            </ul>
+            />
             <ul
               class="webmention--replies"
             >
