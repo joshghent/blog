@@ -217,6 +217,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
     },
-    "gatsby-plugin-preact",
+    // "gatsby-plugin-preact",
   ],
 };
