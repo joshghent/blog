@@ -86,7 +86,6 @@ export default function WebMentions({ url }) {
   }
 
   function renderLikes() {
-    console.log(links);
     if (!loading && links.length > 0) {
       return links.slice(0).map((link) => {
         if (link.activity.type === "like") {
