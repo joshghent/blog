@@ -26,7 +26,7 @@ function Photos({ data, location }) {
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
 
-  const handleClick = (index, item) => setIndex(index);
+  const handleClick = (i) => setIndex(i);
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
