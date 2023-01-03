@@ -5,7 +5,7 @@ import HCard from './hcard';
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props;
+    const { title, children, noContainer } = this.props;
     const header = (
       <h1
         style={{
@@ -58,6 +58,7 @@ class Layout extends React.Component {
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
           }}
         >
+          {noContainer && <main>{children}</main>}
           <div
             style={{
               marginLeft: 'auto',
@@ -66,7 +67,7 @@ class Layout extends React.Component {
               padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
             }}
           >
-            <main className="container">{children}</main>
+            {!noContainer && <main className="container">{children}</main>}
             <footer style={{ textAlign: 'center' }}>
               © {new Date().getFullYear()} - <Link to="/" className="u-url p-name">Josh Ghent</Link> - <a href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a> - <a href="https://github.com/joshghent/blog">View source</a>
             </footer>
