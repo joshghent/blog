@@ -86,14 +86,8 @@ export default function WebMentions({ url }) {
   }
 
   function renderLikes() {
-    if (loading) {
-      return <div>Loading webmentions...</div>;
-    }
-    if (!loading && links.length === 0) {
-      return "";
-    }
-    if (!loading) {
-      return links.slice(0).map((link, index) => {
+    if (!loading && links.length > 0) {
+      return links.slice(0).map((link) => {
         if (link.activity.type === "like") {
           let date = new Date(link.data.published ?? link.verified_date);
           date = new Intl.DateTimeFormat("en-US").format(date);
@@ -101,7 +95,7 @@ export default function WebMentions({ url }) {
             <a
               href={link.data.url}
               className="webmentions--likes-avatar"
-              key={index}
+              key={link.data.id}
             >
               {link.data.author?.photo && (
                 <img
@@ -116,6 +110,7 @@ export default function WebMentions({ url }) {
         return "";
       });
     }
+    return "";
   }
 
   function renderContent() {
@@ -125,7 +120,7 @@ export default function WebMentions({ url }) {
 
     if (
       !loading &&
-      links.filter((l) => ["reply", "link"].includes(l.activity.type))
+      links.filter((l) => ["reply", "link", "like"].includes(l.activity.type))
         .length === 0
     ) {
       return <div>No webmentions yet.</div>;

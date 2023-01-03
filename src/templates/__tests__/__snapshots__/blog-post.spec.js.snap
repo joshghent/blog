@@ -198,6 +198,9 @@ Object {
                 </a>
               </div>
               <ul
+                class="webmention--likes"
+              />
+              <ul
                 class="webmention--replies"
               >
                 <div>
@@ -219,7 +222,7 @@ Object {
             style="text-align: center;"
           >
             © 
-            2022
+            2023
              - 
             <a
               class="u-url p-name"
@@ -438,6 +441,9 @@ Object {
               </a>
             </div>
             <ul
+              class="webmention--likes"
+            />
+            <ul
               class="webmention--replies"
             >
               <div>
@@ -459,7 +465,7 @@ Object {
           style="text-align: center;"
         >
           © 
-          2022
+          2023
            - 
           <a
             class="u-url p-name"
