@@ -40,7 +40,7 @@
     "gatsby-remark-images": "~6.25.0",
     "gatsby-remark-prismjs": "~6.24.0",
     "gatsby-remark-reading-time": "~1.1.0",
-    "gatsby-remark-smartypants": "~5.24.0",
+    "gatsby-remark-smartypants": "~5.25.0",
     "gatsby-source-filesystem": "~4.25.0",
     "gatsby-transformer-remark": "~5.25.1",
     "gatsby-transformer-sharp": "~4.25.0",
