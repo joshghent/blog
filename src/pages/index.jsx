@@ -20,11 +20,9 @@ class HomeIndex extends React.Component {
           <h2>Hello World</h2>
           <p>I&apos;m Josh - software engineer, maker and aspiring writer.</p>
           <p>Generally, I write about technical architecture, software culture and DevOps. This is my little corner of the internet where I post my writings, photos and things I have discovered on the net.</p>
-          <p>created - <Link to="/work">Turbo Technologies (consultancy firm)</Link> / <a href="https://turboapi.dev">TurboAPI</a> / <a href="https://place.dog">PlaceDog</a> / <a href="https://joshghent.gumroad.com/l/ultimate-checklists">Checklists for Web Agencies</a> / <a href="https://github.com/joshghent/dailydoggos">DailyDoggos Telegram Bot</a></p>
-          <p>latest - <Link to="/now">what I&apos;m doing</Link></p>
-          <p>bookshelf - <Link to="/bookshelf">my virtual bookshelf</Link></p>
 
-          <p>You can reach me via <a href="mailto:me@joshghent.com">Email</a>, <a href="https://github.com/joshghent">GitHub</a> and <a href="https://twitter.com/joshghent">Twitter</a>. And find my <a href="https://docs.google.com/document/d/1BHEsryVDOnFv-XDYjLKrVFC2TCNgqHr9KLVM9Vul-9Y/export?format=pdf">CV here</a>.</p>
+          <p><Link to="/projects">projects</Link> · <Link to="/now">latest</Link> · <Link to="/bookshelf">bookshelf</Link></p>
+          <p><a href="https://github.com/joshghent">github</a> · <a href="https://twitter.com/joshghent">twitter</a></p>
         </section>
 
         <hr className="section-break" />
