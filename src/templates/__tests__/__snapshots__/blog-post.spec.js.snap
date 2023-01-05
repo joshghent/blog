@@ -108,9 +108,9 @@ Object {
                 </li>
                 <li>
                   <a
-                    href="/work"
+                    href="/services"
                   >
-                    Work with me
+                    Services
                   </a>
                 </li>
               </ul>
@@ -326,9 +326,9 @@ Object {
               </li>
               <li>
                 <a
-                  href="/work"
+                  href="/services"
                 >
-                  Work with me
+                  Services
                 </a>
               </li>
             </ul>

@@ -28,10 +28,10 @@ class WorkIndex extends React.Component {
             <li><strong>DevOps and Automation</strong>. Using Infrastructure-as-code tools and CI Pipeline tools, I can save your development team time, catch bugs before your customers and create reuseable systems.</li>
           </ul>
 
-          <h2>Trusted By</h2>
+          {/* <h2>Trusted By</h2>
           { /* List of logos */}
 
-          <h2>Working with me</h2>
+          {/* <h2>Working with me</h2>
           <p>I believe good design and communication is the key to solving lots of problems. Therefore, when programming I strive for <strong>simplicity</strong> and <strong>maintainability</strong>; writing code for humans rather than computers. I have a (healthy) obsession with automation so that teams have more time to do high-value work and run smoothly.</p>
 
           <p>I am big believer in documentation to communicate ideas, foster discussions and make decisions. Often, you will see me writing down my progress, asking for feedback, and favouring asynchronous discussions on a document rather than a synchronous meeting. </p>
@@ -52,17 +52,17 @@ class WorkIndex extends React.Component {
             <ul>
               <li>
             <p>Lorum ipsum</p>
-            <span>David Skewis</span>
+            <span>Person A</span>
             </li>
             <li>
               <p>Lorum Ipsum</p>
               <span>Another person</span>
             </li>
             </ul>
-          </div>
+          </div> */}
 
           <h2>Contact</h2>
-          <p>Send me an e-mail at <strong>me@joshghent.com</strong> with a brief description of what you are looking for. We will talk about timelines, scope, budget, and make sure we're a good fit. Keep it casual! I am professional, but laid-back. I&apos;ll get back to you in 1 business day.</p>
+          <p>Send me an e-mail at <strong>me@joshghent.com</strong> with a brief description of what you are looking for. We will talk about timelines, scope, budget, and make sure we&apos;re a good fit. Keep it casual! I am professional, but laid-back. I&apos;ll get back to you in 1 business day.</p>
           <p><i>I am currently based in Birmingham, UK.</i></p>
         </div>
       </Layout>
