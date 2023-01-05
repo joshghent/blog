@@ -101,30 +101,16 @@ Object {
               >
                 <li>
                   <a
-                    href="/blog"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="/archive"
                   >
-                    Archive
+                    Posts
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/now"
+                    href="/services"
                   >
-                    About me
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/work"
-                  >
-                    Work with me
+                    Services
                   </a>
                 </li>
               </ul>
@@ -220,22 +206,12 @@ Object {
           <footer
             style="text-align: center;"
           >
-            © 
-            2023
-             - 
-            <a
-              class="u-url p-name"
-              href="/"
-            >
-              Josh Ghent
-            </a>
-             - 
             <a
               href="https://creativecommons.org/licenses/by-sa/4.0/"
             >
               cc-by-sa
             </a>
-             - 
+             · 
             <a
               href="https://github.com/joshghent/blog"
             >
@@ -343,30 +319,16 @@ Object {
             >
               <li>
                 <a
-                  href="/blog"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
                   href="/archive"
                 >
-                  Archive
+                  Posts
                 </a>
               </li>
               <li>
                 <a
-                  href="/now"
+                  href="/services"
                 >
-                  About me
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/work"
-                >
-                  Work with me
+                  Services
                 </a>
               </li>
             </ul>
@@ -462,22 +424,12 @@ Object {
         <footer
           style="text-align: center;"
         >
-          © 
-          2023
-           - 
-          <a
-            class="u-url p-name"
-            href="/"
-          >
-            Josh Ghent
-          </a>
-           - 
           <a
             href="https://creativecommons.org/licenses/by-sa/4.0/"
           >
             cc-by-sa
           </a>
-           - 
+           · 
           <a
             href="https://github.com/joshghent/blog"
           >

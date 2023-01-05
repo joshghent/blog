@@ -37,27 +37,24 @@ class HomeIndex extends React.Component {
           <p>Things I&apos;m reading about and want to know more about.</p>
           <ul>
             <li>Photography. Particularly landscape and macro photography.</li>
-            <li>Reading - particularly about neurology, history, and space. <a href="https://www.goodreads.com/user/show/74204708-josh">What I&apos;m reading</a>.</li>
-            <li>Exercising - hiking, badminton and running. <a href="https://www.alltrails.com/members/joshua-ghent">My trekking history</a>.</li>
-            <li>Gardening - mainly vegetables, aiming to be self-sufficient in leafy vegetables.</li>
+            <li>Reading. particularly about neurology, history, and space. <a href="https://www.goodreads.com/user/show/74204708-josh">What I&apos;m reading</a>.</li>
+            <li>Exercising. hiking, badminton and running. <a href="https://www.alltrails.com/members/joshua-ghent">My trekking history</a>.</li>
+            <li>Gardening. mainly vegetables, aiming to be self-sufficient in leafy vegetables.</li>
             <li>Formula 1.</li>
             <li>Writing.</li>
-            <li>Urban Planning.</li>
+            <li>Urban Planning and Design.</li>
             <li>Cooking.</li>
-            <li>Linguistics.</li>
-            <li>Psychology.</li>
-            <li>Advanced health optimization.</li>
-            <li>The design of everyday things.</li>
             <li>IndieWeb.</li>
+            <li>Chess</li>
           </ul>
 
           <hr className="section-break" />
 
           <h2>What tech am I using?</h2>
           <ul>
-            <li>Laptop: Macbook Pro M1 2020</li>
-            <li>Phone: iPhone 8+</li>
-            <li>Stack: Although I try any technologies, I mostly use NodeJS, React and Angular</li>
+            <li>Laptop: Macbook Pro M1 2021</li>
+            <li>Phone: iPhone 14 Pro Max</li>
+            <li>Stack: Although I try any technologies, I mostly use NodeJS and React</li>
             <li>You can find the setup for my machines (which are standardized) <a href="https://github.com/joshghent/dotfiles">here</a></li>
           </ul>
 
