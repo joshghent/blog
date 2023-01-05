@@ -83,6 +83,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: `${__dirname}/content/notes`,
+        name: "notes",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: `${__dirname}/content/assets`,
         name: "assets",
       },
@@ -137,7 +144,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.nodes.map((node) => ({
+              allMarkdownRemark.edges.map(({ node }) => ({
                 ...node.frontmatter,
                 description: node.excerpt,
                 date: node.frontmatter.date,
@@ -147,29 +154,33 @@ module.exports = {
               })),
             query: `
               {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
+                allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
+                  frontmatter: {
+                    date: { ne: null }
+                  }, fileAbsolutePath: {regex: "/^(?!.*(notes).*$)/"}
+                }) {
+                  edges {
+                    node {
+                      html
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        date
+                        title
+                        description
+                      }
                     }
                   }
                 }
               }
             `,
             output: "/rss.xml",
-            title: "Developer Musings - Josh Ghent RSS Feed",
+            title: "Developer Musings",
           },
           {
             serialize: ({ query: { site, allFile } }) =>
-              allFile.nodes.map((node) => ({
+              allFile.edges.map((node) => ({
                 title: `${site.siteMetadata.siteTitle} Photo - ${node.id}`,
                 description: node.changeTime,
                 date: node.changeTime,
@@ -191,7 +202,41 @@ module.exports = {
               }
             `,
             output: "/photos.xml",
-            title: "Josh Ghent's Photo Feed",
+            title: "Developer Musings - Photos",
+          },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map(({ node }) => ({
+                title: node.frontmatter.date,
+                description: node.html,
+                date: node.frontmatter.date,
+                url: `${site.siteMetadata.siteUrl}/notes#${node.frontmatter.keyDate}`,
+                guid: node.frontmatter.keyDate,
+              })),
+            query: `
+            {
+              allMarkdownRemark(
+                sort: {fields: [frontmatter___date], order: DESC},
+                filter: {frontmatter: {date: {ne: null}}, fileAbsolutePath: {regex: "/notes/"}}
+              ) {
+                edges {
+                  node {
+                    id
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      date(formatString: "do MMMM YYYY")
+                      keyDate: date(formatString: "YYYY-MM-DDTHH:MM")
+                    }
+                    fileAbsolutePath
+                  }
+                }
+              }
+            }`,
+            output: "/notes.xml",
+            title: "Developer Musings - Notes",
           },
         ],
       },
@@ -211,7 +256,6 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-netlify",
     "gatsby-plugin-typography",
     {
       resolve: "gatsby-plugin-brotli",
@@ -243,6 +287,5 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
     },
-    // "gatsby-plugin-preact",
   ],
 };
