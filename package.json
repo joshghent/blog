@@ -28,7 +28,7 @@
     "gatsby-plugin-og-images": "^1.2.0",
     "gatsby-plugin-open-graph-images": "^0.1.8",
     "gatsby-plugin-preact": "^6.25.0",
-    "gatsby-plugin-purgecss": "^6.1.2",
+    "gatsby-plugin-purgecss": "^6.2.1",
     "gatsby-plugin-react-helmet": "^5.25.0",
     "gatsby-plugin-sharp": "4.25.0",
     "gatsby-plugin-sitemap": "^5.25.0",
