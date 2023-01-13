@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "dotenv": "^16.0.3",
-    "gatsby": "^4.25.2",
+    "gatsby": "^4.25.3",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-brotli": "^2.1.0",
     "gatsby-plugin-catch-links": "^4.25.0",
