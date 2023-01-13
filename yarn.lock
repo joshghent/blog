@@ -8675,10 +8675,10 @@ hunspell-spellchecker@^1.0.2:
   resolved "https://registry.yarnpkg.com/hunspell-spellchecker/-/hunspell-spellchecker-1.0.2.tgz#a10b0bd2fa00a65ab62a4c6b734ce496d318910e"
   integrity sha512-4DwmFAvlz+ChsqLDsZT2cwBsYNXh+oWboemxXtafwKIyItq52xfR4e4kr017sLAoPaSYVofSOvPUfmOAhXyYvw==
 
-icloud-shared-album@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/icloud-shared-album/-/icloud-shared-album-1.1.0.tgz#bb4119734b5207c8f5c8ed3f1371113a066a09bf"
-  integrity sha512-11aH46nuvsEHXyouaWoPSMDP7n26HnqZA6g1k+FDMsKFX+mkDNxcVqEFfgbB3udjyBBE6fkfjx3UTV2G3tpWTg==
+icloud-shared-album@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/icloud-shared-album/-/icloud-shared-album-1.2.0.tgz#6ae337b5162f11befe768047f571cd595bfe96a6"
+  integrity sha512-1TFMACeNbQR+G7b43lCiXzXjIsKsXMFi6wfWcFQUyLLx4sfvtOQt+ijE2XtsX79GBoSJ5w93GNPBX/kK3rea1A==
   dependencies:
     axios "^0.26.0"
     lodash.chunk "^4.2.0"
