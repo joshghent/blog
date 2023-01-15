@@ -292,5 +292,15 @@
     "url": "https://walkingtheworld.substack.com/p/how-to-travel",
     "image": "bookmark-how-to-travel.jpg",
     "type": "article"
+  },
+  {
+    "title": "Scaling PostgresML to 1 Million Requests per Second",
+    "site": "PostgresML",
+    "date": "2023-01-15",
+    "description": "Addressing horizontal scalability concerns, we've benchmarked PostgresML and ended up with an incredible 1 million requests per second using commodity hardware.",
+    "url": "https://postgresml.org/blog/scaling-postgresml-to-one-million-requests-per-second/",
+    "image": "bookmark-scaling-postgresml-to-1-million-requests-per-second.jpg",
+    "type": "article",
+    "notes": "Interesting write up.\nShows the importance of thinking of scale at all levels. Also consider the network of the machines not just the cpu and memory."
   }
 ]
