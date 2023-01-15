@@ -302,5 +302,15 @@
     "image": "bookmark-scaling-postgresml-to-1-million-requests-per-second.jpg",
     "type": "article",
     "notes": "Interesting write up.\nShows the importance of thinking of scale at all levels. Also consider the network of the machines not just the cpu and memory."
+  },
+  {
+    "title": "Betting on Things That Never Change",
+    "site": "Collab Fund",
+    "date": "2023-01-15",
+    "description": "Amazon launched 22 years ago this week.",
+    "url": "https://collabfund.com/blog/betting-on-things-that-never-change/",
+    "image": "bookmark-betting-on-things-that-never-change.jpg",
+    "type": "article",
+    "notes": "Notable observation that Amazon is the centre of the Venn diagram with low costs and fast delivery. They bet on those things not changing. It’s important to bear this in mind when coming up with product ideas. Consider betting on things that will never change."
   }
 ]
