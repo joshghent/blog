@@ -312,5 +312,14 @@
     "image": "bookmark-betting-on-things-that-never-change.jpg",
     "type": "article",
     "notes": "Notable observation that Amazon is the centre of the Venn diagram with low costs and fast delivery. They bet on those things not changing. It’s important to bear this in mind when coming up with product ideas. Consider betting on things that will never change."
+  },
+  {
+    "title": "Seeing through hardware counters: a journey to threefold performance increase",
+    "site": "Medium",
+    "date": "2023-01-16",
+    "description": "By Vadim Filanovsky and Harshad Sane",
+    "url": "https://netflixtechblog.com/seeing-through-hardware-counters-a-journey-to-threefold-performance-increase-2721924a2822",
+    "image": "bookmark-seeing-through-hardware-counters-a-journey-to-threefold-performance-increase.png",
+    "type": "article"
   }
 ]
