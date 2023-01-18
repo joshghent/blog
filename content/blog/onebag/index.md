@@ -27,7 +27,7 @@ Enjoy :)
 ### Tech
 
 - <mark>**<u>MacBook Pro 14” 2021.</u>**</mark> Brought after I spilled an entire litre of water on my old laptop (yes really - and no, rice didn't help). It allows me to do my work and that's it. I could have used some more RAM occasionally for running VM's and such but it's great 99% of the time. I generally limit software or OS upgrades because I find stuff just break after upgrading.
-- <mark>**<u>iPhone 14 Pro Max.</u>**</mark> Upgraded a few months ago and it's made a massive difference to the speed that I can accomplish tasks with. When traveling, it's my constant companion, for everything from maps, music, ride sharing, and travel guide.
+- <mark>**<u>iPhone 14 Pro Max.</u>**</mark> Upgraded a few months ago and it's made a massive difference to the speed that I can accomplish tasks with. When travelling, it's my constant companion, for everything from maps, music, ride sharing, and travel guide.
 
   - **Apps installed**
     - **Reading:** Kindle, Feedly
@@ -64,7 +64,7 @@ Enjoy :)
   - Driving license
   - Some cash
 
-- <mark>**<u>Tote bag.</u>**</mark> Used as a beach bag and for groceries. Because it's so compressable and weighs nearly nothing, it's a must have for me now.
+- <mark>**<u>Tote bag.</u>**</mark> Used as a beach bag and for groceries. Because it's so compressible and weighs nearly nothing, it's a must have for me now.
 - <mark>**<u>SIM card tool.</u>**</mark> Kept in a little pocket in my bag. Useful for international travel when I need to swap SIMs.
 - <mark>**<u>Washing powder (optional).</u>**</mark> Although I've heard some horror stories of it being confused for drugs, we've not been pulled asides for this in an airport so far! Usually washing powder is sold in large boxes so we carry a small ziplock bag of it. We take powder because we found tablets exploded constantly. So for the extra weight, it's worth it. It's marked as optional as we don't always take trips that require washing clothes.
 - <mark>**<u>Toiletries.</u>**</mark>
@@ -74,7 +74,7 @@ Enjoy :)
   - Plaster
   - Paracetamol
 
-- <mark>**<u>Sharpie or pen.</u>**</mark> The pen is mighter than the sword as they say! You never know you need this, until you need it. And when you need it, it seems impossible to find a pen unless you have one yourself. For the microscopic weight that a pen has, it's worth packing even if I don't use it _all_ the time.
+- <mark>**<u>Sharpie or pen.</u>**</mark> The pen is mightier than the sword as they say! You never know you need this, until you need it. And when you need it, it seems impossible to find a pen unless you have one yourself. For the microscopic weight that a pen has, it's worth packing even if I don't use it _all_ the time.
 - <mark>**<u>Sunglasses.</u>**</mark> I always break/lose sunglasses so I just got the cheapest UV400 pair I could find. UV400 means way more light is filtered and protects your eyes. If you're squinting on a beach whilst wearing sunglasses then you probably don't have UV400.
 
 ### Hiking
@@ -82,7 +82,7 @@ Enjoy :)
 This is the stuff I add for hiking trips. So far, I haven't taken my hiking stuff through an airport so just watch out for that! Currently, I'm in the middle of picking a tent and quilt - I will update this list when I get them.
 
 - <mark>[**<u>Soto Amicus.</u>**](https://amzn.eu/d/8Y7sVm2)</mark> A powerful and lightweight stove. Resilient against wind and has saved me a few times. Able to boil a litre of water in around 5 minutes (depending on altitude).
-- <mark>[**<u>Befree 1L.</u>**](https://amzn.eu/d/1PBDINy)</mark> Probably my best hiking purchase. This bladder bottle is collapsable and can filter any water you find on a trail. Although I generally look for clean water to gather, this removes any nasty stuff.
+- <mark>[**<u>Befree 1L.</u>**](https://amzn.eu/d/1PBDINy)</mark> Probably my best hiking purchase. This bladder bottle is collapsible and can filter any water you find on a trail. Although I generally look for clean water to gather, this removes any nasty stuff.
 - <mark>[**<u>Stanley Pots.</u>**](https://amzn.eu/d/fhWDIc0)</mark> Normally used to boil water for instant meals. Although a little bulky, it covers stuff for 2 people.
 
 ---
