@@ -59,7 +59,7 @@
     "typography": "^0.16.21"
   },
   "devDependencies": {
-    "@lhci/cli": "^0.10.0",
+    "@lhci/cli": "^0.11.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "^14.4.3",
