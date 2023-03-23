@@ -299,6 +299,7 @@ hotfix
 disincentivized
 api
 ChatGPT
+Eventbridge
  - content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -702,3 +703,12 @@ Rowden
 dr
  - content/blog/communication/index.md
 5-why's
+ - content/blog/api-rules-of-thumb/index.md
+inbetween
+righty
+tighty
+loosey
+4xx
+5xx
+spec
+CustomerEmailChanged
