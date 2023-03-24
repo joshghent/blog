@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { PhotoSlider } from "../components/photos-slider";
+import {Intro} from "../components/intro";
 
 class HomeIndex extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class HomeIndex extends React.Component {
           keywords={data.site.siteMetadata.defaultTags}
         />
         <section id="hello-world">
-          <h2>Hello World</h2>
+          {/* <h2>Hello World</h2>
           <p>I&apos;m Josh - software engineer, maker and aspiring writer.</p>
           <p>
             Generally, I write about technical architecture, software culture
@@ -33,7 +34,8 @@ class HomeIndex extends React.Component {
           <p>
             <a href="https://github.com/joshghent">github</a> ·{" "}
             <a href="https://twitter.com/joshghent">twitter</a>
-          </p>
+          </p> */}
+          <Intro />
         </section>
 
         <hr className="section-break" />
@@ -47,7 +49,7 @@ class HomeIndex extends React.Component {
             RSS
           </a>
 
-          <PhotoSlider limit={5} />
+          <PhotoSlider limit={10} />
         </section>
 
         <hr className="section-break" />
