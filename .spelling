@@ -715,3 +715,5 @@ spec
 CustomerEmailChanged
  - content/blog/running/index.md
 Medicins
+ - content/blog/aws-queues/index.md
+Zendesk
