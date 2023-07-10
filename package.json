@@ -56,7 +56,7 @@
     "react-toggle": "4.1.2",
     "react-typography": "^0.16.23",
     "request": "^2.88.2",
-    "typography": "^0.16.21"
+    "typography": "^0.16.24"
   },
   "devDependencies": {
     "@lhci/cli": "^0.11.0",
