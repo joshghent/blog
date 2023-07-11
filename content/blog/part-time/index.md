@@ -47,7 +47,7 @@ Beyond meetings, it also prevents you from becoming a single point of failure. P
 
 #### Focusing on outputs, not inputs
 
-If you are contracted to work 35 hours a week, what is the incentive to work hard all of that time? Very little. Of course, you don't want to miss deadlines. But people are used to scope creep and tickets taking longer than their alloted points. So what's the harm if you slack off a bit? After all, [Vouchercloud found that their office workers were "productive" for a mere 2 hours and 23 minutes per day](https://www.vouchercloud.com/resources/office-worker-productivity).
+If you are contracted to work 35 hours a week, what is the incentive to work hard all of that time? Very little. Of course, you don't want to miss deadlines. But people are used to scope creep and tickets taking longer than their allotted points. So what's the harm if you slack off a bit? After all, [Vouchercloud found that their office workers were "productive" for a mere 2 hours and 23 minutes per day](https://www.vouchercloud.com/resources/office-worker-productivity).
 
 Fewer hours mean a shift in mindset. My contracts are about deliverables within a set weekly timeframe. The spotlight is on what I've done, not time spent.
 
