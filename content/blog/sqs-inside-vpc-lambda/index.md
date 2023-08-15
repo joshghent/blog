@@ -1,8 +1,8 @@
-```
+---
 title: TIL - How to send an SQS message from a Lambda inside a VPC
 date: 2023-08-15
 tags: ["til"]
-```
+---
 
 Sending a message to SQS from a Lambda inside a VPC should be trivial. Unfortunately, this is AWS so they like to make it as complex as possible.
 
