@@ -74,62 +74,17 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-feed",
+      resolve: "gatsby-source-filesystem",
       options: {
-        // this base query will be merged with any queries in each feed
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map((edge) => ({
-                ...edge.node.frontmatter,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }],
-              })),
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "Josh Ghent Blog RSS Feed",
-          },
-        ],
+        path: `${__dirname}/content/blog`,
+        name: "blog",
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/blog`,
-        name: "blog",
+        path: `${__dirname}/content/notes`,
+        name: "notes",
       },
     },
     {
@@ -166,22 +121,6 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          // {
-          //   resolve: "gatsby-remark-opengraph",
-          //   options: {
-          //     background: "#00b8ff",
-          //     // if you create post-specific open graph images, be sure to prefix `./public`
-          //     outputPath: (node) => path.join("./public", node.fields.slug),
-          //     texts: [
-          //       {
-          //         text: (node) => node.frontmatter.title,
-          //         font: require.resolve(
-          //           "./content/assets/SpaceGrotesk-Bold.ttf"
-          //         ),
-          //       },
-          //     ],
-          //   },
-          // },
         ],
       },
     },
@@ -205,7 +144,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.nodes.map((node) => ({
+              allMarkdownRemark.edges.map(({ node }) => ({
                 ...node.frontmatter,
                 description: node.excerpt,
                 date: node.frontmatter.date,
@@ -215,25 +154,89 @@ module.exports = {
               })),
             query: `
               {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
+                allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
+                  frontmatter: {
+                    date: { ne: null }
+                  }, fileAbsolutePath: {regex: "/^(?!.*(notes).*$)/"}
+                }) {
+                  edges {
+                    node {
+                      html
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        date
+                        title
+                        description
+                      }
                     }
                   }
                 }
               }
             `,
             output: "/rss.xml",
-            title: "Developer Musings - Josh Ghent RSS Feed",
+            title: "Developer Musings",
+          },
+          {
+            serialize: ({ query: { site, allFile } }) =>
+              allFile.edges.map((node) => ({
+                title: `${site.siteMetadata.siteTitle} Photo - ${node.id}`,
+                description: node.changeTime,
+                date: node.changeTime,
+                url: node.publicURL,
+                guid: node.publicURL,
+              })),
+            query: `
+              {
+                allFile(filter: {sourceInstanceName: {eq: "assets"}, absolutePath: { regex: "/photography/"}}) {
+                  edges {
+                    node {
+                      id
+                      absolutePath
+                      publicURL
+                      changeTime
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/photos.xml",
+            title: "Developer Musings - Photos",
+          },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map(({ node }) => ({
+                title: node.frontmatter.date,
+                description: node.html,
+                date: node.frontmatter.date,
+                url: `${site.siteMetadata.siteUrl}/notes#${node.frontmatter.keyDate}`,
+                guid: node.frontmatter.keyDate,
+              })),
+            query: `
+            {
+              allMarkdownRemark(
+                sort: {fields: [frontmatter___date], order: DESC},
+                filter: {frontmatter: {date: {ne: null}}, fileAbsolutePath: {regex: "/notes/"}}
+              ) {
+                edges {
+                  node {
+                    id
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      date(formatString: "do MMMM YYYY")
+                      keyDate: date(formatString: "YYYY-MM-DDTHH:MM")
+                    }
+                    fileAbsolutePath
+                  }
+                }
+              }
+            }`,
+            output: "/notes.xml",
+            title: "Developer Musings - Notes",
           },
         ],
       },
@@ -253,7 +256,6 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-netlify",
     "gatsby-plugin-typography",
     {
       resolve: "gatsby-plugin-brotli",
@@ -285,25 +287,5 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
     },
-    {
-      resolve: `gatsby-plugin-webmention`,
-      options: {
-        username: "joshghent.com", // webmention.io username
-        identity: {
-          // you need to specify at least one of the identities
-          // to be able to log in webmention.io
-          github: "joshghent",
-          twitter: "joshghent", // no @
-          email: "me@joshghent.com",
-        },
-        mentions: true,
-        pingbacks: false,
-        domain: "joshghent.com",
-        fetchLimit: 10000, // number of webmentions to fetch
-        token: process.env.WEBMENTIONS_TOKEN,
-      },
-    },
-    "gatsby-plugin-preact",
-    "gatsby-plugin-no-javascript",
   ],
 };

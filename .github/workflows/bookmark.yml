@@ -1,32 +1,37 @@
 name: Add bookmark
+
 on:
-  issues:
-    types: opened
+  workflow_dispatch:
+    inputs:
+      url:
+        description: The URL to bookmark.
+        required: true
+        type: string
+      notes:
+        description: Notes about the bookmark.
+        type: string
+      date:
+        description: Date (YYYY-MM-DD). The default date is today.
+        type: string
 
 jobs:
   add_bookmark:
     runs-on: macOS-latest
     name: Add bookmark
-    # only continue if issue has "bookmark" label
-    if: contains( github.event.issue.labels.*.name, 'bookmark')
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Bookmark action
-        uses: katydecorah/bookmark-action@v3.1.2
+        uses: katydecorah/bookmark-action@v5.0.0
         with:
-          fileName: _data/bookmarks.yml
+          fileName: _data/bookmarks.json
       - name: Download the thumbnail image
         continue-on-error: true
         run: curl "${{ env.BookmarkImage }}" -o "content/assets/images/bookmarks/${{ env.BookmarkImageOutput }}"
       - name: Commit files
         run: |
+          git pull
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A && git commit -m  "Added ${{ env.BookmarkTitle }} to bookmarks.yml"
+          git add -A && git commit -m  "Bookmark ${{ env.BookmarkTitle }}"
           git push
-      - name: Close issue
-        uses: peter-evans/close-issue@v2
-        with:
-          issue-number: "${{ env.IssueNumber }}"
-          comment: "You bookmarked ${{ env.BookmarkTitle }} on ${{env.DateBookmarked}}."

@@ -1,0 +1,25 @@
+name: Create bookmarks post
+
+on:
+  schedule:
+    - cron: "0 0 */30 * *"
+  workflow_dispatch:
+
+jobs:
+  add_bookmark:
+    runs-on: macOS-latest
+    name: Add bookmark
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Bookmark action
+        uses: joshghent/bookmark-action@v1.0.0
+        with:
+          postFileName: content/blog/links-${{ steps.date.outputs.date }}.yml
+          bookmarksFile: _data/bookmarks.json
+          numberOfDays: 30
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4

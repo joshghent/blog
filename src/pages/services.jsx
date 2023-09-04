@@ -22,18 +22,12 @@ class WorkIndex extends React.Component {
           <p>Software development is complex ➿, cloud bills are sky high 💸, and bugs keep happening 🐛.</p>
           <p>Fortunately, I can help 🙋</p>
 
-
           <p>As a freelancer, I offer four types of services.</p>
           <ul>
             <li><strong>Software Development</strong>. Having been a software developer for 7+ years, I have the experience of building projects from the ground up, improving existing systems, and breaking down large systems into microservices.</li>
             <li><strong>Solutions Architecture</strong>. I can help you design and implement reliable architectures that can handle millions of customers and new features.</li>
             <li><strong>Website Performance Consultancy</strong>. This involves in-depth analysis of your website for performance and accessibility issues. Afterwards, I will work with your development team to implement the fixes.</li>
             <li><strong>DevOps and Automation</strong>. Using Infrastructure-as-code tools and CI Pipeline tools, I can save your development team time, catch bugs before your customers and create reuseable systems.</li>
-          </ul>
-
-          <h2>Previous Cients</h2>
-          <ul>
-            <li>BlueLightCard</li>
           </ul>
 
           {/* <h2>Trusted By</h2>

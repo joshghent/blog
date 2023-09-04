@@ -95,7 +95,7 @@ export const pageQuery = graphql`
     groups: allMarkdownRemark(filter: {
           frontmatter: {
             date: { ne: null }
-          }
+          }, fileAbsolutePath: {regex: "/^(?!.*(notes).*$)([^\n]*)/"}
         }) {
       group(field: fields___year_month) {
         edges {
@@ -114,12 +114,11 @@ export const pageQuery = graphql`
   	posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {
       frontmatter: {
         date: { ne: null }
-      }
+      }, fileAbsolutePath: {regex: "/^(?!.*(notes).*$)([^\n]*)/"}
     }) {
       edges {
         node {
           html
-          excerpt
           fields {
             slug
           }

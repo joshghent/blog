@@ -3,6 +3,21 @@
   src: url("../../content/assets/SpaceGrotesk-Bold.ttf");
 }
 
+@font-face {
+  font-family: 'Self Bold';
+  src: url("../../content/assets/fonts/self-modern_bold_web.woff2");
+}
+
+@font-face {
+  font-family: 'Self Regular';
+  src: url("../../content/assets/fonts/self-modern_regular_web.woff2");
+}
+
+@font-face {
+  font-family: 'Self Italic';
+  src: url("../../content/assets/fonts/self-modern_italic_web.woff2");
+}
+
 body {
   --bg: #fff;
   --textNormal: #222;
@@ -37,7 +52,7 @@ h4,
 h5,
 h6,
 .font {
-  font-family: SpaceGroteskBold, nunito-sans, -apple-system, BlinkMacSystemFont,
+  font-family: 'Self Bold', nunito-sans, -apple-system, BlinkMacSystemFont,
     segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
 }
 
@@ -45,7 +60,7 @@ hr.section-break {
   border: 0;
   border-left: 0.7rem solid var(--textNormal);
   height: 0.7rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
   display: inline-block;
 }
 
@@ -350,4 +365,107 @@ hr {
   width: fit-content;
   display: block;
   margin: auto;
+}
+
+.notes--list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes--list .note--item {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 3em;
+  margin-top: 3em;
+}
+
+.note--date {
+  color: grey;
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.note--target {
+  display: inline;
+}
+
+.note--item .note--target {
+  display: none;
+}
+
+.note--item:target .note--target {
+  display: inline;
+}
+
+.note--target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: var(--color-secondary);
+  margin-right: 0.25em;
+}
+
+.intro--section p {
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-family: 'Self Regular', serif;
+}
+
+.intro--section a {
+  font-family: 'Self Italic';
+  cursor: n-resize;
+  transition: none;
+}
+
+.intro--section a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--color-primary);
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
 }

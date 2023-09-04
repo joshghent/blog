@@ -1,40 +1,73 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { graphql } from 'gatsby';
-import React from 'react';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import { graphql } from "gatsby";
+import React, { useState } from "react";
+import { Gallery } from "react-grid-gallery";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { rhythm } from "../utils/typography";
 
-class Photos extends React.Component {
-  render() {
-    const { data, location } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const photos = data.allFile.edges;
+function Photos({ data, location }) {
+  const siteTitle = data.site.siteMetadata.title;
+  const images = data.allFile.edges.map((x) => ({
+    src: x.node.publicURL,
+    key: x.node.id,
+    width: x.node.childImageSharp.width,
+    height: x.node.childImageSharp.height,
+    nano: x.node.childImageSharp.fixed.base64,
+  }));
 
-    return (
-      <Layout location={location} title={`${siteTitle}`}>
-        <SEO
-          title="Photos"
-          description="Photos I have taken"
-          keywords={data.site.siteMetadata.defaultTags}
+  const [index, setIndex] = useState(-1);
+
+  const currentImage = images[index];
+  const nextIndex = (index + 1) % images.length;
+  const nextImage = images[nextIndex] || currentImage;
+  const prevIndex = (index + images.length - 1) % images.length;
+  const prevImage = images[prevIndex] || currentImage;
+
+  const handleClick = (i) => setIndex(i);
+  const handleClose = () => setIndex(-1);
+  const handleMovePrev = () => setIndex(prevIndex);
+  const handleMoveNext = () => setIndex(nextIndex);
+
+  return (
+    <Layout location={location} title={`${siteTitle}`} noContainer="true">
+      <SEO
+        title="Photos"
+        description="Photos I have taken"
+        keywords={data.site.siteMetadata.defaultTags}
+      />
+      <div className="photo__container" style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: rhythm(85),
+          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
+        }}>
+        <Gallery
+          images={images}
+          onClick={handleClick}
+          enableImageSelection={false}
+          rowHeight={300}
         />
-        <div className="photo__container">
-        {photos.map(({node}) => (
-          // TODO: Add dynamic selection of how to view the images
-          <figure id={node.id}>
-            <a href={node.publicURL}>
-              {/* // TODO: change over to gatsby image */}
-              <img src={node.publicURL} loading="lazy" alt=""/>
-            </a>
-            {/* TODO: Correctly pull through photo metadata and surface camera information */}
-            {/* <figcaption>
-              <span className="photo__metadata"></span>
-            </figcaption> */}
-          </figure>
-          ))}
-        </div>
-      </Layout>
-    );
-  }
+        {!!currentImage && (
+          /* @ts-ignore */
+          <Lightbox
+            mainSrc={currentImage.src}
+            imageTitle={currentImage.caption ?? ""}
+            mainSrcThumbnail={currentImage.src}
+            nextSrc={nextImage.src}
+            nextSrcThumbnail={nextImage.src}
+            prevSrc={prevImage.src}
+            prevSrcThumbnail={prevImage.src}
+            onCloseRequest={handleClose}
+            onMovePrevRequest={handleMovePrev}
+            onMoveNextRequest={handleMoveNext}
+          />
+        )}
+      </div>
+    </Layout>
+  );
 }
 
 export default Photos;
@@ -46,21 +79,38 @@ export const pageQuery = graphql`
         title
       }
     }
-    allFile(filter: {sourceInstanceName: {eq: "assets"}, absolutePath: { regex: "/photography/"}}) {
+    allFile(
+      sort: { fields: [modifiedTime], order: DESC }
+      filter: {
+        sourceInstanceName: { eq: "assets" }
+        absolutePath: { regex: "/photography/" }
+      }
+    ) {
       edges {
         node {
           id
           extension
           absolutePath
           publicURL
+          childImageSharp {
+            id
+            original {
+              height
+              width
+            }
+            fixed(toFormatBase64: NO_CHANGE) {
+              base64
+              tracedSVG
+              aspectRatio
+              srcWebp
+              srcSetWebp
+              originalName
+            }
+          }
         }
       }
     }
-    allMarkdownRemark(filter: {
-          frontmatter: {
-            date: { ne: null }
-          }
-        }) {
+    allMarkdownRemark(filter: { frontmatter: { date: { ne: null } } }) {
       group(field: fields___year_month) {
         edges {
           node {

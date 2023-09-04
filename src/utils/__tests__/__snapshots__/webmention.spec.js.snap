@@ -21,6 +21,9 @@ Object {
           </a>
         </div>
         <ul
+          class="webmention--likes"
+        />
+        <ul
           class="webmention--replies"
         >
           <div>
@@ -46,6 +49,9 @@ Object {
           What's this?
         </a>
       </div>
+      <ul
+        class="webmention--likes"
+      />
       <ul
         class="webmention--replies"
       >

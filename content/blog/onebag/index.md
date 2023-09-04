@@ -35,6 +35,7 @@ Enjoy :)
     - **Journaling:** Day One, Notes
     - **Utilities:** 1Password, Notion
     - **Entertainment:** Spotify, Pocket casts
+
 - <mark>**<u>Airpods Pro.</u>**</mark> Used for music and calls. Due to the noise cancelling, I use them to get silence when on a flight.
 - <mark>**Anker powerbrick.**</mark> Mine is so old and battered you can't buy it anymore. These things are bomb proof and are great for providing power on the go. Because it weighs about 500g, I generally only bring it when I really think I'll need it.
 - <mark>**Universal plug.**</mark> The amazon page has disappeared but search for any generic worldwide travel adapter and you'll get something decent. I chose something light and that can deliver fast charging. This plug means I don't need to carry USB plugs as it has the ports integrated itself.
@@ -43,7 +44,6 @@ Enjoy :)
 - USB-C cable
 - Kindle
 - Nikon D5600
-- 
 
 ### Clothing
 

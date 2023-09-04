@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v3
         with:
@@ -26,8 +28,9 @@ jobs:
 
       - name: Commit and push
         run: |
+          git config --global init.defaultBranch master
           git config --global user.email "bot@joshghent.com"
           git config --global user.name "photos [bot]"
           git add .
           git commit -m "📸 Update photos" || echo "Nothing to commit"
-          git push origin HEAD:main
+          git push origin HEAD:master

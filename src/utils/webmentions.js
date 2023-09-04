@@ -20,7 +20,6 @@ export default function WebMentions({ url }) {
   const [page, setPage] = useState(0);
   const [links, setLinks] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const twitterHref = `https://twitter.com/intent/tweet/?text=Great%20post%20by%20@joshghent%20${fullUrl}`;
 
   useEffect(() => {
     const fullUrl = `https://joshghent.com${url}`;
@@ -86,38 +85,33 @@ export default function WebMentions({ url }) {
     });
   }
 
-  // function renderLikes() {
-  //   if (loading) {
-  //     return <div>Loading webmentions...</div>;
-  //   }
-  //   if (!loading && links.length === 0) {
-  //     return "";
-  //   }
-  //   if (!loading) {
-  //     return links.slice(0).map((link, index) => {
-  //       if (link.activity.type === "like") {
-  //         let date = new Date(link.data.published ?? link.verified_date);
-  //         date = new Intl.DateTimeFormat("en-US").format(date);
-  //         return (
-  //           <div className="webmention--item" key={index}>
-  //             <div className="webmention--meta">
-  //               <a href={link.data.url}>
-  //                 {link.data.author?.photo && (
-  //                   <img
-  //                     alt=""
-  //                     className="webmention--image"
-  //                     src={link.data.author?.photo}
-  //                   />
-  //                 )}{" "}
-  //               </a>
-  //             </div>
-  //           </div>
-  //         );
-  //       }
-  //       return "";
-  //     });
-  //   }
-  // }
+  function renderLikes() {
+    if (!loading && links.length > 0) {
+      return links.slice(0).map((link) => {
+        if (link.activity.type === "like") {
+          let date = new Date(link.data.published ?? link.verified_date);
+          date = new Intl.DateTimeFormat("en-US").format(date);
+          return (
+            <a
+              href={link.data.url}
+              className="webmentions--likes-avatar"
+              key={link.data.id}
+            >
+              {link.data.author?.photo && (
+                <img
+                  alt=""
+                  className="webmention--image"
+                  src={link.data.author?.photo}
+                />
+              )}{" "}
+            </a>
+          );
+        }
+        return "";
+      });
+    }
+    return "";
+  }
 
   function renderContent() {
     if (loading) {
@@ -126,7 +120,7 @@ export default function WebMentions({ url }) {
 
     if (
       !loading &&
-      links.filter((l) => ["reply", "link"].includes(l.activity.type))
+      links.filter((l) => ["reply", "link", "like"].includes(l.activity.type))
         .length === 0
     ) {
       return <div>No webmentions yet.</div>;
@@ -150,7 +144,7 @@ export default function WebMentions({ url }) {
           What&apos;s this?
         </a>
       </div>
-      {/* <ul className="webmention--likes">{renderLikes()}</ul> */}
+      <ul className="webmention--likes">{renderLikes()}</ul>
       <ul className="webmention--replies">{renderContent()}</ul>
     </div>
   );
