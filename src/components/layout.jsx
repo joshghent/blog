@@ -43,7 +43,7 @@ class Layout extends React.Component {
               <nav className="nav">
                 <ul style={{ listStyle: 'none', display: 'inline' }}>
                   <li><Link to="/archive">Posts</Link></li>
-                  <li><Link to="/services">Services</Link></li>
+                  <li><Link to="/consulting-launch-2023">Services</Link></li>
                 </ul>
               </nav>
             </div>

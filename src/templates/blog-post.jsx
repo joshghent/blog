@@ -1,6 +1,7 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
+// import OpenEmote from '../components/openemote';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 import WebMentions from "../utils/webmentions";
@@ -12,7 +13,6 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
     const tags = post.frontmatter.tags ? [].concat(post.frontmatter.tags, data.site.siteMetadata.defaultTags) : data.site.siteMetadata.defaultTags
-
     return (
       <Layout location={location} title={`${siteTitle}`}>
         <SEO
@@ -35,6 +35,7 @@ class BlogPostTemplate extends React.Component {
         </section>
 
         <WebMentions url={location.pathname} />
+        {/* <OpenEmote target={`joshghent.com${location.pathname}`} reactions={["❤️", "👍", "👎", "😂", "😮", "😡"]}/> */}
 
         <hr
           style={{

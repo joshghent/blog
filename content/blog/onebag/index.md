@@ -37,9 +37,13 @@ Enjoy :)
     - **Entertainment:** Spotify, Pocket casts
 
 - <mark>**<u>Airpods Pro.</u>**</mark> Used for music and calls. Due to the noise cancelling, I use them to get silence when on a flight.
-- <mark>**<u>Anker powerbrick.</u>**</mark> Mine is so old and battered you can't buy it anymore. These things are bomb proof and are great for providing power on the go. Because it weighs about 500g, I generally only bring it when I really think I'll need it.
-- <mark>**<u>Universal plug.</u>**</mark> The amazon page has disappeared but search for any generic worldwide travel adapter and you'll get something decent. I chose something light and that can deliver fast charging. This plug means I don't need to carry USB plugs as it has the ports integrated itself.
+- <mark>**Anker powerbrick.**</mark> Mine is so old and battered you can't buy it anymore. These things are bomb proof and are great for providing power on the go. Because it weighs about 500g, I generally only bring it when I really think I'll need it.
+- <mark>**Universal plug.**</mark> The amazon page has disappeared but search for any generic worldwide travel adapter and you'll get something decent. I chose something light and that can deliver fast charging. This plug means I don't need to carry USB plugs as it has the ports integrated itself.
 - <mark>**<u>Apple Watch.</u>**</mark> Used passively for tracking walks, sleep and, occasionally, telling the time.
+- 2x USB-C to Lightning Cable
+- USB-C cable
+- Kindle
+- Nikon D5600
 
 ### Clothing
 
@@ -48,7 +52,7 @@ Enjoy :)
 - <mark>[**<u>Adidas ultraboosts black.</u>**](https://amzn.eu/d/iUHmtP9)</mark> The only shoes I ever bring abroad. I walked 200km in Italy over 2 weeks and my feet were as fresh as the first day. They are incredibly light and dry quickly. Because they are black it means double as shoes for getting into a club or bar.
 - <mark>**<u>Merino wool socks.</u>**</mark> I must admit I was a little skeptical of the hype around merino. But after giving them a try I'm a total convert. Because they keep you dry, they also keep you warm. It's an odd mental model to think of, but moisture (read, sweat) can either cool (and therefore cool your body) or warm up (and make you uncomfortable). Merino solves this problem by being highly wicking. I got a pair as a gift and now plan to replace all my current socks with them.
 - <mark>**<u>Jeans.</u>**</mark> A pair of Levi's. Usually I wear these on flights. Jeans go with everything so are a good item to have.
-- <mark>**<u>5x H&M Premium T-shirts.</u>**</mark> 2 white, 3 black. I don't always bring 5, but 5 is my maximum. If I'm away for more than that, then I just wash the clothes. Black and white mean that dressing to match is super easy. I pack these tshirts by rolling them. Despite what many say, I find this doesn't prevent creases but I find these H&M tshirts uncrease themselves after being rolled out/worn fairly quickly.
+- <mark>**<u>5x Uniqlo T-shirts.</u>**</mark> 2 white, 3 black. I don't always bring 5, but 5 is my maximum. If I'm away for more than that, then I just wash the clothes. Black and white mean that dressing to match is super easy. 
 - <mark>**<u>Shorts.</u>**</mark> A simple navy pair. Sometimes add another pair of shorts here depending on the type of trip we are taking.
 - <mark>**<u>Underwear.</u>**</mark> 5 pairs. All black. From Amazon so they are easy to replace.
 - <mark>**<u>Swim trunks.</u>**</mark> For swimming...

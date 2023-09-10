@@ -16,9 +16,11 @@ class WorkIndex extends React.Component {
           keywords={data.site.siteMetadata.defaultTags}
         />
         <div>
-          <h1>Let&apos;s talk!</h1>
+          <h1>Let&apos;s work together</h1>
 
           <p>I am a business-minded <strong>full stack engineer</strong> and <strong>solutions architect</strong> with <strong>over 7 years</strong> of professional experience. I thrive in building robust high-quality software and designing scalable cloud native solutions.</p>
+          <p>Software development is complex ➿, cloud bills are sky high 💸, and bugs keep happening 🐛.</p>
+          <p>Fortunately, I can help 🙋</p>
 
           <p>As a freelancer, I offer four types of services.</p>
           <ul>
