@@ -12,4 +12,4 @@ date: 2023-06-09
 3. be requirements led
 4. ask good questions
 5. time spend configuring a system (productivity, software, computer) is time wasted.
-6. the goal of a productivity system is to be simple and reduce cognative overhead. evaluate if yours is accomplishing those goals.
+6. the goal of a productivity system is to be simple and reduce cognitive overhead. evaluate if yours is accomplishing those goals.

@@ -64,7 +64,7 @@ Encompassed within many of my roles is leadership and training. I believe I can 
 * Creating *systems* that empower the team to drive their own growth.
 * Introducing *fair and accurate metrics* to motivate the team and measure progress.
 * Building a culture of sharing and learning by introducing *knowledge shares*, *pair programming* and *code reviews*.
-* Establishing *psychological safety* by means of *blameless postmortums*, *retrospectives* and *one-to-ones*.
+* Establishing *psychological safety* by means of *blameless postmortems*, *retrospectives* and *one-to-ones*.
 * Making sure that communication between stakeholders and the team is *transparent* and *effective*, with shared goals and values.
 
 I have primarily worked with engineering teams who have a headcount of 1-20 people and successfully introduced these practices to them.
@@ -77,7 +77,7 @@ If you would like more information about the services below please get in touch.
 
 * Cloud Architecture Plan or Review - £1,300
 * Website/Application Performance Audit - £1,500
-* Obserability Audit - £750
+* Observability Audit - £750
 * Team Strategy Documentation - £2,500
 * Team Training - £1,250
 
