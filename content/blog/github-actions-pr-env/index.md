@@ -34,7 +34,7 @@ First we need to setup the workflow. We'll trigger for new `pull_requests` and g
 
 Additionally, we'll add a `PR_PREFIX` variable. This is so that we can deploy multiple pull request environments at the same time.
 
-> Thoughout the jobs, you will likely see code to filter out `dependabot` triggers. This is because these jobs will not work when triggered by dependabot. You can remove these if you don't use dependabot.
+> Throughout the jobs, you will likely see code to filter out `dependabot` triggers. This is because these jobs will not work when triggered by dependabot. You can remove these if you don't use dependabot.
 
 ```yaml
 name: Pull Request Ephemeral Environment
@@ -154,7 +154,7 @@ frontend:
 ### Post a comment
 
 Next we need to post a comment to the pull request with the URL's from the output.
-I copied the format of the message from the one that the native cloudflare integration uses because it looks quite good.
+I copied the format of the message from the one that the native Cloudflare integration uses because it looks quite good.
 
 If there is no comment, it will create one. If there is one, it will update it. Simple!
 
@@ -198,7 +198,7 @@ comment:
           </table>
 ```
 
-### Cleanup
+### Clean Up
 
 Finally, we need to clean up the resources that we created. This is done by using the `sst remove` command. Cloudflare pages resources are automatically cleaned up for us.
 
