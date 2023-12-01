@@ -6,6 +6,8 @@ module.exports = {
       name: "Turbo Technologies",
       url: "https://turboapi.dev",
     },
+    resumeUrl:
+      "https://drive.google.com/file/d/14M9LhWuqytY1BNX7xQ77Zi7ZqncngeLf/view?usp=drive_link",
     description:
       "Self-taught software developer and solo-maker. Creating fun products and writing about my journey. Helping to teaching new developers about breaking into the industry and improving workflows in your development team.",
     siteUrl: "https://joshghent.com",

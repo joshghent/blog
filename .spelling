@@ -323,33 +323,34 @@ cloudflare
 midwit
 Kubernetes
 Uniqlo
- - content/blog/attending-meetups/index.md
+NextJS
+- content/blog/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
 o
- - content/blog/google-psi-problems/index.md
+- content/blog/google-psi-problems/index.md
 Minifier
 everytime
 Laravel
- - content/blog/battling-with-elasticsearch/index.md
+- content/blog/battling-with-elasticsearch/index.md
 1’s
 0’s
 Memcache’s
 20x
- - content/blog/database-design/index.md
+- content/blog/database-design/index.md
 1-to-1
 country_id’s
- - content/blog/dont-know/index.md
+- content/blog/dont-know/index.md
 js
 npx
- - content/blog/goals-in-todoist/index.md
+- content/blog/goals-in-todoist/index.md
 center
 out_and_about
 deep_work
- - content/blog/good-code-review/index.md
+- content/blog/good-code-review/index.md
 Array.includes
 Array.includes.
- - content/blog/grafana-node/index.md
+- content/blog/grafana-node/index.md
 i
 getInstance
 GraphiteController
@@ -362,7 +363,7 @@ GetUsers
 startTime
 graphiteController.writeTiming
 consolidateBy
- - content/blog/how-to-learn-programming/index.md
+- content/blog/how-to-learn-programming/index.md
 ument
 ation
 cetera
@@ -371,18 +372,18 @@ bzflush
 __construct
 StdOut
 se
- - content/blog/linkedin-for-developers/index.md
+- content/blog/linkedin-for-developers/index.md
 foosball
 masse
- - content/blog/next-gen-communication/index.md
+- content/blog/next-gen-communication/index.md
 defacto
 ol
 Twilio’s
 accountId
- - content/blog/ntp/index.md
+- content/blog/ntp/index.md
 Stratum-0
 time.google.com.
- - content/blog/performance-principles/index.md
+- content/blog/performance-principles/index.md
 youdontneedjquery
 Addy
 Osmani
@@ -395,7 +396,7 @@ cloudinary
 CriticalCSS
 div’s
 un-indexed
- - content/blog/php-hatred/index.md
+- content/blog/php-hatred/index.md
 namespacing
 namespaced
 array_map
@@ -422,17 +423,17 @@ paamayim
 nekudatayim
 Zend
 lingua-franca
- - content/blog/resiliency-by-design/index.md
+- content/blog/resiliency-by-design/index.md
 requeue
 4am
 reusability
 offs
 failovers
- - content/blog/successful-meetup/index.md
+- content/blog/successful-meetup/index.md
 barebones
 Slackin
 afterward
- - content/blog/tech-talk-tips/index.md
+- content/blog/tech-talk-tips/index.md
 Glossophobia
 1-on-1
 NottinghamJS
@@ -440,49 +441,49 @@ Alexa
 gifs
 Slidedeck
 powerpoint
- - content/blog/tracking-personal-finance/index.md
+- content/blog/tracking-personal-finance/index.md
 Flexdirect
 Moneybox
- - content/blog/what-lang-to-learn/index.md
+- content/blog/what-lang-to-learn/index.md
 obvi
 overarchingly
 www.reddit.com
 learnprogramming
 faq#wiki_which_programming_language_should_i_start_with
- - content/blog/why-as-a-dev/index.md
+- content/blog/why-as-a-dev/index.md
 PoC
 infact
- - content/blog/zen-iphone/index.md
+- content/blog/zen-iphone/index.md
 8-hour
- - content/blog/leaving-work/index.md
+- content/blog/leaving-work/index.md
 Tanna
 LastFm2Slack
 aways
- - content/blog/gatsby-or-bust/index.md
+- content/blog/gatsby-or-bust/index.md
 Overreacted.io
 Sivers
 medium-2-md
- - content/blog/resiliency/index.md
+- content/blog/resiliency/index.md
 requeued
 3x
 LaunchDarkly
 Easy-peasy
- - content/blog/signal-vs-noise/index.md
+- content/blog/signal-vs-noise/index.md
 Quinn
- - content/blog/pentest/index.md
+- content/blog/pentest/index.md
 hunter2
 GOAVQAp4BJ
 Yury
 Smykalov
 ysmykalov
 helmetjs
- - content/blog/personal-infra/index.md
+- content/blog/personal-infra/index.md
 clamshelled
 usethis
 usesthis
- - content/blog/private-github-packages-travis/index.md
+- content/blog/private-github-packages-travis/index.md
 org
- - content/blog/backwards-compatible/index.md
+- content/blog/backwards-compatible/index.md
 ol
 Cantrills
 SQLite3
@@ -494,7 +495,7 @@ spacejam
 Cantrill's
 4th
 _
- - content/blog/zsh-speed/index.md
+- content/blog/zsh-speed/index.md
 150ms
 13ms
 zshrc
@@ -505,20 +506,20 @@ Pyenv
 pyenv
 compinit
 Zplugin
- - content/blog/pdf-generation/index.md
+- content/blog/pdf-generation/index.md
 700ms
 NetworkIdle2
 500ms
 networkidle2
- - content/blog/domain-migration/index.md
+- content/blog/domain-migration/index.md
 KeyPrefixEquals
 KeyPrefixEqual
 API
- - content/blog/rebuilding-a-monolith/index.md
+- content/blog/rebuilding-a-monolith/index.md
 devdocs
- - content/blog/third-party-data-resiliency/index.md
+- content/blog/third-party-data-resiliency/index.md
 tm
- - content/blog/ats-resiliency/index.md
+- content/blog/ats-resiliency/index.md
 tm
 1
 2
@@ -528,60 +529,60 @@ tm
 6
 7
 0
- - content/blog/health-checks/index.md
+- content/blog/health-checks/index.md
 Harrelson's
 pocky
 Harrelson
- - content/blog/error-messages/index.md
+- content/blog/error-messages/index.md
 parsable
- - content/blog/api-performance/index.md
+- content/blog/api-performance/index.md
 500ms
 webhook
 885ms
 7ms
- - content/blog/using-rds-snapshots/index.md
+- content/blog/using-rds-snapshots/index.md
 snapshot-access-vpc
 rds-snapshot-sg
- - content/blog/learning-software/index.md
+- content/blog/learning-software/index.md
 sqlzoo
- - content/blog/redesign/index.md
+- content/blog/redesign/index.md
 Jadene
 Aderonmu
 ff6c2f
 Disqus
 Solarwinds
- - content/blog/youtube-playlist-downloader/index.md
+- content/blog/youtube-playlist-downloader/index.md
 Youtube-DL
 youtube-dl
- - content/blog/resumes/index.md
+- content/blog/resumes/index.md
 someones
 hemingwayapp.com
 RxJS
- - content/blog/shutdown-routine/index.md
+- content/blog/shutdown-routine/index.md
 5pm
- - content/blog/spellcheck-ci/index.md
+- content/blog/spellcheck-ci/index.md
 mdspell
- - content/blog/github-actions-perf/index.md
+- content/blog/github-actions-perf/index.md
 20s
 50s
 Anywho
 lego
- - content/blog/deskercise/index.md
+- content/blog/deskercise/index.md
 deskercise
- - content/blog/your-business/index.md
+- content/blog/your-business/index.md
 DuckDuckGo'ing
 configs
 1am
 3am
- - content/blog/typing-practise/index.md
+- content/blog/typing-practise/index.md
 200-word
 influencecapa
 comprom
 discuse
 cya
- - content/blog/azure-pipelines-sequelize/index.md
+- content/blog/azure-pipelines-sequelize/index.md
 DB_URL
- - content/blog/webperf-on-deadline/index.md
+- content/blog/webperf-on-deadline/index.md
 Akamai
 482ms
 154ms
@@ -592,31 +593,31 @@ Phillip
 bundlesize
 webpack
 speedcurve
- - content/blog/software-beauty/index.md
+- content/blog/software-beauty/index.md
 requestId’s
 coworkers
 softwarebeauty
- - content/blog/auth0-cache/index.md
+- content/blog/auth0-cache/index.md
 1ms
- - content/blog/how-you-work/index.md
+- content/blog/how-you-work/index.md
 specs
- - content/blog/ship-faster/index.md
+- content/blog/ship-faster/index.md
 lifecycles
- - content/blog/recruiters/index.md
+- content/blog/recruiters/index.md
 inMail
- - content/blog/remote-collaboration/index.md
+- content/blog/remote-collaboration/index.md
 RemoteOk.com
- - content/blog/self-taught-mistakes/index.md
+- content/blog/self-taught-mistakes/index.md
 Codecademy
 katas
 Render.com
- - content/blog/quarterly-plan/index.md
+- content/blog/quarterly-plan/index.md
 5am
- - content/blog/mid-to-senior-dev/index.md
+- content/blog/mid-to-senior-dev/index.md
 shalt
- - content/blog/more/index.md
+- content/blog/more/index.md
 5k
- - content/blog/bookshelf/index.md
+- content/blog/bookshelf/index.md
 *
 Guernica
 Groupthink
@@ -627,7 +628,7 @@ maintainence
 Mans
 kwai
 Chekov
- - content/blog/onebag/index.md
+- content/blog/onebag/index.md
 decluttering
 italy
 Anker
@@ -645,43 +646,43 @@ uncrease
 8kg
 6kg
 2x
- - content/blog/deep-remove-key-from-object/index.md
+- content/blog/deep-remove-key-from-object/index.md
 Ramda
 VanillaJS
- - content/blog/carpel-tunnel/index.md
+- content/blog/carpel-tunnel/index.md
 Physio
 30mg
 500mg
 7mg
 Beethovans
 movies
- - content/blog/carpal-tunnel/index.md
+- content/blog/carpal-tunnel/index.md
 30mg
 500mg
 7mg
 Beethovans
 movies
- - content/blog/site-upgrades/index.md
+- content/blog/site-upgrades/index.md
 400Kb
 Chiou
 Grotesk
 Katy
 DeCorah
 graphql
- - content/blog/rate-limits/index.md
+- content/blog/rate-limits/index.md
 95th-percentile
- - content/blog/project-hail-mary/index.md
+- content/blog/project-hail-mary/index.md
 subpar
 morse
- - content/blog/seven-deaths-evelyn-hardcastle/index.md
+- content/blog/seven-deaths-evelyn-hardcastle/index.md
 bourne
 groundhog
 worldview
- - content/blog/rules-of-thumb/index.md
+- content/blog/rules-of-thumb/index.md
 100k
 MAUs
 Auth
- - content/blog/2022-music/index.md
+- content/blog/2022-music/index.md
 Templeman
 Flyte
 Adigery
@@ -708,28 +709,28 @@ Del
 Albarn
 KFlay
 Kendrick
- - content/blog/favourite-subreddits/index.md
+- content/blog/favourite-subreddits/index.md
 writingprompts
 culinaryplating
 itookapicture
 homelab
 f30
- - content/blog/loginllama-001/index.md
+- content/blog/loginllama-001/index.md
 devlogs
 tumblr
 tigsource
 vercel
 codemod
 mvp
- - content/blog/things-learned-sooner/index.md
+- content/blog/things-learned-sooner/index.md
 300ms
 bain
- - content/blog/simple-sites/index.md
+- content/blog/simple-sites/index.md
 Rowden
 dr
- - content/blog/communication/index.md
+- content/blog/communication/index.md
 5-why's
- - content/blog/api-rules-of-thumb/index.md
+- content/blog/api-rules-of-thumb/index.md
 inbetween
 righty
 tighty
@@ -738,27 +739,27 @@ loosey
 5xx
 spec
 CustomerEmailChanged
- - content/blog/running/index.md
+- content/blog/running/index.md
 Medicins
- - content/blog/aws-queues/index.md
+- content/blog/aws-queues/index.md
 Zendesk
- - content/blog/github-repo-setup/index.md
+- content/blog/github-repo-setup/index.md
 blog-umentation
 setups
- - content/blog/skunk-works/index.md
+- content/blog/skunk-works/index.md
 SR-71
 american
- - content/blog/whimsical-software/index.md
+- content/blog/whimsical-software/index.md
 whimsey
 wim-zi-kal
- - content/blog/complexity/index.md
+- content/blog/complexity/index.md
 ve
 jobby
 Janine
 Goodharts
- - content/blog/part-time/index.md
+- content/blog/part-time/index.md
 Vouchercloud
- - content/blog/crisps/index.md
+- content/blog/crisps/index.md
 Chipsticks
- - content/blog/github-actions-pr-env/index.md
+- content/blog/github-actions-pr-env/index.md
 Cleanup

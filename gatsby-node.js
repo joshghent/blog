@@ -6,7 +6,21 @@ function pad(n) {
 }
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
+
+  createRedirect({
+    fromPath: "/resume",
+    toPath:
+      "https://drive.google.com/file/d/14M9LhWuqytY1BNX7xQ77Zi7ZqncngeLf/view?usp=drive_link",
+    statusCode: 200,
+  });
+
+  createRedirect({
+    fromPath: "/cv",
+    toPath:
+      "https://drive.google.com/file/d/14M9LhWuqytY1BNX7xQ77Zi7ZqncngeLf/view?usp=drive_link",
+    statusCode: 200,
+  });
 
   const blogPost = path.resolve("./src/templates/blog-post.jsx");
   return graphql(`
