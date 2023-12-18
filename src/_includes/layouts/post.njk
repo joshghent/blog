@@ -2,5 +2,5 @@
 layout: layouts/base.njk
 ---
 
-<time>{{ date | readableDate }}</time>
+<time datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
 <article>{{ content | safe }}</article>
