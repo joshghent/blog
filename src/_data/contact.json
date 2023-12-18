@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "me@joshghent.com",
+      "link": "mailto:me@joshghent.com"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/joshghent"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/joshghent"
+    }
+  ]
+}
