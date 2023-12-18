@@ -1,5 +1,4 @@
 module.exports = {
-  purge: ["_site/**/*.html"],
   darkMode: "class",
   content: [
     "./src/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
