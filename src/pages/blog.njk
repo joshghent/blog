@@ -6,5 +6,5 @@ eleventyNavigation:
   key: Blog
   order: 2
 ---
-{% set postslist = collections.posts %}
+{% set postslist = collections.posts | sort(attribute='date') | reverse %}
 {% include "components/postslist.njk" %}
