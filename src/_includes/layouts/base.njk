@@ -3,7 +3,7 @@
   <head>
     <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/theme.css" />
 
     <script>
       // Remove this script if you don't need the dark mode toggle
@@ -34,8 +34,8 @@
   </head>
   <body class="dark:bg-zinc-800 dark:text-white">
     {% include "../components/navigation.njk" %}
-    <main class="p-12 ">
-      <h1 class="text-3xl mb-8">{{title}}</h1>
+    <main class="p-[20px] max-w-[720px] m-auto">
+      <h1 class="text-3xl mb-8 text-balance">{{title}}</h1>
       {{ content | safe }}
     </main>
     <script src="/assets/main.js"></script>
