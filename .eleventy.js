@@ -1,10 +1,33 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const tailwind = require("tailwindcss");
+const postCss = require("postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+
+const postcssFilter = (cssCode, done) => {
+  // we call PostCSS here.
+  postCss([
+    tailwind(require("./tailwind.config")),
+    autoprefixer(),
+    cssnano({ preset: "default" }),
+  ])
+    .process(cssCode, {
+      from: "./src/styles/main.css",
+    })
+    .then(
+      (r) => done(null, r.css),
+      (e) => done(e, null)
+    );
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy("src/img");
+
+  eleventyConfig.addWatchTarget("styles/**/*.css");
+  eleventyConfig.addNunjucksAsyncFilter("postcss", postcssFilter);
 
   const { DateTime } = require("luxon");
 
