@@ -36,7 +36,8 @@
       "title": "LoginLlama",
       "active": true,
       "year": 2023,
-      "description": "",
+      "description": "A suspicious login detector for your website or app. Powered by AI",
+      "technologies": ["nextjs", "typescript", "openai", "tailwindcss"],
       "url": "https://loginllama.app"
     },
     {
@@ -50,56 +51,49 @@
       "title": "DoNotAge",
       "active": true,
       "year": 2023,
-      "description": "",
+      "description": "Deployed and managed scalable infrastructure for a high traffic e-commerce website.",
       "url": "https://donotage.org"
     },
     {
       "title": "BlueLightCard",
-      "active": true,
+      "active": false,
       "year": 2022,
-      "description": "",
+      "description": "Solutions Architect tasked with migrating a large PHP monolith to a serverless microservice architecture.",
       "url": "https://bluelightcard.co.uk"
     },
     {
       "title": "ESFiddle",
       "active": false,
       "year": 2022,
-      "description": "",
-      "url": ""
+      "description": "ES6 Sandbox featured in YDKJS.",
+      "url": "https://github.com/esfiddle/esfiddle"
     },
     {
       "title": "Cappfinity",
       "active": false,
       "year": 2019,
-      "description": "",
+      "description": "Lead up development of a machine learning powered recruitment tool.",
       "url": "https://cappfinity.com"
     },
     {
       "title": "CloudCall",
       "active": false,
       "year": 2018,
-      "description": "",
+      "description": "Lead up backend development of the SMS and instant messaging feature ",
       "url": "https://cloudcall.com"
-    },
-    {
-      "title": "Web3.Storage",
-      "active": false,
-      "year": 2022,
-      "description": "",
-      "url": "https://web3.storage"
     },
     {
       "title": "Givetap",
       "active": true,
       "year": 2021,
-      "description": "",
+      "description": "Built features and managed infrastructure for a new fundraising platform.",
       "url": "https://givetap.co.uk"
     },
     {
       "title": "Alphageek",
       "active": true,
       "year": 2021,
-      "description": "",
+      "description": "DevOps and Web Consultant for a leading digital agency.",
       "url": "https://alphageekdigital.co.uk"
     }
   ]
