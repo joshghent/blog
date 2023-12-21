@@ -1,4 +1,4 @@
-<ul class="grid gap-4 prose dark:prose-invert prose-a:text-blue-500 visited:prose-a:text-violet-500">
+<ul class="pl-0 grid gap-4 prose dark:prose-invert prose-a:text-blue-500 visited:prose-a:text-violet-500">
   {% for post in postslist %}
     <li class="grid grid-cols-[auto_1fr] items-start">
       <time class="italic text-gray-500 inline-block align-top" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
