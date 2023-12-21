@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "title": "Todoist Box",
+      "active": true,
+      "year": 2022,
+      "description": "A github action to show your Todoist stats in a gist.",
+      "technologies": ["javascript", "github-actions"],
+      "url": "https://github.com/joshghent/todoist-box"
+    },
+    {
+      "title": "Rescue Box",
+      "active": true,
+      "year": 2022,
+      "description": "A github action to show your RescueTime stats in a gist.",
+      "technologies": ["javascript", "github-actions"],
+      "url": "https://github.com/joshghent/rescue-box"
+    },
+    {
+      "title": "Place.Dog",
+      "active": true,
+      "year": 2023,
+      "technologies": ["typescript", "docker"],
+      "description": "A simple service to get cute dogs as placeholders for your websites and designs. Just add a width and height to the end of the url.",
+      "url": "https://github.com/joshghent/placedog"
+    },
+    {
+      "title": "OpenEmote",
+      "active": true,
+      "year": 2023,
+      "technologies": ["go", "redis"],
+      "description": "OpenEmote is an open source API for adding reactions to your blog, website, or app.",
+      "url": "https://github.com/joshghent/openemote"
+    },
+    {
+      "title": "LoginLlama",
+      "active": true,
+      "year": 2023,
+      "description": "A suspicious login detector for your website or app. Powered by AI",
+      "technologies": ["nextjs", "typescript", "openai", "tailwindcss"],
+      "url": "https://loginllama.app"
+    },
+    {
+      "title": "York Press",
+      "active": true,
+      "year": 2020,
+      "description": "E-learning platform",
+      "url": "https://york-press.com/"
+    },
+    {
+      "title": "DoNotAge",
+      "active": true,
+      "year": 2023,
+      "description": "Deployed and managed scalable infrastructure for a high traffic e-commerce website.",
+      "url": "https://donotage.org"
+    },
+    {
+      "title": "BlueLightCard",
+      "active": false,
+      "year": 2022,
+      "description": "Solutions Architect tasked with migrating a large PHP monolith to a serverless microservice architecture.",
+      "url": "https://bluelightcard.co.uk"
+    },
+    {
+      "title": "ESFiddle",
+      "active": false,
+      "year": 2022,
+      "description": "ES6 Sandbox featured in YDKJS.",
+      "url": "https://github.com/esfiddle/esfiddle"
+    },
+    {
+      "title": "Cappfinity",
+      "active": false,
+      "year": 2019,
+      "description": "Lead up development of a machine learning powered recruitment tool.",
+      "url": "https://cappfinity.com"
+    },
+    {
+      "title": "CloudCall",
+      "active": false,
+      "year": 2018,
+      "description": "Lead up backend development of the SMS and instant messaging feature ",
+      "url": "https://cloudcall.com"
+    },
+    {
+      "title": "Givetap",
+      "active": true,
+      "year": 2021,
+      "description": "Built features and managed infrastructure for a new fundraising platform.",
+      "url": "https://givetap.co.uk"
+    },
+    {
+      "title": "Alphageek",
+      "active": true,
+      "year": 2021,
+      "description": "DevOps and Web Consultant for a leading digital agency.",
+      "url": "https://alphageekdigital.co.uk"
+    }
+  ]
+}

@@ -6,16 +6,12 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
       - run: npm i markdown-spellcheck -g
-      - run: mdspell -a -n -r "content/blog/**/*.md"
+      - run: mdspell -a -n -r "src/blog/**/*.md"
         name: Spellcheck
