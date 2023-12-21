@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "Lambda Warming is an Antipattern"
-date: "2023-12-18"
+date: 2023-12-18
 description: "Lambda warming is a common strategy to mitigate cold start times. But is it the right solution?"
 tags: ["aws", "lambda", "serverless", "architecture"]
 ---
