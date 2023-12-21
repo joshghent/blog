@@ -1,39 +1,17 @@
 version: 2
+
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 2
-  ignore:
-  - dependency-name: gatsby-image
-    versions:
-    - 3.1.0
-    - 3.2.0
-    - 3.3.0
-    - 3.4.0
-  - dependency-name: eslint
-    versions:
-    - 7.24.0
-  - dependency-name: gatsby
-    versions:
-    - 2.32.12
-    - 3.2.1
-  - dependency-name: preact-render-to-string
-    versions:
-    - 5.1.19
-  - dependency-name: gatsby-plugin-catch-links
-    versions:
-    - 3.2.0
-  - dependency-name: gatsby-plugin-typography
-    versions:
-    - 2.12.0
-  - dependency-name: gatsby-transformer-remark
-    versions:
-    - 2.16.1
-  - dependency-name: react-dom
-    versions:
-    - 17.0.2
-  - dependency-name: react
-    versions:
-    - 17.0.2
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    rebase-strategy: "auto"
+    open-pull-requests-limit: 3
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
