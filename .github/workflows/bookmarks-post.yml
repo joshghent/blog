@@ -22,4 +22,4 @@ jobs:
           bookmarksFile: _data/bookmarks.json
           numberOfDays: 30
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
