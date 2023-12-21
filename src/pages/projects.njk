@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projects and Work History
 layout: layouts/base.njk
 permalink: /projects/
 eleventyNavigation:
@@ -7,7 +7,9 @@ eleventyNavigation:
   order: 1
 ---
 
+<div class="prose dark:prose-invert">
 {% for project in projects.items %}
   <h2>{{ project.title }}</h2>
   <p>{{ project.description }}</p>
 {% endfor %}
+</div>
