@@ -1,12 +1,9 @@
 ---
 title: Developer Musings
 layout: layouts/base.njk
-eleventyNavigation:
-  key: Home
-  order: 0
 ---
 
-<div class="space-y-8">
+<div class="space-y-8 prose dark:prose-invert">
   <div>
     <p>
       Hey, my name is <strong>Josh</strong>
@@ -14,5 +11,11 @@ eleventyNavigation:
       based in then UK, who loves to build <a href="/whimsical-software">whimsical software</a> with robust, sustainable architectures.
       Currently I’m building <a href="https://loginllama.app">LoginLlama 🦙</a> a suspicious login detection API.
     </p>
+  </div>
+
+  <div>
+    <h2>Recent Posts</h2>
+    {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
+    {% include "components/postslist.njk" %}
   </div>
 </div>
