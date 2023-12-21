@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Alert Fatigue for Developers
 date: 2023-07-12
+draft: true
 ---
 
 When your first outage happens, alerting and monitoring becomes top priority. You don't want to be woken up at 3am again.

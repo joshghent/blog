@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Field Notes - London, England
 date: 2023-03-05
+draft: true
 ---
 
 I have travelled to many cities around the world. But without doubt, my favourite is London.

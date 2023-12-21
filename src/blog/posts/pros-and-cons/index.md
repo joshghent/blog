@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Pros and Cons
 date: 2023-03-10
+draft: true
 ---
 
 If you're making a technical decision, weigh up the pros and cons.

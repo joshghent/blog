@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Why Meetings Happen
 date: 2023-07-25
+draft: true
 ---
 
 I've been thinking a lot about meetings lately. I believe a majority of developers resent meetings - myself included. But, I've been thinking about why this is and what we can do to make meetings better.

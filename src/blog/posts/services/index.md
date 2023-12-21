@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Services I offer
 date: 2023-09-04
+draft: true
 ---
 
 Although I primarily work with organisations as a freelancer, I also offer a number of fixed cost services for teams who need an extra boost in a particular area.

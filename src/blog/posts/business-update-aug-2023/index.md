@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Business Version 2
 date: 2023-08-30
+draft: true
 ---
 
 I've been self-employed for the best part of 2 years now. It's been an interesting ride so far and I hope it will just get better. This "version 2" of the business is the next steps on that journey. I wanted to document it here for historical reasons.

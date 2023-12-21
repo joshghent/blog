@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Build a deployment pipeline in GitHub Actions
 description: Speed up your deployments and reduce code admin.
 date: 2023-01-10
+draft: true
 ---
 
 In every organisation I have joined, they all have a slightly different way of deploying products. Some have one staging environment, others have four. Some use hundreds of git branches, others use one.

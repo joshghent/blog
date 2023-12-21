@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Being Mindful about my Digital Footprint
 date: 2023-07-12
+draft: true
 ---
 
 For better and for worse, I'm a child of the internet age. I grew up here.

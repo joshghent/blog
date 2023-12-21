@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Crisps Tier list
 date: 2023-03-25
+draft: true
 ---
 
 A long time ago ~~in a galaxy far far away~~ some coworkers and I started a site called Crisp Rater. If you couldn't tell by the title, the premise was to rate various brands of crisps and flavours.

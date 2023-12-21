@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Book notes - Skunk Works
 date: 2023-04-04
 description: A review of Skunk Works by Ben R Rich
+draft: true
 ---
 
 Skunk Works was an elite division of Lockheed Martin who designed a number of hugely significant military aircraft between 1939 to 1978.

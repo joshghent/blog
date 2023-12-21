@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Midwit
 date: 2023-09-05
+draft: true
 ---
 
 The midwit meme encompasses an idea that I've been thinking a lot about lately

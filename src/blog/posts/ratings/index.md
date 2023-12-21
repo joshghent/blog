@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: I hate ratings
 description:
 date: 2023-06-08
+draft: true
 ---
 
 I hate rating things because they are meaningless.

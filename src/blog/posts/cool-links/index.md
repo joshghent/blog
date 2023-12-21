@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Cool Links from Around the Web
 date: 2023-01-20
+draft: true
 ---
 
 Despite web search providing an interface to a wealth of human knowledge, one thing that it can't crack is finding cool stuff. And that's mainly because cool is relative and hard to quantify.

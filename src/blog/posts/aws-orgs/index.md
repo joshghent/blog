@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: How you should probably setup your AWS Organisation
 date: 2023-07-05
+draft: true
 ---
 
 At a certain stage in a companies life, they realise that everyone logging into their production AWS account is probably not a great idea. In addition to that, hoards of developers are deploying their temporary test environments to the account and polluting the space.
