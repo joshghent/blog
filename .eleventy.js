@@ -8,6 +8,7 @@ const cssnano = require("cssnano");
 const postcssFilter = (cssCode, done) => {
   // we call PostCSS here.
   postCss([
+    // @ts-ignore
     tailwind(require("./tailwind.config")),
     autoprefixer(),
     cssnano({ preset: "default" }),
@@ -34,6 +35,39 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
     arr.slice(0, limit)
   );
+
+  eleventyConfig.addCollection("posts", (collection) => {
+    return [...collection.getFilteredByGlob("./src/blog/posts/**/*.md")].filter(
+      (post) => !post.data.draft
+    );
+  });
+
+  eleventyConfig.addFilter("splitlines", function (input) {
+    const parts = input.split(" ");
+    const lines = parts.reduce(function (prev, current) {
+      if (!prev.length) {
+        return [current];
+      }
+
+      let lastOne = prev[prev.length - 1];
+
+      if (lastOne.length + current.length > 19) {
+        return [...prev, current];
+      }
+
+      prev[prev.length - 1] = lastOne + " " + current;
+
+      return prev;
+    }, []);
+
+    return lines;
+  });
+
+  eleventyConfig.addCollection("drafts", (collection) => {
+    return [...collection.getFilteredByGlob("./src/blog/posts/**/*.md")]
+      .filter((item) => item.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
 
   const { DateTime } = require("luxon");
 
@@ -63,6 +97,22 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromISO(isoDateStr, {
       zone: "utc",
     }).toFormat("MMMM d, yyyy");
+  });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: "Europe/London",
+    })
+      .setLocale("en")
+      .toISODate();
+  });
+
+  eleventyConfig.addShortcode("openGraphScreenshotURL", function () {
+    const encodedURL = encodeURIComponent(
+      `https://joshghent.com/social${this.page.url}`
+    );
+    const cacheKey = `_${new Date().valueOf()}`;
+    return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/${cacheKey}`;
   });
 
   return {
