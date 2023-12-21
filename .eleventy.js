@@ -29,6 +29,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("styles/**/*.css");
   eleventyConfig.addNunjucksAsyncFilter("postcss", postcssFilter);
 
+  eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
+    arr.slice(0, limit)
+  );
+
   const { DateTime } = require("luxon");
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -41,10 +45,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc",
-    }).toFormat("MMMM d, yyyy");
+    }).toFormat("MMM d, yyyy");
   });
 
-  eleventyConfig.addFilter("fromISO", (isoDateStr) => {
+  eleventyConfig.addFilter("fromISO", (isoDate) => {
+    if (!(isoDate instanceof Date) && typeof isoDate !== "string") {
+      // If the input is neither a Date object nor a string, return a placeholder or an error message
+      return "Invalid Date";
+    }
+
+    // Convert Date object to ISO string if necessary
+    let isoDateStr =
+      isoDate instanceof Date ? isoDate.toISOString() : String(isoDate);
+
     return DateTime.fromISO(isoDateStr, {
       zone: "utc",
     }).toFormat("MMMM d, yyyy");
