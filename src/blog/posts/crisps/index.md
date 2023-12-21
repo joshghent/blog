@@ -5,9 +5,9 @@ date: 2023-03-25
 draft: true
 ---
 
-A long time ago ~~in a galaxy far far away~~ some coworkers and I started a site called Crisp Rater. If you couldn't tell by the title, the premise was to rate various brands of crisps and flavours.
+A long time ago ~~in a galaxy far far away~~ some coworker and I started a site called Crisp Rater. If you couldn't tell by the title, the premise was to rate various brands of crisps and flavours.
 
-It's an incredibly british past time to both consume crisps and to think their importance is significant enough to rate them. But then again, we were all british.
+It's an incredibly British past time to both consume crisps and to think their importance is significant enough to rate them. But then again, we were all British.
 
 Since then, in line with building my digital garden, I wanted to build a small page on my website dedicated to crisps.
 

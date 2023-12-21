@@ -9,7 +9,7 @@ I've been thinking a lot about meetings lately. I believe a majority of develope
 
 ## Are all meetings bad?
 
-If you spend any time reading tech blogs, you'll probably stumble across some SaaS company who scrap all meetings or goes totally "async". It's tempting to want to implement this philosphy at your own company. The problem is that like most advice, there isn't a one-size-fits-all approach. It has to be tailored. What works for them, will not work for you.
+If you spend any time reading tech blogs, you'll probably stumble across some SaaS company who scrap all meetings or goes totally "async". It's tempting to want to implement this philosophy at your own company. The problem is that like most advice, there isn't a one-size-fits-all approach. It has to be tailored. What works for them, will not work for you.
 
 Meetings have a bit of a bad reputation. You picture a stuffy boardroom filled with people who don't want to be there, being asking questions about the work they are doing. This category of meetings are pointless.
 

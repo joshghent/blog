@@ -324,6 +324,21 @@ midwit
 Kubernetes
 Uniqlo
 NextJS
+Xero
+Uptimerobot
+Rescuetime
+Typora
+Indiehackers
+whatsapp
+DuckDuckGo
+VPCs
+Node.js
+Yan
+Fargate
+Conways
+Gousto
+HelloFresh
+Digitalocean
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -350,6 +365,7 @@ deep_work
 - src/blog/posts/good-code-review/index.md
 Array.includes
 Array.includes.
+_OR_
 - src/blog/posts/grafana-node/index.md
 i
 getInstance
@@ -423,6 +439,7 @@ paamayim
 nekudatayim
 Zend
 lingua-franca
+_actually
 - src/blog/posts/resiliency-by-design/index.md
 requeue
 4am
@@ -481,6 +498,7 @@ helmetjs
 clamshelled
 usethis
 usesthis
+_I_
 - src/blog/posts/private-github-packages-travis/index.md
 org
 - src/blog/posts/backwards-compatible/index.md
@@ -761,5 +779,29 @@ Goodharts
 Vouchercloud
 - src/blog/posts/crisps/index.md
 Chipsticks
+Rater
+hullahoops
+crunchies
+Doritos
+b-tec
+McCoys
+Watsites
+Nik
+Naks
+Tyralls
+poncy
+Pom
+Frazelles
 - src/blog/posts/github-actions-pr-env/index.md
 Cleanup
+ - src/blog/posts/alert-fatigue/index.md
+3am
+ - src/blog/posts/lambda-warming-antipattern/index.md
+Cui
+300ms
+ - src/blog/posts/midwit/index.md
+aj
+ajlkn
+k8s
+ - src/blog/posts/ratings/index.md
+airbnb

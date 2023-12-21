@@ -35,4 +35,4 @@ It's no secret that the English like to drink. But, even for those who don't, th
 
 ## Multiculturalism
 
-London's greatest strength is that lots of people aren't natively british. Step off the train in St Pancras and chances are the first voices you hear won't be speaking English. It's absolutely fantastic. What it brings is a huge amount of diversity, each culture bringing it's own strengths, like a city-wide UN meeting. The city has a vast array of Italian deli's, Taco stands and Bao bars amongst others.
+London's greatest strength is that lots of people aren't natively British. Step off the train in St Pancras and chances are the first voices you hear won't be speaking English. It's absolutely fantastic. What it brings is a huge amount of diversity, each culture bringing it's own strengths, like a city-wide UN meeting. The city has a vast array of Italian deli's, Taco stands and Bao bars amongst others.

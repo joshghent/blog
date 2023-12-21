@@ -35,6 +35,6 @@ So here's the plan...
 
 As stated, my goal is to provide a wider range of products and services for businesses. That may sound like a lot of vague jargon (and it is), but the jist is that I won't be just a software developer - I'll be a cloud architect, teacher, team leader, devops engineer, and software engineer all rolled into one. Additionally, with SaaS products that I've built, I can also offer these free of charge to my clients.
 
-## Step 1: Productized Agency
+## Step 1: Productised Agency
 
 ## Step 2: SaaS Product
