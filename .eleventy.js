@@ -26,6 +26,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy("src/img");
 
+  eleventyConfig.addPassthroughCopy({ static: "/" });
+
   eleventyConfig.addWatchTarget("styles/**/*.css");
   eleventyConfig.addNunjucksAsyncFilter("postcss", postcssFilter);
 
