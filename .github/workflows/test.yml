@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - "**"
-      - "!main"
+      - "!master"
 
 permissions:
   contents: write
@@ -53,10 +53,8 @@ jobs:
           token: ${{github.token}}
 
   lighthouse:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     needs: setup
-    steps:
-      uns-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Audit URLs using Lighthouse
