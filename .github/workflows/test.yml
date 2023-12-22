@@ -24,7 +24,7 @@ jobs:
 
       - run: sleep 30
       - name: cloudflare-preview-url
-        uses: zentered/cloudflare-preview-url@v1.0.0
+        uses: zentered/cloudflare-preview-url@v1.4.0
         id: cloudflare_preview_url
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
