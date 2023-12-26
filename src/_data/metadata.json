@@ -3,7 +3,7 @@
     "title": "Developer Musings",
     "subtitle": "Recent content from Josh Ghent's blog",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "path": "/rss.xml",
     "url": "https://joshghent.com/feed/feed.xml",
     "id": "https://joshghent.com/"
   }
