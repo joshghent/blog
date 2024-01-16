@@ -25,6 +25,9 @@ jobs:
       - name: Install
         run: npm ci --no-audit
 
+      - name: Build
+        run: npm run build
+
       - name: Publish
         uses: cloudflare/pages-action@1
         id: cloudflare-publish
@@ -32,6 +35,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: joshghent
+          directory: _site
           gitHubToken: ${{ secrets.GH_TOKEN_WORKAROUND }}
 
   carbon:
