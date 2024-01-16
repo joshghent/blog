@@ -1,21 +1,19 @@
 name: Test
 
 on:
-  push:
-    branches:
-      - "**"
-      - "!master"
+  pull_request:
 
 permissions:
   contents: write
   pull-requests: write
   id-token: write
+  deployments: write
 
 jobs:
   setup:
     runs-on: ubuntu-latest
     outputs:
-      site_url: ${{ steps.cloudflare_preview_url.outputs.preview_url }}
+      url: ${{ steps.cloudflare-publish.outputs.url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,19 +25,15 @@ jobs:
       - name: Install
         run: npm ci --no-audit
 
-      - run: sleep 30
-      - name: cloudflare-preview-url
-        uses: zentered/cloudflare-preview-url@v1.4.1
-        id: cloudflare_preview_url
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        id: cloudflare-publish
         with:
-          cloudflare_project_id: "joshghent"
-          wait_until_ready: true
-      - name: Get URL
-        run: echo "https://${{ steps.cloudflare_preview_url.outputs.preview_url }}"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: joshghent
+          gitHubToken: ${{ secrets.GH_TOKEN_WORKAROUND }}
+
   carbon:
     runs-on: ubuntu-latest
     needs: setup
@@ -47,7 +41,7 @@ jobs:
       - name: Calculate CO2 🌱
         uses: GeopJr/CO2@v1
         with:
-          url: ${{ needs.setup.outputs.site_url }}
+          url: ${{ needs.setup.outputs.url }}
           renewable: true
           comment: true
           token: ${{github.token}}
@@ -60,6 +54,6 @@ jobs:
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v10
         with:
-          urls: ${{ needs.setup.outputs.site_url }}
+          urls: ${{ needs.setup.outputs.url }}
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
