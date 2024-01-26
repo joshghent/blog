@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Bookmark action
-        uses: katydecorah/bookmark-action@v6.3.0
+        uses: katydecorah/bookmark-action@v6.4.0
         with:
           fileName: _data/bookmarks.json
       - name: Download the thumbnail image
