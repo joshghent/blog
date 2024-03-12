@@ -1,8 +1,8 @@
 ---
 layout: layouts/post.njk
 title: Cool Links from Around the Web
-date: 2023-01-20
-draft: true
+date: 2024-03-11
+description: An ever expanding list of links from around the world wide web.
 ---
 
 Despite web search providing an interface to a wealth of human knowledge, one thing that it can't crack is finding cool stuff. And that's mainly because cool is relative and hard to quantify.
@@ -13,13 +13,12 @@ If you have suggestions, submit a pull request on this blog!
 
 Where possible, I've attempted to categorize them. Enjoy!
 
-## General Tech
-
--
-
 ## Web
 
--
+- https://solar.lowtechmagazine.com
+- https://grumpy.website
+- https://www.abandonedamerica.us/abandoned-theaters
+- https://designmanifestos.org
 
 ## Psychology
 
