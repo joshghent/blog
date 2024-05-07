@@ -349,6 +349,19 @@ eleventy
 webpack
 rss
 P.S.
+Vogals
+flo
+coolaid
+cloudwatch
+codebuild
+pagerduty
+remocal
+dynamodb
+Flink
+timestamp
+protobuf
+HyperLogLog
+chatgpt
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -821,3 +834,20 @@ React-ish
 v1
 v2
 0.01g
+ - src/blog/posts/aws-summit-2024/index.md
+JustEat
+justeat
+iplayer
+articleId
+8am-10am
+wifi
+ - src/blog/posts/canary-islands-tz/index.md
+Canarian
+spanish
+time.apple.com
+timezone
+appétit
+ - src/blog/posts/marp/index.md
+Marp
+ - src/blog/posts/will-ai-take-my-job/index.md
+layoffs
