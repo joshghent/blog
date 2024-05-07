@@ -34,7 +34,7 @@ This is a case where alerting is not needed as there is no direct action you or 
 
 ## 3. Non-actionable alerts
 
-Similar to the above, if an alert doesn't require an action, then it should be ditched or filtered out into a seperate "notifications" bucket.
+Similar to the above, if an alert doesn't require an action, then it should be ditched or filtered out into a separate "notifications" bucket.
 
 As an exercise, do the following:
 

@@ -8,7 +8,7 @@ description: If you hate powerpoint like I do, this is for you.
 Working in tech, if you wanted to "share your knowledge" chances are you used Powerpoint to create a presentation.
 It's been around forever so can run on anything and, on the surface, is simple to use.
 
-But, Powerpoint sucks. It really does. The interface is incredibly cluttered, the snap to grid system is completely unhelpful in real world scenerios, and there are just too many options.
+But, Powerpoint sucks. It really does. The interface is incredibly cluttered, the snap to grid system is completely unhelpful in real world scenarios, and there are just too many options.
 All I need is to have some images and text on a page and be able to scroll between them. I can forgo my beloved "star-wipe" transitions for simplicities sake.
 
 Images, and text. That sounds a lot like something I could do in Markdown.
