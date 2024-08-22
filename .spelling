@@ -362,6 +362,8 @@ timestamp
 protobuf
 HyperLogLog
 chatgpt
+leetcode
+bpmn
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -851,3 +853,10 @@ appétit
 Marp
  - src/blog/posts/will-ai-take-my-job/index.md
 layoffs
+ - src/blog/posts/solutions-architecture/index.md
+PoCs
+RFCs
+ADRs
+Zachman
+runbooks
+calculator.aws
