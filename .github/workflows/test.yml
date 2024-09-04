@@ -36,7 +36,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: joshghent
           directory: _site
-          gitHubToken: ${{ secrets.GH_TOKEN_WORKAROUND }}
+          branch: ${{ github.head_ref || github.ref_name }} 
 
   carbon:
     runs-on: ubuntu-latest
