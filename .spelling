@@ -364,6 +364,12 @@ HyperLogLog
 chatgpt
 leetcode
 bpmn
+hyperscaler
+sharding
+umms
+ahhs
+Opensearch
+Algolia
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -860,3 +866,5 @@ ADRs
 Zachman
 runbooks
 calculator.aws
+ - src/blog/posts/dynamodb-harmful/index.md
+ehem
