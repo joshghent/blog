@@ -370,6 +370,10 @@ umms
 ahhs
 Opensearch
 Algolia
+allgood
+Fastify
+Hono
+pnpm
 typingclub
 starcraft
 Nuphy
@@ -874,6 +878,9 @@ runbooks
 calculator.aws
  - src/blog/posts/dynamodb-harmful/index.md
 ehem
+ - src/blog/posts/allgood/index.md
+jobby
+healthcheck
  - src/blog/posts/typing-fast/index.md
 wic
 iz
