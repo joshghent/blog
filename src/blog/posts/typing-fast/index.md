@@ -9,7 +9,7 @@ Typing is the conduit by which thoughts flow via the keyboard to the computer. D
 Remember when you had a phone that looked like this?
 
 <div class="image">
-	<img alt="A keyboard with number 0-9. Each button represents 3 characters" src="../../assets/images/keyboard.jpg"/>
+	<img alt="A keyboard with number 0-9. Each button represents 3 characters" src="../../assets/images/old-keyboard.jpg"/>
 </div>
 
 Remember how slow it was? It took ages to write something - 'wic iz y we rote lyk this'.
@@ -49,7 +49,7 @@ Once I had grasped using all 10 fingers, I moved on to measuring my progress and
 
 ## Progress
 <div class="image">
-	<img src="../../assets/images/typing-progress.jpg"/>
+	<img src="../../assets/images/typing-progress.png"/>
 </div>
-My highest words per minute (as measured on 10fastfingers) is 81WPM and my average is staying well above where I started so I'm count that as a success!
+My highest words per minute (as measured on 10fastfingers) is 80WPM and my average is staying well above where I started so I'm count that as a success!
 If you work on a computer daily, I'd strongly recommend improving your typing speed as your fluency of transmitting information will increase dramatically.
