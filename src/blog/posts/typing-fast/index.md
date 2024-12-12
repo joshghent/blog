@@ -1,8 +1,8 @@
 ---
 layout: layouts/post.njk
 title: "Learning to Type Fast"
-date: "2024-10-31"
-description: ""
+date: "2024-12-12"
+description: "My journey to stop typing like an ape and improve my typing speed."
 ---
 
 Typing is the conduit by which thoughts flow via the keyboard to the computer. Doing this quickly can massively improve not only your productivity but your flow.
@@ -14,7 +14,7 @@ Remember when you had a phone that looked like this?
 
 Remember how slow it was? It took ages to write something - 'wic iz y we rote lyk this'.
 
-If you work as a software engineer, you'll be typing all day - whether programming or more predominently, emails and slack messages.
+If you work as a software engineer, you'll be typing all day - whether programming or more predominantly, emails and slack messages.
 
 I found that I was typing reasonably fast (70WPM) but often found myself being unable to keep up with my thoughts as I typed. And I made a LOT of mistakes.
 The reason? I typed with my index fingers only. I was super quick with it but I knew that I would never be able to write faster unless I retaught myself to write with all 10 digits.
@@ -34,7 +34,7 @@ Typingclub starts by building you up what fingers you use. Initially it just foc
 This has nothing to do with typing speed per se (more on that after), but a new keyboard would affect my typing experience.
 Previously, I was using a Logitech K380. A fantastic keyboard with multi-bluetooth and plenty of action keys. For £30, it's a steal and I've owned two of them over the years (after the first one met it's unfortunate end with a "e" key being totally broken). But I found the typing experience quite flat.
 A mechanical keyboard was the obvious answer. But this posed a problem. When I was a teenager, I used to play copious amounts of starcraft 2 - with a mechanical keyboard. Soon, my left forearm swelled with fluid and I eventually had to get carpal tunnel surgery to correct the problem.
-Wanting to avoid all that pain again (literally), I was a bit hesistant about picking up a new one. Fortunately, mechanical keyboards have come a long way. And one of those new developments is a "low profile" mechanical keyboard. They are a slimmed down version of mechanical keyboards that are less raised so don't strain your hands as much.
+Wanting to avoid all that pain again (literally), I was a bit hesitant about picking up a new one. Fortunately, mechanical keyboards have come a long way. And one of those new developments is a "low profile" mechanical keyboard. They are a slimmed down version of mechanical keyboards that are less raised so don't strain your hands as much.
 
 After a great deal of searching culminating in an excel spreadsheet comparison, I landed on the Nuphy Air75v2 with Wisteria switches. These switches are most akin to cherry brown switches and have a nice tactile bump on each keystroke. Crucially, they have multi-bluetooth to allow switching between my work and personal machine.
 
