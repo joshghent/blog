@@ -380,6 +380,8 @@ Nuphy
 Air75v2
 thonk
 keypress
+SSH'ed
+IaC
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -885,3 +887,8 @@ healthcheck
 wic
 iz
 lyk
+ - src/blog/posts/pets-vs-cattle/index.md
+cloud-init
+sshing
+setup.sh
+2.Adopt
