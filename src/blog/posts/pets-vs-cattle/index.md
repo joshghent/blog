@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "ClickOps and IaC - which are Pets and Cattle?"
-date: "2024-12-06"
+date: "2025-01-08"
 description: "We get it you use Terraform. Your infra can be fragile though. Just saying..."
 ---
 
