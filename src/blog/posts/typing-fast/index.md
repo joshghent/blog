@@ -52,4 +52,5 @@ Once I had grasped using all 10 fingers, I moved on to measuring my progress and
 	<img src="../../assets/images/typing-progress.png"/>
 </div>
 My highest words per minute (as measured on 10fastfingers) is 80WPM and my average is staying well above where I started so I'm count that as a success!
+
 If you work on a computer daily, I'd strongly recommend improving your typing speed as your fluency of transmitting information will increase dramatically.
