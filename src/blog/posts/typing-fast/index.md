@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Learning to Type Fast"
 date: "2024-12-12"
-description: ""
+description: "My journey to stop typing like an ape and improve my typing speed."
 ---
 
 Typing is the conduit by which thoughts flow via the keyboard to the computer. Doing this quickly can massively improve not only your productivity but your flow.
@@ -52,4 +52,5 @@ Once I had grasped using all 10 fingers, I moved on to measuring my progress and
 	<img src="../../assets/images/typing-progress.jpg"/>
 </div>
 My highest words per minute (as measured on 10fastfingers) is 81WPM and my average is staying well above where I started so I'm count that as a success!
+
 If you work on a computer daily, I'd strongly recommend improving your typing speed as your fluency of transmitting information will increase dramatically.
