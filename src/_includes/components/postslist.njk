@@ -1,8 +1,8 @@
-<ul class="pl-0 grid gap-4 prose dark:prose-invert prose-a:text-blue-600 visited:prose-a:text-violet-600">
+<ul class="pl-0 grid gap prose dark:prose-invert prose-a:text-blue-600 visited:prose-a:text-violet-600">
   {% for post in postslist %}
-    <li class="grid grid-cols-[auto_1fr] items-start">
-      <time class="italic text-gray-600 inline-block align-top" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      <a class="ml-4 no-underline" href="{{ post.url | url }}">{{ post.data.title }}</a>
+    <li class="grid grid-cols-[auto_1fr] items-baseline gap-4">
+      <time class="italic text-gray-600" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <a class="no-underline" href="{{ post.url | url }}">{{ post.data.title }}</a>
     </li>
   {% endfor %}
 </ul>

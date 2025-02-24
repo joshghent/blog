@@ -4,6 +4,8 @@ const tailwind = require("tailwindcss");
 const postCss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const fs = require("fs").promises;
+const path = require("path");
 
 const postcssFilter = (cssCode, done) => {
   // we call PostCSS here.
@@ -113,6 +115,10 @@ module.exports = function (eleventyConfig) {
     );
     const cacheKey = `_${new Date().valueOf()}`;
     return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/${cacheKey}`;
+  });
+
+  eleventyConfig.addFilter('padStart', function(value, length, char) {
+    return String(value).padStart(length, char);
   });
 
   return {
