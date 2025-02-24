@@ -121,6 +121,10 @@ module.exports = function (eleventyConfig) {
     return String(value).padStart(length, char);
   });
 
+  eleventyConfig.addFilter('dateToISO', (date) => {
+    return date.toISOString().split('T')[0];
+  });
+
   return {
     dir: { input: "src", output: "_site" },
   };

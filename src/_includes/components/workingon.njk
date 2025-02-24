@@ -1,9 +1,9 @@
 {% macro workingList(items) %}
-  <ul class="pl-0 space-y-6 list-none">
+  <ul class="pl-0 space-y-6 list-none text-sm">
     {% for item in items %}
-      <li class="grid gap-2">
-        <div class="text-gray-500 font-mono">{{ loop.index | padStart(2, '0') }}</div>
-        <div class="font-mono">
+      <li class="grid mt-0">
+        <div class="text-gray-500 font-mono mt-0">{{ loop.index | padStart(2, '0') }}</div>
+        <div class="font-mono my-0">
           {% if item.content.includes('<a') %}
             {{ item.content | replace('</a>', '<span class="inline-block ml-1 underline">↗</span></a>') | safe }}
           {% else %}
