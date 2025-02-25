@@ -122,6 +122,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('dateToISO', (date) => {
+    if (!(date instanceof Date)) {
+      date = new Date(date);
+    }
     return date.toISOString().split('T')[0];
   });
 

@@ -9,10 +9,10 @@ eleventyNavigation:
 <ul class="pl-0 space-y-2 list-none">
   {% for item in links.items %}
     <li>
+      <p><time class="italic text-gray-600" datetime="{{ item.date | dateToISO }}">{{ item.date | fromISO }}</time></p>
       <a href="{{ item.link }}" class="underline">
         {{ item.title }}<span class="inline-block ml-1 underline">↗</span>
       </a>
-      <date class="italic text-gray-600" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
       <p>{{ item.notes | safe }}</p>
     </li>
   {% endfor %}
