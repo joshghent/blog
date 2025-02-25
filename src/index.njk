@@ -1,21 +1,48 @@
 ---
-title: Developer Musings
 layout: layouts/base.njk
 ---
 
-<div class="space-y-8 prose dark:prose-invert">
-  <div>
-    <p>
-      Hey, my name is <strong>Josh</strong>
-      I’m a software engineer and solutions architect
-      based in then UK, who loves to build <a href="/whimsical-software">whimsical software</a> with robust, sustainable architectures.
-      Currently I’m building <a href="https://bucketscan.com">Bucketscan</a> a malware protection platform for cloud storage. And <a href="https://loginllama.app">LoginLlama 🦙</a> a suspicious login detection API.
-    </p>
+<div class="w-full max-w-none grid grid-cols-1 md:grid-cols-5 gap-8 text-xs">
+  {# Column 1: Intro + Contact Links #}
+  <div class="prose dark:prose-invert md:col-span-3">
+    <div class="mb-8">
+      <h1 class="text-2xl">❖ Josh Ghent</h1>
+      <p class="font-mono text-sm">
+        software eng. building things on the internet. currently creating a malware protection platform for cloud storage. checkout my <a href="/now" class="underline">/now<span class="inline-block ml-1 underline">↗</span></a> for more.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg">around the web</h2>
+      <ul class="pl-0 space-y-2 list-none">
+        {% for item in contact.items %}
+          <li class="font-mono text-sm">
+            <a href="{{ item.link }}" class="underline">
+              {{ item.name }}<span class="inline-block ml-1 underline">↗</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="flex">
+        <h2 class="inline-block text-lg"><a href="/blog" class="underline ml-2">recent writing<span class="inline-block ml-1 underline">↗</span></a></h2>
+      </div>
+      {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
+      {% include "components/postslist.njk" %}
+    </div>
   </div>
 
-  <div>
-    <h2>Recent Posts</h2>
-    {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
-    {% include "components/postslist.njk" %}
+  {# Column 2: Current Work #}
+  <div class="prose dark:prose-invert">
+    <h2 class="text-lg">currently</h2>
+    {% from "components/workingon.njk" import workingList %}
+    {{ workingList(workingon.current) }}
+  </div>
+
+  {# Column 3: Past Work #}
+  <div class="prose dark:prose-invert">
+    <h2 class="text-lg">previously</h2>
+    {{ workingList(workingon.past) }}
   </div>
 </div>

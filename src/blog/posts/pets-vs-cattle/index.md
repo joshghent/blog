@@ -24,7 +24,6 @@ That 5% is all the things not repeatable like
 - Literally any EC2 instance - yes there is cloud-init, but it's not a silver bullet
 
 Many may chalk this down as "bad engineering" but this is the reality of the world. If your business honestly could recreate their entire infrastructure from scratch using only code, then great for you - but this is not the norm.
-
 This is not even including the fact that no matter what IaC you use, it still involves some kind of initial manual work to provision the cloud accounts. At <day job>, we have a "manual-account-setup" terraform module that is run to provision new accounts, but this has to be done manually using local AWS credentials - not in a pipeline.
 
 But let's talk about that 95% that is automated. Now sure, you have a singing and dancing pipeline that runs your Terraform. But then how do you upgrade your Terraform, add governance across multiple teams and ensure that the system is secure? I'll admit that this process is more observable than sshing into servers, but it's still babying of a kind.

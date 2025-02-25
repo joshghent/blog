@@ -1,16 +1,20 @@
 {
   "items": [
     {
-      "name": "me@joshghent.com",
+      "name": "💌 email",
       "link": "mailto:me@joshghent.com"
     },
     {
-      "name": "Twitter",
-      "link": "https://twitter.com/joshghent"
+      "name": "🐦 x",
+      "link": "https://x.com/joshghent"
     },
     {
-      "name": "GitHub",
+      "name": "🐙 github",
       "link": "https://github.com/joshghent"
+    },
+    {
+      "name": "👔 linkedin",
+      "link": "https://www.linkedin.com/in/joshghent"
     }
   ]
 }
