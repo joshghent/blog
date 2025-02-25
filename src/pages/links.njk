@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 <ul class="pl-0 space-y-2 list-none">
-  {% for item in links.items %}
+  {% for item in links.items | sort(attribute='date') | reverse %}
     <li>
       <p><time class="italic text-gray-600" datetime="{{ item.date | dateToISO }}">{{ item.date | fromISO }}</time></p>
       <a href="{{ item.link }}" class="underline">
