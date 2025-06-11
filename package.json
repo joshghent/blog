@@ -10,7 +10,8 @@
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build": "NODE_ENV=production run-s clean build:*",
     "serve:css": "npx postcss ./src/styles/main.css --o _site/style.css --watch",
-    "spellcheck": "mdspell -a -n -r 'src/blog/**/*.md'"
+    "spellcheck": "mdspell -a -n -r 'src/blog/**/*.md'",
+    "spellcheck:correct": "mdspell -a -n 'src/blog/**/*.md'"
   },
   "keywords": [],
   "author": "Josh Ghent <me@joshghent.com>",
