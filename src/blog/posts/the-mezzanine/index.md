@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Book Notes - The Mezzanine
 description: My brief thoughts on the Mezzanine by Nicholson Baker.
-date: 2025-10-06
+date: 2025-06-06
 ---
 Nicholson Baker’s The Mezzanine is ostensibly about nothing. An account of a man who purchases shoelaces and milk during his lunch break. That’s it.
 
