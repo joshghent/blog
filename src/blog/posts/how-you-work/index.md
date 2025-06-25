@@ -57,5 +57,3 @@ By preparing a user manual, you can quickly establish a rapport with your co-wor
 The advantages are that both yourself and the people around you can understand each other and make everyone happy by aiming to keep work within those ideal parameters. Of course, this is not always possible. Tough, stupid things sometimes need doing. But a keen-eyed manager will always be aiming to balance these tasks with work you love.
 
 I've found my manual allows me to reaffirm my ideal work. Whenever I am thinking "I hate this work", I review this manual and figure out _why_ I dislike it.
-
-I'd love to see your manuals! Send them to me on Twitter - @joshghent or via email [at me@joshghent.com](mailto:me@joshghent.com)
