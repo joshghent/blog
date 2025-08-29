@@ -58,13 +58,13 @@ For me, autocomplete is enough - small nudges without handing over the wheel.
 
 ## Yes men
 
-Even with attempts to fix it, AI models remain sycophantic. Look through Claude Code’s GitHub issues and you’ll see people laughing at its endless “You’re absolutely right!” replies.
+Even with attempts to fix it, AI models remain sycophantic. Look through Claude Code’s GitHub issues and you’ll see people complaining at its endless ["You’re absolutely right!"](https://github.com/anthropics/claude-code/issues/3382) replies.
 
 The problem isn’t comedy, it’s that models:
 A) lack critical thinking, and
 B) echo whatever you feed them.
 
-That echo chamber has led some to form unhealthy attachments to models. The uproar over [GPT-4o](https://openai.com/index/hello-gpt-4o/) being replaced by GPT-5 was so loud that OpenAI restored it for Pro users.
+That echo chamber has led some to form unhealthy attachments to models. The uproar over [GPT-4o being replaced by GPT-5](https://www.theguardian.com/technology/2025/aug/22/ai-chatgpt-new-model-grief) was so loud that OpenAI restored it for Pro users.
 
 But models aren’t good friends or coworkers. They won’t disagree, push back, or tell us when we’re wrong. Without that, we don’t learn.
 
