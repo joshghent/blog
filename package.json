@@ -14,7 +14,7 @@
     "spellcheck:correct": "mdspell -a -n 'src/blog/**/*.md'"
   },
   "keywords": [],
-  "author": "Josh Ghent <me@joshghent.com>",
+  "author": "Josh Ghent <2934976+joshghent@users.noreply.github.com>",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
