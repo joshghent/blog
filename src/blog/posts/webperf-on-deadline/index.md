@@ -109,4 +109,4 @@ So, now you can monitor the performance you need to set a budget. In other words
 
 ## Takeaways
 
-Overall, I hope you've learnt some quick ways to improve your web performance. As mentioned, there is a myriad of factors to consider when looking to improve web performance so the methods above will not be a one-size fits all. If you'd like to know why your site is slow, I can help you. I'm a software performance consultant who works with organizations of all sizes to analyse and fix site speed issues. If you'd like to work together, email me at [me@joshghent.com](mailto:me@joshghent.com)
+Overall, I hope you've learnt some quick ways to improve your web performance. As mentioned, there is a myriad of factors to consider when looking to improve web performance so the methods above will not be a one-size fits all. If you'd like to know why your site is slow, I can help you. I'm a software performance consultant who works with organizations of all sizes to analyse and fix site speed issues.
