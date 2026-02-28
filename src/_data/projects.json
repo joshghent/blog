@@ -1,12 +1,20 @@
 {
   "items": [
     {
-      "title": "Bucketscan",
+      "title": "Repowarden",
       "active": true,
-      "year": 2024,
-      "description": "Antivirus for Cloud Storage Systems.",
-      "technologies": ["nextjs", "typescript", "cybersecurity"],
-      "url": "https://bucketscan.com"
+      "year": 2026,
+      "description": "AI-powered repository maintenance. Dependency updates, test generation, and custom code tasks shipped as clean PRs.",
+      "technologies": ["typescript", "ai", "github"],
+      "url": "https://repowarden.dev"
+    },
+    {
+      "title": "PlanPacer",
+      "active": true,
+      "year": 2025,
+      "description": "The easiest way to add Stripe payment plans to your app.",
+      "technologies": ["stripe", "typescript", "payments"],
+      "url": "https://planpacer.com"
     },
     {
       "title": "LoginLlama",

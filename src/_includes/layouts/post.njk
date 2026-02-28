@@ -2,7 +2,5 @@
 layout: layouts/base.njk
 ---
 
-<div class="max-w-[1080px] mx-auto">
-  <time datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
-  <article class="mt-6 leading-6 text-[1em] prose dark:prose-invert">{{ content | safe }}</article>
-</div>
+<time class="text-sm text-zinc-500 dark:text-zinc-400" datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
+<article class="mt-6 leading-7">{{ content | safe }}</article>

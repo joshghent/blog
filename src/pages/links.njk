@@ -2,18 +2,13 @@
 title: Links
 layout: layouts/base.njk
 permalink: /links/
-eleventyNavigation:
-  key: Links
-  order: 3
 ---
-<ul class="pl-0 space-y-2 list-none">
+<ul class="pl-0 space-y-6 list-none">
   {% for item in links.items | sort(attribute='date') | reverse %}
     <li>
-      <p><time class="italic text-gray-600" datetime="{{ item.date | dateToISO }}">{{ item.date | fromISO }}</time></p>
-      <a href="{{ item.link }}" class="underline">
-        {{ item.title }}<span class="inline-block ml-1 underline">↗</span>
-      </a>
-      <p>{{ item.notes | safe }}</p>
+      <time class="text-sm text-zinc-500 dark:text-zinc-400" datetime="{{ item.date | dateToISO }}">{{ item.date | fromISO }}</time>
+      <div><a href="{{ item.link }}">{{ item.title }}</a></div>
+      <p class="text-sm mt-1">{{ item.notes | safe }}</p>
     </li>
   {% endfor %}
 </ul>
