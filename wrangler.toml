@@ -1,2 +1,0 @@
-[pages.build]
-command = "npm ci && npm run build"
