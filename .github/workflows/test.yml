@@ -15,7 +15,7 @@ jobs:
     outputs:
       url: ${{ steps.cloudflare-publish.outputs.url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Add comment to PR
         id: loading_comment_to_pr
         uses: marocchino/sticky-pull-request-comment@v2
