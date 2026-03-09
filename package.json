@@ -16,6 +16,7 @@
   "keywords": [],
   "author": "Josh Ghent <2934976+joshghent@users.noreply.github.com>",
   "license": "ISC",
+  "packageManager": "npm@11.8.0",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^1.0.5",
@@ -30,5 +31,5 @@
     "rimraf": "^6.1.3",
     "tailwindcss": "^3.4.17"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.13.0"
 }
