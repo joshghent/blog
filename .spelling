@@ -385,6 +385,27 @@ IaC
 planpacer
 hono
 micro-saas
+De-corp
+todos
+phoneos
+selfhosted
+enshittification
+vinted
+depop
+tv
+Jellyfin
+blu-ray
+Repowarden
+doggie
+WD-40
+claude
+prs
+eslint
+LLMs
+overreliance
+gpt-4o
+gpt-5
+OpenAI
 - src/blog/posts/attending-meetups/index.md
 pic.twitter.com
 2IQ0vImjxW
@@ -906,3 +927,16 @@ InvoicePaid
 NotebookLM
  - src/blog/posts/planpacer/index.md
 microsaas
+ - src/blog/posts/decorp/index.md
+Bazzells
+vpn
+ - src/blog/posts/enshittification/index.md
+enshittify
+ - src/blog/posts/repowarden/index.md
+QoL
+repowarden.dev
+ - src/blog/posts/todoist-setup/index.md
+_work
+_house
+_project
+repowarden

@@ -16,11 +16,11 @@ The pitch is simple:
 
 ## Why I built it
 
-Most of the burden of maintaining my projects falls into a few catagories:
+Most of the burden of maintaining my projects falls into a few categories:
 
 - Death by dependabot PR's that stack up
 - Test coverage falls behind changes so there are gaps I'm not quite aware of
-- Repetitive cleanup tasks never make it into sprints
+- Repetitive clean up tasks never make it into sprints
 - General bug fixes, QoL improvements etc.
 
 I wanted something that is like a "dev in a box". Sure I could boot up claude code in each of these projects, but that's a huge chore. This is completely automated, like another member of staff.
@@ -38,7 +38,7 @@ The key constraint is quality: changes should be readable, scoped, and easy to m
 
 ## How it fits into a team workflow
 
-I built Repowarden to work with existing engineering rituals. It's not designed for feature development. It just keeps things ticking along so you don't need to worry about how to upgrade Eslint configs, or patch an obscure security problem.
+I built Repowarden to work with existing engineering rituals. It's not designed for feature development. It just keeps things ticking along so you don't need to worry about how to upgrade Eslint config's, or patch an obscure security problem.
 
 Repowarden just handles the repetitive work and leaves the final call to humans.
 

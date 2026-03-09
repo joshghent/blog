@@ -6,7 +6,7 @@ description: "I made a thing! Here is how and why I built PlanPacer"
 ---
 
 I launched a new microsaas - [PlanPacer](https://planpacer.com)!
-PlanPacer offers payment plans for Stripe. Allowing you to create flexible installment payments and boost your conversion rates. 
+PlanPacer offers payment plans for Stripe. Allowing you to create flexible instalment payments and boost your conversion rates. 
 
 Now the elevator pitch is out the way, here is some more information about why and how I built it - as well as some musings on the advantages LLM’s can give solo founders.
 
