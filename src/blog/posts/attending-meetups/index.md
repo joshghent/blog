@@ -38,4 +38,4 @@ When wrapping up a conversation, don’t make excuses about going to the bathroo
 
 All in all, don’t be scared. These are your people, just as shy and nerdy as you are. So put yourself out there and see who you meet. There are lots of interesting people out there! If all else fails, see if you can convince a coworker or friend to come along.
 
-👋 I am available for hire as a freelance web and application developer. Contact me at [hola@joshghent.com](mailto:hola@joshghent.com) if you would like to discuss any projects you have in mind.
+👋 I am available for hire as a freelance web and application developer. Feel free to reach out if you would like to discuss any projects you have in mind.

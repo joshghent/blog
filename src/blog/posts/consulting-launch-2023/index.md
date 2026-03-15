@@ -98,6 +98,6 @@ These products can be provided to your organisation for a discounted rate and im
 
 ## Work with me
 
-If you're interested in the above, and want to work together, please drop me an email at `me at joshghent.com`. Or book a call with me [here](https://calendly.com/joshghent/consultation).
+If you're interested in the above, and want to work together, please feel free to reach out.
 
 I look forward to hearing from you!

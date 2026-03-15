@@ -4,7 +4,7 @@ title: Raising £1000 for MSF
 date: 2023-04-28
 ---
 
-> **TL;DR** I'm raising money for Medicins Sans Frontiers by running my first half marathon. You can donate [here](https://justgiving.com/fundraising/josh-ghent)
+> **TL;DR** I'm raising money for Medicins Sans Frontiers by running my first half marathon.
 
 I love running. It's such a simple exercise. All you need is some good shoes, good music and, ideally, good weather.
 
@@ -28,6 +28,6 @@ I launched a fundraiser through JustGiving in the coming days. I chose the chari
 
 I'm still quite worried about doing 21.2 kilometres. But, the important thing is I am running and raising money for a great cause.
 
-I need your help to reach the goal of £1000. So, please, if you have a few quid donate to the fundraiser here: https://justgiving.com/fundraising/josh-ghent
+I need your help to reach the goal of £1000. So, please, if you have a few quid donate to the fundraiser.
 
 The business my wife and I run, Turbo Technologies, will be doing a donation match of up to £1000 ourselves. Hopefully in totally we can raise £2000.

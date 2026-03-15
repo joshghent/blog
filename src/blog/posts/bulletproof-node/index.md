@@ -61,4 +61,4 @@ You may have noticed the general theme going here — **automation**. I had a pl
 
 And that’s a wrap. **Let me know which tip you found most useful or implemented yourself!**
 
-👋 I am available for hire as a freelance web and application developer. Contact me at [hola@joshghent.com](mailto:hola@joshghent.com) if you would like to discuss any projects you have in mind.
+👋 I am available for hire as a freelance web and application developer. Feel free to reach out if you would like to discuss any projects you have in mind.

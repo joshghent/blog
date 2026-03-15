@@ -65,4 +65,4 @@ A common mistake when designing a database is to store redundant information tha
 
 I tried to target the “[Pareto problems](https://en.wikipedia.org/wiki/Pareto_principle)” here — meaning that, in my view, these 20% of tips will solve 80% of basic database design problems. That being said, there is a **lot** more to learn, and if you’re interested check out [database normalization rules (NF)](https://en.wikipedia.org/wiki/Database_normalization) once you have fully taken in the information from this article.
 
-👋 I am available for hire as a freelance application consultant/developer. Contact me at [hola@joshghent.com](mailto:hola@joshghent.com) if you would like to discuss any projects you have in mind.
+👋 I am available for hire as a freelance application consultant/developer. Feel free to reach out if you would like to discuss any projects you have in mind.

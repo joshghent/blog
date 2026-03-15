@@ -56,4 +56,4 @@ To truly go above and beyond and put yourself in the spotlight as a potential ca
 
 Overall these are just a few tips to help you be that little bit extra special (I know you are) to potential companies. My dad always use to say: “There are lots of baked beans on the shelf, but why do people go for the same brand each time? – Because they believe they are the best. Be the best can of baked beans”. The point is that you have to set yourself out from the crowd. There are lots of developers out there and lots of demand but it doesn’t take much to differentiate yourself from the crowd by applying the points above.
 
-Do you have any more tips to share on LinkedIn or perhaps a grievance or two? Discuss it down below or email me at [hola@joshghent.com](mailto:hola@joshghent.com) or comment below! I’m also on twitter [@joshghent](https://twitter.com/joshghent) where I tweet about web performance and more.
+Do you have any more tips to share on LinkedIn or perhaps a grievance or two? Discuss it down below in the comments!

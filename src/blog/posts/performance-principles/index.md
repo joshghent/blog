@@ -71,4 +71,4 @@ Chances are, if you are the developer then you will be fairly intolerant to anyt
 
 Now you have a clear picture of your most common use case, the next step is to create a performance budget. In other words, how fast should it load? Having a clear target will give you something to aim for and to keep a close eye with each new code change that is made. Be vigilant with sticking to that sub 1 second load time, and don’t accept any new code that pushes it over that limit.
 
-Hopefully, you can utilize these principles in the future an apply them to your own website or application. They should be transferable no matter what technology you are using. Let me know any performance principles you have at [hola@joshghent.com](mailto:hola@joshghent.com) or comment below! I’m also on twitter [@joshghent](https://twitter.com/joshghent?lang=en) where I tweet about web performance and more.
+Hopefully, you can utilize these principles in the future an apply them to your own website or application. They should be transferable no matter what technology you are using. Let me know any performance principles you have in the comments below!

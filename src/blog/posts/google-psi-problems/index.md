@@ -49,4 +49,4 @@ I hasten to add, that if your site must support [Netscape 3 and below ](http://s
 
 Performance should be considered a feature and whilst it would be great to spend lots of time on performance, companies tend to prioritize other tasks ahead of it. Whilst that is not ideal, using the 3 tips above (which should take less than 30 minutes per point) you can quickly improve the performance of your site or application in addition to having more potential leverage for time to be allocated for furthering performance.
 
-Do you have any other performance quick tips? Let me know at [hola@joshghent.com](mailto:hola@joshghent.com) or comment below! I’m also on [twitter @joshghent](https://twitter.com/joshghent?lang=en) where I tweet about web performance and more.
+Do you have any other performance quick tips? Let me know in the comments below!
