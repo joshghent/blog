@@ -1,5 +1,136 @@
 module.exports = {
   darkMode: "class",
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: [
+          "Charter",
+          '"Bitstream Charter"',
+          '"Sitka Text"',
+          "Cambria",
+          "Georgia",
+          "serif",
+        ],
+      },
+      colors: {
+        paper: "#faf9f6",
+        ink: "#1a1a1a",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": "#1a1a1a",
+            "--tw-prose-headings": "#1a1a1a",
+            "--tw-prose-lead": "#4a4540",
+            "--tw-prose-links": "#c70000",
+            "--tw-prose-bold": "#1a1a1a",
+            "--tw-prose-counters": "#6b6561",
+            "--tw-prose-bullets": "#a39e96",
+            "--tw-prose-hr": "#e0dcd4",
+            "--tw-prose-quotes": "#4a4540",
+            "--tw-prose-quote-borders": "#c70000",
+            "--tw-prose-captions": "#6b6561",
+            "--tw-prose-code": "#1a1a1a",
+            "--tw-prose-pre-code": "#e8e4de",
+            "--tw-prose-pre-bg": "#282420",
+            "--tw-prose-th-borders": "#e0dcd4",
+            "--tw-prose-td-borders": "#f0ece4",
+            fontSize: "1.25rem",
+            lineHeight: "1.8",
+            maxWidth: "none",
+            a: {
+              color: "var(--tw-prose-links)",
+              textDecoration: "underline",
+              textDecorationColor: "rgba(199, 0, 0, 0.3)",
+              textUnderlineOffset: "3px",
+              textDecorationThickness: "1px",
+              fontWeight: "inherit",
+              transition: "text-decoration-color 0.2s ease",
+              "&:hover": {
+                textDecorationColor: "var(--tw-prose-links)",
+              },
+            },
+            h1: {
+              fontSize: "2.25em",
+              fontWeight: "700",
+              lineHeight: "1.2",
+              letterSpacing: "-0.02em",
+              marginBottom: "0.4em",
+            },
+            h2: {
+              fontSize: "1.6em",
+              fontWeight: "700",
+              marginTop: "1.8em",
+              letterSpacing: "-0.01em",
+            },
+            h3: {
+              fontSize: "1.3em",
+              fontWeight: "600",
+            },
+            blockquote: {
+              fontStyle: "italic",
+              borderLeftWidth: "3px",
+              borderLeftColor: "var(--tw-prose-quote-borders)",
+              paddingLeft: "1.25em",
+              quotes: "none",
+            },
+            "blockquote p:first-of-type::before": {
+              content: "none",
+            },
+            "blockquote p:last-of-type::after": {
+              content: "none",
+            },
+            code: {
+              backgroundColor: "#f0ece4",
+              borderRadius: "0.25rem",
+              padding: "0.15em 0.35em",
+              fontWeight: "400",
+              fontSize: "0.875em",
+            },
+            "code::before": { content: "none" },
+            "code::after": { content: "none" },
+            img: {
+              borderRadius: "0.25rem",
+            },
+            hr: {
+              borderColor: "var(--tw-prose-hr)",
+              marginTop: "2.5em",
+              marginBottom: "2.5em",
+            },
+          },
+        },
+        invert: {
+          css: {
+            "--tw-prose-body": "#e7e5e4",
+            "--tw-prose-headings": "#f5f5f4",
+            "--tw-prose-lead": "#a8a29e",
+            "--tw-prose-links": "#f87171",
+            "--tw-prose-bold": "#f5f5f4",
+            "--tw-prose-counters": "#a8a29e",
+            "--tw-prose-bullets": "#78716c",
+            "--tw-prose-hr": "#44403c",
+            "--tw-prose-quotes": "#d6d3d1",
+            "--tw-prose-quote-borders": "#f87171",
+            "--tw-prose-captions": "#a8a29e",
+            "--tw-prose-code": "#f5f5f4",
+            "--tw-prose-pre-code": "#e7e5e4",
+            "--tw-prose-pre-bg": "#1c1917",
+            "--tw-prose-th-borders": "#44403c",
+            "--tw-prose-td-borders": "#292524",
+            a: {
+              textDecorationColor: "rgba(248, 113, 113, 0.3)",
+              "&:hover": {
+                textDecorationColor: "#f87171",
+              },
+            },
+            code: {
+              backgroundColor: "#292524",
+            },
+          },
+        },
+      },
+    },
+  },
   plugins: [require("@tailwindcss/typography")],
   content: [
     "./src/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
