@@ -75,9 +75,10 @@ module.exports = function (eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: "utc",
-    }).toFormat("yy-MM-dd");
+    if (dateObj instanceof Date) {
+      return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-MM-dd");
+    }
+    return DateTime.fromISO(String(dateObj), { zone: "utc" }).toFormat("yyyy-MM-dd");
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
