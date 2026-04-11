@@ -2,30 +2,30 @@
 layout: layouts/base.njk
 ---
 
-<div class="mb-12">
-  <h1 class="text-2xl font-bold mb-4">Josh Ghent</h1>
-  <p class="text-base leading-relaxed">
-    Software engineer. Building things on the internet. Checkout my <a href="/now">/now</a> for more.
+<div class="mb-16 not-prose">
+  <h1 class="text-4xl font-bold tracking-tight mb-4">Josh Ghent</h1>
+  <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400">
+    Software engineer. Building things on the internet. See my <a href="/now" class="text-red-700 dark:text-red-400 underline decoration-red-700/30 dark:decoration-red-400/30 underline-offset-2 hover:decoration-red-700 dark:hover:decoration-red-400 transition-all">/now</a> page for more.
   </p>
 </div>
 
-<div class="mb-12">
-  <h2 class="text-lg font-bold mb-4">Recent Writing</h2>
+<section class="mb-14">
+  <h2 class="text-xl font-bold tracking-tight mb-6">Recent Writing</h2>
   {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
   {% include "components/postslist.njk" %}
-  <p class="mt-4"><a href="/blog">All posts &rarr;</a></p>
-</div>
+  <p class="mt-6"><a href="/blog">All posts &rarr;</a></p>
+</section>
 
-<div class="mb-12">
-  <h2 class="text-lg font-bold mb-4">Pages to Checkout</h2>
+<section class="mb-14">
+  <h2 class="text-xl font-bold tracking-tight mb-6">Pages</h2>
   <ul class="list-none pl-0 space-y-2">
     <li><a href="/now">/now</a> &mdash; what I'm up to right now</li>
     <li><a href="/links">/links</a> &mdash; things I've been reading</li>
   </ul>
-</div>
+</section>
 
-<div class="mb-12">
-  <h2 class="text-lg font-bold mb-4">Things I've Built</h2>
+<section class="mb-14">
+  <h2 class="text-xl font-bold tracking-tight mb-6">Things I've Built</h2>
   <ul class="list-none pl-0 space-y-3">
     <li>
       <a href="https://planpacer.com">PlanPacer</a> &mdash; the easiest way to add Stripe payment plans to your app.
@@ -40,4 +40,4 @@ layout: layouts/base.njk
       <a href="https://place.dog">Place.dog</a> &mdash; placeholder images of dogs for your websites and designs.
     </li>
   </ul>
-</div>
+</section>
