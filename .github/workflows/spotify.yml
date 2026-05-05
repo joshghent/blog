@@ -13,11 +13,11 @@ jobs:
       - name: Save the playlist
         uses: katydecorah/spotify-to-yaml-action@v9.0.1
         with:
-          spotifyUser: "joshghent"
+          spotifyUser: ${{ secrets.SPOTIFY_USER }}
         env:
           SpotifyClientID: ${{ secrets.SpotifyClientID }}
           SpotifyClientSecret: ${{ secrets.SpotifyClientSecret}}
-          SpotifyUser: "joshghent"
+          SpotifyUser: ${{ secrets.SPOTIFY_USER }}
       - name: Save the thumbnail
         run: curl "${{ env.PlaylistImage }}" -o "img/playlists/${{ env.PlaylistImageOutput }}"
       - name: Commit files

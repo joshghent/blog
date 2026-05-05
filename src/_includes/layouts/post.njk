@@ -1,6 +1,11 @@
 ---
 layout: layouts/base.njk
+hideTitle: true
 ---
 
-<time class="text-sm text-zinc-500 dark:text-zinc-400" datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
-<article class="mt-6 leading-7">{{ content | safe }}</article>
+<div class="not-prose mb-10">
+  <a href="/blog" class="text-sm text-red-700 dark:text-red-400 no-underline hover:underline">&larr; Back</a>
+</div>
+<h1>{{ title }}</h1>
+<time class="font-mono text-sm text-stone-400 dark:text-stone-500 not-prose block tracking-wide mt-2 mb-10" datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
+<article>{{ content | safe }}</article>

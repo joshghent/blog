@@ -1,7 +1,7 @@
 {
   "feed": {
     "title": "Developer Musings",
-    "subtitle": "Recent content from Josh Ghent's blog",
+    "subtitle": "Recent posts",
     "filename": "rss.xml",
     "path": "/rss.xml",
     "url": "https://joshghent.com/rss.xml",

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Guardian-inspired highlighter selection */
+  ::selection {
+    background-color: #ffe066;
+    color: #1a1a1a;
+  }
+
+  .dark ::selection {
+    background-color: #5c4d00;
+    color: #e7e5e4;
+  }
+}

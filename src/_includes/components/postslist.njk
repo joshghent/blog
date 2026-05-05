@@ -1,8 +1,8 @@
-<ul class="not-prose pl-0 list-none space-y-2">
+<ul class="not-prose list-none pl-0 space-y-3">
   {% for post in postslist %}
     <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-      <time class="text-sm text-zinc-500 dark:text-zinc-400 shrink-0" datetime="{{ post.date | dateToISO }}">{{ post.date | readableDate }}</time>
-      <a class="no-underline text-blue-700 dark:text-blue-400 hover:underline" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      <time class="font-mono text-sm text-stone-400 dark:text-stone-500 shrink-0 tabular-nums tracking-wide" datetime="{{ post.date | dateToISO }}">{{ post.date | readableDate }}</time>
+      <a class="no-underline text-ink dark:text-stone-200 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="{{ post.url | url }}">{{ post.data.title }}</a>
     </li>
   {% endfor %}
 </ul>
