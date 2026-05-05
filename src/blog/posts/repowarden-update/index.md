@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "What's new with Repowarden"
 date: "2026-05-05"
-description: "Three months in. The product has grown teeth — security patching, license flagging, weekly digests, audit-friendly evidence trails, and a CVE catalogue."
+description: "Three months in. The product has grown teeth: security patching, license flagging, weekly digests, audit-friendly evidence trails, and a CVE catalogue."
 ---
 
 I [launched Repowarden](/blog/repowarden) about three months ago. It started as "a dev in a box that does the boring jobs." It's grown teeth since then. Here's what's actually shipped and why some of it matters more than I thought it would.
