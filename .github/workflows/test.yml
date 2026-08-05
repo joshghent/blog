@@ -23,7 +23,7 @@ jobs:
           node-version: "20.x"
 
       - name: Install
-        run: npm ci --no-audit
+        run: yarn install --frozen-lockfile
 
       - name: Build
         run: npm run build
