@@ -941,3 +941,53 @@ _work
 _house
 _project
 repowarden
+ - src/blog/posts/coffee-roasters/index.md
+Pharmacie
+Espresso
+250g
+ - src/blog/posts/how-i-build-products-with-ai/index.md
+agentic
+agentically
+Hono
+Vite
+PostHog
+GA4
+AGENT.md
+e2e
+ - src/blog/posts/is-software-ever-done/index.md
+autoplays
+ - src/blog/posts/online-shopping/index.md
+8a
+Goodhart's
+whoknowswhat
+SimpleLogin
+ - src/blog/posts/repowarden-update/index.md
+27001
+SLA
+Wiz
+transitives
+transitive
+vulns
+deps
+dep
+dep-license
+GPLv3
+EoL
+11pm
+ReDoS
+SSRF
+Ollama
+Probllama
+RCE
+axios
+monorepos
+typosquats
+Bootstrappers
+orgs
+repowarden.dev
+Repowarden
+signup
+lint
+CVE
+Tenable
+30-day

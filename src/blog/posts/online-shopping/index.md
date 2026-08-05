@@ -23,4 +23,4 @@ I recently had a purchase which included the following chain
 
 I'm sure there are a myriad of A/B tests that these businesses have run to optimise the living day lights out of their email campaigns to burn both the brand and the experience as a joyful one in the minds of any consumers. But as Goodhart's Law teaches us, that when a measure becomes a target, it ceases to be a good measure - these sorts of email chains are prime examples of that. Created to optimise whoknowswhat, but ultimately resulting in a frustrating experience.
 
-My solution is ultimately to use a simplelogin alias that I turn off immidiately but this feels like a solution to a problem that shouldn't exist.
+My solution is ultimately to use a SimpleLogin alias that I turn off immediately but this feels like a solution to a problem that shouldn't exist.
