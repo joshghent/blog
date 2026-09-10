@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Gatsby or Bust!"
 date: "2019-08-29T11:37:00.284Z"
-description: ""
+description: "Moving my blog off Medium and my site off static HTML, and why I combined the two into a Gatsby site."
 ---
 
 Recently, I moved my website from a static HTML file on GitHub pages (yes _actually_ static) and my blog from Medium. I decided to combine them both and move over to a Gatsby website.

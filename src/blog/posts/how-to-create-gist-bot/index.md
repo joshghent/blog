@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "How to Create a Pinned Gist Bot in 10 minutes with GitHub Actions"
 date: "2019-11-14T14:58:00.284Z"
-description: ""
+description: "Build a pinned gist bot with GitHub Actions in about ten minutes, using RescueTime data as the example."
 ---
 
 Recently I stumbled upon an awesome page I hadn't seen before [awesome pinned gists](https://github.com/matchai/awesome-pinned-gists). The premise of the list is small apps that run GitHub actions on a schedule to update a gist that is then pinned to your profile.

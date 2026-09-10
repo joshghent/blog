@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Devblog - LoginLlama 001
+description: "Devblog 001: starting an API-as-a-service that detects suspicious logins, and where the existing tools fall short."
 date: 2023-03-23
 ---
 

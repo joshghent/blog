@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Why does NTP Exist?"
 date: "2019-03-05T22:12:03.284Z"
-description: ""
+description: "What NTP actually is, how distributed systems keep their clocks in sync with UTC, and why the protocol matters."
 ---
 
 NTP is one of the most essential and complex systems that never gets spoken about. But why? And what even are they? And why do we need them? If you’re like me, you might have known about NTP servers and known they were important to keep clocks in sync. But don’t computers have clocks already? It was when I visited the Greenwich observatory recently that I realized how complex time was and with a fascination in both computer systems and horology, I decided to dive into the backbone of our lives, time.

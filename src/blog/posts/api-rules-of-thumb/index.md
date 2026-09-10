@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Rules of Thumb for creating API's
+description: "Practical rules of thumb for designing REST APIs, sitting somewhere between rigid rules and abstract principles."
 date: 2023-03-14
 ---
 

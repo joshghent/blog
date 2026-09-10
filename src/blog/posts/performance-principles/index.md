@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Principles of Performance"
 date: "2018-05-16T22:12:03.284Z"
-description: ""
+description: "Principles for building fast websites that hold regardless of the stack you use, starting with network round trips."
 ---
 
 <div class="image">

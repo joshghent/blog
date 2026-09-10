@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "📱 Zen iPhone"
 date: "2018-03-26"
-description: ""
+description: "Turning a phone from an endless scroll into a purposeful tool, treating the home screen like a tidy desk."
 ---
 
 <div class="image">

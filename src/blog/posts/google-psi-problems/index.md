@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Solve 90% of Google Pagespeed Insights Issues in 30 Minutes"
 date: "2018-03-31T22:12:03.284Z"
-description: ""
+description: "Three straightforward changes that will lift your Google PageSpeed Insights score by at least 20 points."
 ---
 
 <div class="image">

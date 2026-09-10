@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Resiliency By Design"
 date: "2019-01-19T22:12:03.284Z"
-description: ""
+description: "Designing resiliency into an architecture: backing off, retries, timeouts, and accepting that dependencies will fail."
 ---
 
 Resiliency by design in your products architecture is a challenging problem that is rarely tested. Building robust platforms are becoming increasingly important as large server providers such as AWS start to [show their cracks](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html) in addition to good old fashion human error (we had an engineer take down a server by knocking it with his ass). [Chaos monkey](https://github.com/Netflix/chaosmonkey) and other tools have sprung up to pursue down resiliency issues, but despite this, they can still persist. Here are a few things to look out for when designing a new system or analysing existing ones.

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Using Grafana for Monitoring you NodeJS Apps"
 date: "2019-03-06T22:12:03.284Z"
-description: ""
+description: "Monitoring a Node.js application with Grafana: the metrics worth graphing and how to wire them up."
 ---
 
 <div class="image">

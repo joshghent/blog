@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "I don’t know what to say…"
 date: "2018-12-04T22:12:03.284Z"
-description: ""
+description: "Thoughts on the event-stream npm breach, package vetting, and the cost of pulling in a dependency for trivial code."
 ---
 
 <div class="image">

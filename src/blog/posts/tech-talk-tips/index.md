@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "10 Things I wish I knew before giving my First Tech Talk"
 date: "2018-11-13T22:12:03.284Z"
-description: ""
+description: "Ten things I wish I had known before giving my first conference talk at a meetup."
 ---
 
 <div class="image">

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Tracking Goals in Todoist"
 date: "2018-07-27T22:12:03.284Z"
-description: ""
+description: "How to track short and long term goals in Todoist instead of buying yet another dedicated goals app."
 ---
 
 “There is always an app for that” is a phrase I heard repeatedly when I was looking at something to keep tabs on my goals, both short and long-term. But you know what, I don’t want an app! I began to consider using [Todoist](https://en.todoist.com/), my task management app for doing this. After all, it’s one of my most used applications so there is less likelihood of me forgetting about it on the back page of a folder. Instead, it would be right front and center. Whilst I’m sure that all those goal management apps have some useful feature, you might be interested to see how you could use Todoist (or indeed any task management app) to keep track of your goals.

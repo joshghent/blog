@@ -1,5 +1,6 @@
 ---
 title: Power Puttering
+description: "Bundling all the tiny jobs that never justify their own time into one scheduled power hour."
 date: 2026-02-25
 layout: layouts/post.njk
 ---

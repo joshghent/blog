@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Managing Application Secrets for Terraform across Teams"
 date: "2019-11-11T15:08:03.284Z"
-description: ""
+description: "Sharing Terraform secrets across a team by storing an encrypted tar in git and decrypting it in CI."
 ---
 
 ### TL;DR

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Lessons from Open Source"
 date: "2018-07-13T22:12:03.284Z"
-description: ""
+description: "Lessons from maintaining an open source project: code ownership, letting go, and reviewing other people's contributions."
 ---
 
 Contributing to open source is often touted as a great way to be recognized in the software development community, with many heralding their [Github](https://github.com/) profiles as a resumé of sorts. Additionally, open source software developers find their programming abilities enhanced and motivations for their day-jobs recharged. Beyond these, however, there are further lessons that can be learnt from contributing to open source.

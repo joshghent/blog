@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Lessons from Battling with Elasticsearch"
 date: "2019-07-05T12:31:03.284Z"
-description: ""
+description: "How eventual consistency in Elasticsearch caused missing messages and channels, and what the bug taught us about architecture."
 ---
 
 This is a story of changing requirements being impeded by architecture and software. It’s an age-old adage but I thought it was worth telling this story as a lesson in foresight and blame.

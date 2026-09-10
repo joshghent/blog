@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Resiliency"
 date: "2019-10-08T11:43:03.284Z"
-description: ""
+description: "How I made an SMS and instant messaging backend resilient after it shipped, and the principles that transferred."
 ---
 
 At my previous post at [CloudCall](https://cloudcall.com), I was responsible for the SMS/IM backend. Whilst it was being developed, we made the classic mistake of not worrying about resiliency or testing since we were so stacked with features and had a manual QA department to act as a big bug dragnet.

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Beginners Database Design Primer"
 date: "2018-02-14"
-description: ""
+description: "A beginner's primer on designing a relational database, from entities and keys to normalisation."
 ---
 
 <div class="image">

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Sharpening the Saw
 date: "2020-06-26T10:17:00.284Z"
-description: ""
+description: "The work that makes the rest of the work faster: better notes, sharper tooling, and cutting cognitive overhead."
 ---
 
 Sharpening the saw is Habit 7 in the cringe inducing book entitled "7 Habits of Highly Effective People". This post isn't yet another book review but rather the work we do to make the rest of my work, better, faster and more consistently. The label Covey gave to this work was "sharpening the saw".

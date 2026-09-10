@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Starting with Why as a Software Developer"
 date: "2019-02-26T22:12:03.284Z"
-description: ""
+description: "Applying first principles thinking to engineering decisions, and why knowing the 'why' is what moves your career."
 ---
 
 <div class="image">

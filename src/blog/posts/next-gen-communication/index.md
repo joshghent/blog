@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Architecting the Next Generation of Communication"
 date: "2019-01-23T22:12:03.284Z"
-description: ""
+description: "Architecting a platform-agnostic messaging system with websockets, SMS and email, built to a deadline."
 ---
 
 With the shift to mobile and the statistics of the “younger” generation (hi there) not using phone calls as a means of communication, there is a constant push towards reaching people in a platform agnostic way — via email, LinkedIn, twitter DM, you name it. The challenge arises when you need to create a platform that is scalable demands and flexible enough to hack in any other new communication streams later down the line — maybe we suddenly want support for MySpace messaging.

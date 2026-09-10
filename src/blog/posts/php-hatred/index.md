@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Understanding PHP hatred"
 date: "2018-03-05T22:12:03.284Z"
-description: ""
+description: "Why developers pile on PHP, from inconsistent method naming to its history, and what the criticism gets right."
 ---
 
 <div class="image">

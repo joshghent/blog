@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "LinkedIn For Developers"
 date: "2018-04-19T22:12:03.284Z"
-description: ""
+description: "How developers should actually use LinkedIn, and why recruiters are worth talking to rather than ignoring."
 ---
 
 “Oh, not another recruiter!” – my co-worker said, lazily chucking their phone down. “They just spam!”.

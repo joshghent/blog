@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How to Load test an API with Artillery
+description: "How to load test an API with Artillery, including why you should run the test from a VPS rather than your laptop."
 date: 2023-02-23
 draft: true
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How to fix 'Public key authentication failed' for Azure DevOps
+description: "Fixing 'Public key authentication failed' when cloning an Azure DevOps repository over SSH on a Mac."
 date: 2022-10-06
 tag: ["fix"]
 ---

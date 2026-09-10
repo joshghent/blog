@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Business Version 2
+description: "Pivoting the business away from pure freelancing towards a broader set of products and services for teams."
 date: 2023-08-30
 ---
 

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Bulletproof Node — Security Best Practises"
 date: "2018-01-23T22:12:03.284Z"
-description: ""
+description: "Security changes you can make to a Node application right now without a large refactor."
 ---
 
 <div class="image">
