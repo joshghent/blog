@@ -13,7 +13,7 @@ I have been wanting to move my blog from Medium for a long time. Since the platf
 Anyway, I wanted for people to actually read my blog and didn't like the mobile experience in particular.
 
 <div class="image">
-	<img src="https://miro.medium.com/max/2560/1*6Mu_U4dUXP5uzebamoUYaw.png" />
+	<img src="https://miro.medium.com/max/2560/1*6Mu_U4dUXP5uzebamoUYaw.png" alt="Medium&#x27;s Pardon the interruption dialog covering an article with a sign-up form" />
 	<em>Source: <a href="https://medium.com/@nikitonsky/medium-is-a-poor-choice-for-blogging-bb0048d19133"></a>https://medium.com/@nikitonsky/medium-is-a-poor-choice-for-blogging-bb0048d19133</em>
 </div>
 

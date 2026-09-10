@@ -28,7 +28,7 @@ This thought was inspired by reading [http://boringtechnology.club/](http://bori
 I felt the same way about the work I have done on our Messaging backend. I hope that, as Etsy did, they can leave those API’s and consumers to whir away and hum quietly in the background. It is a testament to how good your code is if 20x scale later it is still humming along nicely and a pseudo-metric I aim for with everything I write.
 
 <div class="image">
-	<img src="https://mk0osnewswb2dmu4h0a.kinstacdn.com/images/comics/wtfm.jpg"/>
+	<img src="https://mk0osnewswb2dmu4h0a.kinstacdn.com/images/comics/wtfm.jpg" alt="Comic from OSNews about developers and documentation" />
 	<em>Credit: <a href="https://www.osnews.com/story/19266/wtfsm/">https://www.osnews.com/story/19266/wtfsm/</a></em>
 </div>
 

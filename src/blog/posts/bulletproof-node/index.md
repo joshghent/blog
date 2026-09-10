@@ -6,7 +6,7 @@ description: "Security changes you can make to a Node application right now with
 ---
 
 <div class="image">
-	<img src="../../assets/images/node.jpeg"/>
+	<img src="../../assets/images/node.jpeg" alt="The Node.js logo over a black and white photograph of two men duelling with pistols" />
 	<em>Make your Node app like this guy</em>
 </div>
 
@@ -53,7 +53,7 @@ This is, in my opinion, the most important aspect of them all. By implementing m
 - Attempt to do SQL injection or other XSS attacks — if you see a particular user attempting to do any of these sorts of attacks, most likely no action will be necessary, as your app should be secure and the likelihood is that they are just messing about. Nonetheless, it may be worth keeping track of these users and the IP address as a sort of “black book”.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/1*TOb464uqspF5k7dG81YyNg.gif"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/1*TOb464uqspF5k7dG81YyNg.gif" alt="Anne Robinson on The Weakest Link saying you are the weakest link, goodbye" />
 	<em>Me talking to my API routes</em>
 </div>
 

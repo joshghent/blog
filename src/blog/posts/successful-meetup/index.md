@@ -6,7 +6,7 @@ description: "What it takes to run a tech meetup, learnt from four months of org
 ---
 
 <div class="image">
-	<img src="../../assets/images/meetup.jpeg"/>
+	<img src="../../assets/images/meetup.jpeg" alt="An audience seated for a talk at a LeicesterJS meetup" />
 	<em>A picture taken from the November 2018 LeicesterJS meetup</em>
 </div>
 

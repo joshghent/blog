@@ -124,7 +124,7 @@ The fluid that had built up around my forearm still remained so I was a bit conc
 After all these treatments, this is how my hand now looks.
 
 <div class="image">
-	<img src="../../assets/images/hand.jpeg"/>
+	<img src="../../assets/images/hand.jpeg" alt="An open palm, showing where carpal tunnel pain sets in" />
 </div>
 
 You can see the small scar just above the ridge of the wrist where the incision was.

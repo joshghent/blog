@@ -13,7 +13,7 @@ A seldom thought of component of performance is that of continuous integration p
 GitHub actions (and I promise this isn't an ad) has a handy feature whereby you can see how many seconds each stage of the job took.
 
 <div class="image">
-	<img src="../../assets/images/github-actions-timing.png"/>
+	<img src="../../assets/images/github-actions-timing.png" alt="GitHub Actions job timings before optimisation, each step listed with its duration" />
 </div>
 
 The first thing I spotted was how long installing npm modules took - nearly 3 minutes! Because of this, I chose to combine the Test and Lint pipeline so that we would not need to duplicate the module installation.
@@ -21,7 +21,7 @@ The first thing I spotted was how long installing npm modules took - nearly 3 mi
 Secondly, I swapped out my normal `npm ci` command for another action `bahmutov/npm-install@v1`. This action handles all the cache invalidation and storage of node modules across builds so you can save time with installing them. After those changes, here is what the timings looked like...
 
 <div class="image">
-	<img src="../../assets/images/github-actions-timing-2.png"/>
+	<img src="../../assets/images/github-actions-timing-2.png" alt="GitHub Actions job timings after optimisation, each step listed with its duration" />
 </div>
 
 Half the time gone! That's a good start but still not far enough. I found the modules were taking ages to install due to a Webpack plugin responsible for optimizing images, something we didn't need in the CI process. I moved this out into an `optionalDependencies` and then set the command to `npm ci --no-optional`
@@ -31,7 +31,7 @@ Half the time gone! That's a good start but still not far enough. I found the mo
 The other big fish to fry was ESLint, it took nearly 2:30 minutes to run. I tried to debug this locally using an environment variable `TIMING=1`. This gives you a table view of how long each ESLint rule took to check.
 
 <div class="image">
-	<img src="../../assets/images/eslint-timing.png"/>
+	<img src="../../assets/images/eslint-timing.png" alt="ESLint rule timing table, with import/no-extraneous-dependencies taking 34 seconds, 47 per cent of the run" />
 </div>
 
 Interestingly, it was the `import/` rules that were taking the longest. After some google-fu, [I discovered that it was due to having to build a dependency graph](https://github.com/benmosher/eslint-plugin-import/issues/1793) across the codebase. Our codebase is fairly large so it was understandable why it would take this long. I didn't want to remove the rule entirely as it was useful, but surely there was a way around it...

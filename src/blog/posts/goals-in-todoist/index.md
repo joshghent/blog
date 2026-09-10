@@ -14,7 +14,7 @@ Now I’m going to dig into the specifics of how you can set your task manager u
 ## Create a goal project
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle" alt="A Todoist project named Goals with sub-projects for the gym, learning to code and writing" />
 	<em>The championship is so close!</em>
 </div>
 
@@ -24,7 +24,7 @@ The first separate is to create a new project to separate your goal based tasks.
 
 Using Todoists powerful recurring task functionality you can now create small tasks within each of these goal projects that is set to recur. For example, here is how I set up the “Gym” project.
 
-![](https://cdn-images-1.medium.com/max/2000/0*rA7JHrKQWXY5IHAV)
+![A Todoist list of gym tasks with due dates and a nested gym bag checklist](https://cdn-images-1.medium.com/max/2000/0*rA7JHrKQWXY5IHAV)
 
 Notice I have taken full advantage of recurring tasks by creating individual work out tasks. I’ve also made sure to have a task that can be chalked off every day to make sure I’m always chipping away at my goal.
 

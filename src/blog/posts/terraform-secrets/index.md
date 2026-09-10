@@ -144,7 +144,7 @@ fi
 After all this has run, I end up with a nice deployment message in Slack!
 
 <div class="image">
-	<img src="./../../assets/images/deployment-success.png"/>
+	<img src="./../../assets/images/deployment-success.png" alt="A Slack message from Deploy Bot confirming build 26 deployed the Terraform stack" />
   <em></em>
 </div>
 

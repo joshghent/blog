@@ -6,7 +6,7 @@ description: "Principles for building fast websites that hold regardless of the 
 ---
 
 <div class="image">
-	<img src="../../assets/images/cheetah.jpeg"/>
+	<img src="../../assets/images/cheetah.jpeg" alt="A cheetah running at full speed" />
 	<em>Photo by Cara Fuller on Unsplash</em>
 </div>
 
@@ -15,7 +15,7 @@ On the web, speed is everything. But you knew that right? Rather than throwing p
 These are principles to be used no matter what technology you use and are more broad in their scope. The aim is to make this into a small handbook, not a manual. Just as once you learn to drive a car you, in theory, can drive any other, this article aims to teach the principles and not the implementation.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*-PJFFL6w3b2sbjF5."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*-PJFFL6w3b2sbjF5." alt="A very overweight cat lying on the floor" />
 	<em>This is your website</em>
 </div>
 
@@ -34,7 +34,7 @@ Note this tip applies only to HTTP 1.1. With the rise of HTTP2 around the corner
 A [fantastic talk by Addy Osmani at CSSConf](https://www.youtube.com/watch?v=FEs2jgZBaQA) demonstrated the detrimental effect of having large image assets on your page (especially in the visible viewport). To have a fast running app or website, you have to shed the things that slow you down.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*weuFQ40LFR1eJQyR."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*weuFQ40LFR1eJQyR." alt="A man dragging an oversized suitcase covered in travel stickers" />
 	<em>I couldn’t find a photo of Usain Bolt with a bag of sand but here’s the next best thing!</em>
 </div>
 
@@ -49,7 +49,7 @@ When loading something, if it “feels” fast then it will be fast. But what do
 It also means being interactive in the shortest time possible. You want a person to scroll down your website and not hit a load of, what I will call, the “Tasmanian scrollbar devil”. I’m sure you’ve had it yourself, scrolling down a website then an image above the visible viewport loads and pushed the content you were trying to look at down. Incredible annoying UX and takes up valuable CPU time.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*sOAULjFJsJE0_kYf."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*sOAULjFJsJE0_kYf." alt="A cartoon shopfront covered in sale signs" />
 	<em>You don’t want this guy on your site</em>
 </div>
 

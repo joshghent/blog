@@ -6,7 +6,7 @@ description: "Thoughts on the event-stream npm breach, package vetting, and the 
 ---
 
 <div class="image">
-	<img src="../../assets/images/githubscreenshot.png"/>
+	<img src="../../assets/images/githubscreenshot.png" alt="The GitHub issue titled I don&#x27;t know what to say on the event-stream repository" />
 </div>
 
 The issue raised for the event-stream breach. It’s a grizzly flame war that I would not recommend reading

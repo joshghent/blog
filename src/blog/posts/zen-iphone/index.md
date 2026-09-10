@@ -6,7 +6,7 @@ description: "Turning a phone from an endless scroll into a purposeful tool, tre
 ---
 
 <div class="image">
-	<img src="../../assets/images/zeniphone.jpg"/>
+	<img src="../../assets/images/zeniphone.jpg" alt="Someone holding a phone over an open laptop on a desk" />
 	<em>Photo credit: <a href="https://unsplash.com/photos/Dl6jeyfihLk">https://unsplash.com/photos/Dl6jeyfihLk</a></em>
 </div>
 

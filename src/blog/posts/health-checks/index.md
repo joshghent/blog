@@ -30,7 +30,7 @@ Ok! Good start. In this basic example, this express API is telling the caller of
 A good place to start is to define what unhealthy means for your service. In other words, at what stage will your core application become unusable to the point where your customers will react something like this.
 
 <div class="image">
-	<img src="https://media0.giphy.com/media/M11UVCRrc0LUk/giphy.gif"/>
+	<img src="https://media0.giphy.com/media/M11UVCRrc0LUk/giphy.gif" alt="Moss from The IT Crowd typing frantically at his desk" />
 </div>
 
 Nowadays, systems are never usually completely "down" but rather have failure points across a range of services. For example, if you run a microservice architected infrastructure then perhaps one piece of functionality will not work but the core of the application will. Your health checks and your messaging to customers needs to reflect this.
@@ -81,7 +81,7 @@ That health check endpoint is exactly what developers need to assist with debugg
 For example, take a look at Slack status page
 
 <div class="image">
-	<img src="../../assets/images/slackstatus.png"/>
+	<img src="../../assets/images/slackstatus.png" alt="The Slack status page reporting every service as operational" />
 </div>
 
 You can see that it doesn't contained detailed break downs of information, but rather individual components of a system that a customer will be familiar with - messaging, login, notifications etc. You should follow a similar pattern, if your system is an API that delivers Woody Harrelson's face as placeholder images for frontend developers, then perhaps you'd have the following services you can report on:
@@ -93,7 +93,7 @@ You can see that it doesn't contained detailed break downs of information, but r
 You can then report those data points to a frontend status page whilst keeping your in-depth health checks that are only accessible by your developers internally.
 
 <div class="image">
-	<img src="../../assets/images/seriouswork.png"/>
+	<img src="../../assets/images/seriouswork.png" alt="A spoof status page headed Harrelson is up and running, listing invented services" />
   <em>There we go! Ready for production!</em>
 </div>
 

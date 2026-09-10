@@ -6,7 +6,7 @@ description: "Applying first principles thinking to engineering decisions, and w
 ---
 
 <div class="image">
-	<img src="../../assets/images/jackdaw.png"/>
+	<img src="../../assets/images/jackdaw.png" alt="A jackdaw standing on a wall beside an open laptop" />
 	<em>Developers are like jackdaws — “oh shiny!”</em>
 </div>
 
