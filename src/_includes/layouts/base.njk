@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.url == "/" %}Josh Ghent — {{ metadata.title }}{% else %}{{ title }} — {{ metadata.title }}{% endif %}</title>
+    <title>{% if page.url == "/" %}Josh Ghent — {{ metadata.title }}{% elif title.length > 40 %}{{ title }}{% else %}{{ title }} — {{ metadata.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% set pageDescription = description or metadata.description %}
     {% set canonical = metadata.url + page.url %}
     <meta name="description" content="{{ pageDescription }}">
     <meta name="author" content="{{ metadata.author.name }}">
+    {% if draft %}<meta name="robots" content="noindex, nofollow">{% endif %}
     <link rel="canonical" href="{{ canonical }}">
     <link rel="alternate" type="application/atom+xml" title="{{ metadata.title }}" href="{{ metadata.feed.url }}">
 
