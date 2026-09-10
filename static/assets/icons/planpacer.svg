@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Planpacer" fill="none">
+  <path d="M32 32 L32 5 A27 27 0 0 1 59 32 Z" fill="#0f766e"/>
+  <path d="M57.5 38.5 A26.5 26.5 0 0 1 38.5 57.5" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M25.5 57.5 A26.5 26.5 0 0 1 6.5 38.5" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M5.5 25.5 A27 27 0 0 1 25.5 5.8" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+</svg>

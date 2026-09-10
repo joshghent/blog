@@ -5,28 +5,83 @@
       "active": true,
       "year": 2026,
       "description": "AI-powered repository maintenance. Dependency updates, test generation, and custom code tasks shipped as clean PRs.",
-      "url": "https://repowarden.dev"
+      "url": "https://repowarden.dev",
+      "icon": "/assets/icons/repowarden.svg",
+      "type": "product"
     },
     {
       "title": "PlanPacer",
       "active": true,
       "year": 2025,
       "description": "The easiest way to add Stripe payment plans to your app.",
-      "url": "https://planpacer.com"
+      "url": "https://planpacer.com",
+      "icon": "/assets/icons/planpacer.svg",
+      "type": "product"
+    },
+    {
+      "title": "Bucketscan",
+      "active": false,
+      "year": 2024,
+      "description": "Virus and malware detection for cloud storage buckets.",
+      "url": "https://bucketscan.com",
+      "icon": "/assets/icons/bucketscan.png",
+      "type": "product"
     },
     {
       "title": "LoginLlama",
       "active": true,
       "year": 2023,
       "description": "A suspicious login detector for your website or app.",
-      "url": "https://loginllama.app"
+      "url": "https://loginllama.app",
+      "icon": "/assets/icons/loginllama.png",
+      "type": "product"
     },
     {
       "title": "Place.Dog",
       "active": true,
       "year": 2023,
       "description": "A simple service to get cute dogs as placeholders for your websites and designs.",
-      "url": "https://place.dog"
+      "url": "https://place.dog",
+      "icon": "/assets/icons/placedog.png",
+      "type": "product"
+    },
+    {
+      "title": "Gantarr",
+      "active": true,
+      "year": 2026,
+      "type": "oss",
+      "description": "The simple way to build timeline Gantt charts.",
+      "url": "https://gantarr.joshghent.com",
+      "repo": "https://github.com/joshghent/gantarr",
+      "icon": "/assets/icons/gantarr.svg"
+    },
+    {
+      "title": "Uptime",
+      "active": true,
+      "year": 2026,
+      "type": "oss",
+      "description": "Configurable status page software that runs on Cloudflare Workers.",
+      "url": "https://github.com/joshghent/uptime",
+      "repo": "https://github.com/joshghent/uptime"
+    },
+    {
+      "title": "Allgood",
+      "active": true,
+      "year": 2024,
+      "type": "oss",
+      "description": "Comprehensive health checks for Typescript and Javascript apps. Supports Express, Hono and Fastify.",
+      "url": "https://github.com/joshghent/allgood",
+      "repo": "https://github.com/joshghent/allgood"
+    },
+    {
+      "title": "Gifbar",
+      "active": true,
+      "year": 2018,
+      "type": "oss",
+      "description": "GIFs in your menu bar, on Windows, macOS and Linux.",
+      "url": "https://github.com/joshghent/gifbar",
+      "repo": "https://github.com/joshghent/gifbar",
+      "icon": "/assets/icons/gifbar.png"
     }
   ]
 }

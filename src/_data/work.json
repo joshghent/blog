@@ -1,0 +1,162 @@
+{
+  "_note": "Source of truth for /cv. Roles newest first. Mirrors 'Josh Ghent Resume - 2027.pdf'.",
+  "headline": "Head of Software Engineering · Distributed Systems · Platform & Architecture",
+  "summary": "Technical leader experienced in scaling high-traffic systems, modernising legacy platforms, and leading engineering teams to deliver resilient, high-quality software at pace.",
+  "email": "hire@joshghent.com",
+  "items": [
+    {
+      "role": "Head of Software Engineering",
+      "company": "BPP University",
+      "period": "Dec 2025 – Present",
+      "highlights": [
+        "Lead a team of 10 engineers across 2 teams delivering multiple high-priority projects to aggressive timelines. Projected for £1.8M revenue in the first year.",
+        "Own the technical strategy and architectural decisions for high-traffic web platforms.",
+        "Modernised legacy technology and introduced scalable platform patterns to improve reliability and meet CE+ regulations.",
+        "Mentor engineers across seniority levels to increase their ownership and system comprehension."
+      ]
+    },
+    {
+      "role": "Lead Software Engineer",
+      "company": "BPP University",
+      "period": "Aug 2025 – Dec 2025",
+      "highlights": [
+        "Led the creation of a brand new micro-learning platform. Ran discovery with stakeholders, architected the solution, managed budgets, and sourced staff.",
+        "Implemented ways of working for the newly formed team and drove agile practices."
+      ]
+    },
+    {
+      "role": "Fractional Head of Engineering",
+      "company": "Propeller",
+      "period": "Aug 2025 – Feb 2026",
+      "highlights": [
+        "Led the digital transformation from a legacy system to a serverless AWS solution, and the transition to git. Deployment velocity and customer satisfaction both went up."
+      ]
+    },
+    {
+      "role": "Senior Software Architect",
+      "company": "BPP University",
+      "period": "Nov 2023 – Aug 2025",
+      "highlights": [
+        "Led projects for the digital transformation of an education business. Saved over $300,000 in cloud costs while increasing system capacity and resiliency."
+      ],
+      "skills": "Event Driven Architecture, AWS, C4, BPMN 2.0, UML"
+    },
+    {
+      "role": "Solutions Architect",
+      "company": "BlueLightCard",
+      "period": "May 2022 – Jun 2023",
+      "contract": true,
+      "highlights": [
+        "Created a new serverless cloud architecture and helped the team migrate from their on-premise system."
+      ],
+      "skills": "Typescript, Node.js, Lambda, DynamoDB, C4"
+    },
+    {
+      "role": "Principal Software Engineer",
+      "company": "York Press",
+      "period": "Oct 2020 – Present",
+      "contract": true,
+      "highlights": [
+        "Leading a team of 5 engineers building an e-learning platform that delivers multi-media learning experiences to their customers."
+      ],
+      "skills": "Typescript, Node.js, ECS, Lambda"
+    },
+    {
+      "role": "Tech Principal",
+      "company": "Alphageek",
+      "period": "Nov 2021 – Jan 2024",
+      "contract": true,
+      "highlights": [
+        "Optimised performance and introduced resiliency measures for large e-commerce websites built on WordPress."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Web3.storage",
+      "period": "Aug 2021 – Dec 2021",
+      "contract": true,
+      "highlights": [
+        "Led re-architecture of the storage calculation service, which enabled additional revenue-generating features."
+      ],
+      "skills": "Javascript, GitHub Actions, IPFS"
+    },
+    {
+      "role": "Lead Software Engineer",
+      "company": "Givetap",
+      "period": "Jan 2021 – Jan 2023",
+      "contract": true,
+      "highlights": [
+        "Added a dynamic fundraising feature to a charity platform, led CI/CD integration, and moved the platform to AWS ECS Fargate."
+      ],
+      "skills": "Angular, Typescript, Terraform"
+    },
+    {
+      "role": "Lead Software Engineer",
+      "company": "Cappfinity",
+      "period": "Jul 2019 – Oct 2020",
+      "highlights": [
+        "Led a product overhaul that cut costs by 33%, hardened security, and accelerated delivery with bi-weekly sprints."
+      ],
+      "skills": "Python, Terraform, Typescript"
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Cloudcall",
+      "period": "Feb 2018 – Jul 2019",
+      "highlights": [
+        "Integrated GDPR and messaging features into a telecom app used by 27,000 users across 500 companies.",
+        "Led the platform team in creating a public API and its documentation."
+      ],
+      "skills": "Typescript, Node.js, DynamoDB, RabbitMQ"
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Frogspark",
+      "period": "Jan 2017 – Feb 2018",
+      "highlights": [
+        "Built large-scale web applications across housing surveying and meal delivery, and introduced source control, deployment procedures, and server tooling to the team."
+      ],
+      "skills": "PHP, Laravel, MySQL, Javascript"
+    },
+    {
+      "role": "Software Developer",
+      "company": "Eduspot",
+      "period": "Apr 2016 – Dec 2016",
+      "highlights": [
+        "Lead developer of a parents evening product used by over 150,000 parents across 700 schools in 3 countries.",
+        "Built an API that handles the sending of over 500,000 parent invitations at once."
+      ],
+      "skills": "Javascript, TSQL, HTML, CSS"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Engineering leadership",
+      "items": "Engineering management, technical strategy and roadmapping, system design and architecture, cross-functional stakeholder leadership, mentoring and team development, agile practices, technical writing"
+    },
+    {
+      "group": "Distributed systems and architecture",
+      "items": "High-traffic web architecture, microservices and EDA, API design, platform engineering, scalability and performance optimisation, reliability and observability patterns, C4 model and architectural documentation"
+    },
+    {
+      "group": "Languages and app development",
+      "items": "Typescript, Node.js, Rust, Next.js"
+    },
+    {
+      "group": "Cloud and infrastructure",
+      "items": "AWS (serverless, Lambda, API Gateway, ECS, DynamoDB, S3), Terraform, Docker, Cloudflare (R2, Workers), Linux"
+    },
+    {
+      "group": "Data and storage",
+      "items": "PostgreSQL, MySQL, DynamoDB, MongoDB"
+    }
+  ],
+  "education": [
+    {
+      "qualification": "Aerospace Engineering",
+      "institution": "Loughborough College / Leicester Space Centre",
+      "period": "2013 – 2015",
+      "detail": "A-Level Physics, A-Level Mathematics, BTEC Level 3 in Engineering."
+    }
+  ]
+}
