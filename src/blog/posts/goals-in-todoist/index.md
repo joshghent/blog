@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Tracking Goals in Todoist"
 date: "2018-07-27T22:12:03.284Z"
-description: ""
+description: "How to track short and long term goals in Todoist instead of buying yet another dedicated goals app."
 ---
 
 “There is always an app for that” is a phrase I heard repeatedly when I was looking at something to keep tabs on my goals, both short and long-term. But you know what, I don’t want an app! I began to consider using [Todoist](https://en.todoist.com/), my task management app for doing this. After all, it’s one of my most used applications so there is less likelihood of me forgetting about it on the back page of a folder. Instead, it would be right front and center. Whilst I’m sure that all those goal management apps have some useful feature, you might be interested to see how you could use Todoist (or indeed any task management app) to keep track of your goals.
@@ -14,7 +14,7 @@ Now I’m going to dig into the specifics of how you can set your task manager u
 ## Create a goal project
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*yEtGLCX52onL5Kle" alt="A Todoist project named Goals with sub-projects for the gym, learning to code and writing" />
 	<em>The championship is so close!</em>
 </div>
 
@@ -24,7 +24,7 @@ The first separate is to create a new project to separate your goal based tasks.
 
 Using Todoists powerful recurring task functionality you can now create small tasks within each of these goal projects that is set to recur. For example, here is how I set up the “Gym” project.
 
-![](https://cdn-images-1.medium.com/max/2000/0*rA7JHrKQWXY5IHAV)
+![A Todoist list of gym tasks with due dates and a nested gym bag checklist](https://cdn-images-1.medium.com/max/2000/0*rA7JHrKQWXY5IHAV)
 
 Notice I have taken full advantage of recurring tasks by creating individual work out tasks. I’ve also made sure to have a task that can be chalked off every day to make sure I’m always chipping away at my goal.
 

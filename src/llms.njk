@@ -1,0 +1,28 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title }}
+
+> {{ metadata.description | safe }}
+
+Author: {{ metadata.author.name }} — {{ work.headline | safe }}. {{ work.summary | safe }}
+
+- [CV]({{ metadata.url }}/cv/): work history, products, and skills.
+- [Now]({{ metadata.url }}/now/): what Josh is working on currently.
+- [RSS]({{ metadata.url }}/rss.xml): full-text feed of every post.
+
+## Products
+{% for item in projects.items | filterBy("type", "product") %}
+- [{{ item.title }}]({{ item.url }}){% if not item.active %} (archived){% endif %}: {{ item.description | safe }}
+{%- endfor %}
+
+## Open source
+{% for item in projects.items | filterBy("type", "oss") %}
+- [{{ item.title }}]({{ item.url }}): {{ item.description | safe }}
+{%- endfor %}
+
+## Writing
+{% for post in collections.posts | sort(attribute='date') | reverse %}
+- [{{ post.data.title | safe }}]({{ metadata.url }}{{ post.url }}){% if post.data.description %}: {{ post.data.description | safe }}{% endif %}
+{%- endfor %}

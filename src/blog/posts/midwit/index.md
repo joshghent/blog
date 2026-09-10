@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Midwit
+description: "The midwit meme applied to software: the more complicated a solution is, the worse it usually turns out to be."
 date: 2023-09-05
 draft: true
 ---

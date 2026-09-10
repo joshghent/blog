@@ -1,5 +1,6 @@
 ---
 title: Anti-Book Book club
+description: "A book club where everyone reads a different book around a shared theme. How it works and why it beats the usual format."
 date: 2026-02-28
 layout: layouts/post.njk
 ---

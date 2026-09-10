@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Managing Application Secrets for Terraform across Teams"
 date: "2019-11-11T15:08:03.284Z"
-description: ""
+description: "Sharing Terraform secrets across a team by storing an encrypted tar in git and decrypting it in CI."
 ---
 
 ### TL;DR
@@ -144,7 +144,7 @@ fi
 After all this has run, I end up with a nice deployment message in Slack!
 
 <div class="image">
-	<img src="./../../assets/images/deployment-success.png"/>
+	<img src="./../../assets/images/deployment-success.png" alt="A Slack message from Deploy Bot confirming build 26 deployed the Terraform stack" />
   <em></em>
 </div>
 

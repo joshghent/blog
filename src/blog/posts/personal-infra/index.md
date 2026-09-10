@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Personal Infrastructure"
 date: "2020-06-16T12:01:03.284Z"
-description: ""
+description: "My personal infrastructure: the scripts, services and setup I use, and the two principles behind every change."
 ---
 
 After seeing the amazing posts by both Stephan Wolfram and Jess Frazelle, I wanted to chime in on my "personal infrastructure". I've always found stories about how people work, their little scripts and hacks they use and the machines they operate on, to be incredibly compelling - [usesthis](https://usesthis.com/) is a great site dedicated to that very subject.

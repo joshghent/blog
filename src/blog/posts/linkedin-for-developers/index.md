@@ -2,12 +2,12 @@
 layout: layouts/post.njk
 title: "LinkedIn For Developers"
 date: "2018-04-19T22:12:03.284Z"
-description: ""
+description: "How developers should actually use LinkedIn, and why recruiters are worth talking to rather than ignoring."
 ---
 
 “Oh, not another recruiter!” – my co-worker said, lazily chucking their phone down. “They just spam!”.
 
-![](https://cdn-images-1.medium.com/max/10368/1*-FpmhaWSMn5ieGS-yYUPFA@2x.jpeg)
+![A man standing beside a bicycle, looking at his phone](https://cdn-images-1.medium.com/max/10368/1*-FpmhaWSMn5ieGS-yYUPFA@2x.jpeg)
 
 This is an all too common phrase I hear from developers. I disagree with this sentiment because recruiters can get you good jobs and negotiate on your behalf – it’s in their best interest to do so. If you are looking for a new opportunity, LinkedIn can be a great way to connect with people who will start the hunt for you. Here I will break down not only how to optimize yourself for a new job but also hopefully how to remove a lot of the pain points of searching for one.
 

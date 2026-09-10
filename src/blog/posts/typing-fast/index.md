@@ -28,7 +28,7 @@ Typingclub starts by building you up what fingers you use. Initially it just foc
 
 ## A new keyboard
 <div class="image">
-	<img src="../../assets/images/my-keyboard.jpg"/>
+	<img src="../../assets/images/my-keyboard.jpg" alt="A mechanical keyboard with a yellow spacebar on a wooden desk" />
 </div>
 
 This has nothing to do with typing speed per se (more on that after), but a new keyboard would affect my typing experience.
@@ -49,7 +49,7 @@ Once I had grasped using all 10 fingers, I moved on to measuring my progress and
 
 ## Progress
 <div class="image">
-	<img src="../../assets/images/typing-progress.jpg"/>
+	<img src="../../assets/images/typing-progress.png" alt="A chart of typing speed over time, averaging 75 words per minute with a high of 90" />
 </div>
 My highest words per minute (as measured on 10fastfingers) is 81WPM and my average is staying well above where I started so I'm count that as a success!
 

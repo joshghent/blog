@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Business Version 2
+description: "Two years into self-employment, moving from pure freelancing to cloud architecture, engineering leadership and products."
 date: 2023-08-30
 draft: true
 ---

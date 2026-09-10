@@ -1,5 +1,6 @@
 ---
 title: Todoist Setup 2026
+description: "My Todoist setup after a decade and 50,000 completed tasks, and why I dropped the standard GTD project structure."
 date: 2026-02-26
 layout: layouts/post.njk
 ---

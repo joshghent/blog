@@ -13,7 +13,7 @@ The three reasons are as follows:
 - Performance
 - Privacy
 
-# Accessibility
+## Accessibility
 
 After hearing a talk by [Jadene Aderonmu](https://twitter.com/hellojadene) about the [WCAG guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/), I began to include accessibility as a critical part of a website. Often, I had pushed accessibility to the side. Because it was difficult to test and seldom noticed.
 But accessibility is vital. Recently, an "Ask Hacker News" post asked, ["How do I prepare as a developer going blind?"](https://news.ycombinator.com/item?id=22918980). Although a small part, I realised how little notice of a large community I took. My website is only a drop in the digital sea. But, as with the [boy and the starfish](https://www.peoplehr.com/blog/2015/11/20/the-story-of-the-boy-and-the-starfish/) "I made a difference for that one". I don't have the power to change the web, but I do for my tiny corner of it.

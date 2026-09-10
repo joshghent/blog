@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How Part Time has helped me in life
+description: "Why working three days a week has been the best career move I have made, and why part time is the next remote work."
 date: 2023-07-11
 ---
 

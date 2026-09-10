@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "Beginners Database Design Primer"
 date: "2018-02-14"
-description: ""
+description: "A beginner's primer on designing a relational database, from entities and keys to normalisation."
 ---
 
 <div class="image">
-	<img src="../../assets/images/database.png"/>
+	<img src="../../assets/images/database.png" alt="Line drawing of a pair of hands drawing on a drafting table" />
 </div>
 
 Your boss has just got off the phone with a client who wants a bespoke social network site targeting a niche market. And they want you to head up the project. You’ve never built a social network. Your mind goes to Facebook, Twitter, and Instagram. They’re built by thousands of people with genius level IQ’s and degrees. How could you compete?
@@ -27,13 +27,13 @@ What are the features of the site? **Really** **break it down**. The more you br
 
 As we are building a social network, the leading feature is letting users posts and allowing other (authorized) users to comment. Here we have a one-to-many relationship, because a user will be able to have many posts and comments.
 
-![](https://cdn-images-1.medium.com/max/2740/0*FyqSEsID4A_2jE_n.)
+![Entity relationship diagram linking Users, Posts and Comments tables through their id columns](https://cdn-images-1.medium.com/max/2740/0*FyqSEsID4A_2jE_n.)
 
 We will have other instances such as with user “likes” (such as liking a page, or group) that will require a many-to-many relationship because a user will have many likes, and those likes will have many different properties.
 
 One of the primary objectives of good database design is to remove redundant data and increase the integrity of that data. Often, people combine tables that have one-to-one relationships. For example storing users data with their address. Let’s see why:
 
-![](https://cdn-images-1.medium.com/max/2808/0*JVxQ1FSGDaEupI9Z.)
+![Entity relationship diagram splitting the address fields out of the user table into a separate locations table](https://cdn-images-1.medium.com/max/2808/0*JVxQ1FSGDaEupI9Z.)
 
 The example on the left combines the users table with the address for that person. On the right we have separated it into different tables. But which approach is optimal?
 

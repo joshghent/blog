@@ -2,14 +2,14 @@
 layout: layouts/post.njk
 title: "What Tracking My Expenses for a Year Taught Me About Personal Finance"
 date: "2018-02-26"
-description: ""
+description: "What a year of tracking every expense in a Google Sheet taught me about personal finance."
 ---
 
 2017 was the year I tracked my finances. I started doing this because I wanted to remove the mystery of where my money was going. I wasn’t overspending per se, but found it challenging to know exactly what I had spent across credit cards, debit cards, cash, etc.
 
 Although there are a lot of personal expense tracking software, uncharacteristically, I chose a low tech option — a simple [Google Sheet](https://www.google.com/sheets/about/). I then have a tab for each month and columns to track the Date, Shop, Amount, Notes and then a category of the expense (I have the option of fuel, entertainment, food, shopping, gifts and other).
 
-![](https://cdn-images-1.medium.com/max/2000/1*xHO8TCWzWqaSueqOiEELQw.jpeg)
+![Illustration of a credit card, piggy bank and bar chart connected to a brain](https://cdn-images-1.medium.com/max/2000/1*xHO8TCWzWqaSueqOiEELQw.jpeg)
 
 Now we’re in 2018, I now tracked my specific expenses for over a year. Here is what I’ve learnt.
 

@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: TIL - How to send an SQS message from a Lambda inside a VPC
+description: "How to send an SQS message from a Lambda inside a VPC, including the VPC endpoint and policy AWS makes you configure."
 date: 2023-08-15
 tags: ["til"]
 ---

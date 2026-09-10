@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Lifehacks
+description: "A running list of the heuristics and rules I have picked up over the years and actually use."
 date: 2023-06-09
 ---
 

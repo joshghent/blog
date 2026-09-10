@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Field Notes - London, England
+description: "Notes on London from an amateur student of urban planning: the tube, place names, and how the city lives and breathes."
 date: 2023-03-05
 draft: true
 ---

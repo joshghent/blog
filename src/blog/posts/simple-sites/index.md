@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Simple sites
+description: "A collection of small, minimalist tools, and why this class of software is worth protecting."
 date: 2023-03-09
 ---
 

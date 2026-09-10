@@ -17,19 +17,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: "20.x"
-
-      - name: Enable corepack
-        run: corepack enable
+          cache: pnpm
 
       - name: Install
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate templates
+        run: pnpm run validate:templates
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
+
+      - name: Accessibility audit
+        run: pnpm run check:accessibility
 
       - name: Publish
         uses: cloudflare/pages-action@1

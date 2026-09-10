@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Raising £1000 for MSF
+description: "Running my first half marathon to raise £1,000 for Medecins Sans Frontieres, and how running became a habit."
 date: 2023-04-28
 ---
 

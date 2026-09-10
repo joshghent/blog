@@ -1,0 +1,21 @@
+{
+  "_note": "Referral links for /referrals. Fields: name, category, description, benefit, code (optional), url. Entries without a url are skipped.",
+  "items": [
+    {
+      "name": "Butternut Box",
+      "category": "Food",
+      "description": "Fresh dog food, portioned and delivered.",
+      "benefit": "Discount on your first box",
+      "code": "Gabriella32",
+      "url": "https://butternutbox.com/Gabriella32"
+    },
+    {
+      "name": "DigitalOcean",
+      "category": "Tech",
+      "description": "Simple cloud hosting. What I use for throwaway VPS work.",
+      "benefit": "$200 credit over 60 days",
+      "code": "1bde5ebad5ef",
+      "url": "https://m.do.co/c/1bde5ebad5ef"
+    }
+  ]
+}

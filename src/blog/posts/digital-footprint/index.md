@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Being Mindful about my Digital Footprint
+description: "Auditing years of accumulated online accounts and cutting my digital footprint back to the services I actually use."
 date: 2023-07-12
 draft: true
 ---

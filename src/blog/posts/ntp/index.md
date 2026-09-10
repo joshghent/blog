@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Why does NTP Exist?"
 date: "2019-03-05T22:12:03.284Z"
-description: ""
+description: "What NTP actually is, how distributed systems keep their clocks in sync with UTC, and why the protocol matters."
 ---
 
 NTP is one of the most essential and complex systems that never gets spoken about. But why? And what even are they? And why do we need them? If you’re like me, you might have known about NTP servers and known they were important to keep clocks in sync. But don’t computers have clocks already? It was when I visited the Greenwich observatory recently that I realized how complex time was and with a fascination in both computer systems and horology, I decided to dive into the backbone of our lives, time.
@@ -17,7 +17,7 @@ NTP defines different “stratum” or tiers from GPS or atomic clocks (Stratum 
 
 The stratum number is used to measure the distance between a given device and the “ultimate” time source Stratum 0. This number means NTP can prevent cyclical dependencies too.
 
-![](https://cdn-images-1.medium.com/max/2000/1*UMh6Wu8Mg-55mHR3NaOzCg.png)
+![Diagram of the NTP hierarchy, with atomic clocks feeding stratum one, two and three servers](https://cdn-images-1.medium.com/max/2000/1*UMh6Wu8Mg-55mHR3NaOzCg.png)
 
 As you go down the chain, each “tier” is configured to synchronize with the tier above it. A given device in a tier may sanity check other computers that are in the same stratum (asides from stratum 0). Furthermore, a single computer may query multiple computers from the tier above to gain even more accuracy.
 

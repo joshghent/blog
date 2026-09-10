@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "Starting with Why as a Software Developer"
 date: "2019-02-26T22:12:03.284Z"
-description: ""
+description: "Applying first principles thinking to engineering decisions, and why knowing the 'why' is what moves your career."
 ---
 
 <div class="image">
-	<img src="../../assets/images/jackdaw.png"/>
+	<img src="../../assets/images/jackdaw.png" alt="A jackdaw standing on a wall beside an open laptop" />
 	<em>Developers are like jackdaws — “oh shiny!”</em>
 </div>
 

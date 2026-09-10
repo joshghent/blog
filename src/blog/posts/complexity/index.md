@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Why are software companies so obsessed with doing anything but work?
+description: "Shipping LoginLlama with no dev environment and no process was the fastest I have ever built. Most companies do the opposite."
 date: 2023-06-21
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "One item purchased, Ten emails"
+description: "A single online order now generates ten emails. A look at how retail email got this far out of hand."
 date: "2026-04-08"
 ---
 
