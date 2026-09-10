@@ -41,3 +41,19 @@ pnpm run serve
 ```
 pnpm run build
 ```
+
+#### 6. Validate templates
+
+Rejects Jinja2 syntax that Nunjucks accepts and silently ignores, such as an inline condition on a `for` tag. Runs in CI before the build.
+
+```
+pnpm run validate:templates
+```
+
+#### 7. Check accessibility
+
+Runs axe and HTML CodeSniffer against a sample of built pages in both themes (WCAG 2.1 AA). Also runs in CI.
+
+```
+pnpm run build && pnpm run check:accessibility
+```

@@ -11,7 +11,9 @@
     "build": "NODE_ENV=production run-s clean 'build:*'",
     "serve:css": "npx postcss ./src/styles/main.css --o _site/style.css --watch",
     "spellcheck": "mdspell -a -n -r 'src/blog/**/*.md'",
-    "spellcheck:correct": "mdspell -a -n 'src/blog/**/*.md'"
+    "spellcheck:correct": "mdspell -a -n 'src/blog/**/*.md'",
+    "validate:templates": "node scripts/validate_templates.mjs",
+    "check:accessibility": "node scripts/check_accessibility.mjs"
   },
   "keywords": [],
   "author": "Josh Ghent",
@@ -26,8 +28,10 @@
     "cssnano": "^7.1.2",
     "markdown-spellcheck": "^1.3.1",
     "npm-run-all": "^4.1.5",
+    "pa11y": "^10.0.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
+    "puppeteer": "^25.9.0",
     "rimraf": "^6.1.3",
     "tailwindcss": "^3.4.17"
   }
