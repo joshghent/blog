@@ -1,11 +1,132 @@
 ---
 layout: layouts/base.njk
 hideTitle: true
+wide: true
 ---
+{% set shareUrl = "https://joshghent.com" + page.url %}
+{% set shareTitle = title %}
+{% set minutes = content | readingTime %}
 
-<div class="not-prose mb-10">
-  <a href="/blog" class="text-sm text-red-700 dark:text-red-400 no-underline hover:underline">&larr; Back</a>
+<div class="mx-auto grid max-w-6xl grid-cols-1 gap-x-10 px-6 xl:grid-cols-[9rem_minmax(0,42rem)_14rem] xl:justify-center">
+
+  <aside class="hidden xl:block">
+    <div class="sticky top-10">
+      {% include "components/share.njk" %}
+    </div>
+  </aside>
+
+  <div class="min-w-0">
+    <div class="mb-8">
+      <a href="/blog" class="text-sm text-accent dark:text-orange-400 no-underline hover:underline">&larr; All writing</a>
+    </div>
+
+    <h1 class="text-3xl sm:text-[2.5rem] font-bold tracking-tight leading-[1.15] text-ink dark:text-stone-100">{{ title }}</h1>
+
+    <div class="mt-4 mb-10 flex items-center gap-3 border-b border-line dark:border-stone-800 pb-4 text-sm text-stone-500 dark:text-stone-400">
+      <time datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
+      <span class="text-stone-500 dark:text-stone-400">&middot;</span>
+      <span>{{ minutes }} min read</span>
+      <button type="button" class="share-btn ml-auto" data-copy-url="{{ shareUrl }}" aria-label="Copy link to this post">
+        {% include "components/icons/link.njk" %}
+        <span data-copy-label>Copy link</span>
+      </button>
+    </div>
+
+    <details class="hidden mb-10 border border-line dark:border-stone-800 rounded p-4" data-toc-mobile>
+      <summary class="cursor-pointer text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400">On this page</summary>
+      <nav class="mt-3" data-toc-list-mobile></nav>
+    </details>
+
+    <article class="prose dark:prose-invert" data-article>{{ content | safe }}</article>
+
+    <div class="mt-14 border-t border-line dark:border-stone-800 pt-6 xl:hidden">
+      {% set compact = true %}
+      {% include "components/share.njk" %}
+      {% set compact = false %}
+    </div>
+  </div>
+
+  <aside class="hidden" data-toc>
+    <div class="sticky top-10">
+      <p class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-3">On this page</p>
+      <div class="relative">
+        <div class="absolute left-0 top-0 bottom-0 w-px bg-stone-200 dark:bg-stone-700"></div>
+        <div class="absolute left-0 inset-y-0 w-[2px] bg-accent dark:bg-orange-400 origin-top" style="transform:scaleY(0)" data-toc-progress></div>
+        <nav data-toc-list></nav>
+      </div>
+    </div>
+  </aside>
 </div>
-<h1>{{ title }}</h1>
-<time class="font-mono text-sm text-stone-400 dark:text-stone-500 not-prose block tracking-wide mt-2 mb-10" datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time>
-<article>{{ content | safe }}</article>
+
+<script>
+(function () {
+  var article = document.querySelector('[data-article]');
+  if (!article) return;
+
+  var headings = Array.prototype.slice.call(article.querySelectorAll('h2[id], h3[id]'));
+  var desktop = document.querySelector('[data-toc]');
+  var mobile = document.querySelector('[data-toc-mobile]');
+
+  if (headings.length > 1) {
+    var build = function (target) {
+      var ul = document.createElement('ul');
+      ul.className = 'list-none pl-0 m-0 space-y-1 text-sm';
+      headings.forEach(function (h) {
+        var li = document.createElement('li');
+        li.className = 'm-0';
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        a.className = 'toc-link' + (h.tagName === 'H3' ? ' toc-link-sub' : '');
+        a.dataset.tocFor = h.id;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      target.appendChild(ul);
+    };
+    if (desktop) { build(desktop.querySelector('[data-toc-list]')); desktop.className = 'hidden xl:block'; }
+    if (mobile) { build(mobile.querySelector('[data-toc-list-mobile]')); mobile.className = 'xl:hidden mb-10 border border-line dark:border-stone-800 rounded p-4'; }
+  }
+
+  var progress = document.querySelector('[data-toc-progress]');
+  var links = Array.prototype.slice.call(document.querySelectorAll('[data-toc-for]'));
+  var ticking = false;
+  var top = 0;
+  var range = 1;
+
+  var measure = function () {
+    top = article.getBoundingClientRect().top + window.scrollY;
+    range = Math.max(1, article.offsetHeight - window.innerHeight);
+  };
+
+  var update = function () {
+    ticking = false;
+    var read = Math.min(1, Math.max(0, (window.scrollY - top) / range));
+    if (progress) progress.style.transform = 'scaleY(' + read + ')';
+
+    var current = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].getBoundingClientRect().top < 160) current = headings[i].id;
+    }
+    // At the very bottom nothing else can scroll past the threshold, so pin the last heading.
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+      current = headings[headings.length - 1].id;
+    }
+
+    for (var j = 0; j < links.length; j++) {
+      links[j].classList.toggle('toc-link-active', links[j].dataset.tocFor === current);
+    }
+
+    if (current && history.replaceState && location.hash !== '#' + current) {
+      history.replaceState(null, '', '#' + current);
+    }
+  };
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  window.addEventListener('resize', function () { measure(); update(); });
+  measure();
+  update();
+})();
+</script>

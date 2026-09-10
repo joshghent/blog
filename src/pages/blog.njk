@@ -1,7 +1,35 @@
 ---
-title: Blog
+title: Writing
 layout: layouts/base.njk
 permalink: /blog/
+wide: true
 ---
-{% set postslist = collections.posts | sort(attribute='date') | reverse %}
-{% include "components/postslist.njk" %}
+{% set all = collections.posts | sort(attribute='date') | reverse %}
+{% set featured = all[0] %}
+
+<div class="mx-auto max-w-4xl px-6">
+  <div class="flex items-baseline justify-between border-b border-line dark:border-stone-800 pb-4">
+    <h1 class="text-2xl font-bold tracking-tight">Writing</h1>
+    <p class="text-sm text-stone-500 dark:text-stone-400">{{ all.length }} posts</p>
+  </div>
+
+  <a href="{{ featured.url | url }}" class="group mt-8 block no-underline rounded-lg border border-line dark:border-stone-800 bg-white/60 dark:bg-stone-800/30 p-7 hover:border-accent/40 dark:hover:border-orange-400/40 transition-colors">
+    <div class="flex items-center gap-2.5 text-sm tracking-wide text-stone-500 dark:text-stone-400">
+      <span class="text-accent dark:text-orange-400 uppercase tracking-[0.14em]">Latest</span>
+      <span aria-hidden="true">&middot;</span>
+      <time datetime="{{ featured.date | dateToISO }}">{{ featured.date | readableDate }}</time>
+      <span aria-hidden="true">&middot;</span>
+      <span>{{ featured.templateContent | readingTime }} min read</span>
+    </div>
+    <h2 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight leading-tight text-ink dark:text-stone-100 group-hover:text-accent dark:group-hover:text-orange-400 transition-colors">{{ featured.data.title }}</h2>
+    {% if featured.data.description %}
+      <p class="mt-3 text-stone-500 dark:text-stone-400 leading-relaxed">{{ featured.data.description }}</p>
+    {% endif %}
+  </a>
+
+  <div class="mt-12">
+    <p class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-1">Everything else</p>
+    {% set postslist = all.slice(1) %}
+    {% include "components/postslist.njk" %}
+  </div>
+</div>

@@ -1,14 +1,61 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{% if page.url == "/" %}Josh Ghent{% else %}{{ title }} — Josh Ghent{% endif %}</title>
+    <meta charset="utf-8">
+    <title>{% if page.url == "/" %}Josh Ghent — {{ metadata.title }}{% else %}{{ title }} — {{ metadata.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="{% if page.url == "/" %}Josh Ghent{% else %}{{ title }}{% endif %}" />
-    <meta property="og:url" content="{{ page.url }}" />
+    {% set pageDescription = description or metadata.description %}
+    {% set canonical = metadata.url + page.url %}
+    <meta name="description" content="{{ pageDescription }}">
+    <meta name="author" content="{{ metadata.author.name }}">
+    <link rel="canonical" href="{{ canonical }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ metadata.title }}" href="{{ metadata.feed.url }}">
+
+    <meta property="og:site_name" content="{{ metadata.title }}">
+    <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{% if page.url == "/" %}Josh Ghent{% else %}{{ title }}{% endif %}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:url" content="{{ canonical }}">
     <meta property="og:image" content="{% openGraphScreenshotURL %}">
-    <meta property="twitter:image" content="{% openGraphScreenshotURL %}">
-    <meta name="twitter:card" content="summary_large_image" />
+    {% if layout == "layouts/post.njk" %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
+    <meta property="article:author" content="{{ metadata.author.name }}">{% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.url == "/" %}Josh Ghent{% else %}{{ title }}{% endif %}">
+    <meta name="twitter:description" content="{{ pageDescription }}">
+    <meta name="twitter:image" content="{% openGraphScreenshotURL %}">
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)">
+
     <link rel="stylesheet" href="/theme.css" />
+
+    <script type="application/ld+json">
+    {% if layout == "layouts/post.njk" %}
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ title | dump | safe }},
+        "description": {{ pageDescription | dump | safe }},
+        "datePublished": "{{ date | htmlDateString }}",
+        "dateModified": "{{ date | htmlDateString }}",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonical }}" },
+        "url": "{{ canonical }}",
+        "author": { "@type": "Person", "name": "{{ metadata.author.name }}", "url": "{{ metadata.url }}/cv/" },
+        "publisher": { "@type": "Person", "name": "{{ metadata.author.name }}", "url": "{{ metadata.url }}" }
+      }
+    {% else %}
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ metadata.author.name }}",
+        "url": "{{ metadata.url }}",
+        "email": "{{ metadata.author.email }}",
+        "jobTitle": "Head of Software Engineering",
+        "description": {{ work.summary | dump | safe }},
+        "sameAs": ["https://github.com/joshghent"],
+        "knowsAbout": ["Software architecture", "Engineering leadership", "Distributed systems", "AWS", "Typescript"]
+      }
+    {% endif %}
+    </script>
 
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -28,27 +75,90 @@
       };
     </script>
 
+    {% if metadata.gaId %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.gaId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ metadata.gaId }}');
+    </script>
+    {% endif %}
   </head>
   <body class="bg-paper dark:bg-stone-900 text-ink dark:text-stone-200 font-serif">
-    <header class="max-w-2xl mx-auto px-6 pt-12 pb-8">
-      <div class="flex items-center justify-between">
-        <a href="/" class="text-ink dark:text-stone-200 no-underline hover:opacity-60 transition-opacity font-medium">Josh Ghent</a>
-        <div class="flex items-center gap-5">
-          <nav class="flex items-center gap-4 text-sm text-stone-400 dark:text-stone-500">
-            <a href="/blog" class="no-underline hover:text-ink dark:hover:text-stone-200 transition-colors">Writing</a>
-            <a href="/now" class="no-underline hover:text-ink dark:hover:text-stone-200 transition-colors">Now</a>
-            <a href="/links" class="no-underline hover:text-ink dark:hover:text-stone-200 transition-colors">Links</a>
-          </nav>
-          <button class="text-stone-400 hover:text-ink dark:hover:text-stone-200 transition-colors p-1" onclick="toggleDarkMode()" type="button" aria-label="Toggle dark mode">
-            <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-            <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-          </button>
-        </div>
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus:rounded focus:bg-paper focus:px-4 focus:py-2 focus:text-ink dark:focus:bg-stone-800 dark:focus:text-stone-100">Skip to content</a>
+    <header class="border-b border-line dark:border-stone-800 no-print">
+      <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-4 text-center">
+        <a href="/" class="block text-ink dark:text-stone-100 no-underline hover:text-accent dark:hover:text-orange-400 transition-colors text-[1.75rem] sm:text-4xl font-bold tracking-tight leading-none">{{ metadata.title }}</a>
+
+        <input type="checkbox" id="nav-toggle" class="peer sr-only" aria-label="Show navigation menu">
+        <label for="nav-toggle" class="sm:hidden absolute left-5 top-9 cursor-pointer p-1 text-stone-500 hover:text-accent dark:text-stone-400 dark:hover:text-orange-400 transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span class="sr-only">Menu</span>
+        </label>
+
+        <nav class="hidden peer-checked:flex sm:flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-5 mt-4 sm:mt-2.5 text-[0.9375rem] text-stone-500 dark:text-stone-400">
+          <a href="/blog" class="no-underline hover:text-accent dark:hover:text-orange-400 transition-colors">Writing</a>
+          <a href="/cv" class="no-underline hover:text-accent dark:hover:text-orange-400 transition-colors">CV</a>
+          <a href="/now" class="no-underline hover:text-accent dark:hover:text-orange-400 transition-colors">Now</a>
+          <a href="/links" class="no-underline hover:text-accent dark:hover:text-orange-400 transition-colors">Links</a>
+          <a href="/rss.xml" class="no-underline hover:text-accent dark:hover:text-orange-400 transition-colors">RSS</a>
+        </nav>
+
+        <button class="absolute right-5 top-9 text-stone-500 hover:text-accent dark:text-stone-400 dark:hover:text-orange-400 transition-colors p-1" onclick="toggleDarkMode()" type="button" aria-label="Toggle dark mode">
+          <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
       </div>
     </header>
-    <main class="max-w-2xl mx-auto px-6 pb-24 prose dark:prose-invert">
-      {% if title and not hideTitle %}<h1>{{ title }}</h1>{% endif %}
-      {{ content | safe }}
-    </main>
+    {% if wide %}
+      <main id="content" class="pt-10 pb-24">{{ content | safe }}</main>
+    {% else %}
+      <main id="content" class="max-w-2xl mx-auto px-6 pt-10 pb-24 prose dark:prose-invert">
+        {% if title and not hideTitle %}<h1>{{ title }}</h1>{% endif %}
+        {{ content | safe }}
+      </main>
+    {% endif %}
+    <footer class="border-t border-line dark:border-stone-800 no-print">
+      <div class="mx-auto max-w-6xl px-6 py-8 text-[0.9375rem] text-stone-500 dark:text-stone-400 flex flex-wrap justify-center gap-x-4 gap-y-1">
+        <span>&copy; Josh Ghent</span>
+        <a href="/rss.xml" class="no-underline hover:text-accent dark:hover:text-orange-400">RSS</a>
+        <a href="/cv" class="no-underline hover:text-accent dark:hover:text-orange-400">CV</a>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        var tracked = e.target.closest('[data-track]');
+        if (tracked && typeof gtag === 'function') {
+          gtag('event', tracked.dataset.track, { link_url: tracked.getAttribute('href') });
+        }
+
+        var copy = e.target.closest('[data-copy-url]');
+        if (copy) {
+          navigator.clipboard.writeText(copy.dataset.copyUrl).then(function () {
+            var label = copy.querySelector('[data-copy-label]');
+            var original = label ? label.textContent : null;
+            if (label) label.textContent = 'Copied';
+            copy.classList.add('text-accent');
+            setTimeout(function () {
+              if (label) label.textContent = original;
+              copy.classList.remove('text-accent');
+            }, 1600);
+          });
+          return;
+        }
+
+        var toot = e.target.closest('[data-share-mastodon]');
+        if (toot) {
+          var stored = localStorage.mastodonInstance || '';
+          var instance = prompt('Your Mastodon instance', stored || 'mastodon.social');
+          if (!instance) return;
+          instance = instance.trim().replace(/^https?:\/\//, '').replace(/\/$/, '');
+          localStorage.mastodonInstance = instance;
+          var text = toot.dataset.title + ' ' + toot.dataset.url;
+          window.open('https://' + instance + '/share?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -26,6 +26,35 @@ const postcssFilter = (cssCode, done) => {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Give every heading an id so the "On this page" nav can link to it.
+  const slugify = (text) =>
+    text
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-");
+
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.core.ruler.push("heading_ids", (state) => {
+      const used = new Map();
+      state.tokens.forEach((token, i) => {
+        if (token.type !== "heading_open") return;
+        const base = slugify(state.tokens[i + 1].content) || "section";
+        const seen = used.get(base) || 0;
+        used.set(base, seen + 1);
+        token.attrSet("id", seen ? `${base}-${seen}` : base);
+      });
+    });
+  });
+
+  eleventyConfig.addFilter("readingTime", (content) => {
+    const words = String(content || "")
+      .replace(/<[^>]*>/g, " ")
+      .split(/\s+/)
+      .filter(Boolean).length;
+    return Math.max(1, Math.round(words / 200));
+  });
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy("src/img");
 
@@ -36,6 +65,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
     arr.slice(0, limit)
+  );
+
+  // Nunjucks has no inline "for ... if", so filtering happens here.
+  eleventyConfig.addFilter("filterBy", (arr, key, value) =>
+    (arr || []).filter((item) => item[key] === value)
   );
 
   eleventyConfig.addCollection("posts", (collection) => {
