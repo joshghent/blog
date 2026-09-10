@@ -25,7 +25,7 @@ cd blog
 #### 3. Install dependencies
 
 ```
-npm install
+pnpm install
 ```
 
 #### 4. Work locally
@@ -33,11 +33,11 @@ npm install
 Watches for changes and serves locally on http://localhost:8080
 
 ```
-npm run serve
+pnpm run serve
 ```
 
 #### 5. Create a production build
 
 ```
-npm run build
+pnpm run build
 ```
