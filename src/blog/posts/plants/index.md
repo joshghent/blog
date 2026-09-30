@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: House Plants
+description: "The house plants my wife and I collected during lockdown, and how each of them has fared since."
 date: 2023-07-11
 draft: true
 ---

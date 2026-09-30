@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Albums I listened to in 2022
 date: 2023-01-19
-description:
+description: "Every album I listened to in 2022 with a rating out of ten, kept so I can rediscover them later."
 ---
 
 In the past couple of years, I started tracking albums I listened to and what I rated them. The motivation was to be able to re-discover music in coming years and to satisfy my tendency to record data about little things.

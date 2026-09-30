@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: The Cobra Effect and Software
+description: "Measuring engineering inputs like test counts and code coverage incentivises exactly the behaviour you did not want."
 date: 2023-02-28
 ---
 

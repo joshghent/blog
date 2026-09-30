@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How you should probably setup your AWS Organisation
+description: "How to structure an AWS Organisation with separate accounts, and migrate developers off the root production account."
 date: 2023-07-05
 draft: true
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: You can't fix engineering culture with communication
+description: "'Communication' is the default diagnosis for every engineering culture problem, and it is almost always the wrong one."
 date: 2023-03-08
 ---
 

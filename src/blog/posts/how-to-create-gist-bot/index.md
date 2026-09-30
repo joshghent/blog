@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "How to Create a Pinned Gist Bot in 10 minutes with GitHub Actions"
 date: "2019-11-14T14:58:00.284Z"
-description: ""
+description: "Build a pinned gist bot with GitHub Actions in about ten minutes, using RescueTime data as the example."
 ---
 
 Recently I stumbled upon an awesome page I hadn't seen before [awesome pinned gists](https://github.com/matchai/awesome-pinned-gists). The premise of the list is small apps that run GitHub actions on a schedule to update a gist that is then pinned to your profile.
@@ -30,7 +30,7 @@ Most services have a public API, so try Googling `<APP NAME> API documentation`.
 Inside the documentation, you will be able to find the endpoint you need to call to get the data as well as information about how to authenticate the request.
 
 <div class="image">
-	<img src="./../../assets/images/rescuetime-api.png"/>
+	<img src="./../../assets/images/rescuetime-api.png" alt="The RescueTime daily summary feed API documentation" />
   <em>The RescueTime API Docs I used</em>
 </div>
 
@@ -75,7 +75,7 @@ $ node index.js
 If you go and view your Gist in the browser, this should have successfully updated it with the information you want. If it has worked, then proceed to the next step, otherwise - time for bug fixes! 🐛
 
 <div class="image">
-	<img src="./../../assets/images/rescuebox.png"/>
+	<img src="./../../assets/images/rescuebox.png" alt="The rescue-box pinned gist splitting the day into productive, distracting and neutral time" />
   <em></em>
 </div>
 

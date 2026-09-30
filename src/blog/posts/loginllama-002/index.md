@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Devblog - LoginLlama 002
+description: "Devblog 002: sensitivity options, save confirmations, and cutting scope to keep shipping."
 date: 2023-02-06
 draft: true
 ---

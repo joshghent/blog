@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "How to Run a Successful Tech Meetup — even if you’re forgetful"
 date: "2018-12-22T22:12:03.284Z"
-description: ""
+description: "What it takes to run a tech meetup, learnt from four months of organising LeicesterJS."
 ---
 
 <div class="image">
-	<img src="../../assets/images/meetup.jpeg"/>
+	<img src="../../assets/images/meetup.jpeg" alt="An audience seated for a talk at a LeicesterJS meetup" />
 	<em>A picture taken from the November 2018 LeicesterJS meetup</em>
 </div>
 

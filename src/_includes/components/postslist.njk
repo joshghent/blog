@@ -1,8 +1,18 @@
-<ul class="not-prose list-none pl-0 space-y-3">
+{# Params: postslist #}
+<div class="not-prose">
   {% for post in postslist %}
-    <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-      <time class="font-mono text-sm text-stone-400 dark:text-stone-500 shrink-0 tabular-nums tracking-wide" datetime="{{ post.date | dateToISO }}">{{ post.date | readableDate }}</time>
-      <a class="no-underline text-ink dark:text-stone-200 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </li>
+    <article class="border-b border-dotted border-stone-300 dark:border-stone-700 first:border-t-0">
+      <a href="{{ post.url | url }}" class="group block no-underline py-5">
+        <div class="flex items-center gap-2.5 text-sm tracking-wide text-stone-500 dark:text-stone-400">
+          <time datetime="{{ post.date | dateToISO }}">{{ post.date | readableDate }}</time>
+          <span aria-hidden="true">&middot;</span>
+          <span>{{ post.templateContent | readingTime }} min read</span>
+        </div>
+        <h3 class="mt-1.5 text-xl font-bold tracking-tight leading-snug text-ink dark:text-stone-100 group-hover:text-accent dark:group-hover:text-orange-400 transition-colors">{{ post.data.title }}</h3>
+        {% if post.data.description %}
+          <p class="mt-1.5 text-base leading-relaxed text-stone-500 dark:text-stone-400">{{ post.data.description }}</p>
+        {% endif %}
+      </a>
+    </article>
   {% endfor %}
-</ul>
+</div>

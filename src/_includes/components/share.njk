@@ -1,0 +1,41 @@
+{# Params: shareUrl, shareTitle, compact (icon-only row for small screens) #}
+{% set encodedUrl = shareUrl | urlencode %}
+{% set encodedTitle = shareTitle | urlencode %}
+{% set encodedBoth = shareTitle + " " + shareUrl %}
+{% set links = [
+  { name: "Hacker News", href: "https://news.ycombinator.com/submitlink?u=" + encodedUrl + "&t=" + encodedTitle, icon: "hn" },
+  { name: "X", href: "https://x.com/intent/tweet?url=" + encodedUrl + "&text=" + encodedTitle, icon: "x" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/sharing/share-offsite/?url=" + encodedUrl, icon: "linkedin" },
+  { name: "Bluesky", href: "https://bsky.app/intent/compose?text=" + (encodedBoth | urlencode), icon: "bluesky" },
+  { name: "Threads", href: "https://www.threads.net/intent/post?text=" + (encodedBoth | urlencode), icon: "threads" }
+] %}
+
+<div class="{% if compact %}not-prose{% endif %}">
+  <p class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-3">Discuss online</p>
+  <ul class="list-none pl-0 m-0 {% if compact %}flex flex-wrap gap-2{% else %}space-y-1{% endif %}">
+    {% for link in links %}
+      <li class="m-0">
+        <a href="{{ link.href }}" target="_blank" rel="noopener noreferrer"
+           class="share-btn"
+           {% if compact %}aria-label="Share on {{ link.name }}" title="Share on {{ link.name }}"{% endif %}>
+          {% include "components/icons/" + link.icon + ".njk" %}
+          {% if not compact %}<span>{{ link.name }}</span>{% endif %}
+        </a>
+      </li>
+    {% endfor %}
+    <li class="m-0">
+      <button type="button" class="share-btn w-full" data-share-mastodon data-url="{{ shareUrl }}" data-title="{{ shareTitle }}"
+        {% if compact %}aria-label="Share on Mastodon" title="Share on Mastodon"{% endif %}>
+        {% include "components/icons/mastodon.njk" %}
+        {% if not compact %}<span>Mastodon</span>{% endif %}
+      </button>
+    </li>
+    <li class="m-0">
+      <button type="button" class="share-btn w-full" data-copy-url="{{ shareUrl }}"
+        {% if compact %}aria-label="Copy link" title="Copy link"{% endif %}>
+        {% include "components/icons/link.njk" %}
+        {% if not compact %}<span data-copy-label>Copy link</span>{% endif %}
+      </button>
+    </li>
+  </ul>
+</div>

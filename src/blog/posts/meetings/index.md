@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Why Meetings Happen
+description: "Developers resent meetings, but the meeting is usually a symptom. Why they happen and how to make them worth attending."
 date: 2023-07-25
 draft: true
 ---

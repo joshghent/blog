@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Resiliency By Design"
 date: "2019-01-19T22:12:03.284Z"
-description: ""
+description: "Designing resiliency into an architecture: backing off, retries, timeouts, and accepting that dependencies will fail."
 ---
 
 Resiliency by design in your products architecture is a challenging problem that is rarely tested. Building robust platforms are becoming increasingly important as large server providers such as AWS start to [show their cracks](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html) in addition to good old fashion human error (we had an engineer take down a server by knocking it with his ass). [Chaos monkey](https://github.com/Netflix/chaosmonkey) and other tools have sprung up to pursue down resiliency issues, but despite this, they can still persist. Here are a few things to look out for when designing a new system or analysing existing ones.
@@ -20,7 +20,7 @@ If a service does lose connection to a service it requires persistent access to,
 But when your app boots fresh for the first time, it also needs logic to establish anything it needs in those services. For example, if you have a queue consumer service that maintains a connection to [RabbitMQ](https://www.rabbitmq.com/), when it boots, it needs logic in there to assert all the queues and exchanges it needs. Often, because a queue publisher service has been written previously, **that **service contains all the assert logic. However, when it comes to deploying the queue consumer service, you hit errors because the publisher service was not deployed previously and therefore had not asserted the exchanges and queues the consumer needs. This creates deployment dependencies, which trust me, you don’t want.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*7veIJLnOp4w_LV2m"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*7veIJLnOp4w_LV2m" alt="An AWS deployment across two availability zones, with load balancers, application instances, database replication and backups to S3" />
 	<em>Example structure of an app with fail over</em>
 </div>
 

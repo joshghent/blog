@@ -1,5 +1,6 @@
 ---
 title: Supply Chain Irony
+description: "Enterprises run due diligence on every supplier, then let their developers npm install anything they like."
 date: 2026-02-27
 layout: layouts/post.njk
 ---

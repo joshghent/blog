@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "The Art of Good Code Review"
 date: "2018-05-30T22:12:03.284Z"
-description: ""
+description: "What code review is not (style, bug catching) and the principles that make a review genuinely useful."
 ---
 
 Code review is a critical part of any software development process. In theory, it is designed to broaden system knowledge amongst the team and ensure that the code is maintainable and easy to read. Perfecting code reviews can be somewhat of an art, it requires a balance of being picky and not sweating the small stuff.

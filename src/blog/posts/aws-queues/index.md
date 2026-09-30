@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: SQS, SNS, Eventbridge, DynamoDB - Chosing the right queue system in AWS
+description: "SQS, SNS, EventBridge, Amazon MQ or DynamoDB streams? How to pick the right AWS messaging service for the job."
 date: 2023-05-02
 ---
 

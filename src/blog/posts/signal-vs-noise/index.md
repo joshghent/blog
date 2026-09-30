@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Signal vs Noise - Staying Up to Date"
 date: "2019-10-16T11:40:03.284Z"
-description: ""
+description: "How to stay current in technology by finding the 20% of content that gives you 80% of the value."
 ---
 
 Technology is so fast paced that to stay up to date, you _need_ to be learning on a daily basis. However, the internet is so awash with vast swaths of information of varying accuracy and importance that it's difficult to filter the signal from the noise and only consume that which will be of lasting importance.

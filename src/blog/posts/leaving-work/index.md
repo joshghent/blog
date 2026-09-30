@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "A Guide to Leaving Your Job"
 date: "2019-08-16T12:31:03.000Z"
-description: ""
+description: "A 30-day plan for handing in your notice well: documentation, handover, playbooks, and leaving cleanly."
 ---
 
 Recently, I handed my notice in to my previous job at CloudCall after receiving an new offer at Capp&Co. I won't go into _why_ I chose to leave, but handing my notice in did leave me with the challenge of how to uncouple myself as a Developer from the services that I managed. Jamie Tanna has suggested using blogs as a form of documentation, which is exactly what this is, everything you need to do before you leave your job - broken down by time. In my case I had just under 30 days to get everything ready.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: I hate ratings
-description:
+description: "Five star rating systems collapse into 'fine' and 'awful', which makes almost every rating meaningless."
 date: 2023-06-08
 draft: true
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Five Things I Wish I learnt sooner
+description: "Five lessons from a decade of engineering and freelancing, starting with attaching metrics to your work."
 date: 2023-02-13
 ---
 

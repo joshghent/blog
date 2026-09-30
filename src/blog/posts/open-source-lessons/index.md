@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Lessons from Open Source"
 date: "2018-07-13T22:12:03.284Z"
-description: ""
+description: "Lessons from maintaining an open source project: code ownership, letting go, and reviewing other people's contributions."
 ---
 
 Contributing to open source is often touted as a great way to be recognized in the software development community, with many heralding their [Github](https://github.com/) profiles as a resumé of sorts. Additionally, open source software developers find their programming abilities enhanced and motivations for their day-jobs recharged. Beyond these, however, there are further lessons that can be learnt from contributing to open source.
@@ -14,7 +14,7 @@ When I first took over as maintainer for an open source project, I found myself 
 I was not focused on delivering features and bug fixes but instead on how I perceived the codebase *should *be.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*KzBNzDDzzdTtEh32."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*KzBNzDDzzdTtEh32." alt="Jim Carrey typing furiously at a keyboard" />
 	<em>“No, it should look like this!”</em>
 </div>
 
@@ -29,7 +29,7 @@ Of course, sometimes a certain approach is more convoluted than perhaps necessar
 Open source by its nature is open to basically anyone with a Github account. Therefore, people who stumble across your project and want to contribute to it may not be from the same time zone or have English as a second language. This can often lead to miscommunications. Therefore, it is best to make a concerted effort to ensure there is no ambiguity with what you are saying. Furthermore, different nations may have certain customs in their language that whilst might offend you, are thought of as nothing from others. This can be the case in reverse too, so be mindful of any language that could offend others unnecessarily.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*2nwpaiTXHO_QQXR1."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*2nwpaiTXHO_QQXR1." alt="J. Jonah Jameson from Spider-Man looking unimpressed" />
 	<em>Emotion doesn’t always travel well on the internet</em>
 </div>
 
@@ -40,7 +40,7 @@ An important thing to bear in mind when communicating with either maintainers or
 Beyond writing code, there is an even more important, yet seldom thought of, form of writing — documentation. Critically in open source, if you want people to use your thing — you gotta tell them how to use that thing!
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*0Ijnny5zhcXA1nUM."/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*0Ijnny5zhcXA1nUM." alt="Homer Simpson at a computer asking where the any key is" />
 	<em>Where is the “any” key?</em>
 </div>
 

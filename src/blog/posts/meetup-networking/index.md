@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Networking at Tech Meetups
 date: "2018-08-11T22:12:03.284Z"
-description: ""
+description: "How to talk to people at tech meetups when you are introverted, including the questions that actually start conversations."
 ---
 
 Tech meetups and talks are a great way to get to know fellow developers in your locality. But it can be challenging if you are introverted by your nature. Although you may not be introverted, some find it challenging to approach people when they first attended a meetup. Networking is a core part of why many attend meetups — whether to find a project to work on, a new job or just a friend. This article is motivated by knowing my past-self and others would benefit from how to network at meetups.

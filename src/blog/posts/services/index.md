@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Services I offer
+description: "Fixed-cost services for teams: cloud architecture reviews, performance audits, and engineering leadership support."
 date: 2023-09-04
 draft: true
 ---

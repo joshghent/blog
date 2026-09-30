@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Components of a Great Architecture Diagram
-description:
+description: "The parts that make an architecture diagram actually useful: a key, an author, a version history, and clear flows."
 date: 2024-05-02
 ---
 

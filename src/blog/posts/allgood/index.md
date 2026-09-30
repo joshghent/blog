@@ -8,7 +8,7 @@ description: "Why and how I created allgood"
 Over the weekend, I shipped a new open source project - allgood. It's an npm module designed to instantly add a `/healthcheck` page to your app. Out the box it supports Express, Fastify and Hono. It could be adapted to use Next as well (although I haven't tested this).
 
 After you set it up, you get a page like this:
-<img src="../../assets/images/allgood/allgood.png"/>
+<img src="../../assets/images/allgood/allgood.png" alt="The allgood health check page listing six passing checks with their response times" />
 
 You can find the [code on GitHub](https://github.com/joshghent/allgood) and the [library published on NPM](https://www.npmjs.com/package/@joshghent/allgood)
 

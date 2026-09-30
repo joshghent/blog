@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "Solve 90% of Google Pagespeed Insights Issues in 30 Minutes"
 date: "2018-03-31T22:12:03.284Z"
-description: ""
+description: "Three straightforward changes that will lift your Google PageSpeed Insights score by at least 20 points."
 ---
 
 <div class="image">
-	<img src="../../assets/images/horserace.jpg"/>
+	<img src="../../assets/images/horserace.jpg" alt="Two jockeys racing horses neck and neck down a track" />
 	<em>Source: <a href="https://unsplash.com/photos/fxAo3DiMICI">https://unsplash.com/photos/fxAo3DiMICI</a></em>
 </div>
 
@@ -33,7 +33,7 @@ Huge savings in speed will come from the client’s browser not having to downlo
 You can cache your assets in a few ways, the easiest is to set a cache control header on your requests. On an Apache server, you can do that as follows.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2152/0*SsZKehPZW3P9knAC."/>
+	<img src="https://cdn-images-1.medium.com/max/2152/0*SsZKehPZW3P9knAC." alt="Apache configuration setting cache-control max-age for images, CSS and Javascript" />
 	<em>Code here: <a href="https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1">https://gist.github.com/joshghent/fcca761d006ae34a1a2aaa0406a9e0f1</a></em>
 </div>
 

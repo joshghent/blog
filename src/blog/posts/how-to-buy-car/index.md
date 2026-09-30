@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How to buy a car
+description: "A checklist for buying a used car, from MOT history and common faults to what to check before you hand over the money."
 date: 2023-08-30
 ---
 

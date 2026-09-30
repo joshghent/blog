@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "10 Things I wish I knew before giving my First Tech Talk"
 date: "2018-11-13T22:12:03.284Z"
-description: ""
+description: "Ten things I wish I had known before giving my first conference talk at a meetup."
 ---
 
 <div class="image">
-	<img src="../../assets/images/me.jpeg"/>
+	<img src="../../assets/images/me.jpeg" alt="The title slide of the Lightning Node App Performance talk, projected in front of an audience" />
 	<em>Giving the talk — credit https://twitter.com/JamieTanna/status/1029428095223320576</em>
 </div>
 
@@ -25,7 +25,7 @@ First and foremost, the preparation took a long time. A long time. Initially, I 
 Part of the reason the preparation took a long time was I wanted to make sure I was 100% concrete on every last word I said — in case someone picked me up on it and tore the entire talk to shreds. For example, part of my talk was speaking about the [NodeJS event loop](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c). Although I know roughly how the event loop works, there were still some questions I did not know. I thought that perhaps someone may ask me about the Node event loop and therefore, I set on down the rabbit hole to explore. This kind of pattern occurred at least 6–7 times when creating the talk and accounted for a large proportion of the time I spent.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/1*qO8ucAj7rpUXP_tD3W1A9Q.png"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/1*qO8ucAj7rpUXP_tD3W1A9Q.png" alt="A spoof cereal box for Node Clusters, high in processing power" />
 	<em>The image I created for Node js clusters</em>
 </div>
 
@@ -40,7 +40,7 @@ In connection with preparation time, it also took a long time to come up with a 
 This is a lesson I learned after the fact of presenting the talk. Not every point deserves the same amount of time. Spend more time on the difficult to understand topics and breeze through the small minor points. There is often a sunken cost fallacy at play here, whereby you take lots of time to prepare all the slides so they each deserve their own ceremony. We should try to get rid of this thinking and instead prioritize the points covered. Ordering your points carefully can aid with this. No one wants to be bombarded with lots of heavy topics all in one go, so spread them out and interleave them with smaller, lighter points.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/0*8H9OLV-pu8qsvO4e"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/0*8H9OLV-pu8qsvO4e" alt="Bender from Futurama raising a finger" />
 	<em>Your delivery can get a bit wooden!</em>
 </div>
 
@@ -49,7 +49,7 @@ This is a lesson I learned after the fact of presenting the talk. Not every poin
 Practising your talk is essential of course but you can practice it too much. At a certain point, your delivery could become too scripted or wooden. Rather than attempting to memorize a script, remember the points you are covering. Then just speak. If you have the subject knowledge then this will produce results. Furthermore, speaking from within rather than from notes will vary your talk in different ways. I found that when practising my talk, I would do it a different way each time, adding anecdotes and talking points and cutting others. This was done at an unconscious level and would not have been achieved if I were reciting verbatim.
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2416/0*p-iyI1WhYQGJUMQ2"/>
+	<img src="https://cdn-images-1.medium.com/max/2416/0*p-iyI1WhYQGJUMQ2" alt="A tweet running from there&#x27;s an app for that in 2008 to there&#x27;s an npm module for that in 2014" />
 	<em>There’s an NPM module for that — <a href="https://twitter.com/iamdevloper/status/487606612757315584">https://twitter.com/iamdevloper/status/487606612757315584</a></em>
 </div>
 

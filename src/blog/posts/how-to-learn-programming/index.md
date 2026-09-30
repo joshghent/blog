@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "How to Learn a Programming Language in Record Time"
 date: "2017-06-28T22:12:03.284Z"
-description: ""
+description: "A faster way to pick up a second programming language by learning the 20% of it you will actually use."
 ---
 
 ![image](../../assets/images/1_8CZLKCJ926_bhBSmSJj2ww.png)

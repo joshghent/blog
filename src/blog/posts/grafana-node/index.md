@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "Using Grafana for Monitoring you NodeJS Apps"
 date: "2019-03-06T22:12:03.284Z"
-description: ""
+description: "Monitoring a Node.js application with Grafana: the metrics worth graphing and how to wire them up."
 ---
 
 <div class="image">
-	<img src="../../assets/images/grfana.png"/>
+	<img src="../../assets/images/grfana.png" alt="A Grafana dashboard of four panels graphing request counts and response times" />
 	<em>This guide assumes you already have a basic NodeJS API and a Graphite instance configured.</em>
 </div>
 
@@ -163,17 +163,17 @@ Let’s first create the “count” graph that tracks how many times and when t
 
 Create a new dashboard and you should find yourself on a screen like this. I would recommend creating a new “dashboard” for each API/Service
 
-![](https://cdn-images-1.medium.com/max/3200/0*GUwQEkXskLsaZXhZ)
+![An empty new Grafana dashboard](https://cdn-images-1.medium.com/max/3200/0*GUwQEkXskLsaZXhZ)
 
 Move your mouse over to the left and click “Add Panel” in the little menu that pops out. Then click “Graph”
 
-![](https://cdn-images-1.medium.com/max/3200/0*b291v5I_59xKDkj6)
+![The Grafana panel editor with an empty graph](https://cdn-images-1.medium.com/max/3200/0*b291v5I_59xKDkj6)
 
 Now, click the graph and click “Edit”. Now we can add a data source for our graph.
 
 Set your data source as your Graphite DB so you can now perform queries for your data. You will need to build up a query like this:
 
-![](https://cdn-images-1.medium.com/max/2000/0*OtAVsLVruQ7s6xqi)
+![The Grafana metrics tab building a query for a count of users](https://cdn-images-1.medium.com/max/2000/0*OtAVsLVruQ7s6xqi)
 
 Let’s break this down
 
@@ -191,7 +191,7 @@ Let’s break this down
 
 You should now have a graph like this
 
-![](https://cdn-images-1.medium.com/max/3200/0*NTK1NC0F3jwXLTNh)
+![A Grafana time series panel showing a spike in requests](https://cdn-images-1.medium.com/max/3200/0*NTK1NC0F3jwXLTNh)
 
 For our “error” graph, simply repeat the steps and change the query to add an extra “error” metric — so the full query will be something like \* \* MYPREFIX GetUsers count error.
 

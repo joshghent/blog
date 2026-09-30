@@ -1,43 +1,89 @@
 ---
 layout: layouts/base.njk
+wide: true
 ---
 
-<div class="mb-16 not-prose">
-  <h1 class="text-4xl font-bold tracking-tight mb-4">Josh Ghent</h1>
-  <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400">
-    Software engineer. Building things on the internet. See my <a href="/now" class="text-red-700 dark:text-red-400 underline decoration-red-700/30 dark:decoration-red-400/30 underline-offset-2 hover:decoration-red-700 dark:hover:decoration-red-400 transition-all">/now</a> page for more.
-  </p>
+<div class="mx-auto max-w-3xl px-6">
+
+  <section class="mb-16">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-none">Josh Ghent</h1>
+    <p class="mt-4 text-lg sm:text-xl leading-relaxed text-stone-600 dark:text-stone-400">
+      Head of software engineering. I lead teams building high-traffic systems. Away from that I
+      write small open source tools and self-host most of what I use. This is where I write about
+      the work.
+    </p>
+    <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+      <a href="/cv" class="text-accent dark:text-orange-400 underline decoration-accent/30 dark:decoration-orange-400/30 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">Work history &amp; CV</a>
+      <a href="/blog" class="text-accent dark:text-orange-400 underline decoration-accent/30 dark:decoration-orange-400/30 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">All writing</a>
+      <a href="/now" class="text-accent dark:text-orange-400 underline decoration-accent/30 dark:decoration-orange-400/30 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/now</a>
+    </div>
+  </section>
+
+  <section class="mb-16">
+    <div class="flex items-baseline justify-between border-b border-line dark:border-stone-800 pb-3 mb-2">
+      <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400">Recent writing</h2>
+      <a href="/blog" class="text-sm no-underline text-stone-500 hover:text-accent dark:text-stone-400 dark:hover:text-orange-400 transition-colors">All posts &rarr;</a>
+    </div>
+    {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
+    {% include "components/postslist.njk" %}
+  </section>
+
+  <section class="mb-16">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 border-b border-line dark:border-stone-800 pb-3 mb-6">Products</h2>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {% for item in projects.items | filterBy("type", "product") | filterBy("active", true) %}
+        <a href="{{ item.url }}" class="group block no-underline rounded-lg border border-line dark:border-stone-800 p-5 hover:border-accent/40 dark:hover:border-orange-400/40 transition-colors">
+          <div class="flex items-start gap-3.5">
+            {% if item.icon %}<img src="{{ item.icon }}" alt="" width="40" height="40" class="h-10 w-10 shrink-0 rounded" loading="lazy">{% endif %}
+            <div class="min-w-0 flex-1">
+              <div class="flex items-baseline justify-between gap-3">
+                <h3 class="font-bold tracking-tight text-ink dark:text-stone-100 group-hover:text-accent dark:group-hover:text-orange-400 transition-colors">{{ item.title }}</h3>
+                <span class="text-sm text-stone-500 dark:text-stone-400">{{ item.year }}</span>
+              </div>
+              <p class="mt-1 text-base leading-relaxed text-stone-500 dark:text-stone-400">{{ item.description }}</p>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="mb-16">
+    <div class="flex items-baseline justify-between border-b border-line dark:border-stone-800 pb-3 mb-6">
+      <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400">Open source</h2>
+      <a href="https://github.com/joshghent" class="text-[0.9375rem] no-underline text-stone-500 hover:text-accent dark:text-stone-400 dark:hover:text-orange-400 transition-colors">GitHub &rarr;</a>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {% for item in projects.items | filterBy("type", "oss") | filterBy("active", true) %}
+        <a href="{{ item.url }}" class="group block no-underline rounded-lg border border-line dark:border-stone-800 p-5 hover:border-accent/40 dark:hover:border-orange-400/40 transition-colors">
+          <div class="flex items-start gap-3.5">
+            {% if item.icon %}
+              <img src="{{ item.icon }}" alt="" width="40" height="40" class="h-10 w-10 shrink-0 rounded" loading="lazy">
+            {% else %}
+              {% include "components/icons/github.njk" %}
+            {% endif %}
+            <div class="min-w-0 flex-1">
+              <div class="flex items-baseline justify-between gap-3">
+                <h3 class="font-bold tracking-tight text-ink dark:text-stone-100 group-hover:text-accent dark:group-hover:text-orange-400 transition-colors">{{ item.title }}</h3>
+                <span class="text-sm text-stone-500 dark:text-stone-400">{{ item.year }}</span>
+              </div>
+              <p class="mt-1 text-base leading-relaxed text-stone-500 dark:text-stone-400">{{ item.description }}</p>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 border-b border-line dark:border-stone-800 pb-3 mb-5">Elsewhere</h2>
+    <ul class="list-none pl-0 m-0 space-y-2 text-stone-600 dark:text-stone-400">
+      <li><a href="/cv" class="text-accent dark:text-orange-400 underline decoration-accent/40 dark:decoration-orange-400/40 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/cv</a> &mdash; work history, in one page</li>
+      <li><a href="/now" class="text-accent dark:text-orange-400 underline decoration-accent/40 dark:decoration-orange-400/40 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/now</a> &mdash; what I&rsquo;m up to right now</li>
+      <li><a href="/links" class="text-accent dark:text-orange-400 underline decoration-accent/40 dark:decoration-orange-400/40 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/links</a> &mdash; things I&rsquo;ve been reading</li>
+      <li><a href="/referrals" class="text-accent dark:text-orange-400 underline decoration-accent/40 dark:decoration-orange-400/40 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/referrals</a> &mdash; codes for services I use</li>
+      <li><a href="/rss.xml" class="text-accent dark:text-orange-400 underline decoration-accent/40 dark:decoration-orange-400/40 underline-offset-4 hover:decoration-accent dark:hover:decoration-orange-400 transition-all">/rss.xml</a> &mdash; subscribe to the writing</li>
+    </ul>
+  </section>
+
 </div>
-
-<section class="mb-14">
-  <h2 class="text-xl font-bold tracking-tight mb-6">Recent Writing</h2>
-  {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(5) %}
-  {% include "components/postslist.njk" %}
-  <p class="mt-6"><a href="/blog">All posts &rarr;</a></p>
-</section>
-
-<section class="mb-14">
-  <h2 class="text-xl font-bold tracking-tight mb-6">Pages</h2>
-  <ul class="list-none pl-0 space-y-2">
-    <li><a href="/now">/now</a> &mdash; what I'm up to right now</li>
-    <li><a href="/links">/links</a> &mdash; things I've been reading</li>
-  </ul>
-</section>
-
-<section class="mb-14">
-  <h2 class="text-xl font-bold tracking-tight mb-6">Things I've Built</h2>
-  <ul class="list-none pl-0 space-y-3">
-    <li>
-      <a href="https://planpacer.com">PlanPacer</a> &mdash; the easiest way to add Stripe payment plans to your app.
-    </li>
-    <li>
-      <a href="https://repowarden.dev">Repowarden</a> &mdash; AI-powered repository maintenance that ships clean PRs.
-    </li>
-    <li>
-      <a href="https://loginllama.app">LoginLlama</a> &mdash; a suspicious login detector for your website or app.
-    </li>
-    <li>
-      <a href="https://place.dog">Place.dog</a> &mdash; placeholder images of dogs for your websites and designs.
-    </li>
-  </ul>
-</section>

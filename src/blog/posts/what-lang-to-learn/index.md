@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "What programming language should I learn: or Why it doesn’t matter"
 date: "2017-06-23T22:12:03.284Z"
-description: ""
+description: "Which programming language should you learn first? It matters far less than the noise suggests."
 ---
 
 Searching [‘What programming language should I learn’](https://www.google.com/search?q=what%20programming%20language%20should%20I%20learn) will return you over 7 million results. The first one says Javascript, the next PHP, another extols the virtues of Java and statically typed languages. What even is a statically typed language you might ask? I just want to make apps for my phone!

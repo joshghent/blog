@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Setup a Repo in Github
+description: "My default GitHub repository setup: conventional commit checks, branch protection, CI and a modular monolith structure."
 date: 2023-05-03
 ---
 

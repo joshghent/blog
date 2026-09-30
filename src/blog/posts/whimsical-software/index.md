@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Whimsical Software
+description: "Software optimised purely for revenue has stopped being fun. A case for whimsy and building things that delight."
 date: 2023-03-24
 ---
 

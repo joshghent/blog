@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Crisps Tier list
+description: "A definitive S-tier ranking of British crisps, from pickled onion Monster Munch downwards."
 date: 2023-03-25
 draft: true
 ---

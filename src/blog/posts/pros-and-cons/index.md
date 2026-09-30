@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Pros and Cons
+description: "The most underrated tool for a technical decision is a plain table of pros and cons for each option."
 date: 2023-03-10
 draft: true
 ---

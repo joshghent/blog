@@ -1,0 +1,127 @@
+---
+title: CV
+layout: layouts/base.njk
+permalink: /cv/
+wide: true
+description: Josh Ghent — engineering leader. Work history, products, skills, and writing.
+---
+
+<div class="mx-auto max-w-3xl px-6 cv">
+
+  <section class="border-b border-line dark:border-stone-800 pb-8">
+    <div class="flex items-start justify-between gap-4">
+      <div class="min-w-0">
+        <h1 class="text-4xl font-bold tracking-tight leading-none">Josh Ghent</h1>
+        <p class="mt-2 text-lg text-stone-500 dark:text-stone-400">{{ work.headline }}</p>
+      </div>
+      <a href="{{ metadata.cv }}" download
+         class="no-print shrink-0 inline-flex items-center gap-2 rounded border border-line dark:border-stone-700 px-4 py-2 text-[0.9375rem] no-underline text-ink dark:text-stone-100 hover:border-accent hover:text-accent dark:hover:border-orange-400 dark:hover:text-orange-400 transition-colors"
+         data-track="cv_download">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        Export to PDF
+      </a>
+    </div>
+    <p class="mt-5 leading-relaxed text-stone-600 dark:text-stone-400">{{ work.summary }}</p>
+    <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[0.9375rem]">
+      <a href="mailto:{{ work.email }}" class="text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">{{ work.email }}</a>
+      <a href="https://github.com/joshghent" class="text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">GitHub</a>
+      <a href="/blog" class="text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">Writing</a>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-6">Experience</h2>
+    <ol class="list-none pl-0 m-0 space-y-9">
+      {% for job in work.items %}
+        <li class="m-0 break-inside-avoid">
+          <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+            <h3 class="text-lg font-bold tracking-tight text-ink dark:text-stone-100">
+              {{ job.role }}{% if job.contract %} <span class="font-normal text-stone-500 dark:text-stone-400">(Contract)</span>{% endif %}
+            </h3>
+            <span class="text-[0.9375rem] text-stone-500 dark:text-stone-400">{{ job.period }}</span>
+          </div>
+          <p class="mt-0.5 text-stone-500 dark:text-stone-400">{{ job.company }}</p>
+          <ul class="mt-3 pl-5 list-disc space-y-1.5 text-stone-600 dark:text-stone-400 marker:text-stone-400 dark:marker:text-stone-500">
+            {% for point in job.highlights %}<li class="pl-1">{{ point }}</li>{% endfor %}
+          </ul>
+          {% if job.skills %}<p class="mt-2.5 text-[0.9375rem] text-stone-500 dark:text-stone-400">{{ job.skills }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-6">Products I&rsquo;ve built</h2>
+    <ul class="list-none pl-0 m-0 space-y-5">
+      {% for item in projects.items | filterBy("type", "product") %}
+        <li class="m-0 flex gap-4">
+          {% if item.icon %}<img src="{{ item.icon }}" alt="" width="36" height="36" class="mt-1 h-9 w-9 shrink-0 rounded" loading="lazy">{% endif %}
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+              <div class="flex items-baseline gap-2.5">
+                <a href="{{ item.url }}" class="font-bold tracking-tight text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">{{ item.title }}</a>
+                {% if not item.active %}<span class="rounded bg-stone-500/10 px-1.5 py-0.5 text-xs uppercase tracking-[0.12em] text-stone-600 dark:text-stone-300">Archived</span>{% endif %}
+              </div>
+              <span class="text-[0.9375rem] text-stone-500 dark:text-stone-400">{{ item.year }}</span>
+            </div>
+            <p class="mt-1 leading-relaxed text-stone-600 dark:text-stone-400">{{ item.description }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-6">Open source</h2>
+    <ul class="list-none pl-0 m-0 space-y-5">
+      {% for item in projects.items | filterBy("type", "oss") %}
+        <li class="m-0 flex gap-4">
+          {% if item.icon %}
+            <img src="{{ item.icon }}" alt="" width="36" height="36" class="mt-1 h-9 w-9 shrink-0 rounded" loading="lazy">
+          {% else %}
+            <span class="mt-1">{% include "components/icons/github.njk" %}</span>
+          {% endif %}
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+              <a href="{{ item.url }}" class="font-bold tracking-tight text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">{{ item.title }}</a>
+              <span class="text-[0.9375rem] text-stone-500 dark:text-stone-400">{{ item.year }}</span>
+            </div>
+            <p class="mt-1 leading-relaxed text-stone-600 dark:text-stone-400">{{ item.description }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-6">Skills</h2>
+    <dl class="m-0 space-y-4">
+      {% for group in work.skills %}
+        <div class="sm:grid sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-4">
+          <dt class="font-bold tracking-tight text-ink dark:text-stone-100">{{ group.group }}</dt>
+          <dd class="ml-0 mt-0.5 sm:mt-0 text-stone-600 dark:text-stone-400 leading-relaxed">{{ group.items }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-6">Education</h2>
+    {% for item in work.education %}
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+        <h3 class="text-lg font-bold tracking-tight text-ink dark:text-stone-100">{{ item.qualification }}</h3>
+        <span class="text-[0.9375rem] text-stone-500 dark:text-stone-400">{{ item.period }}</span>
+      </div>
+      <p class="mt-0.5 text-stone-500 dark:text-stone-400">{{ item.institution }}</p>
+      <p class="mt-2 text-stone-600 dark:text-stone-400">{{ item.detail }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="mt-12 no-print">
+    <h2 class="text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400 mb-2">Selected writing</h2>
+    {% set postslist = collections.posts | sort(attribute='date') | reverse | limit(6) %}
+    {% include "components/postslist.njk" %}
+    <p class="mt-5 text-[0.9375rem]"><a href="/blog" class="text-accent dark:text-orange-400 no-underline hover:underline underline-offset-4">All {{ collections.posts.length }} posts &rarr;</a></p>
+  </section>
+
+</div>

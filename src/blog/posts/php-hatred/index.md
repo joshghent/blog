@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "Understanding PHP hatred"
 date: "2018-03-05T22:12:03.284Z"
-description: ""
+description: "Why developers pile on PHP, from inconsistent method naming to its history, and what the criticism gets right."
 ---
 
 <div class="image">
-	<img src="../../assets/images/php.png"/>
+	<img src="../../assets/images/php.png" alt="Cartoon of a person glaring at a computer screen" />
 	<em>Pictured: The PHP developer in their natural state of silent contempt</em>
 </div>
 
@@ -40,14 +40,14 @@ If you’ve ever done PHP development you may have run into this issue. You’ve
 
 So you write the code and then run it and then…
 
-![](https://cdn-images-1.medium.com/max/2000/0*iKeBG9ial1LFcExP.)
+![A PHP syntax error reading unexpected close bracket, expecting comma or semicolon](https://cdn-images-1.medium.com/max/2000/0*iKeBG9ial1LFcExP.)
 
 What? You say. After much debugging, thinking there may be an issue with your method, you finally resort to the PHP docs.
 
 There you discover…
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2432/1*WdQmqjGHTWJD8Avo29rMjw.png"/>
+	<img src="https://cdn-images-1.medium.com/max/2432/1*WdQmqjGHTWJD8Avo29rMjw.png" alt="The PHP documentation signature for array_map" />
 	<em>Documentation for array_map <a href="https://secure.php.net/manual/en/function.array-map.php">https://secure.php.net/manual/en/function.array-map.php</a></em>
 </div>
 
@@ -67,7 +67,7 @@ Another aggravating method usage case is when manipulating arrays. [Sort()](http
 
 Without doubt however, the trifecta of annoyance comes from finding a string within a string. This could not be more simple. Every language has a method like this, and they all work the same. A needle (the string you want to find) and a haystack (the string you want to find it in) are accepted, the method then returns the haystack index at which this needle was found and returns -1 if it wasn’t found. This is the case for Javascript, C and most other languages. PHP however, being the language hipster that it is, decided that this wasn’t good enough and decided to break the status quo by returning false if the needle wasn’t found. That doesn’t sound so bad (although inconsistent with every other language in existence) but if you loosely compare false in PHP, it becomes a 0. Now this is an issue with the following code
 
-![](https://cdn-images-1.medium.com/max/2976/1*AtvD1m_29mSkdMJw_2IQhw.png)
+![PHP comparing strpos against false with a loose equality check, which returns false when the match is at position zero](https://cdn-images-1.medium.com/max/2976/1*AtvD1m_29mSkdMJw_2IQhw.png)
 
 Unfortunately, because the developer was expecting a response of anything but -1 from the [strpos](https://secure.php.net/manual/en/function.strpos.php) method, this code will return true even though the needle is evidently not in the haystack. I find this one of the the most glaring oversights in PHP because it’s so easy to get wrong when programming something that depends on this as well as being again, inconsistent with other languages.
 
@@ -85,7 +85,7 @@ Now, you may have got error messages **_actually _**working but sooner or later 
 
 For the uninitiated, [paamayim nekudatayim](https://en.wiktionary.org/wiki/%D7%A4%D7%A2%D7%9E%D7%99%D7%99%D7%9D_%D7%A0%D7%A7%D7%95%D7%93%D7%AA%D7%99%D7%99%D7%9D#Hebrew) is a romanized version of the Hebrew word for “twice colon” which is referring to the [scope resolution operator](https://en.wikipedia.org/wiki/Scope_resolution_operator#PHP) (::). The kind you would use to call a static method such as this
 
-![](https://cdn-images-1.medium.com/max/2976/1*p1H01HBwqUr8OhBQf-556w.png)
+![A PHP class with a static method named fn, called as Test::fn()](https://cdn-images-1.medium.com/max/2976/1*p1H01HBwqUr8OhBQf-556w.png)
 
 This was originally introduced by Israeli-built [Zend Engine](http://www.zend.com/en/community/php) back in PHP 3. Now that’s fine for people who speak Hebrew, but English is widely accepted as the lingua-franca of programming and the internet at large. Again, it all relates back to ease of use. After finding out the meaning, in a way, I kind of like it as a fun quirk of PHP with an interesting backstory but it is very confusing to new PHP developers (or developers full stop).
 
@@ -93,10 +93,10 @@ This error message still lives on today in PHP 7.
 
 The main issue with PHP error messages are the detail and specificity. At some point, because you’re not a robot (or maybe you are — if so please fill out this captcha before continuing) you’ll miss type something, perhaps missing a bracket or quotation mark. Maybe your code looks something like this.
 
-![](https://cdn-images-1.medium.com/max/2976/1*AODwsrc4MDA1ZfPh4les3w.png)
+![A PHP greet function returning bonjour or hello depending on the language argument](https://cdn-images-1.medium.com/max/2976/1*AODwsrc4MDA1ZfPh4les3w.png)
 
 <div class="image">
-	<img src="https://cdn-images-1.medium.com/max/2000/1*zQTkfZ1biXDZ8r_rflvaaw.png"/>
+	<img src="https://cdn-images-1.medium.com/max/2000/1*zQTkfZ1biXDZ8r_rflvaaw.png" alt="A PHP syntax error reading unexpected &#x27;hello&#x27; as a T_STRING" />
 	<em>Result of the code above</em>
 </div>
 
@@ -112,7 +112,7 @@ The problem with this for new programmers or programmers without a C/Perl backgr
 
 Helpfully the PHP manual clears up the differences
 
-![](https://cdn-images-1.medium.com/max/2000/1*EBTgMqTKHbUjL5mIEQQyDg.png)
+![PHP documentation noting the construct is equivalent to exit()](https://cdn-images-1.medium.com/max/2000/1*EBTgMqTKHbUjL5mIEQQyDg.png)
 
 Yeah… perhaps not. As a takeaway from this point, it is important to not pollute your documentation of a codebase with legacy stories of reasoning behind one decision or another (as has been done here). On the other hand, question whether there should be those stories in the first place.
 

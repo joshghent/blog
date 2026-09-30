@@ -2,11 +2,11 @@
 layout: layouts/post.njk
 title: "📱 Zen iPhone"
 date: "2018-03-26"
-description: ""
+description: "Turning a phone from an endless scroll into a purposeful tool, treating the home screen like a tidy desk."
 ---
 
 <div class="image">
-	<img src="../../assets/images/zeniphone.jpg"/>
+	<img src="../../assets/images/zeniphone.jpg" alt="Someone holding a phone over an open laptop on a desk" />
 	<em>Photo credit: <a href="https://unsplash.com/photos/Dl6jeyfihLk">https://unsplash.com/photos/Dl6jeyfihLk</a></em>
 </div>
 

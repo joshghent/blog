@@ -1,0 +1,40 @@
+---
+title: Referrals
+layout: layouts/base.njk
+permalink: /referrals/
+wide: true
+description: Referral codes for the services I actually pay for and use. Both of us get something when you sign up.
+---
+
+<div class="mx-auto max-w-4xl px-6">
+
+  <div class="border-b border-line dark:border-stone-800 pb-4">
+    <h1 class="text-2xl font-bold tracking-tight">Referrals</h1>
+    <p class="mt-2 max-w-2xl text-stone-600 dark:text-stone-400 leading-relaxed">
+      Codes for services I pay for and use. Sign up through one of these and we both get
+      something, usually credit or money off. I get nothing if you do not stay, so there is
+      nothing here I would not recommend anyway.
+    </p>
+  </div>
+
+  <div class="mt-8 grid gap-5 sm:grid-cols-2">
+    {% for item in referrals.items %}
+      {% if item.url %}
+        <a href="{{ item.url }}" class="ticket" rel="nofollow sponsored noopener" data-track="referral_click">
+          <div class="ticket-body">
+            {% if item.category %}<p class="ticket-category">{{ item.category }}</p>{% endif %}
+            <h2 class="ticket-name">{{ item.name }}</h2>
+            {% if item.description %}<p class="ticket-description">{{ item.description }}</p>{% endif %}
+            {% if item.benefit %}<p class="ticket-benefit">{{ item.benefit }}</p>{% endif %}
+          </div>
+          <div class="ticket-stub">
+            <p class="ticket-stub-label">{% if item.code %}Code{% else %}Redeem{% endif %}</p>
+            <p class="ticket-code">{% if item.code %}{{ item.code }}{% else %}&rarr;{% endif %}</p>
+            <span class="ticket-barcode" aria-hidden="true"></span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

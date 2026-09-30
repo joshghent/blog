@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Site Upgrades - Gatsby V4 and Webmentions
-description:
+description: "Upgrading the site from Gatsby V2 to V4 and adding webmentions, after it stopped running locally altogether."
 date: 2022-07-28
 tags: ["meta"]
 ---

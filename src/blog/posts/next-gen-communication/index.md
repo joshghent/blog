@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "Architecting the Next Generation of Communication"
 date: "2019-01-23T22:12:03.284Z"
-description: ""
+description: "Architecting a platform-agnostic messaging system with websockets, SMS and email, built to a deadline."
 ---
 
 With the shift to mobile and the statistics of the “younger” generation (hi there) not using phone calls as a means of communication, there is a constant push towards reaching people in a platform agnostic way — via email, LinkedIn, twitter DM, you name it. The challenge arises when you need to create a platform that is scalable demands and flexible enough to hack in any other new communication streams later down the line — maybe we suddenly want support for MySpace messaging.
@@ -27,13 +27,13 @@ To differentiate the communication types you have, group instant message, direct
 
 Channels should be created per group of participants per channel type. For example creating a new sms to a contact creates a new channel, sending an sms to the same contact again will not create a new channel. But, creating a group with Bob, June and Sally called “Sales Call” and then another with the same people but called “Another sales call”, would create two different channels. This is how many other chat applications are built which in accordance with [Jakob’s Law](https://lawsofux.com/jakobs-law.html), is what you want to do.
 
-![](https://cdn-images-1.medium.com/max/2808/0*uy2HVNILokIO_fsG)
+![Architecture diagram routing SMS and app messages through PubNub to three users, with JWT authentication](https://cdn-images-1.medium.com/max/2808/0*uy2HVNILokIO_fsG)
 
 Now that we have a basic instant message and SMS system, we had a new problem to solve — How do we get notifications to the user? Emit a message of a different type on the existing channels sounds like an obvious solution but it assumes the user is subscribed to channel. Fortunately, one way you can solve this is with a “notification” channel. Each account should be assigned a notification channel. Every time a message is sent, it is also sent to the participants notification channel.
 
 For example, if Bob creates a new group chat with June and Sally, it will send a new message on June and Sally’s notification channels informing our application “hey there is a new channel you need to subscribe to!”. This will then trigger a process in the app to subscribe to that channel in the background. When Bob then sends a message on that channel, it sends another message on both the participants (June and Sally) notification channels. When this message is received by the application you can then pop a desktop or mobile notification depending on the platform.
 
-![](https://cdn-images-1.medium.com/max/2000/0*DilygOA_B31jva_5)
+![Diagram of Bob sending one message that PubNub delivers to June and Sally as both a channel message and a notification](https://cdn-images-1.medium.com/max/2000/0*DilygOA_B31jva_5)
 
 Additionally, you can use this notification channel to send other kinds of messages like when a channel has been read, or when the user mutes, leaves or hides a channel. Utilizing the PubNub function again, these notifications can be captured and forward them onto a CRUD API which saves them in DynamoDB. This allows us to provide a consistent experience across any device that the account uses.
 
@@ -41,7 +41,7 @@ Some may be wondering why we don’t just call the API directly, but instead go 
 
 ## Authentication
 
-![](https://cdn-images-1.medium.com/max/2000/0*b4LSzT0YAF4jZf6O)
+![Flow diagram running from login, to requesting a JWT, to authenticating with PubNub, to sending messages](https://cdn-images-1.medium.com/max/2000/0*b4LSzT0YAF4jZf6O)
 
 Authentication can be a big hurdle when breaking up a monolithic architecture into microservices, this is the situation my company found itself in. Prior to developing these SMS/IM systems, users were authenticated to our backend using a username, password and license key. All requests to the API used these parameters. This was not an option when authenticating with PubNub as firstly we did not want to give them access to our accounts database, and second because it’s not an option on their system. A token based system was the only way. We considered a number of different options for token based authentication but eventually settled on JWT because of its flexibility, ease of implementation and security. Combined with this, we had found Kong along with the JWT plugin to be fantastic at handling all the traffic we threw at it.
 

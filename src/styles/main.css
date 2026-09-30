@@ -6,6 +6,18 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  article h2,
+  article h3 {
+    scroll-margin-top: 2.5rem;
   }
 
   /* Guardian-inspired highlighter selection */
@@ -17,5 +29,154 @@
   .dark ::selection {
     background-color: #5c4d00;
     color: #e7e5e4;
+  }
+}
+
+@layer components {
+  .share-btn {
+    @apply flex items-center gap-2 rounded px-2 py-1.5 -mx-2 text-[0.9375rem] no-underline
+           text-stone-500 hover:text-accent hover:bg-stone-500/5
+           dark:text-stone-400 dark:hover:text-orange-400 dark:hover:bg-stone-100/5
+           transition-colors cursor-pointer;
+  }
+
+  .toc-link {
+    @apply block border-l border-transparent pl-4 py-1 -ml-px no-underline leading-snug
+           text-[0.9375rem] text-stone-500 hover:text-accent dark:text-stone-400 dark:hover:text-orange-400 transition-colors;
+  }
+
+  .toc-link-sub {
+    @apply pl-7 text-sm;
+  }
+
+  .toc-link-active {
+    @apply text-ink dark:text-stone-100;
+  }
+
+  /* Referral tickets. The stub width drives both the stub element and the
+     position of the perforation notches. */
+  .ticket {
+    --stub-width: 9.5rem;
+    --notch-radius: 0.75rem;
+
+    @apply relative flex items-stretch overflow-hidden rounded-lg no-underline
+           bg-surface dark:bg-stone-800 transition-transform;
+
+    /* Punch the perforation notches out of the card rather than painting
+       circles over it, so the notch shows the real page background. */
+    -webkit-mask-image: radial-gradient(
+        circle at calc(100% - var(--stub-width)) 0,
+        transparent calc(var(--notch-radius) - 1px),
+        #000 var(--notch-radius)
+      ),
+      radial-gradient(
+        circle at calc(100% - var(--stub-width)) 100%,
+        transparent calc(var(--notch-radius) - 1px),
+        #000 var(--notch-radius)
+      );
+    -webkit-mask-composite: source-in;
+    mask-image: radial-gradient(
+        circle at calc(100% - var(--stub-width)) 0,
+        transparent calc(var(--notch-radius) - 1px),
+        #000 var(--notch-radius)
+      ),
+      radial-gradient(
+        circle at calc(100% - var(--stub-width)) 100%,
+        transparent calc(var(--notch-radius) - 1px),
+        #000 var(--notch-radius)
+      );
+    mask-composite: intersect;
+  }
+
+  .ticket:hover {
+    @apply -translate-y-0.5;
+  }
+
+  .ticket-body {
+    @apply relative z-10 min-w-0 flex-1 p-5;
+  }
+
+  .ticket-category {
+    @apply text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-stone-600 dark:text-stone-300;
+  }
+
+  .ticket-name {
+    @apply mt-1.5 text-xl font-bold tracking-tight text-ink dark:text-stone-100;
+  }
+
+  .ticket:hover .ticket-name {
+    @apply text-accent dark:text-orange-400;
+  }
+
+  .ticket-description {
+    @apply mt-1 text-base leading-relaxed text-stone-600 dark:text-stone-400;
+  }
+
+  .ticket-benefit {
+    @apply mt-3 inline-block rounded bg-accent/10 px-2 py-1 text-[0.9375rem]
+           text-orange-800 dark:bg-orange-400/10 dark:text-orange-200;
+  }
+
+  .ticket-stub {
+    width: var(--stub-width);
+    @apply relative z-10 flex shrink-0 flex-col justify-center border-l-2 border-dashed
+           border-stone-300 px-4 text-center dark:border-stone-600;
+  }
+
+  .ticket-stub-label {
+    @apply text-xs font-medium uppercase tracking-[0.14em] text-stone-600 dark:text-stone-300;
+  }
+
+  .ticket-code {
+    @apply mt-1 break-all font-mono text-[0.8125rem] text-ink dark:text-stone-100;
+  }
+
+  /* Narrow screens get a shorter stub so the body keeps a readable measure. */
+  @media (max-width: 639px) {
+    .ticket {
+      --stub-width: 7.5rem;
+    }
+  }
+
+  .ticket-barcode {
+    @apply mt-3 block h-6 rounded-sm;
+    background-image: repeating-linear-gradient(
+      to right,
+      currentColor 0,
+      currentColor 1px,
+      transparent 1px,
+      transparent 3px,
+      currentColor 3px,
+      currentColor 5px,
+      transparent 5px,
+      transparent 6px
+    );
+    @apply text-stone-400 dark:text-stone-500;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .cv section {
+    break-inside: avoid;
+  }
+
+  @page {
+    margin: 16mm;
   }
 }

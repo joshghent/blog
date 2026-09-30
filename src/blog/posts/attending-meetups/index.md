@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "How to Attend Your First Programming Meetup"
+description: "What to expect at your first programming meetup, why they are worth going to, and how to start talking to people."
 date: "2018-02-06"
 ---
 
