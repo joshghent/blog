@@ -2,6 +2,7 @@
 title: My quest for online privacy
 description: "How I cut down my digital footprint: the email, phone number, newsletters and services that were leaking my data."
 layout: layouts/post.njk
+draft: true
 date: 2026-03-06
 ---
 

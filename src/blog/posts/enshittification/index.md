@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+draft: true
 title: "Curing Enshittification"
 description: "Everything I pay for is quietly getting worse. What causes enshittification and how to get out from under it."
 date: "2026-03-09"

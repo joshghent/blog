@@ -3,6 +3,7 @@ title: "De-corp"
 description: "Moving off Google, Apple and Spotify onto self-hosted and privacy-respecting alternatives. What was worth it and what was not."
 date: 2026-03-08
 layout: layouts/post.njk
+draft: true
 ---
 
 If you've spent time on certain corners of the internet, you may have stumbled across the de-google movement. The idea being to remove google services from your life.
