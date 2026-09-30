@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+draft: true
 title: My Philosophy with AI Tools and a collection of them
 description: A collection of AI tools that can help you with your daily tasks.
 date: 2025-06-12
