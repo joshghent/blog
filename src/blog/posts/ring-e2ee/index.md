@@ -6,13 +6,13 @@ tags: ["privacy", "security", "smart-home", "rant"]
 date: 2026-10-06
 ---
 
-Over the past few years, I've embarked on a journey towards more privacy. This has ranged from migrating away from Gmail to removing data about me online and more.
+Over the past few years, I've embarked on a journey towards more privacy. This has ranged from migrating away from Gmail to removing data about me online and more. (I've also [moved my 2FA codes off Authy](/blog/claude-migrated-me-off-authy) along the way.)
 
-One bugbear remained: our doorbell. I quickly realised I'd made a huge mistake. I bought a smart home product from Ring, a company owned by Amazon. I'd purchased it a while ago, primarily to answer the door remotely whilst travelling.
+One bugbear remained: our doorbell. I quickly realised I'd made a huge mistake. I bought a smart home product from [Ring](https://ring.com), a company [Amazon bought in 2018](https://www.cnbc.com/amp/2018/02/27/amazon-buys-ring-the-smart-door-bell-maker-it-backed-through-alexa-fund.html). I'd purchased it a while ago, primarily to answer the door remotely whilst travelling.
 
 As I didn't want to wastefully throw it away now that I was more privacy conscious, I decided to work with what I had.
 
-That led me to a Ring feature called End-to-End Encryption (E2EE). Ring describes it as enabling only you to have access to your video streams. That implies Ring employees can presumably see your video if you don't have it switched on, but I digress. I activated it so that the video was at least encrypted. Better than nothing.
+That led me to a Ring feature called [End-to-End Encryption (E2EE)](https://ring.com/gb/en/support/articles/7e3lk/using-video-end-to-end-encryption-e2ee). Ring describes it as enabling only you to have access to your video streams. That implies Ring employees can presumably see your video if you don't have it switched on, but I digress. I activated it so that the video was at least encrypted. Better than nothing.
 
 ![Ring's explanation of End-to-End Encryption: your videos are protected with a unique key so that only you have access](/assets/images/ring/e2ee-explainer.jpg)
 
@@ -22,7 +22,7 @@ I took it in good faith that the feature did what it said. As you'll see, the wa
 
 Once I activated the feature, the warning signs started.
 
-Firstly, it disables the video previews on the dashboard. The explanation Ring gives amounts to "this is technically impossible". Given that the doorbell can still record video, take pictures and stream live video in E2E mode, I assume that's guff. It's simply a feature they've chosen not to support, which makes the product more annoying to use.
+Firstly, it disables the video previews on the dashboard. The message they give is that even the greatest minds working for a thousand years couldn't crack this problem. Given that the doorbell can still record video, take pictures and stream live video in E2E mode, I assume that's guff. It's simply a feature they can remove to make it more challenging to use.
 
 ![The Ring app dashboard where the Front Door camera preview reads "Access Restricted"](/assets/images/ring/dashboard.png)
 
@@ -44,7 +44,7 @@ After activating E2E mode, as soon as someone rings the doorbell, my wife and I 
 
 It's odd, because I get this same message whether only I'm signed in or we both are. I tried a single account on a single device: same problem. A single account on two devices: same issue.
 
-Apparently, supporting E2EE across multiple accounts is, again, too much of a technical challenge for Ring.
+Apparently, supporting E2EE across multiple accounts is, again, too much of a technical challenge for Ring. They do at least [document the limitation](https://ring.com/gb/en/support/articles/7e3lk/using-video-end-to-end-encryption-e2ee), though it's not something that's made obvious when you switch it on.
 
 For me this is the most egregious example of Ring being deliberately spiteful once encryption is enabled. Their main selling point, just gone.
 
@@ -52,7 +52,7 @@ And it only happens when the doorbell is rung. If you wait around 10 minutes, we
 
 ## Recordings, subscriptions and support
 
-Because I cancelled the subscription, we also can't watch any recordings. This appears to be a change to Ring's plans, as previously there was a 30 day window where you could watch recordings without a subscription. My guess is that isn't great for EBITDA. Of course, Amazon is only worth over a trillion dollars, so they can't possibly afford to make a little bit less.
+Because I cancelled the subscription, we also can't watch any recordings. This appears to be a change to Ring's plans, as previously there was a 30 day window where you could watch recordings without a subscription. My guess is that isn't great for [EBITDA](https://www.investopedia.com/terms/e/ebitda.asp). Of course, Amazon is only worth over a trillion dollars, so they can't possibly afford to make a little bit less. I'm increasingly convinced that if a penniless orphan could work to make something and be paid next to nothing, Bezos would employ them. Oh wait...
 
 Reaching out to Ring support is a nightmare too. You get an AI chatbot with no hope of reaching a person who can do anything other than regurgitate knowledge base articles.
 
