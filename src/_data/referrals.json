@@ -16,6 +16,13 @@
       "benefit": "$200 credit over 60 days",
       "code": "1bde5ebad5ef",
       "url": "https://m.do.co/c/1bde5ebad5ef"
+    },
+    {
+      "name": "Starlink",
+      "category": "Tech",
+      "description": "Satellite internet that works pretty much anywhere.",
+      "benefit": "Referral reward when you sign up",
+      "url": "https://starlink.com?referral=RC-DF-5467649-23573-59"
     }
   ]
 }
