@@ -8,7 +8,7 @@ import puppeteer from "puppeteer";
 
 const ROOT = new URL("../_site/", import.meta.url).pathname;
 const PORT = 8123;
-const PAGES = ["/", "/blog/", "/cv/", "/now/", "/links/", "/referrals/", "/zsh-speed/"];
+const PAGES = ["/", "/blog/", "/cv/", "/now/", "/links/", "/referrals/", "/skills/", "/zsh-speed/"];
 
 const TYPES = {
   ".html": "text/html; charset=utf-8",

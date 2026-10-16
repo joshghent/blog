@@ -1,0 +1,150 @@
+{
+  "source": "https://github.com/joshghent/skills/tree/main/plugins/joshghent-skills/skills",
+  "groups": [
+    {
+      "id": "plan",
+      "title": "Plan and set up",
+      "summary": "Before the first line of code: turn the plan into a timeline, and make sure anyone can run the repo from a fresh clone."
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "summary": "A second opinion on the code and the interface, ranked by what is most likely to hurt you in production or cost you a conversion."
+    },
+    {
+      "id": "ship",
+      "title": "Maintain and ship",
+      "summary": "The chores that pile up: patching dependencies, clearing the PR queue, and checking the deploy actually went out."
+    },
+    {
+      "id": "grow",
+      "title": "Grow",
+      "summary": "After it ships: write about it, get it found in search and AI answers, and run a weekly loop on the numbers."
+    }
+  ],
+  "items": [
+    {
+      "name": "gantarr",
+      "group": "plan",
+      "added": "2026-06-17",
+      "summary": "Turns a plan, roadmap, or the conversation so far into a valid Gantarr JSON file you can import to render a Gantt chart.",
+      "link": { "href": "https://gantarr.joshghent.com", "label": "Open Gantarr" }
+    },
+    {
+      "name": "groundwork",
+      "group": "plan",
+      "added": "2026-10-13",
+      "summary": "Walks the fresh-clone path for real, scores local dev readiness, fixes the gaps, and opens one PR with a before/after scorecard.",
+      "link": { "href": "/groundwork/", "label": "Read the post" }
+    },
+    {
+      "name": "sentinel",
+      "group": "review",
+      "added": "2026-05-22",
+      "summary": "Audits the whole repo for quality, test coverage, CI, security, and AI-agent fragility, ranked by production risk."
+    },
+    {
+      "name": "design-review",
+      "group": "review",
+      "added": "2026-06-16",
+      "summary": "Reviews a UI for conversion, UX, accessibility, and performance against Apple, FT, and OpenAI standards, and calls out AI design slop."
+    },
+    {
+      "name": "warden",
+      "group": "ship",
+      "added": "2026-06-16",
+      "summary": "Pulls production errors, then patches security alerts and bumps dependencies, verified by your own build and tests, in one PR."
+    },
+    {
+      "name": "conductor",
+      "group": "ship",
+      "added": "2026-07-02",
+      "summary": "Merges every ready PR newest first, each one green on CI, then confirms the deploy shipped and the live app answers."
+    },
+    {
+      "name": "blogger",
+      "group": "grow",
+      "added": "2026-05-22",
+      "summary": "Turns shipped commits into dated blog posts, changelog entries, and social snippets written in your site's voice."
+    },
+    {
+      "name": "beacon",
+      "group": "grow",
+      "added": "2026-07-02",
+      "summary": "Reviews SEO and AI-answer visibility from Search Console, Ahrefs, and PostHog data, then fixes pages, metadata, and schema."
+    },
+    {
+      "name": "growth-review",
+      "group": "grow",
+      "added": "2026-08-19",
+      "summary": "Runs a weekly growth loop: health checks, this week against last, a dated log entry, then ships the one highest-leverage change."
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-10-16",
+      "changes": [
+        { "skills": [], "text": "Every skill can now be installed on its own with the skills CLI, into any agent it supports." }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "version": "1.2.0",
+      "changes": [
+        { "skills": ["groundwork"], "type": "new", "text": "Walks the fresh-clone path, scores ten setup steps, fixes the gaps, and opens one PR with the before/after scorecard." },
+        { "skills": ["groundwork"], "text": "Also checks test coverage (is there a command, does CI enforce it, which critical paths are untested) and whether deploys are automated and gated on CI." }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "version": "1.1.0",
+      "changes": [
+        { "skills": ["warden"], "text": "Added /warden security: collects every open high and critical Dependabot, code scanning, and secret scanning alert across a repo, a list of repos, or an org, and opens one PR that fixes or triages them." },
+        { "skills": ["conductor"], "text": "Merges security-sweep PRs first, then re-counts open high and critical alerts after the deploy." },
+        { "skills": [], "text": "Releases are now versioned with changesets, so /plugin marketplace update pulls new skills reliably." }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "changes": [
+        { "skills": ["growth-review"], "type": "new", "text": "The weekly loop: check the site is actually up and tracking, log the week's numbers, then build one improvement." },
+        { "skills": [], "text": "The plugin and marketplace are now both called joshghent-skills." }
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "changes": [
+        { "skills": ["beacon"], "type": "new", "text": "SEO and GEO review driven by real Search Console, Ahrefs, and PostHog data, including whether AI crawlers are allowed in." },
+        { "skills": ["conductor"], "type": "new", "text": "A merge train for ready PRs that never force-merges, then watches the deploy and smoke-checks the live app." },
+        { "skills": ["warden"], "text": "Prioritises the dependency sweep by live production errors from Sentry, New Relic, Cloudflare Workers, and others." }
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "changes": [
+        { "skills": [], "text": "Fixed the plugin install so Claude Code discovers every skill." }
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "changes": [
+        { "skills": ["gantarr"], "type": "new", "text": "Plan in, importable Gantt timeline out, validated before it is handed over." },
+        { "skills": [], "text": "All skills bundled into a single plugin, so install is two commands at most." }
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "changes": [
+        { "skills": ["design-review"], "type": "new", "text": "A senior product designer's critique of a rendered UI, across viewports and keyboard states." },
+        { "skills": ["warden"], "type": "new", "text": "Dependency and security maintenance, including end-of-life runtime upgrades to the current LTS." },
+        { "skills": [], "text": "The repo became a Claude Code plugin marketplace." }
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "changes": [
+        { "skills": ["blogger", "sentinel"], "type": "new", "text": "The first two skills: turn commits into blog posts, and audit a repo for risk." }
+      ]
+    }
+  ]
+}
