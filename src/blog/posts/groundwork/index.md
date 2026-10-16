@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "/groundwork v1.0 - a new skill to help your projects"
+title: "/groundwork: a skill that makes any repo runnable from a fresh clone"
 description: "Most repos only run on the machines of the few developers who set them up. /groundwork is an agent skill that finds the missing env files, databases and docs, then fixes them."
 tags: ["ai", "open-source", "developer-experience", "product"]
 date: 2026-10-16
