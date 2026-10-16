@@ -156,6 +156,11 @@ module.exports = function (eleventyConfig) {
     return String(value).padStart(length, char);
   });
 
+  // Whole days between an ISO date and the build.
+  eleventyConfig.addFilter("daysSince", (isoDate) =>
+    Math.floor((Date.now() - new Date(isoDate).getTime()) / 86400000)
+  );
+
   eleventyConfig.addFilter('dateToISO', (date) => {
     if (!(date instanceof Date)) {
       date = new Date(date);
