@@ -29,7 +29,7 @@ description: Referral codes for the services I actually pay for and use. Both of
           </div>
           <div class="ticket-stub">
             <p class="ticket-stub-label">{% if item.code %}Code{% else %}Redeem{% endif %}</p>
-            <p class="ticket-code">{% if item.code %}{{ item.code }}{% else %}&rarr;{% endif %}</p>
+            {% if item.code %}<p class="ticket-code">{{ item.code }}</p>{% else %}<p class="ticket-code ticket-code-arrow" aria-hidden="true"></p>{% endif %}
             <span class="ticket-barcode" aria-hidden="true"></span>
           </div>
         </a>

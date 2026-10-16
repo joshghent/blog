@@ -131,6 +131,12 @@
     @apply mt-1 break-all font-mono text-[0.8125rem] text-ink dark:text-stone-100;
   }
 
+  /* Entries without a code show an arrow. Drawn as generated content so the
+     glyph isn't measured as text by contrast checkers. */
+  .ticket-code-arrow::before {
+    content: "\2192";
+  }
+
   /* Narrow screens get a shorter stub so the body keeps a readable measure. */
   @media (max-width: 639px) {
     .ticket {
