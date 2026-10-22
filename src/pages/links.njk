@@ -4,12 +4,16 @@ layout: layouts/base.njk
 description: Links Josh Ghent has been reading, with notes on why each one was worth keeping.
 permalink: /links/
 ---
-<ul class="pl-0 space-y-6 list-none">
-  {% for item in links.items | sort(attribute='date') | reverse %}
-    <li>
-      <time class="font-mono text-sm text-stone-500 dark:text-stone-400 tracking-wide" datetime="{{ item.date | dateToISO }}">{{ item.date | fromISO }}</time>
-      <div><a href="{{ item.link }}">{{ item.title }}</a></div>
-      <p class="text-sm mt-1 text-stone-500 dark:text-stone-400">{{ item.notes | safe }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<p class="text-sm text-stone-500 dark:text-stone-400"><a href="/links/feed.xml">Subscribe to links</a></p>
+<div class="h-feed">
+  <h2 class="sr-only p-name">Links</h2>
+  <ul class="pl-0 space-y-6 list-none">
+    {% for item in collections.links | reverse %}
+      <li class="h-entry">
+        <a class="u-url no-underline" href="{{ item.url }}"><time class="dt-published font-mono text-sm text-stone-500 dark:text-stone-400 tracking-wide" datetime="{{ item.date | htmlDateString }}">{{ item.date | fromISO }}</time></a>
+        <div class="p-name"><a class="u-bookmark-of" href="{{ item.data.bookmark_of }}">{{ item.data.title }}</a></div>
+        <div class="e-content text-sm mt-1 text-stone-500 dark:text-stone-400">{{ item.templateContent | safe }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+hideTitle: true
+---
+{% set permalink = metadata.url + page.url %}
+<article class="h-entry">
+  <div class="mb-6">
+    <a href="/links" class="text-sm text-accent dark:text-orange-400 no-underline hover:underline">&larr; All links</a>
+  </div>
+
+  <h1 class="p-name !mb-2"><a class="u-bookmark-of" href="{{ bookmark_of }}">{{ title }}</a></h1>
+  <p class="!mt-0 text-sm text-stone-500 dark:text-stone-400">
+    <a class="u-url no-underline" href="{{ permalink }}"><time class="dt-published" datetime="{{ date | htmlDateString }}">{{ date | fromISO }}</time></a>
+    &middot; {{ bookmark_of | replace("https://", "") | replace("http://", "") | truncate(60) }}
+    <a class="p-author h-card hidden" href="{{ metadata.url }}">{{ metadata.author.name }}</a>
+  </p>
+
+  <div class="e-content">{{ content | safe }}</div>
+
+  {% if syndication and syndication.length %}
+  <p class="text-sm text-stone-500 dark:text-stone-400">Also on:
+    {% for url in syndication %}<a class="u-syndication" href="{{ url }}" rel="syndication">{{ url | replace("https://", "") | replace("www.", "") | truncate(30, true, "") }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+  </p>
+  {% endif %}
+</article>
