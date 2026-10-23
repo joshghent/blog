@@ -1,0 +1,28 @@
+---
+permalink: /links/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }} — Links</title>
+  <subtitle>Things from around the web worth sharing</subtitle>
+  <link href="{{ metadata.url }}/links/feed.xml" rel="self"/>
+  <link href="{{ metadata.url }}/links/"/>
+  <updated>{{ collections.links | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}/links/</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for item in collections.links | reverse %}
+  {% set absoluteUrl = item.url | absoluteUrl(metadata.url) %}
+  <entry>
+    <title>{{ item.data.title }}</title>
+    <link href="{{ absoluteUrl }}"/>
+    <link rel="related" href="{{ item.data.bookmark_of }}"/>
+    <updated>{{ item.date | dateToRfc3339 }}</updated>
+    <id>{{ absoluteUrl }}</id>
+    <content type="html">{{ ('<p><a href="' + item.data.bookmark_of + '">' + item.data.title + '</a></p>' + item.templateContent) | htmlToAbsoluteUrls(absoluteUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

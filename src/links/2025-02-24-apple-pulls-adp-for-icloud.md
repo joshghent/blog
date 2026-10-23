@@ -1,0 +1,6 @@
+---
+title: "Apple Pulls ADP for iCloud"
+bookmark_of: "https://www.macrumors.com/2025/02/21/apple-pulls-encrypted-icloud-security-feature-uk/"
+date: 2025-02-24
+---
+Apple has pulled Advanced Data Protection for iCloud in the UK. Going to have to look at other options.

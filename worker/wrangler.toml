@@ -1,0 +1,12 @@
+name = "joshghent-links"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+GITHUB_REPO = "joshghent/blog"
+GITHUB_BRANCH = "main"
+SITE_URL = "https://joshghent.com"
+
+# Secrets (set with `wrangler secret put <NAME>`):
+#   API_TOKEN     shared secret the Shortcut / Micropub clients send as a Bearer token
+#   GITHUB_TOKEN  fine-grained PAT, "Contents: read and write" on the blog repo only

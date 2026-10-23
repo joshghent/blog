@@ -15,5 +15,12 @@
   "url": "https://joshghent.com",
   "description": "Writing on software engineering, engineering leadership, and building products, by Josh Ghent.",
   "cv": "/josh-ghent-cv.pdf",
-  "gaId": ""
+  "gaId": "",
+  "indieweb": {
+    "me": ["https://github.com/joshghent"],
+    "webmention": "",
+    "micropub": "",
+    "authorization_endpoint": "https://indieauth.com/auth",
+    "token_endpoint": ""
+  }
 }

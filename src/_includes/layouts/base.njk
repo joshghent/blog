@@ -11,6 +11,13 @@
     {% if draft %}<meta name="robots" content="noindex, nofollow">{% endif %}
     <link rel="canonical" href="{{ canonical }}">
     <link rel="alternate" type="application/atom+xml" title="{{ metadata.title }}" href="{{ metadata.feed.url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ metadata.title }} — Links" href="{{ metadata.url }}/links/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="{{ metadata.title }} — Links" href="{{ metadata.url }}/links/feed.json">
+    {% for url in metadata.indieweb.me %}<link rel="me" href="{{ url }}">
+    {% endfor %}{% if metadata.indieweb.webmention %}<link rel="webmention" href="{{ metadata.indieweb.webmention }}">{% endif %}
+    {% if metadata.indieweb.micropub %}<link rel="micropub" href="{{ metadata.indieweb.micropub }}">
+    <link rel="authorization_endpoint" href="{{ metadata.indieweb.authorization_endpoint }}">
+    <link rel="token_endpoint" href="{{ metadata.indieweb.token_endpoint }}">{% endif %}
 
     <meta property="og:site_name" content="{{ metadata.title }}">
     <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
@@ -123,7 +130,8 @@
     {% endif %}
     <footer class="border-t border-line dark:border-stone-800 no-print">
       <div class="mx-auto max-w-6xl px-6 py-8 text-[0.9375rem] text-stone-500 dark:text-stone-400 flex flex-wrap justify-center gap-x-4 gap-y-1">
-        <span>&copy; Josh Ghent</span>
+        <span class="h-card"><span>&copy; </span><a class="p-name u-url" rel="me" href="{{ metadata.url }}">{{ metadata.author.name }}</a><img class="u-photo hidden" src="/assets/profile-pic.jpg" alt=""></span>
+        <a href="/links" class="no-underline hover:text-accent dark:hover:text-orange-400">Links</a>
         <a href="/rss.xml" class="no-underline hover:text-accent dark:hover:text-orange-400">RSS</a>
         <a href="/cv" class="no-underline hover:text-accent dark:hover:text-orange-400">CV</a>
       </div>
