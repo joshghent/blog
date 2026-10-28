@@ -1012,3 +1012,23 @@ webhook
 Authy
 Bezos
 groundwork
+ - src/blog/posts/php2shell-overreaction/index.md
+CVEs
+CVE-2026-109618
+CVE-2026-109619
+CVSS
+Heartbleed
+10:30pm
+PHP2Shell
+VulnCheck
+PoC
+PoCs
+ASLR
+RCE
+Mythos
+OpenAI
+Wiz
+x86-64
+expletives
+behavior
+30pm
