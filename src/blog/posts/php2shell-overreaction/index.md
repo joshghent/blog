@@ -54,4 +54,4 @@ Sadly, the frontier labs are keen to sell a solution to a problem they supposedl
 
 ## Patch your stuff
 
-Having said all that, patch your stuff! It's important, and it's only a matter of time before exploits show up in the wild. But a week on, nothing has been demonstrated or detected in production. Maybe we'll start to see more proactive patching instead of the reactive vulnerability-patch cycle. Only time will tell.
+Having said all that, patch your stuff! It's important, and it's only a matter of time before exploits show up in the wild. A week on, the only working public exploit VulnCheck found runs on one specific build and setup, and the attack they saw in the wild failed. Nobody has shown a general, end-to-end compromise of a production system. Maybe we'll start to see more proactive patching instead of the reactive vulnerability-patch cycle. Only time will tell.
