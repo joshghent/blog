@@ -6,9 +6,9 @@ tags: ["security", "php", "ai", "opinion"]
 date: 2026-10-28
 ---
 
-Last week saw the arrival of two CVEs for PHP, [CVE-2026-109618 and CVE-2026-109619](https://www.wiz.io/blog/php2shell-exploitation-so-far), each rated a staggering CVSS 9.2. For comparison, [Heartbleed](https://heartbleed.com) was rated 5.0 under CVSS v2 and [7.5 under v3.1](https://nvd.nist.gov/vuln/detail/CVE-2014-0160).
+Last week saw the arrival of two CVEs for PHP, [CVE-2026-109618 and CVE-2026-109619](https://www.wiz.io/blog/php2shell-exploitation-so-far), each rated a staggering CVSS 9.2. For comparison, [Heartbleed](https://heartbleed.com) was rated 5.0 under CVSS version 2 and [7.5 under version 3.1](https://nvd.nist.gov/vuln/detail/CVE-2014-0160).
 
-Soon after the news landed, the cyber security team and others at work were setting up war room channels to patch immediately. It was a huge amount of work. We had to check each system to find its exact PHP version, then wait for patches to appear. Many vendors released at the time of the announcement. Others (*cough* Amazon *cough*) were slower, and we waited until around 10:30pm for theirs.
+Soon after the news landed, the cyber security team and others at work were setting up war room channels to patch immediately. It was a huge amount of work. We had to check each system to find its exact PHP version, then wait for patches to appear. Many vendors released at the time of the announcement. Others (*cough* Amazon *cough*) were slower, and we waited until late that night for theirs.
 
 Like many people, I read the announcement, saw the score and thought of several expletives. The pre-announcement was as close to "we're all going to die" as I've seen in a while. Major nations took their sites offline altogether. The coordinated response from Wiz, OpenAI and others fanned the flames. Even the [prime minister of Japan sounded the alarm](https://x.com/takaichi_sanae/status/2112890642590564386).
 
