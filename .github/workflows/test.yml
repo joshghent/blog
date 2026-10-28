@@ -32,6 +32,10 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      # A restored pnpm cache skips Puppeteer's postinstall, so fetch Chrome explicitly.
+      - name: Install Chrome
+        run: pnpm exec puppeteer browsers install chrome
+
       - name: Accessibility audit
         run: pnpm run check:accessibility
 
