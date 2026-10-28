@@ -57,7 +57,7 @@ jobs:
           exit $rc
       - name: Upload betterleaks report
         if: always() && hashFiles('betterleaks-report.json') != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: betterleaks-report
           path: betterleaks-report.json
