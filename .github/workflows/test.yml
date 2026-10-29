@@ -29,6 +29,9 @@ jobs:
       - name: Validate templates
         run: pnpm run validate:templates
 
+      - name: Test links worker
+        run: node --test worker/test/*.test.js
+
       - name: Build
         run: pnpm run build
 
